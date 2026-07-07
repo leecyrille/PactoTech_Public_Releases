@@ -32,5 +32,12 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Fixes from early testing feedback.\n\nFlashing with ST-Link now works on boards with the original factory firmware: that firmware switches its debug port off once it starts, so the Utility now asks you to power-cycle the board and catches it as it turns on. Detect once, then flash - no extra tools needed.\n\nTest screen voice announcements now stop when the Utility window is in the background or closed to the tray.\n\nUpdate checks and downloads no longer hang - a failed firmware download says so clearly and can be retried. The What's-new list now explains when releases exist on a different update channel than yours, and older installs are moved off the retired 'production' channel name automatically."
+  },
+  {
+    "version": "20260707_1343",
+    "date": "2026-07-07",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "Fixes ST-Link detection failing with 'the debug probe could not be created' - the Utility was holding its own connection to the ST-Link open while trying to connect a second time. Also renames the About page to Update / About."
   }
 ]
