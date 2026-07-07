@@ -25,5 +25,12 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "The Utility can now flash boards with an ST-Link, right from the app.\n\nIf your board is on firmware from before in-app updates existed (or has the F103VB chip), you no longer need any external flashing tools: connect an ST-Link V2 to the board's SWD header, pick your board model in the Utility's firmware section, and press Flash. The app reads the chip itself, downloads the matching signed image, and refuses anything that doesn't fit your exact hardware.\n\nAlso fixes update-signature verification for in-app firmware updates."
+  },
+  {
+    "version": "20260707_0554",
+    "date": "2026-07-07",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "Fixes from early testing feedback.\n\nFlashing with ST-Link now works on boards with the original factory firmware: that firmware switches its debug port off once it starts, so the Utility now asks you to power-cycle the board and catches it as it turns on. Detect once, then flash - no extra tools needed.\n\nTest screen voice announcements now stop when the Utility window is in the background or closed to the tray.\n\nUpdate checks and downloads no longer hang - a failed firmware download says so clearly and can be retried. The What's-new list now explains when releases exist on a different update channel than yours, and older installs are moved off the retired 'production' channel name automatically."
   }
 ]
