@@ -18,16 +18,18 @@
             color:var(--dim); font-size:14px; user-select:none; }
   .entry { background:var(--card); border:1px solid var(--line);
            border-radius:12px; padding:18px 22px; margin-bottom:14px; }
-  .entry.beta { display:none; }
+  .entry.beta, .entry.earlytesting { display:none; }
   body.show-beta .entry.beta { display:block; }
+  body.show-earlytesting .entry.earlytesting { display:block; }
   .head { display:flex; align-items:center; gap:10px; flex-wrap:wrap;
           margin-bottom:8px; }
   .ver { font-weight:700; font-size:17px; }
   .date { color:var(--dim); font-size:13px; }
   .chip { font-size:11px; font-weight:700; letter-spacing:.05em;
           padding:2px 9px; border-radius:999px; text-transform:uppercase; }
-  .chip.production { background:#123a2a; color:#4cd47a; }
+  .chip.production, .chip.stable { background:#123a2a; color:#4cd47a; }
   .chip.beta { background:#3a2a12; color:#f2b23e; }
+  .chip.earlytesting { background:#3a1212; color:#f26d5e; }
   .chip.app { background:#12303a; color:var(--cyan); }
   .chip.firmware { background:#241a3a; color:#a55eea; }
   .chip.both { background:#122c3a; color:#7df9ff; }
@@ -45,7 +47,19 @@
   <label class="toggle"><input type="checkbox" id="beta"
     onchange="document.body.classList.toggle('show-beta', this.checked)">
     Show beta releases</label>
-  <p class="empty">No releases published yet.</p>
+  <label class="toggle"><input type="checkbox" id="earlytesting"
+    onchange="document.body.classList.toggle('show-earlytesting', this.checked)">
+    Show early-testing releases</label>
+  <div class="entry earlytesting">
+    <div class="head">
+      <span class="ver">20260707_0103</span>
+      <span class="chip earlytesting">earlytesting</span>
+      <span class="chip both">App + Firmware</span>
+      <span class="boards">1000T · 2000H · 2000T · 4000H · 4000T</span>
+      <span class="date">2026-07-06</span>
+    </div>
+    <div class="notes"><p>First Early Testing release of the new Pacto Tech software platform.</p><p>The Pacto Tech Utility for Windows: live controller status and input testing, full remapping for XInput and keyboard outputs, mode controls with editable shortcuts, customizable on-screen overlays and themes, kiosk/lockdown modes for cabinets, ready-made scripts for LaunchBox and other frontends, and automatic app updates on your chosen channel.</p><p>New firmware for all current boards (1000T, 2000T, 2000H, 4000T, 4000H) introduces in-app firmware updates: flash your board once with the ST-Link image from this release, and every update after that installs from inside the Utility with a couple of clicks. An interrupted update can&#x27;t brick the board. Also improved: much cleaner switching between arcade (XInput) and gamepad/keyboard (DISS.) modes, per-input mode settings, twin-stick 1P/2P modes, and turbo refinements.</p></div>
+  </div>
   <footer>Pacto Tech &middot; <a href="https://pactotech.com">pactotech.com</a></footer>
 </div>
 </body>

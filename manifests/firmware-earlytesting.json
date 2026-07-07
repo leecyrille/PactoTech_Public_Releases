@@ -1,0 +1,47 @@
+{
+  "channel": "earlytesting",
+  "updated": "2026-07-07T01:12:43Z",
+  "version": "20260707_0103",
+  "boards": {
+    "1000T": {
+      "version": "20260707_0103",
+      "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/1000T/20260707_0103/1000T.pfw",
+      "size": 93481,
+      "sha256": "d70e3fc2773bea23465caed0ec9f8815d5198715b20b854ca19bc6335c5db09c",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNis0dW1WZFNSeHVxTFRIdHFIc2hMSlh4Sm5ncVFXcFpFRjJ3VVBPWVJlNUtOcENjUWVwTGVOcDBOd25VTzU1MFdQUGhOTHNUSVdJeng5cnF0RytmMGdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzg2Njc0CWZpbGU6MTAwMFQucGZ3Ck9HK0NsMmhIWW9IVFc3NW1qV0ZIdDRlOTNIazBMeGxFNHVkSXNjNllDTUVNWGdJOEU1QTlDM2pYbnAyQ3BuUUpNeFVyMm9oV0JLMG9BWTI0T3ViRkNRPT0K",
+      "minLayout": 2
+    },
+    "2000H": {
+      "version": "20260707_0103",
+      "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/2000H/20260707_0103/2000H.pfw",
+      "size": 105086,
+      "sha256": "8dbf2b100f7d0fa08664bf3250406246f5548a65a65240b00efa9b61e25212a0",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNnpKNUpxWUZicGkwZGlZazQrMWF4VGhFa3RZWjhzaCtvUWdQdkJ6N1FVMU1wMmU1aklKdGdtandkdGNnZXdCczdyWkRneDJtZ1ZGbFRnWWNobUhCTWdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzg2NjgxCWZpbGU6MjAwMEgucGZ3CnFBTkM3SHAyMk9mZzVUa0xqSkRLTDhGeExrcGgxRHB0MndVd2hOcWJJeVMrZk5oL3BmTDJSekF2dHE1TFdCSTdySDZ4VlR5WW1lRnZhY1BiejFEYUFnPT0K",
+      "minLayout": 2
+    },
+    "2000T": {
+      "version": "20260707_0103",
+      "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/2000T/20260707_0103/2000T.pfw",
+      "size": 104792,
+      "sha256": "2535f8e81d95e6c7c7f88348f346dd140e699cdd95b4b7ffddf3e26df1dc0eec",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjk3UUc4b0ZUaDVoMnRieDRxWGFnUmxvMlVDNlRsUU9MV2NWMy9VWllWb2RUZUtpOW13RkFhelg3VGY1UFBGVnp4TER2WUxqeVQwWGpLcE83dHZvcHdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzg2Njc3CWZpbGU6MjAwMFQucGZ3CjgxcG9ZOXJCM0lVUVZhMWhLcitra0hqV3lUUU9icklTdWE2c01UQ1lQMXVHeDlidWlZenRXU0JvVkNobkk5UkJqV2ZDOFozUkt3aGljL0RDQzdEcEJRPT0K",
+      "minLayout": 2
+    },
+    "4000H": {
+      "version": "20260707_0103",
+      "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/4000H/20260707_0103/4000H.pfw",
+      "size": 100501,
+      "sha256": "b5fabbcc5a575fe56b7f526b455bc5d3ec2f1bb6d2cf504e48b24418329db41f",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjNpYkw0T3FsbEdWV2wrZWlsT3NqdTJWYXAvZFZwckhwQ2d0blB3TUZERWhrVWx3MHl3aDlGQ3ZrZ011Mld4TFpBTGlvbnJEVmFQcTNzMVhtK0FlTmdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzg2Njg4CWZpbGU6NDAwMEgucGZ3Ck45UTU0MVBldERuSkVvKzBKM3krZWN5SEFtUnNVeXR0anVZdWJxMGdOaGttK21UWnpUNlZVNlJxcjhpcWhFYnJiZlM1OXRsQXFFME41cGR5Z21heEJ3PT0K",
+      "minLayout": 2
+    },
+    "4000T": {
+      "version": "20260707_0103",
+      "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/4000T/20260707_0103/4000T.pfw",
+      "size": 100737,
+      "sha256": "92caa5659681499cb3f56b72b3770168698e356308dcfa9788fd5108fa7f9ca2",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNnc5MCt6VHUrU2l3ejN6RWNtTEMxZVNhNFQ3Q21uU3ZTZEZXUG54Y0lMWWcra1pZVEFUaDd3N2d5aGc5SW1HVUxvWFZhUmhRTmlFM1h6QWtNWDBHOGdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzg2Njg0CWZpbGU6NDAwMFQucGZ3ClNMZmRGSllETkYrQ2hnbmgwaVQ4Sk4rb0xGRUVkbnlhSmphNEpJUmVVK0IwMUFXNXhyeDBSUVNIVXFNR2Vzb2t6VFgyeXNjSm1yc3Rqa29mWjMyM0RRPT0K",
+      "minLayout": 2
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version": "0.20260707.103",
+  "notes": "Pacto Tech Utility 20260707_0103 (earlytesting)",
+  "pub_date": "2026-07-07T01:12:43Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjRtV0dwQ1N4YVZuVDczZHFzWGpFVWg3Ykl3cmVuTnorbVg2UitwOEpJOEdQbmJTZmxIdTBSZFNNQmhJN25JY0NXb015YXo5ckxzNXZIR1J3VXhwandJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzg2NjQ3CWZpbGU6UGFjdG8gVGVjaCBVdGlsaXR5XzAuMjAyNjA3MDcuMTAzX3g2NC1zZXR1cC5leGUKakhDenNQM05EMGcvOTlGdjQvRUx1YzVIRTV0WGpCSER5RUlqa085UytxcWw3aGJDa1pPWWFFbHZRVS9vSHdjdk1MNW00RnpzUjFxYm5BYnR4Mk8xQ3c9PQo=",
+      "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-Utility-Setup.exe"
+    }
+  }
+}

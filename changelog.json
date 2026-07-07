@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "version": "20260707_0103",
+    "date": "2026-07-06",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "First Early Testing release of the new Pacto Tech software platform.\n\nThe Pacto Tech Utility for Windows: live controller status and input testing, full remapping for XInput and keyboard outputs, mode controls with editable shortcuts, customizable on-screen overlays and themes, kiosk/lockdown modes for cabinets, ready-made scripts for LaunchBox and other frontends, and automatic app updates on your chosen channel.\n\nNew firmware for all current boards (1000T, 2000T, 2000H, 4000T, 4000H) introduces in-app firmware updates: flash your board once with the ST-Link image from this release, and every update after that installs from inside the Utility with a couple of clicks. An interrupted update can't brick the board. Also improved: much cleaner switching between arcade (XInput) and gamepad/keyboard (DISS.) modes, per-input mode settings, twin-stick 1P/2P modes, and turbo refinements.",
+    "boards": [
+      "1000T",
+      "2000H",
+      "2000T",
+      "4000H",
+      "4000T"
+    ]
+  }
+]

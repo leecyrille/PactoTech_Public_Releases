@@ -1,11 +1,11 @@
 {
   "version": "0.0.0",
   "notes": "No beta release published yet.",
-  "pub_date": "2026-07-03T00:00:00Z",
+  "pub_date": "2026-07-06T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
       "signature": "placeholder",
-      "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/app-beta/PactoTech-Utility-Setup.exe"
+      "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/beta/PactoTech-Utility-Setup.exe"
     }
   }
 }
