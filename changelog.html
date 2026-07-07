@@ -52,6 +52,16 @@
     Show early-testing releases</label>
   <div class="entry earlytesting">
     <div class="head">
+      <span class="ver">20260707_0419</span>
+      <span class="chip earlytesting">earlytesting</span>
+      <span class="chip app">App</span>
+      
+      <span class="date">2026-07-06</span>
+    </div>
+    <div class="notes"><p>The Utility can now flash boards with an ST-Link, right from the app.</p><p>If your board is on firmware from before in-app updates existed (or has the F103VB chip), you no longer need any external flashing tools: connect an ST-Link V2 to the board&#x27;s SWD header, pick your board model in the Utility&#x27;s firmware section, and press Flash. The app reads the chip itself, downloads the matching signed image, and refuses anything that doesn&#x27;t fit your exact hardware.</p><p>Also fixes update-signature verification for in-app firmware updates.</p></div>
+  </div>
+  <div class="entry earlytesting">
+    <div class="head">
       <span class="ver">20260707_0353</span>
       <span class="chip earlytesting">earlytesting</span>
       <span class="chip both">App + Firmware</span>

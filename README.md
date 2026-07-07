@@ -50,11 +50,21 @@ image is target-locked: the firmware and the Utility both refuse a file
 built for a different board or chip, so a mix-up can't damage anything —
 it just won't apply.
 
-1. Connect an ST-Link V2 to the board's SWD header (SWDIO / SWCLK / GND / 3V3).
-2. Flash the file for **your board + chip** at address `0x08000000` (with
-   [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html)
-   or `st-flash write PactoTech-4000T-F103VC-STLink-Full.bin 0x8000000`).
-3. Done — every future update happens inside the Utility app.
+**The easy way — the Utility does it for you.** Install the Pacto Tech
+Utility, open its firmware section, and use **"Flash with ST-Link"**:
+
+1. Connect an ST-Link V2 to the board's SWD header (SWDIO / SWCLK / GND / 3V3)
+   and plug the ST-Link into the PC.
+2. Pick your board model and press **Detect chip** — the Utility reads the
+   chip itself, so it always downloads the right image for your exact
+   hardware.
+3. Press **Flash firmware**. Done — every future update happens inside the
+   app (F103VC / F103ZE boards).
+
+You never need to download firmware files by hand. If you prefer manual
+tools, the same images can be flashed at address `0x08000000` with
+[STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html)
+or `st-flash write PactoTech-4000T-F103VC-STLink-Full.bin 0x8000000`.
 
 *Note for F103VB boards (some 2000H/4000H): that chip has a smaller memory
 with no room for the update system, so those boards always update via

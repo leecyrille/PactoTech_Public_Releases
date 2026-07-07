@@ -18,5 +18,12 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20260707_0419",
+    "date": "2026-07-06",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "The Utility can now flash boards with an ST-Link, right from the app.\n\nIf your board is on firmware from before in-app updates existed (or has the F103VB chip), you no longer need any external flashing tools: connect an ST-Link V2 to the board's SWD header, pick your board model in the Utility's firmware section, and press Flash. The app reads the chip itself, downloads the matching signed image, and refuses anything that doesn't fit your exact hardware.\n\nAlso fixes update-signature verification for in-app firmware updates."
   }
 ]
