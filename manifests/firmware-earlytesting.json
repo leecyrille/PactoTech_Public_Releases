@@ -1,47 +1,165 @@
 {
   "channel": "earlytesting",
-  "updated": "2026-07-07T01:22:32Z",
-  "version": "20260707_0103",
+  "updated": "2026-07-07T04:00:18Z",
+  "version": "20260707_0353",
   "boards": {
     "1000T": {
-      "version": "20260707_0103",
-      "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/1000T/20260707_0103/1000T.pfw",
-      "size": 90755,
-      "sha256": "45d81a160efce573805bcd8967fe1cd8a29ae733d1b85b1b2213bb9b747673c9",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjJxaFlMUE9hc1pwU2hWY214VVJTS3M5dEhjQVFSNTJxYVVXNVVuN1B2NktPNDlOMHl0bk9DOWhVZVhmTFQwR2h2RGNZdVpXdnZNbEFnbUd6WXJMS0E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzg3MzAwCWZpbGU6MTAwMFQucGZ3CnpEWXZ6bTMvR09tN1pXYzJIOHRYbWRlVzhVMDVSZFVSbzNpRG1OM2ozeHArSENxU0xEOWY4RGNieWQ4R2VKYWhRUDVMZTdFb08xZnpLYTFMRmpwb0JBPT0K",
-      "minLayout": 2
+      "targets": {
+        "F103VC": {
+          "version": "20260707_0353",
+          "mcu": "F103VC",
+          "flashKb": 256,
+          "ota": true,
+          "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-1000T-F103VC-STLink-Full.bin",
+          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/1000T-F103VC/20260707_0353/1000T-F103VC.pfw",
+          "size": 90960,
+          "sha256": "003751422539b5892de1a24b168fb4aaed485904bbc7bfff769336cfa9d9253b",
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNnp0L0lyeURlcEQ1KzMzWFBrMENoa2dGUEV5aHVnYmJtR0JmVmpvNE5QREdzcmV0WkE0WDlqVDF5ZVpzQ0cwZ3ZvZWh5cnFPTkpDYS81NUJXdGdwOXdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzk2NzM0CWZpbGU6MTAwMFQtRjEwM1ZDLnBmdwo0VGdMUWRhVWkwYU16YlBlMCtxc1RSTHV2dGhNTE00YkNlZkFZNU9sY2o2YlNrdnpzS0JaMnVBMjhDbGx2RURqMW81ZXBZT1U3U1NSdm03Uis0d2RCZz09Cg==",
+          "minLayout": 2
+        }
+      }
     },
     "2000H": {
-      "version": "20260707_0103",
-      "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/2000H/20260707_0103/2000H.pfw",
-      "size": 102329,
-      "sha256": "b8d96907e5a65c30b21f9eaa0065dd0b99a5501038062e57723f3436041b862d",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjdtVFQ5ZGc4djhHa0Y3eWI5Z0Izc3JaeVVSMzNweFFKZ013bXBIZWhOVXJUbFIvYytpLy9QcjlTZ0gwM1JhSEtnWlFVZWhiTGtBcUNsSVBuVTMxb2d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzg3MzA4CWZpbGU6MjAwMEgucGZ3CnVqWkFEekFYUmk2OUd2ZXAyQ1NKemZWM21sNWttaWFuSG53V3laRmVZekFEU2RMTjRUdFJPeFJNOGJ2UTAwcHRBQWJndklVZzBZOTYwaTJWQUJMaEF3PT0K",
-      "minLayout": 2
+      "targets": {
+        "F103VB": {
+          "version": "20260707_0353",
+          "mcu": "F103VB",
+          "flashKb": 128,
+          "ota": false,
+          "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-2000H-F103VB-STLink-Full.bin"
+        },
+        "F103VC": {
+          "version": "20260707_0353",
+          "mcu": "F103VC",
+          "flashKb": 256,
+          "ota": true,
+          "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-2000H-F103VC-STLink-Full.bin",
+          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/2000H-F103VC/20260707_0353/2000H-F103VC.pfw",
+          "size": 102538,
+          "sha256": "3d2ca6adc9126a0f649681374a2183767b819c8e533d17a166c822bc29fc3c6a",
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjBjMG9tVE9XN0l5UW03L3FHbGJzNWx6dEdtZ0ptQW1ybW1KYktnSm05WDcwU0t5NlBGZys0eVlXRkZsNi9uMWVhZHNPSUx3QVIzRllyU29kT1hQVlF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzk2NzQyCWZpbGU6MjAwMEgtRjEwM1ZDLnBmdwpaUXN0Vmszam9ocjJ5dy9iTHJ5RTdvQTh6MWNXaHhWM09tMFovWEFsUFpsOFNXa1JaNi9jWUpwUm9RSCtNQUVrZXVKLzF6RnBBM2U2WVMxS3Y5WjNDUT09Cg==",
+          "minLayout": 2
+        }
+      }
     },
     "2000T": {
-      "version": "20260707_0103",
-      "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/2000T/20260707_0103/2000T.pfw",
-      "size": 102060,
-      "sha256": "85be023f38f62fa586752717cb13f0441e2b0dc350198bd67ab3f8444637af86",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjJFTWN1K01mZjJpQkxRbGtzdURVZk1veXJZWEZmcnFRSTJxVHg3SDNQeGRiT01wRDB0WjVETDc0ZVh2Q3Q2M21qSUdLdExHcDFvLzNUNW1JUzhnT0FNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzg3MzA0CWZpbGU6MjAwMFQucGZ3Ck9LQ284a2RCdFZRd1B4VEQvTExjQzZkUnhIR2JOd1k2aVRDVkJsbmFodGpFbDY1ZFdVR3FidEUvS2NmK0NsT1NRM0tTNS9EYW9hdnZmVC9sUlpPbkN3PT0K",
-      "minLayout": 2
+      "targets": {
+        "F103VC": {
+          "version": "20260707_0353",
+          "mcu": "F103VC",
+          "flashKb": 256,
+          "ota": true,
+          "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-2000T-F103VC-STLink-Full.bin",
+          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/2000T-F103VC/20260707_0353/2000T-F103VC.pfw",
+          "size": 102282,
+          "sha256": "55dbf5c44da2d7efa4cfb1264d52c408c0cab90d763eaf77c015ed8b35e8df1c",
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNnh2ajhKcHJVMVRJR3ZTMWVFQi8xVEdoK2wzRElySVl1WEFSZFlla1kra085RjhTdzg1ZG1weDlBcTVMWTJld1psSkFZdDBJK3VZZ2hpaWVLTURxa0FRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzk2NzM5CWZpbGU6MjAwMFQtRjEwM1ZDLnBmdwo1WW5rSTVFbnk5bGI0SzZNdGl6aHgzY2phSEsrcGhZSlR2cG1tYjFqYlFBaVIzUitKeWRHMCt5WjYvbktraDl1QnNBZW8xZ0FmaytnVFlZYXdvVnpBZz09Cg==",
+          "minLayout": 2
+        }
+      }
+    },
+    "3000T": {
+      "targets": {
+        "F103VC": {
+          "version": "20260707_0353",
+          "mcu": "F103VC",
+          "flashKb": 256,
+          "ota": true,
+          "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-3000T-F103VC-STLink-Full.bin",
+          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/3000T-F103VC/20260707_0353/3000T-F103VC.pfw",
+          "size": 92446,
+          "sha256": "234009925eeafa662ccf09ba62a01ea9f6f6c3c2ebc9e381b5fe7acc5cfb9229",
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjFKZzh0QnAvRFMxN25DdjRKaGNaZmljSVVzSURkTDZab3FCMnc0aU4wTURHbHNkME11VXhqZUxCejZuSHdXTFg1TjAwV3lMcnVEdXZiZ3JHdjFwMFFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzk2NzQ4CWZpbGU6MzAwMFQtRjEwM1ZDLnBmdwpmYm1xMDlKOTR4NTRtV0YxeDgzNW9KZEd1Y01oN0w5QytlazJ4bmJXREtqeGJsVkMyTVBkQUNNSW9kdUdFWmxtSUhpT0tudC9rQVNxWlB4OTJvVE5BQT09Cg==",
+          "minLayout": 2
+        }
+      }
     },
     "4000H": {
-      "version": "20260707_0103",
-      "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/4000H/20260707_0103/4000H.pfw",
-      "size": 97743,
-      "sha256": "ace9039f76f2bad5ed41d3cd9a7384913a4a686c07f06c75140785c39e9827f8",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjZ5eTZaTTFnKy9XWXlNVk9uZHVEbU5Wa1hwR0dMVjd0T3ZBTzhzMVVIQThWL0xXOXAzSVZuZ2xwMmFudjY4aHVMOHFFWUk5dURxU3A4NnRBZnpNVWdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzg3MzE1CWZpbGU6NDAwMEgucGZ3CjJCV0prZkFnUmVlWXJVQklqYnBmUldpOWZ5clFFTGhxQ1pTZ2tGZzU3VzY0OTJnd0JhT0N2cXVwMEJKZEczditJWXBIODZ6VDR2SERudWpDR3BvbENnPT0K",
-      "minLayout": 2
+      "targets": {
+        "F103VB": {
+          "version": "20260707_0353",
+          "mcu": "F103VB",
+          "flashKb": 128,
+          "ota": false,
+          "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-4000H-F103VB-STLink-Full.bin"
+        },
+        "F103VC": {
+          "version": "20260707_0353",
+          "mcu": "F103VC",
+          "flashKb": 256,
+          "ota": true,
+          "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-4000H-F103VC-STLink-Full.bin",
+          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/4000H-F103VC/20260707_0353/4000H-F103VC.pfw",
+          "size": 97943,
+          "sha256": "5925ccdced7b5a2a69ec3ebe2ee4cf07a183010b8f86aba4d224001d2d2573bf",
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjVQUTJkdjhoWlc2aWowdUkyOFV2TVArOUExR2lBN3VPN1JoS054SnlNaFNwNnVsK3NiekRFQ3BCL2ozR0R4VnlhUjZlczZFeTZvRnVobnhobUVxaHdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzk2NzU2CWZpbGU6NDAwMEgtRjEwM1ZDLnBmdwp0R1haRDVXd2pyZVZRWit4ZnF2eFdnY3kyVzRoWUEwT0JVdGU5TWdrRVBlZDlxRDZpdTYrRlNEU2RrRHkwTVREYlFZNVd5cHNzdWh3ZjdPUTZNOFVCdz09Cg==",
+          "minLayout": 2
+        }
+      }
+    },
+    "4000H2": {
+      "targets": {
+        "F103ZE": {
+          "version": "20260707_0353",
+          "mcu": "F103ZE",
+          "flashKb": 512,
+          "ota": true,
+          "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-4000H2-F103ZE-STLink-Full.bin",
+          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/4000H2-F103ZE/20260707_0353/4000H2-F103ZE.pfw",
+          "size": 99792,
+          "sha256": "ef26207db67ead413092508cee6ca4d97a6f6225908fc154fdc4c32345ee05e5",
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNndnb2dLbG9ReFpkM1ROdlorNnhIVWNucDJmdEY4RTRIOFF5WXFmeVR4enNKRlZkdk9PVzY3Wm9DWUEvbXdzMXJWNHBoNTNTTk9iYldCTXVKL1E4THdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzk2NzYxCWZpbGU6NDAwMEgyLUYxMDNaRS5wZncKWlpLSURTM085UVM5eVM3NWRIc3BwTG04cTdTUkNhUXVGTERGd3RsWEd4Q2R4a1V0MmpScXJ1T0xibjI5dTN1VHltSHl2Tnd2aWp6VzVNRXRyMGxYQmc9PQo=",
+          "minLayout": 2
+        }
+      }
     },
     "4000T": {
-      "version": "20260707_0103",
-      "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/4000T/20260707_0103/4000T.pfw",
-      "size": 97985,
-      "sha256": "347cf67a528b490092d5f4d05ff07b0acfaa2121df6cb6efa4639eba4e6add88",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNndsekdhUWlyU21vQ1d6dUJsVFptTXRlaHVJdE04MnJPdjJFcXh1VFc2bFZtbWZxTExpUzl4VExyTGlDL1dndlZGcXJqbHZGNnZxNUdISVNGeWZtSXdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzg3MzExCWZpbGU6NDAwMFQucGZ3CktmNWFDZytjNU9oaUhSZmFHYzhSZ2RyNHhwTzZpdCtzV3VSd3lGbGtkLzNRMXJwRklFb2VBK3dUbWRRS1pyQkNSOFFvdmlObnB4S29DNWlqamM3TUN3PT0K",
-      "minLayout": 2
+      "targets": {
+        "F103VC": {
+          "version": "20260707_0353",
+          "mcu": "F103VC",
+          "flashKb": 256,
+          "ota": true,
+          "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-4000T-F103VC-STLink-Full.bin",
+          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/4000T-F103VC/20260707_0353/4000T-F103VC.pfw",
+          "size": 98191,
+          "sha256": "8b9a0f4f2af4ee9eec5aab52c38609be1469ac7c90139e85ad90614b672d7109",
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjNsYklqRWkvd0NtcmkydlpCcWk2dkt2c0tKWnNWVzEybERtcHFjZlJZNDdXejAyWmlWaHFaQnVLaG5UdHA0ZUF3Y2lndEVFdktKbSszcjlJNFM5cGdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzk2NzUyCWZpbGU6NDAwMFQtRjEwM1ZDLnBmdwpkblkrTkQ0YitFenlVSXNBK1phK1Uyb1lvamZSQmpOYStvSjB4UStXN2NhWDNtelVuYjlqNFFHUElZc050NlN5SjhKOEwwaExyQitwMFJ3Z0xHNDlCUT09Cg==",
+          "minLayout": 2
+        }
+      }
+    },
+    "SNAP2": {
+      "targets": {
+        "F103VC": {
+          "version": "20260707_0353",
+          "mcu": "F103VC",
+          "flashKb": 256,
+          "ota": true,
+          "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-SNAP2-F103VC-STLink-Full.bin",
+          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/SNAP2-F103VC/20260707_0353/SNAP2-F103VC.pfw",
+          "size": 102282,
+          "sha256": "c4887e8c65e2a6a0d4a494bfa7b6ecd95bcc0c74d467235657dc560e7e05dc88",
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjhlQlJrRnhKRE5MeGk3WHdFbHp2K0JISjNXU094Y2VzTEtVYk5VR1QyaVduOFpiQ3lIYVVPQlQyWEMxMlZlU1FvSDl2ek5xcmpiS2JERUM4TWN2T2dvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzk2NzY1CWZpbGU6U05BUDItRjEwM1ZDLnBmdwpIemVlSFZwVUZpTWxMT0dBdHh6anhMT28yQXFSMVczdWFXZnpoY3NoSjlQVUV2d0RTWGRLUUdiNDRqazhRNXJGZTV2OGNlaFIzQWZ4cGt2amhPYkhBZz09Cg==",
+          "minLayout": 2
+        }
+      }
+    },
+    "SNAP4": {
+      "targets": {
+        "F103VC": {
+          "version": "20260707_0353",
+          "mcu": "F103VC",
+          "flashKb": 256,
+          "ota": true,
+          "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-SNAP4-F103VC-STLink-Full.bin",
+          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/SNAP4-F103VC/20260707_0353/SNAP4-F103VC.pfw",
+          "size": 98191,
+          "sha256": "91ab82163e79846d2b509c5c7e2a369aa86e075c1e8ae66398dd02ce88e3ff30",
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjdiRngvUTg4N3pkcTVoVDAzakN2TGc5cGYva0J2aHlDQ3BqTTFRTUFOWCs4aVBIUHZ2MVk5akVjeGp5NkVqSVZzZWZMQi9xczc2c0tpR21sdndFK2dzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzk2NzY4CWZpbGU6U05BUDQtRjEwM1ZDLnBmdwozb2lSd2VvM1U4OWhKUEQ5YVZ3eWpoazZoR25Pd1JGWEFNQjZSWDFKaVJJNjFNc0czcjd1by9GeG14YytVTndhR1hJeGZzVEhiMEpjTmFWOVhONzZEQT09Cg==",
+          "minLayout": 2
+        }
+      }
     }
   }
 }

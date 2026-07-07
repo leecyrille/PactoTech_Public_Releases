@@ -35,13 +35,31 @@ update can't brick the board — it simply resumes on the next power-up).
 **One exception — the one-time upgrade to the updatable firmware.** Boards
 shipped before in-app updates existed need a single flash with an ST-Link
 programmer to install the new bootloader. Each channel's release page hosts a
-`PactoTech-<BOARD>-STLink-Full.bin` per board model:
+`PactoTech-<BOARD>-<MCU>-STLink-Full.bin` per board **and chip**:
+
+| Your board | Chip marking on the big square IC | File to flash |
+|---|---|---|
+| 1000T / 2000T / 3000T / 4000T / SNAP2 / SNAP4 | STM32F103**VC**T6 | `PactoTech-<BOARD>-F103VC-STLink-Full.bin` |
+| 2000H / 4000H | STM32F103**VC**T6 | `PactoTech-<BOARD>-F103VC-STLink-Full.bin` |
+| 2000H / 4000H | STM32F103**VB**T6 | `PactoTech-<BOARD>-F103VB-STLink-Full.bin` |
+| 4000H2 | STM32F103**ZE**T6 | `PactoTech-4000H2-F103ZE-STLink-Full.bin` |
+
+Most boards use the F103**VC** chip — check the marking on the main square
+chip if your 2000H/4000H is from a batch that used the F103**VB**. Every
+image is target-locked: the firmware and the Utility both refuse a file
+built for a different board or chip, so a mix-up can't damage anything —
+it just won't apply.
 
 1. Connect an ST-Link V2 to the board's SWD header (SWDIO / SWCLK / GND / 3V3).
-2. Flash the file for **your board model** at address `0x08000000` (with
+2. Flash the file for **your board + chip** at address `0x08000000` (with
    [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html)
-   or `st-flash write PactoTech-4000T-STLink-Full.bin 0x8000000`).
+   or `st-flash write PactoTech-4000T-F103VC-STLink-Full.bin 0x8000000`).
 3. Done — every future update happens inside the Utility app.
+
+*Note for F103VB boards (some 2000H/4000H): that chip has a smaller memory
+with no room for the update system, so those boards always update via
+ST-Link — the Utility will tell you when a new version is available for
+them.*
 
 The `firmware/` folder and `manifests/` are the machine-readable index the
 app uses; you don't need them directly.
