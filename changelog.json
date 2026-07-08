@@ -53,5 +53,25 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Corrects the ST-Link flashing guidance: when the chip can't be reached, the Utility now points at the usual causes - SWD wiring and making sure the board runs from its own power (an ST-Link's 3V3 pin can't power a whole board) - while it keeps retrying through a power-cycle."
+  },
+  {
+    "version": "20260708_0046",
+    "date": "2026-07-07",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "The Test screen now shows the raw electrical state of every input pin - including the mode pins - straight off the connectors, perfect for checking cabinet wiring (needs this firmware). The keyboard test shows just the keys being sent right now instead of a wall of every mapped key, and both keyboard keys and mode-pin presses are announced by voice.\n\nThe Help section now says which boards each feature applies to (a 2000T has no 4-player mode, twin stick isn't available on the 3000T, the 4000H uses button combos instead of TURBO/8TO6 pins, and so on).\n\nWhen your board already updates from the app, the ST-Link flashing tool is dimmed with a note pointing at the normal update button - it stays available for recovery.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
