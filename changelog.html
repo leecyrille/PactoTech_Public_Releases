@@ -33,6 +33,7 @@
   .chip.app { background:#12303a; color:var(--cyan); }
   .chip.firmware { background:#241a3a; color:#a55eea; }
   .chip.both { background:#122c3a; color:#7df9ff; }
+  .chip.linux { background:#1a3a12; color:#8be04c; }
   .boards { color:var(--dim); font-size:12.5px; }
   .notes p { margin:6px 0; color:#c9d4dc; }
   .empty { color:var(--dim); }
@@ -50,6 +51,16 @@
   <label class="toggle"><input type="checkbox" id="earlytesting"
     onchange="document.body.classList.toggle('show-earlytesting', this.checked)">
     Show early-testing releases</label>
+  <div class="entry earlytesting">
+    <div class="head">
+      <span class="ver">20260708_0500</span>
+      <span class="chip earlytesting">earlytesting</span>
+      <span class="chip linux">Linux / Batocera</span>
+      
+      <span class="date">2026-07-07</span>
+    </div>
+    <div class="notes"><p>First PactoLink release for Linux emulation systems: Batocera, RetroPie, Lakka and desktop Linux.</p><p>Your arcade controls appear as correctly-mapped Xbox 360 gamepads with zero controller setup, mode changes pop on the cabinet screen (PC Batocera) or as RetroArch messages in-game, and the full Pacto configurator is served to any browser on your network at http://&lt;cabinet-ip&gt;:46810.</p><p>Batocera installs from the Ports menu (drop the zip contents on the cabinet&#x27;s share and launch &quot;Install PactoLink&quot;); RetroPie and desktop Linux use sudo ./install.sh; Lakka installs over SSH. Raspberry Pi (aarch64) builds are included but still experimental. See the Help section in the app or web configurator for step-by-step guides.</p></div>
+  </div>
   <div class="entry earlytesting">
     <div class="head">
       <span class="ver">20260708_0313</span>
