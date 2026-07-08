@@ -73,5 +73,12 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20260708_0234",
+    "date": "2026-07-07",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "Fixes in-app firmware updates failing with 'firmware package is inconsistent' - the app mis-read the update package header. Update the app first, then firmware updates install normally. (Found by installing firmware 20260708_0046 on the bench through the exact customer path.)"
   }
 ]
