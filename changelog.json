@@ -80,5 +80,12 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Fixes in-app firmware updates failing with 'firmware package is inconsistent' - the app mis-read the update package header. Update the app first, then firmware updates install normally. (Found by installing firmware 20260708_0046 on the bench through the exact customer path.)"
+  },
+  {
+    "version": "20260708_0313",
+    "date": "2026-07-07",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "The Help section now covers Batocera, RetroPie and desktop Linux: what works today (keyboard mode out of the box, remote configuration from any browser or phone on your network), the one-time setup lines, and honest notes on gamepad support and on-screen overlays. Remote configuration stays open on your local network by default - viewing is always open, and an optional PIN can protect changes if you want it."
   }
 ]
