@@ -52,6 +52,16 @@
     Show early-testing releases</label>
   <div class="entry earlytesting">
     <div class="head">
+      <span class="ver">20260708_0018</span>
+      <span class="chip earlytesting">earlytesting</span>
+      <span class="chip app">App</span>
+      
+      <span class="date">2026-07-07</span>
+    </div>
+    <div class="notes"><p>Corrects the ST-Link flashing guidance: when the chip can&#x27;t be reached, the Utility now points at the usual causes - SWD wiring and making sure the board runs from its own power (an ST-Link&#x27;s 3V3 pin can&#x27;t power a whole board) - while it keeps retrying through a power-cycle.</p></div>
+  </div>
+  <div class="entry earlytesting">
+    <div class="head">
       <span class="ver">20260707_2348</span>
       <span class="chip earlytesting">earlytesting</span>
       <span class="chip app">App</span>
@@ -78,7 +88,7 @@
       
       <span class="date">2026-07-07</span>
     </div>
-    <div class="notes"><p>Fixes from early testing feedback.</p><p>Flashing with ST-Link now works on boards with the original factory firmware: that firmware switches its debug port off once it starts, so the Utility now asks you to power-cycle the board and catches it as it turns on. Detect once, then flash - no extra tools needed.</p><p>Test screen voice announcements now stop when the Utility window is in the background or closed to the tray.</p><p>Update checks and downloads no longer hang - a failed firmware download says so clearly and can be retried. The What&#x27;s-new list now explains when releases exist on a different update channel than yours, and older installs are moved off the retired &#x27;production&#x27; channel name automatically.</p></div>
+    <div class="notes"><p>Fixes from early testing feedback.</p><p>Flashing with ST-Link is more resilient: if the chip can&#x27;t be reached, the Utility keeps retrying with clear guidance - check the wiring, make sure the board has its own power, and power-cycle it. Detect once, then flash - no extra tools needed.</p><p>Test screen voice announcements now stop when the Utility window is in the background or closed to the tray.</p><p>Update checks and downloads no longer hang - a failed firmware download says so clearly and can be retried. The What&#x27;s-new list now explains when releases exist on a different update channel than yours, and older installs are moved off the retired &#x27;production&#x27; channel name automatically.</p></div>
   </div>
   <div class="entry earlytesting">
     <div class="head">

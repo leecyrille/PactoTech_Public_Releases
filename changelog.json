@@ -31,7 +31,7 @@
     "date": "2026-07-07",
     "channel": "earlytesting",
     "kind": "app",
-    "notes": "Fixes from early testing feedback.\n\nFlashing with ST-Link now works on boards with the original factory firmware: that firmware switches its debug port off once it starts, so the Utility now asks you to power-cycle the board and catches it as it turns on. Detect once, then flash - no extra tools needed.\n\nTest screen voice announcements now stop when the Utility window is in the background or closed to the tray.\n\nUpdate checks and downloads no longer hang - a failed firmware download says so clearly and can be retried. The What's-new list now explains when releases exist on a different update channel than yours, and older installs are moved off the retired 'production' channel name automatically."
+    "notes": "Fixes from early testing feedback.\n\nFlashing with ST-Link is more resilient: if the chip can't be reached, the Utility keeps retrying with clear guidance - check the wiring, make sure the board has its own power, and power-cycle it. Detect once, then flash - no extra tools needed.\n\nTest screen voice announcements now stop when the Utility window is in the background or closed to the tray.\n\nUpdate checks and downloads no longer hang - a failed firmware download says so clearly and can be retried. The What's-new list now explains when releases exist on a different update channel than yours, and older installs are moved off the retired 'production' channel name automatically."
   },
   {
     "version": "20260707_1343",
@@ -46,5 +46,12 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Adds a searchable Help section covering every feature: player modes and twin stick, Disconnect/Keyboard mode and the DongleMaster, remapping, turbo, shortcuts, overlays and themes, kiosk mode, LaunchBox scripts, firmware updates, ST-Link flashing, update channels, backup, and troubleshooting. Type a word into the search box and matching topics open with the hits highlighted."
+  },
+  {
+    "version": "20260708_0018",
+    "date": "2026-07-07",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "Corrects the ST-Link flashing guidance: when the chip can't be reached, the Utility now points at the usual causes - SWD wiring and making sure the board runs from its own power (an ST-Link's 3V3 pin can't power a whole board) - while it keeps retrying through a power-cycle."
   }
 ]
