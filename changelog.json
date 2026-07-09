@@ -114,5 +114,12 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20260709_0440",
+    "date": "2026-07-08",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "Fixes the sidebar \"update available\" notice staying visible after everything is already up to date (the sections were right - the notice just could not hide)."
   }
 ]
