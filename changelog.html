@@ -53,6 +53,16 @@
     Show early-testing releases</label>
   <div class="entry earlytesting">
     <div class="head">
+      <span class="ver">20260709_0209</span>
+      <span class="chip earlytesting">earlytesting</span>
+      <span class="chip both">App + Firmware</span>
+      <span class="boards">1000T-F103VC · 2000H-F103VB · 2000H-F103VC · 2000T-F103VC · 3000T-F103VC · 4000H-F103VB · 4000H-F103VC · 4000H2-F103ZE · 4000T-F103VC · SNAP2-F103VC · SNAP4-F103VC</span>
+      <span class="date">2026-07-08</span>
+    </div>
+    <div class="notes"><p>Easier updates: the Update page now checks for updates automatically when opened, highlights the next step, and greys out anything that&#x27;s already done; an &quot;update available&quot; notice appears in the sidebar next to the connection status. Fixed: the ST-Link section no longer stays highlighted after a successful flash.</p><p>Firmware fix: a &quot;CONNECTING ARCADE CONTROLS - 12s&quot; message could stay frozen on the overlay and SpecVision after power-on (on boards with a DongleMaster attached). This firmware fixes it, and the app&#x27;s overlay now also clears a stuck message on older firmware by itself.</p><p>New - Windows / Linux mode (USB identity, Modes page): boards in Batocera, RetroPie or Lakka cabinets can be set to Linux mode, where the controls run on the system&#x27;s own built-in Xbox 360 driver - real native gamepads, no extra software in the input path. The board keeps full configurator support via Keyboard mode on Windows, and the Help section covers everything including a one-line Linux installer.</p><p>Clearer settings: pinball inputs and mode-wiring options now always stay visible with per-board notes (greyed items explain which boards have them and how to add the feature with remapping), and the turbo switch wiring is spelled out (permanent ground on TURBO, switch on !TURB).</p></div>
+  </div>
+  <div class="entry earlytesting">
+    <div class="head">
       <span class="ver">20260708_0500</span>
       <span class="chip earlytesting">earlytesting</span>
       <span class="chip linux">Linux / Batocera</span>

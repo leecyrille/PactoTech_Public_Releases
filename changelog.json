@@ -94,5 +94,25 @@
     "channel": "earlytesting",
     "kind": "linux",
     "notes": "First PactoLink release for Linux emulation systems: Batocera, RetroPie, Lakka and desktop Linux.\n\nMode changes pop right on the cabinet screen (PC Batocera) or as RetroArch messages in-game, and the full Pacto configurator is served to any browser on your network at http://<cabinet-ip>:46810. Keyboard/Disconnect mode works out of the box for MAME-style play; native gamepad (XInput) support on Linux arrives with the upcoming \"Linux mode\" firmware update: switch the board's USB identity to Linux mode and Linux's own built-in Xbox-pad driver runs the controls directly.\n\nOne-line install on any of them: curl -L https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/install.sh | sh (RetroPie/desktop Linux: | sudo sh) - the script detects your system and installs the right signed package; the releases README has step-by-step instructions including how to open a terminal or SSH in. Batocera can also install with no terminal at all: drop the zip contents on the cabinet's share and launch \"Install PactoLink\" from the Ports menu. Raspberry Pi (aarch64) builds are included but still experimental. See the Help section in the app or web configurator for step-by-step guides."
+  },
+  {
+    "version": "20260709_0209",
+    "date": "2026-07-08",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "Easier updates: the Update page now checks for updates automatically when opened, highlights the next step, and greys out anything that's already done; an \"update available\" notice appears in the sidebar next to the connection status. Fixed: the ST-Link section no longer stays highlighted after a successful flash.\n\nFirmware fix: a \"CONNECTING ARCADE CONTROLS - 12s\" message could stay frozen on the overlay and SpecVision after power-on (on boards with a DongleMaster attached). This firmware fixes it, and the app's overlay now also clears a stuck message on older firmware by itself.\n\nNew - Windows / Linux mode (USB identity, Modes page): boards in Batocera, RetroPie or Lakka cabinets can be set to Linux mode, where the controls run on the system's own built-in Xbox 360 driver - real native gamepads, no extra software in the input path. The board keeps full configurator support via Keyboard mode on Windows, and the Help section covers everything including a one-line Linux installer.\n\nClearer settings: pinball inputs and mode-wiring options now always stay visible with per-board notes (greyed items explain which boards have them and how to add the feature with remapping), and the turbo switch wiring is spelled out (permanent ground on TURBO, switch on !TURB).",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
