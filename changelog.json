@@ -121,5 +121,25 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Fixes the sidebar \"update available\" notice staying visible after everything is already up to date (the sections were right - the notice just could not hide)."
+  },
+  {
+    "version": "20260709_0621",
+    "date": "2026-07-09",
+    "channel": "earlytesting",
+    "kind": "firmware",
+    "notes": "Critical firmware fixes - update recommended for ALL boards:\n\nCabinets with a SpecVision attached could hang at power-on and look stuck in a boot loop: after display init the I2C bus ran far above its 25 kHz design speed, and a bus error could freeze the controller entirely. The bus now stays at its intended speed, display interrupts can no longer starve the system, and the controller recovers automatically within 100 ms if the display link ever locks up.\n\nThe DISS (Disconnect/Keyboard) input on all boards except the 4000H2 was electrically floating - boards with nothing wired to DISS could randomly enter keyboard mode or reboot repeatedly. The input now has its pull-up enabled, matching every other mode input.\n\nBoards with the F103VB chip (some 2000H/4000H) update with the in-app ST-Link flasher; everything else updates in-app over USB.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
