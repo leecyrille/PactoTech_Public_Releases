@@ -74,6 +74,64 @@ them.*
 The `firmware/` folder and `manifests/` are the machine-readable index the
 app uses; you don't need them directly.
 
+## Batocera, RetroPie & Lakka (they're all Linux)
+
+PactoLink brings Pacto boards to Linux-based emulation systems: **on-screen
+mode overlays** on the cabinet screen (PC/x86 Batocera; RetroArch messages
+in-game elsewhere), the **full configurator served to any browser on your
+network** at `http://<machine-ip>:46810`, and **keyboard/Disconnect mode**
+for MAME-style play with zero setup.
+
+> **Good to know:** Batocera, RetroPie, Lakka, Knulli, ROCKNIX, MiSTer and
+> the Steam Deck are all **Linux** systems, even when they don't look like
+> it. Native gamepad (XInput) play on them arrives with the upcoming
+> **"Linux mode"** firmware update — when your board has it, set the
+> board's USB identity to **LINUX** for these machines (Modes page in the
+> configurator). Keyboard mode is the supported way to play until then.
+
+### One-line install
+
+```
+curl -L https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/install.sh | sh
+```
+
+The script detects your system (Batocera / Lakka / generic Linux), downloads
+the matching signed package from Early Testing, and installs it. On
+RetroPie/desktop Linux run it with `sudo` (`... | sudo sh`). Everything lands
+in user storage and survives OS updates; each package's README has the
+uninstall steps.
+
+**Where do I type that?**
+
+- **Batocera — on the cabinet:** plug in a keyboard, press **F1** to open
+  the file manager, then **Tools → Open Terminal**, and paste the line.
+- **Batocera — from another PC (remote):** SSH is on by default. Find the
+  cabinet's IP under **MAIN MENU → NETWORK SETTINGS**, then from any PC
+  (Windows 10/11: PowerShell — `ssh` is built in):
+  `ssh root@<cabinet-ip>` (password `linux`), then paste the line.
+- **Lakka — from another PC:** enable SSH under **Settings → Services**,
+  find the IP under **Main Menu → Information → Network Information**, then
+  `ssh root@<ip>` (password `root`) and paste the line.
+- **RetroPie — on the machine:** press **F4** to quit EmulationStation to
+  the terminal, type the line with `sudo`.
+- **RetroPie — from another PC (remote):** enable SSH (RetroPie menu →
+  raspi-config → Interface Options, or place a file named `ssh` on the boot
+  partition), then `ssh pi@<ip>` (default password `raspberry`) and run the
+  line with `sudo`.
+
+### No terminal? (Batocera)
+
+Download `PactoLink-Batocera-x86_64.zip` from
+[Early Testing](https://github.com/leecyrille/PactoTech_Public_Releases/releases/tag/earlytesting),
+extract its `roms` folder onto the cabinet's network share
+(`\\BATOCERA\share`, user `root` / password `linux`), refresh gamelists
+(MAIN MENU → GAME SETTINGS → UPDATE GAMELISTS), and launch
+**Install PactoLink** from the Ports menu.
+
+All PactoLink packages (x86_64 + Raspberry Pi `aarch64`, the latter
+experimental) are on the Early Testing release with signatures and
+`PactoLink-SHA256SUMS.txt`.
+
 ## Release notes
 
 **[📋 What's new — full changelog](https://leecyrille.github.io/PactoTech_Public_Releases/changelog.html)**
