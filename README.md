@@ -1,20 +1,29 @@
 # Pacto Tech — Downloads
 
+> # ⚠️ EARLY TESTING RELEASE
+>
+> **Everything on this page is an _Early Testing_ (preview) build.** You're
+> getting the newest features first — but this is **not** the final, polished
+> release, so it may have rough edges or change as we go.
+>
+> It's perfect if you're happy to try new things and let us know how it goes.
+> Thanks for helping us test! 🙌
+
 Welcome! This is the home for the **Pacto Tech Utility** — the free app for
 setting up your Pacto arcade controller — and the **firmware** that runs on the
 boards. Install the app once and it keeps both itself and your controller up to
 date for you.
 
-## Get the app (Windows)
+## Get the app (Windows) — Early Testing
 
-### ➡️ [Download the Pacto Tech Utility](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-Utility-Setup.exe)
+### ➡️ [Download the Pacto Tech Utility (Early Testing)](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-Utility-Setup.exe)
 
-Run the installer and you're ready to go — the app updates itself from then on.
-You can also browse [everything on the release page](https://github.com/leecyrille/PactoTech_Public_Releases/releases/tag/earlytesting).
+Run the installer and you're ready to go — the app keeps itself updated on the
+**Early Testing** channel from then on. You can also browse
+[everything on the Early Testing release page](https://github.com/leecyrille/PactoTech_Public_Releases/releases/tag/earlytesting).
 
-> 💡 This is our **Early Testing** build — you get the newest features first.
-> It's what we're inviting people to try right now, so if you spot anything
-> odd, we'd love to hear about it.
+> 💡 Because this is an Early Testing build, if you spot anything odd we'd
+> genuinely love to hear about it — that feedback is exactly what it's for.
 
 ## Keeping your controller up to date
 
