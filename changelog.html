@@ -53,6 +53,16 @@
     Show early-testing releases</label>
   <div class="entry earlytesting">
     <div class="head">
+      <span class="ver">20260710_0500</span>
+      <span class="chip earlytesting">earlytesting</span>
+      <span class="chip app">App</span>
+      
+      <span class="date">2026-07-09</span>
+    </div>
+    <div class="notes"><p>In-game overlays now show over fullscreen games. Games running in exclusive fullscreen (MAME&#x27;s default on Windows) used to hide the mode-change banners entirely, because Windows won&#x27;t let any other window draw over an exclusive-fullscreen game. The Utility now draws the banner inside the game&#x27;s own picture, so it shows over any fullscreen game - the same technique the Steam and Discord overlays use. It&#x27;s on by default (App Options -&gt; &quot;Draw banners over fullscreen games&quot;). Note: because this works by drawing into the game, some antivirus tools may flag the Utility; if that happens you can turn it off there and use the per-emulator options instead. For MAME you can install a small plugin (App Options -&gt; Install MAME plugin) and RetroArch shows the banners once its Network Commands are enabled - neither of those needs the in-game overlay.</p><p>Clearer firmware-update messages: boards with the 128 KB F103VB chip (some 2000H and 4000H boards) now say plainly that they update with the ST-Link flasher - this is normal for that chip, not a one-time step and not old firmware - and the Update page names your exact chip (for example &quot;4000H (F103VB)&quot;). A misleading &quot;already updates from the app&quot; note has been removed for boards that actually need the ST-Link.</p></div>
+  </div>
+  <div class="entry earlytesting">
+    <div class="head">
       <span class="ver">20260709_0621</span>
       <span class="chip earlytesting">earlytesting</span>
       <span class="chip firmware">Firmware</span>
