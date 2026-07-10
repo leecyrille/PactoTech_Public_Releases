@@ -27,31 +27,37 @@ Run the installer and you're ready to go — the app keeps itself updated on the
 
 ## Keeping your controller up to date
 
-**Good news: you almost never have to think about this.** Plug your controller
+**Most of the time you don't have to think about this.** Plug your controller
 into your PC with its USB cable, open the Utility, and it updates the firmware
-for you over that same cable. It checks your exact board first, and an
-interrupted update can't harm anything — it simply picks up where it left off
-the next time you power on.
+for you right over that cable — it checks your exact board first, and an
+interrupted update can't harm anything (it just picks up again next power-on).
 
-**One kind of board works a little differently.** Some **2000H** and **4000H**
-controllers use a smaller memory chip (the **F103VB**) that doesn't have room
-for the over-the-cable update system. Those boards get their firmware through a
-small **ST-Link V2** programmer instead — and the nice part is the **Utility now
-does this for you, right inside the app**. No separate tools, no command line:
+There are two times you'll reach for a small **ST-Link V2** programmer — and the
+good news is the **Utility now does the ST-Link flash for you, right inside the
+app**, with no separate tools and no command line:
+
+**1. Boards on older firmware** (from before over-USB updates existed) need
+**one** ST-Link flash to install the new *bootloader* — the piece that makes
+updating over USB possible. **After that single flash, the board updates over
+USB from then on**, and you won't need the ST-Link again.
+
+**2. Some 2000H and 4000H boards** use a smaller memory chip (the **F103VB**)
+that doesn't have room for the update system, so **those boards always update
+with the ST-Link**. It's not a fault — just how that little chip works.
+
+**Doing the ST-Link flash (either case):**
 
 1. Connect an ST-Link V2 to the four pins on the board labelled
    **SWDIO / SWCLK / GND / 3V3**, and plug the ST-Link into your PC. Keep the
    board's own USB cable plugged in too (it needs its own power).
-2. In the Utility, go to **Update / About**, and under **Your controller** press
-   **Detect chip**, then **Flash firmware**.
+2. In the Utility, open **Update / About**, and under **Your controller** press
+   **Detect chip**, then **Flash firmware**. The app reads your exact board and
+   chip and flashes the matching firmware — your settings are kept.
 
-That's it. The app reads your exact board and chip and flashes the matching
-firmware, and your settings are kept. If your controller uses one of the larger
-chips, you'll never need the ST-Link at all — it just updates over USB.
-
-**Not sure which chip you have?** The Utility tells you. On the **Update / About**
-page it names your exact board and chip (for example *"4000H (F103VB)"*), so
-you always know whether it updates over USB or with an ST-Link.
+**Not sure which case you're in?** The Utility tells you on the **Update /
+About** page: it names your exact board and chip (for example *"4000H
+(F103VB)"*) and says right there whether it updates over USB or with an
+ST-Link. It also lets you know whenever a new version is available.
 
 ## Using Pacto boards on Batocera, RetroPie, Lakka & other Linux systems
 
