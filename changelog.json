@@ -175,5 +175,25 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20260710_0415",
+    "date": "2026-07-10",
+    "channel": "earlytesting",
+    "kind": "firmware",
+    "notes": "Fixes a startup freeze on 1- and 2-player boards used with a SpecVision display and a DongleMaster: the controller could lock up shortly after plugging in and stay unresponsive until power-cycled.\n\nAlso completes the Disconnect/Keyboard mode fixes from the previous release for 1-player boards - entering keyboard mode with the D-PAD mode switch turned on now sticks on every board.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
