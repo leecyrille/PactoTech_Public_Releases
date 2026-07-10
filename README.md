@@ -43,7 +43,11 @@ USB from then on**, and you won't need the ST-Link again.
 
 **2. Some 2000H and 4000H boards** use a smaller memory chip (the **F103VB**)
 that doesn't have room for the update system, so **those boards always update
-with the ST-Link**. It's not a fault — just how that little chip works.
+with the ST-Link**. It's not a fault, and you're not missing anything — these
+boards do **everything** the larger-chip versions do, exactly the same; the
+only difference is that firmware updates come through the ST-Link rather than
+over USB. If you like, you can simply **leave the ST-Link connected while you
+play** — it does no harm and makes the occasional update a one-click affair.
 
 **Doing the ST-Link flash (either case):**
 
