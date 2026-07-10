@@ -155,5 +155,25 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Simpler Update page. Instead of separate boxes for the in-app update and the ST-Link tool (with a note that could contradict them), the controller now shows one plain line telling you exactly what to do: it's up to date, there's an update you install over the USB cable, or this controller updates with an ST-Link - with only the button or steps that apply. Boards with the 128 KB F103VB chip (some 2000H and 4000H) are told plainly that they update with the ST-Link flasher, which is normal for that chip - not old firmware and not a one-time step - and the page names your exact chip (for example \"4000H (F103VB)\").\n\nAlso included: in-game overlays that show over fullscreen games. Games in exclusive fullscreen (MAME's default on Windows) used to hide the mode-change banners because Windows won't let any other window draw over them; the Utility now draws the banner inside the game's own picture, the same way the Steam and Discord overlays do. It's on by default (App Options -> \"Draw banners over fullscreen games\"). Because it works by drawing into the game, some antivirus tools may flag the Utility - if that happens you can turn it off there and use the per-emulator options (a small MAME plugin, or RetroArch's Network Commands) instead."
+  },
+  {
+    "version": "20260710_0250",
+    "date": "2026-07-10",
+    "channel": "earlytesting",
+    "kind": "firmware",
+    "notes": "Firmware fix for all boards: Disconnect/Keyboard mode could immediately jump back to gamepad mode on cabinets with the D-PAD mode switch turned on - entering keyboard mode now sticks, whether started from the Utility app or the DIS input.\n\nCabinets wired with a maintained Disconnect switch also work correctly again: hold the switch closed at power-on to start in keyboard mode, and flip it off to return to gamepad mode.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
