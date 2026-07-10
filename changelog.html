@@ -53,6 +53,16 @@
     Show early-testing releases</label>
   <div class="entry earlytesting">
     <div class="head">
+      <span class="ver">20260710_0537</span>
+      <span class="chip earlytesting">earlytesting</span>
+      <span class="chip app">App</span>
+      
+      <span class="date">2026-07-09</span>
+    </div>
+    <div class="notes"><p>Simpler Update page. Instead of separate boxes for the in-app update and the ST-Link tool (with a note that could contradict them), the controller now shows one plain line telling you exactly what to do: it&#x27;s up to date, there&#x27;s an update you install over the USB cable, or this controller updates with an ST-Link - with only the button or steps that apply. Boards with the 128 KB F103VB chip (some 2000H and 4000H) are told plainly that they update with the ST-Link flasher, which is normal for that chip - not old firmware and not a one-time step - and the page names your exact chip (for example &quot;4000H (F103VB)&quot;).</p><p>Also included: in-game overlays that show over fullscreen games. Games in exclusive fullscreen (MAME&#x27;s default on Windows) used to hide the mode-change banners because Windows won&#x27;t let any other window draw over them; the Utility now draws the banner inside the game&#x27;s own picture, the same way the Steam and Discord overlays do. It&#x27;s on by default (App Options -&gt; &quot;Draw banners over fullscreen games&quot;). Because it works by drawing into the game, some antivirus tools may flag the Utility - if that happens you can turn it off there and use the per-emulator options (a small MAME plugin, or RetroArch&#x27;s Network Commands) instead.</p></div>
+  </div>
+  <div class="entry earlytesting">
+    <div class="head">
       <span class="ver">20260710_0500</span>
       <span class="chip earlytesting">earlytesting</span>
       <span class="chip app">App</span>
