@@ -195,5 +195,25 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20260711_1239",
+    "date": "2026-07-11",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "Keyboard/Disconnect mode: returning to gamepad mode now shows the countdown on the SpecVision display and the on-screen overlay, matching what you already saw when switching into keyboard mode.\n\nThe Utility now shows your SpecVision display live in the sidebar, so you can see exactly what the controller shows.\n\nUpdates page: your controller's installed firmware and the newest available now sit right above each other with the differences highlighted, and updating is a single click. Advanced options let you install any earlier version — we keep every release — and manually pick a board or chip for recovery.\n\nNew in App Options: keep the app and your controller firmware up to date automatically — both off by default.\n\nAlso includes the earlier fix for a startup freeze on 1- and 2-player boards used with a SpecVision display and a DongleMaster, and a tidied keyboard-mode overlay.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
