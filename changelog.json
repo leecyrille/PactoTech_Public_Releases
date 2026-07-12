@@ -215,5 +215,25 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20260711_1907",
+    "date": "2026-07-11",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "The Utility's SpecVision view now works on every controller — even without a SpecVision attached, the sidebar shows exactly what one would display (labeled \"SpecVision preview\").\n\nFixed the Test page gamepad diagrams drawing dark with the direction indicators invisible.\n\nTest page cleanup: the mode and special input pins are now large readable tiles that light up as you press, and the duplicate lists (per-player pin rows, mode status) are gone — the controller diagrams and sidebar already show those.\n\nFixed a false \"this board's firmware doesn't report pin states\" message that could appear on up-to-date controllers.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
