@@ -282,5 +282,25 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "The connection box (bottom left) now shows your controller's chip variant next to the firmware â€” for example \"FW 20260711 2317 Â· VB\" â€” so it's always clear which chip a board has. Works on all variants; controllers on older firmware simply don't show it."
+  },
+  {
+    "version": "20260712_1105",
+    "date": "2026-07-12",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "Game profiles got a lot smarter:\n\nYour Steam library is found automatically — every installed Steam game appears in the games list, ready to profile, and is recognized the moment it runs.\n\nAuto-profile MAME games: one click profiles thousands of arcade games with the right player mode for YOUR board — it knows the player count of ~15,000 games (including the separate 2-player and 4-player versions of games like TMNT, Sunset Riders and The Simpsons), the twin-stick games (Robotron, Smash T.V., ...), and which classic shoot-em-ups should have turbo (Raiden at full speed, the Toaplan classics at 15 Hz, Battle Garegga slowed on purpose — and games where holding the button matters, like DoDonPachi's laser, are left alone).\n\nTurbo per game: every profile can now force turbo on any combination of buttons with adjustable speed shown in Hz, or force it off. Profiles also get an 8to6 on/off option.\n\nFront ends: RetroFE, HyperSpin, LaunchBox/Big Box, CoinOPS, Playnite, EmulationStation and friends — plus Steam and Steam Big Picture — are recognized, and one button sets them all to 2 Player, Analog Fast, Turbo off, 8to6 off so menus always behave.\n\nThis update includes new firmware (per-game turbo support).",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
