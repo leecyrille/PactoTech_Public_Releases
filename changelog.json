@@ -235,5 +235,25 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20260711_2122",
+    "date": "2026-07-11",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "NEW: Game profiles. The Utility can now detect which game is running — emulators and their ROMs (MAME, RetroArch, Dolphin, PCSX2 and ~30 more), plus regular Windows games — and apply a controller profile automatically: switch player layout, stick output, or even flip to keyboard mode so a gamepad-only game uses your DongleMaster gamepads. Set a default per emulator, override individual games, remap every button per game with advanced profiles, and save named profiles to reuse anywhere. A built-in catalog of 570 popular games gets you started; everything you actually run is learned automatically. When a game closes, your controller goes back exactly how it was.\n\nFixed: on controllers with older firmware, the app could flash \"update available\" in a loop and make the Update button hard to click. The app now handles older firmware gracefully.\n\nFirmware: each board type now identifies its USB layout distinctly, fixing a Windows quirk where owning two different Pacto board types could stop the app from connecting to one of them (expect a brief one-time driver refresh the first time you connect after updating). Keyboard mode can now also be switched from software — used by Game profiles and available to launcher scripts.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
