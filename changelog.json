@@ -275,5 +275,12 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20260712_1033",
+    "date": "2026-07-12",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "The connection box (bottom left) now shows your controller's chip variant next to the firmware â€” for example \"FW 20260711 2317 Â· VB\" â€” so it's always clear which chip a board has. Works on all variants; controllers on older firmware simply don't show it."
   }
 ]
