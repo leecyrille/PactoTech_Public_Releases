@@ -255,5 +255,25 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20260711_2317",
+    "date": "2026-07-11",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "Game profiles now map buttons per player: advanced profiles have P1–P4 tabs, so each player's controls can be remapped independently for a specific game. Applied while the game runs, back to normal when it exits.\n\nThe games catalog grew: TeknoParrot with 72 PC-arcade titles (Initial D, Wangan Midnight Maximum Tune, Mario Kart GP DX, House of the Dead and more), plus yuzu and Ryujinx with 35 popular Switch titles.\n\nThe DISC. KEYBD chip in the sidebar is now clickable — one click switches the controller into keyboard mode (your USB gamepads take over; the controller briefly reconnects, that's normal), another click brings it back.\n\nThis update includes new firmware for the per-player mapping and the clickable keyboard switch.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
