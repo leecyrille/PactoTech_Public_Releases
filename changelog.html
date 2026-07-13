@@ -53,6 +53,16 @@
     Show early-testing releases</label>
   <div class="entry earlytesting">
     <div class="head">
+      <span class="ver">20260712_2012</span>
+      <span class="chip earlytesting">earlytesting</span>
+      <span class="chip app">App</span>
+      
+      <span class="date">2026-07-12</span>
+    </div>
+    <div class="notes"><p>Fixed automatic updates sometimes not running until you visited the Updates page. If the update check failed because the app started before your network was connected (common when the app launches at login), it silently waited hours before trying again. It now retries every few minutes until a check succeeds, and rechecks the moment your connection comes back.</p></div>
+  </div>
+  <div class="entry earlytesting">
+    <div class="head">
       <span class="ver">20260712_1941</span>
       <span class="chip earlytesting">earlytesting</span>
       <span class="chip app">App</span>

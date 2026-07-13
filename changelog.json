@@ -309,5 +309,12 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Game profiles got a big usability pass. Every game is now a single line showing its key settings at a glance - click to expand the full editor. Platforms (MAME, RetroArch, Steam, front ends...) are collapsible sections, and each platform now has its own default profile that covers every game on it, separate from per-game settings.\n\nRetroArch games can now take profiles per CORE - set a default for your SNES core once and every SNES game uses it.\n\nYou can also profile any program directly: 'Choose a program...' lets you pick an .exe and attach a profile to it.\n\nThe sidebar now shows the game you're playing (or the last one detected), whether a profile was applied automatically, and a one-click button to edit that game's profile. Games are tracked by their process now, so clicking into the Utility no longer counts as 'leaving' the game.\n\nAutomatic MAME and front-end profiles now always state turbo explicitly (on with tuned timing, or off) instead of leaving it unset."
+  },
+  {
+    "version": "20260712_2012",
+    "date": "2026-07-12",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "Fixed automatic updates sometimes not running until you visited the Updates page. If the update check failed because the app started before your network was connected (common when the app launches at login), it silently waited hours before trying again. It now retries every few minutes until a check succeeds, and rechecks the moment your connection comes back."
   }
 ]
