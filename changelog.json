@@ -316,5 +316,25 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Fixed automatic updates sometimes not running until you visited the Updates page. If the update check failed because the app started before your network was connected (common when the app launches at login), it silently waited hours before trying again. It now retries every few minutes until a check succeeds, and rechecks the moment your connection comes back."
+  },
+  {
+    "version": "20260713_0252",
+    "date": "2026-07-13",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "Game profiles are now a spreadsheet. Every game is a row you can edit in place - player mode, stick, custom controls, turbo with per-button checkboxes and speeds shown in Hz, and a new Exit Function per game. Sort or filter by any column, select ranges of cells and copy/paste values across them like Excel, right-click to copy a whole profile onto other games, and hide columns you don't use. Profiles are grouped into three tables: what to do when NO known game is running, games you added yourself, and games added from the game database - with a Default/Modified marker and play counts.\n\nThe game database is rebuilt from MAME's own data: 19,000+ arcade games with player counts, simultaneous-play, buttons, and control types (trackball, spinner, paddle, lightgun and more) shown right in the table.\n\nNew Exit Function: choose what the cabinet's exit button (or holding Start+Back with interlock) does - the classic gamepad Start+Back, or typing a key combo like ESC or Alt+F4, even while the sticks are working as gamepads. There's a global setting on the Modes page, and any game can override it. This needs the controller firmware in this release.\n\nFull Custom controls: map any button on the panel to any output - another player's button, or a keyboard key - per game.\n\nNew Game & program history section: see what ran and when, with play counts, and add a profile straight from a history entry (the app recommends whether to profile the game, the emulator, or the RetroArch core). History can be turned off; browser tab titles are only recorded if you opt in (off by default for privacy).\n\nExcel export/import: edit your profiles as a spreadsheet with dropdowns and a full Help sheet explaining every option, then import it back - great for bulk editing or AI-assisted editing. Profiles are also now included in \"Back up settings to file\".\n\nThe two detection toggles are now one clear switch: \"Apply game profiles automatically\". When nothing recognized is running, the controller now rests in your \"No known game detected\" profile (2 Player, Analog Fast, turbo off by default).\n\nController firmware in this release adds the Exit Function and Full Custom output engines (config version 12 - your saved settings migrate automatically).",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
