@@ -336,5 +336,12 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20260713_0751",
+    "date": "2026-07-13",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "You can now run OLDER versions from the Updates page - for the app as well as the firmware. In the app section, 'Run a different app version' lists every published version with its notes; picking one installs it and turns automatic app updates off so it stays put (turn them back on in App Options whenever you want the newest again).\n\nBecause some features need the app and controller firmware to move together, every version now shows the firmware it shipped with - and if your controller is on a different one, the app points out which firmware to flash to match. Firmware versions likewise show the app of their day.\n\nOlder app installers are archived from this release onward, so the list will grow over time."
   }
 ]
