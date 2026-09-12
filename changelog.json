@@ -343,5 +343,25 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "You can now run OLDER versions from the Updates page - for the app as well as the firmware. In the app section, 'Run a different app version' lists every published version with its notes; picking one installs it and turns automatic app updates off so it stays put (turn them back on in App Options whenever you want the newest again).\n\nBecause some features need the app and controller firmware to move together, every version now shows the firmware it shipped with - and if your controller is on a different one, the app points out which firmware to flash to match. Firmware versions likewise show the app of their day.\n\nOlder app installers are archived from this release onward, so the list will grow over time."
+  },
+  {
+    "version": "20260912_1803",
+    "date": "2026-09-12",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "Utility: fixes arcade front ends (RetroFE / CoinOPS and other SDL-based launchers) losing controls while the Utility runs in the background. The Utility's windows could briefly take the screen focus when the app started or when a second copy launched, and SDL front ends stop reading the controller the moment they lose focus. The mode overlay window is now created so it can never take focus, the settings window no longer flashes at start-up, and a second background launch is ignored. Overlays over full-screen games are unchanged.\n\nFirmware (all boards): 8-to-6 button conversion now matches the manual. Previously every build applied the alternate \"shift-right\" table whenever 8-to-6 was enabled (X became LT, Y became X, and so on). The default is now the documented shift-left conversion: RB acts as LB, LB as LT, RT as RB and LT as RT, with X/Y/A/B unchanged. The shift-right variant (hold LB or LT while enabling) still works as before.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]

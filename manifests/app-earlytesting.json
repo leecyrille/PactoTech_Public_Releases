@@ -1,10 +1,10 @@
 {
-  "version": "0.20260713.751",
-  "notes": "Pacto Tech Utility 20260713_0751 (earlytesting)",
-  "pub_date": "2026-07-13T13:59:22Z",
+  "version": "0.20260912.1803",
+  "notes": "Pacto Tech Utility 20260912_1803 (earlytesting)",
+  "pub_date": "2026-09-12T18:11:48Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjFidXNXWE5YbnlCbDFTb05EUTkrK1ZSMFByRW1EZWJnZDVza20yci9sa2NNdTVNcXY4SDdLQTNNaVZ1alRMZWVlNFZPY3M3cDJFWFBXUGd4SUJqRXdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzOTUwOTMyCWZpbGU6UGFjdG8gVGVjaCBVdGlsaXR5XzAuMjAyNjA3MTMuNzUxX3g2NC1zZXR1cC5leGUKWTRvL1JhVE0zZUxIeUN2V2NpY01xL0FMaGo1VnZPcFJiODdyMTB5d1h3UWpPd00xdHpWMnVaUmVVbkllQVNSMVcyVldYejQ3K3FiVExJYlBNYU9pQlE9PQo=",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNitNRE0xUGN4eG5aVDFyeWd2Y2F0bExOekVtV2lwZ294MG4zeS9ta0Q3S2RQNzg2eXo3SjdNRzRQSW85OFcwZ2Y5bFNWTGhjZWgvTGZmSmlhMDNsUlFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5MjM2NDc1CWZpbGU6UGFjdG8gVGVjaCBVdGlsaXR5XzAuMjAyNjA5MTIuMTgwM194NjQtc2V0dXAuZXhlCnptTVlrRElTVEwrLzlxUDBYcTRzNjY2NFBSNVkvQitrNGFuUXBESngxempEVkRMQWNhWTZVeXNPUTFrNG1EeC80V1I2MlkxNjZNV2Vqd254NXkzQ0RRPT0K",
       "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-Utility-Setup.exe"
     }
   }
