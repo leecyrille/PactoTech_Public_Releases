@@ -53,6 +53,16 @@
     Show early-testing releases</label>
   <div class="entry earlytesting">
     <div class="head">
+      <span class="ver">20260913_2301</span>
+      <span class="chip earlytesting">earlytesting</span>
+      <span class="chip both">App + Firmware</span>
+      <span class="boards">1000T-F103VC · 2000H-F103VB · 2000H-F103VC · 2000T-F103VC · 3000T-F103VC · 4000H-F103VB · 4000H-F103VC · 4000H2-F103ZE · 4000T-F103VC · SNAP2-F103VC · SNAP4-F103VC</span>
+      <span class="date">2026-09-13</span>
+    </div>
+    <div class="notes"><p>Utility: the mode overlay (and the sidebar chips and tray) now show Turbo on/off and 8-to-6 on/off when they are changed at the board with a switch pin or an 8-second button shortcut. The board always announced these changes, but the Utility could discard the announcement when it arrived while another request to the board was in progress, which was most of the time because the display mirror polls continuously. Announcements are now kept and delivered.</p><p>Firmware (all boards): one announcement per mode change. A turbo toggle used to send two identical announcements back to back, which made the overlay replace its &quot;TURBO ON&quot; banner with the player-layout name a moment later.</p></div>
+  </div>
+  <div class="entry earlytesting">
+    <div class="head">
       <span class="ver">20260912_1803</span>
       <span class="chip earlytesting">earlytesting</span>
       <span class="chip both">App + Firmware</span>
