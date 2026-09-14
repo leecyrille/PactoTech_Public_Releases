@@ -383,5 +383,12 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20260914_0036",
+    "date": "2026-09-13",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "Utility: the board's connection countdowns (\"Connecting gamepads\", \"Connecting arcade controls\") now show on the PC screen too, the same as on the SpecVision display. The corner badge stays up for the whole countdown and ticks down in place, then clears once the controls have reconnected.\n\nUtility: new App Options setting \"Keep the corner badge clear of\". Steam and Windows show their \"controller connected\" pop-ups in the bottom-right corner by default, right when the Pacto board reconnects, so a corner badge placed there now moves to the top-right instead. Pick another corner if your Steam notifications are set elsewhere, or \"Nothing\" to keep the badge exactly where you set it."
   }
 ]
