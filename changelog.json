@@ -397,5 +397,12 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Utility: optional automatic updates now install as soon as a release appears. With \"Update the app automatically\" or \"Update controller firmware automatically\" switched on (App Options; both are off by default so installs stay exactly as they are unless you choose otherwise), the Utility checks its update channel every 15 minutes instead of every 6 hours and installs right away. Updates are never applied while a game is running or while you have unsaved edits; firmware installs over USB only, and boards that need an ST-Link are never flashed on their own."
+  },
+  {
+    "version": "20260915_0242",
+    "date": "2026-09-14",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "Utility: AI agent access. An AI assistant (Claude, ChatGPT, a local agent) can now configure the Utility and the controller for you. App Options has a new \"AI agent access\" section with a \"Copy bootstrap prompt\" button: paste that prompt into your assistant and ask for what you want, for example \"swap A and B for player 2 in Street Fighter\" or \"make the corner badge bigger\". The assistant reads and changes settings, game profiles, live modes, button remaps, keyboard maps and board parameters through a local, token-protected connection on this PC only; nothing is reachable from the network or from web pages, and the switch in App Options turns it off. The settings and game-profile files in the config folder can also be edited by hand or by a script and are picked up live, with every setting written out so nothing has to be guessed."
   }
 ]
