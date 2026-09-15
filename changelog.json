@@ -390,5 +390,12 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Utility: the board's connection countdowns (\"Connecting gamepads\", \"Connecting arcade controls\") now show on the PC screen too, the same as on the SpecVision display. The corner badge stays up for the whole countdown and ticks down in place, then clears once the controls have reconnected.\n\nUtility: new App Options setting \"Keep the corner badge clear of\". Steam and Windows show their \"controller connected\" pop-ups in the bottom-right corner by default, right when the Pacto board reconnects, so a corner badge placed there now moves to the top-right instead. Pick another corner if your Steam notifications are set elsewhere, or \"Nothing\" to keep the badge exactly where you set it."
+  },
+  {
+    "version": "20260915_0150",
+    "date": "2026-09-14",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "Utility: optional automatic updates now install as soon as a release appears. With \"Update the app automatically\" or \"Update controller firmware automatically\" switched on (App Options; both are off by default so installs stay exactly as they are unless you choose otherwise), the Utility checks its update channel every 15 minutes instead of every 6 hours and installs right away. Updates are never applied while a game is running or while you have unsaved edits; firmware installs over USB only, and boards that need an ST-Link are never flashed on their own."
   }
 ]
