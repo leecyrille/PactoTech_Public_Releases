@@ -404,5 +404,12 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Utility: AI agent access. An AI assistant (Claude, ChatGPT, a local agent) can now configure the Utility and the controller for you. App Options has a new \"AI agent access\" section with a \"Copy bootstrap prompt\" button: paste that prompt into your assistant and ask for what you want, for example \"swap A and B for player 2 in Street Fighter\" or \"make the corner badge bigger\". The assistant reads and changes settings, game profiles, live modes, button remaps, keyboard maps and board parameters through a local, token-protected connection on this PC only; nothing is reachable from the network or from web pages, and the switch in App Options turns it off. The settings and game-profile files in the config folder can also be edited by hand or by a script and are picked up live, with every setting written out so nothing has to be guessed."
+  },
+  {
+    "version": "20260915_0624",
+    "date": "2026-09-15",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "Utility: keyboard-map read-out for the new PactoTech Control Test app. The local agent API gains a read-only GET /agent/kbmap route (both profiles, 4 headers x 18 inputs) so the full-screen Control Test app can draw the arcade panel with each button's key while the Utility is running. No behaviour change otherwise."
   }
 ]
