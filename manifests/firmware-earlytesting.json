@@ -1,22 +1,22 @@
 {
   "channel": "earlytesting",
-  "updated": "2026-09-16T04:54:25Z",
-  "version": "20260916_0446",
+  "updated": "2026-09-16T05:04:32Z",
+  "version": "20260916_0457",
   "boards": {
     "1000T": {
       "targets": {
         "F103VC": {
-          "version": "20260916_0446",
+          "version": "20260916_0457",
           "mcu": "F103VC",
           "flashKb": 256,
           "ota": true,
           "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-1000T-F103VC-STLink-Full.bin",
-          "stlinkSha256": "65fa690aef7f7f2814a0aef9937735ce2ca373de400c8e3ba660b81d1cf78445",
-          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjF5eWNjeGM3V0c0Zm15b0ZKOEsyYlBiQTJrMXZPejh5SXdWUTd4ZWd3bUV3NXRxcEROZ0xmUUNaek5FanJRTkdoeXlCNmFzQnI1UkV4R1hVeXgwRFEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM0NDEyCWZpbGU6UGFjdG9UZWNoLTEwMDBULUYxMDNWQy1TVExpbmstRnVsbC5iaW4KaXZmUWZ2L0M4UTJGRlhTdDJ3cXFnOXlPc1RBTVV6NitrVUVCS3FoeGZ5WlZtMm9LNlhOVzhFY0lMYXc5aVhhZEpSZHhScFNmMnJYWG5vU050bnR2RHc9PQo=",
-          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/1000T-F103VC/20260916_0446/1000T-F103VC.pfw",
-          "size": 94314,
-          "sha256": "9423e4e31ae579e842f8695b40d5338edffc3314d9bca9322b16ed9d5f24ec2a",
-          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjlsN3ZCMU5EM1lrTHZVbkNhZE92aEhqdGdMRU1LT2ExZWQ0dGx6OWFvRE9Fcjk5NTViYkExRHlXT1J2Tm5mWG5mYlNkMUUva1dUODdtMVA3WTI0MmdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM0NDExCWZpbGU6MTAwMFQtRjEwM1ZDLnBmdwpKMFRHL0hPNVZxMWVsejlWZk1oRXFGcU5IMU93TmhzdEFndzduRlFVZEdlZ2FyekhlNm9uTkRkUWo2S1ZEa1pMT1I4Mk1rUkZoRE9pWWdrT3hQcWJEUT09Cg==",
+          "stlinkSha256": "a271143d01ce8a2da539422a034bdc75336be967bab7f3c0905a290442fc83f8",
+          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNnlldkxwS2NNZks3NFlNcXlsV1dkaHB1L2prdnVyb0wxb1RueWdBT1ZjVzJXdVQyVUNsdVRnb3FzdTFqaUxtRWdURjBZTEdrTEUzb3hVRjl3cUZnWlF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM1MDI3CWZpbGU6UGFjdG9UZWNoLTEwMDBULUYxMDNWQy1TVExpbmstRnVsbC5iaW4KRkRkVzlpRFlBbEQ3UUNucnA2MGZlekRpaTQ1aEE5YjQ5K3B2WTVGRHFGOWVoQlJYUkJFUXJTVTF5Z214WVhKS0lITWhlZGVWbmJ0bjRmMElPS2xFQnc9PQo=",
+          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/1000T-F103VC/20260916_0457/1000T-F103VC.pfw",
+          "size": 94296,
+          "sha256": "224d3dd6da4d513c96eccd1a14b4dda8ad4983c0fa52bed9850cb2963f3c5950",
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjBoL1FUUUdZN1JVTGZjOGEyNk9LUGJRSG8ycXBmN043SktTR0l1Sjl2NHZwZUhxK2RIUExKUzRNRnJVSG5kUy8vU2hmRmY5L01MWmI1SHFNZS9uVXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM1MDI2CWZpbGU6MTAwMFQtRjEwM1ZDLnBmdwpxaTU5NXFFYzI0U2hjemc4WTRqbHNLdGhqaVdMNEpxOFdINGx5dE4rN0xKZ2o0YWgyYnJaM2IyTHhuOHFVU2VROU14aWFkVHRsNldnMHZNbXcxM2JDUT09Cg==",
           "minLayout": 2
         }
       }
@@ -24,26 +24,26 @@
     "2000H": {
       "targets": {
         "F103VB": {
-          "version": "20260916_0446",
+          "version": "20260916_0457",
           "mcu": "F103VB",
           "flashKb": 128,
           "ota": false,
           "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-2000H-F103VB-STLink-Full.bin",
-          "stlinkSha256": "d25bab282010e4e59b8b0d1c0404c676a8fbfaa057b8fdb329bce14742c6cab9",
-          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjRVU3duWDNSbUNoVG9NbDZPTHRLOHVCZ2loL1o0eGpOZFhJVmxPRkc3Nm1BNGNGVVByTEdvZ1JQNnVqUXE3WUROblpWUGh6Z0x0TUI2WS9aMXN1SVE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM0NDIwCWZpbGU6UGFjdG9UZWNoLTIwMDBILUYxMDNWQi1TVExpbmstRnVsbC5iaW4KeDZzY25FWGc0dFNtczhqVkJEUkpub0JPYXBmZzFpQXJ0elJCaWM5dkdlaCtBb3JQR2phQWRSN0dkejZzWDQreE5wbno3Y1U5bmhPbTdaNnR5UGJjQVE9PQo="
+          "stlinkSha256": "631f7415e88f499431db65867a45ce029a8a01676461ab2c1c83656b8c982396",
+          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNitieHJ0dURMQ3liRXBpWjdrUExwaGtrcUkrekkvay9odWI2Zkp5VVdNdDB0VjdZVTNEZzMwY25EZVdndi9CTlh5QVFHK1pBMlg0QVFYNG5ES2VaandBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM1MDM0CWZpbGU6UGFjdG9UZWNoLTIwMDBILUYxMDNWQi1TVExpbmstRnVsbC5iaW4KWHRzc0dFRVB4eFBsZnd3WXFNUkNiVVNhdSswZ0xIMkpNbU9jc3V6MmdRSUF1OXZGWGdaNEg4bXRIUTZQSmI0U2wzd05QWU9ZY3lKNmFYZFFaZGJtQlE9PQo="
         },
         "F103VC": {
-          "version": "20260916_0446",
+          "version": "20260916_0457",
           "mcu": "F103VC",
           "flashKb": 256,
           "ota": true,
           "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-2000H-F103VC-STLink-Full.bin",
-          "stlinkSha256": "0664248be0eb312b5310f91fcc6811ca60bba7a55e4aa6a198474b47fec99b5b",
-          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjFxL3d2R09nWFNudTFQUlJrZks1aTQ2Qno3R3FMbnlaVDNBWm0yaFlNeTJqK1JNc21uWmtVRzB5M3pZaTFVdmhtMDJKWjlZbWZwcmxmVjJJaDB5MEFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM0NDE4CWZpbGU6UGFjdG9UZWNoLTIwMDBILUYxMDNWQy1TVExpbmstRnVsbC5iaW4KdEJZMEM5ZlcxdmE3WXR0YTFPd1d3QjdLQSsvcmkvZ0N2REhqZ1p4dW4yT1dIQlRpUVk0UVJJRzRWZVRNOVFpUzdxVjRxaUNkeCsxbUtoaTNZVTEvQWc9PQo=",
-          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/2000H-F103VC/20260916_0446/2000H-F103VC.pfw",
-          "size": 106163,
-          "sha256": "f54a08fc68389b9e689c9fb5a8d76da80120fc25ed859ecf0cf8fb374e40e3e4",
-          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNit1a0FDdW4zM1JJQmpWa3I5VUt1TW1qSDNrdUVxVkpSME02YmowUUgwWXFSV0Y2b3VpY0VvV2pUNmdZdlYwSkxzYUczdTg4NWZpWXMyQVFheGZ4dVFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM0NDE3CWZpbGU6MjAwMEgtRjEwM1ZDLnBmdwphTjJrcFhGd2c4WS9DZWVsTzBYU0dYdHNNc244UVd2cm9qQ1ZPejVUS2s4anpWUGJHMnJPcDhXWHBBY3kwVWNiaXNKY0dJOWloaGpHQzE3aTBJY3NCZz09Cg==",
+          "stlinkSha256": "fb43b89e8afc8ec16d316d2f59de5a2bcc62e755b8c8c054f4cb19bbcc341818",
+          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjBYQU13Q3BuSEtkcWIwb3dVT0lOVXdocTNnVmVaN2Zva0IyMjZJaGZZVWthSFRQb0ZhUitaZkV2TlNUQVd3UElSNEhJWDJyOStJa2hXMnVwTmhkVkFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM1MDMzCWZpbGU6UGFjdG9UZWNoLTIwMDBILUYxMDNWQy1TVExpbmstRnVsbC5iaW4KVGNFeVk3a0dlRXA4TTVkQloyVG05bXVIMkdpZVBjdDZyT1ZyTmViaDRLQ1RLN29oaFVma2tjaFRWR0RZL3J6eVVqZEJLQzFCUXdram4vMkZNbnRLQXc9PQo=",
+          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/2000H-F103VC/20260916_0457/2000H-F103VC.pfw",
+          "size": 106153,
+          "sha256": "655e26bd4eb5c4c0d2e01a44b82728766b4ed0c38869812502954378e2b2c84d",
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNitsMkUwb0MvVWY0ZGk3STU0Z0NmcGNjQm0zZVFQWWc4N0NkSDFaYXVpNzBYY2wwRnF0eXlnWWFmSlVjbVVYeVBwSkU5TmNubFZUV3QxbW5BeXY4aHc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM1MDMyCWZpbGU6MjAwMEgtRjEwM1ZDLnBmdwpMVEJUQXYrQThwdS9MdUlVb1RJbXZSZHYwUitPamdXdkpxRGdLL2pQeWwwT1p1cHJMNWR2MXJpcytLWUlZNFJiZkJmQTR2cVM2dVpWblZ4TVdVYTZCZz09Cg==",
           "minLayout": 2
         }
       }
@@ -51,17 +51,17 @@
     "2000T": {
       "targets": {
         "F103VC": {
-          "version": "20260916_0446",
+          "version": "20260916_0457",
           "mcu": "F103VC",
           "flashKb": 256,
           "ota": true,
           "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-2000T-F103VC-STLink-Full.bin",
-          "stlinkSha256": "630810d9169ed6c074720098d8f90ed5264385fa75195543b608fa0b55ec9eab",
-          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjZlQ3grNVRWdXRPL1ppQmlKRjRMSTF5Z1Z1TkVpYmpnYi95dFpBZXY3bEpHamJhSUFUQ1owZnZpUUtndW9PNldwUzhBVElLZW9DMEZCZXhudklHZXdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM0NDE1CWZpbGU6UGFjdG9UZWNoLTIwMDBULUYxMDNWQy1TVExpbmstRnVsbC5iaW4KUHNNMkRrOXZqbGtyOEJWRVFEcTJQWWZtWkFqYVhNaEVRRmZBV1pxanBFVDZDbGluWFRIcE40U1JaOXlCVVRNR2VkKzAwZitmZk90c29HQWtwT2xpQkE9PQo=",
-          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/2000T-F103VC/20260916_0446/2000T-F103VC.pfw",
-          "size": 105958,
-          "sha256": "70e30971b511caf629b51c2aeb33206194e50fde3b88fe09612962d2fc0ec596",
-          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjRHbmQyc0NOSVNtMkFHYWhjSFh5MW5IS0dSU04xQmluZVJYa25sUkRLL3dQdUpObEpjaW01cTBuSHN2RDZSMnNZZ0xKb2Y4WUV4bmRWWmlSL2thTWdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM0NDE0CWZpbGU6MjAwMFQtRjEwM1ZDLnBmdwpwam5CTEc1T1FZVWtiaDExTVBUbW05OVhCSHVqcmRHalYwTExuUERRQm84REszb1RMM1N0dUdUcWJlRkdoMzR4MWxPMDF6K2pNaDU5eUtGKzFzM3BEUT09Cg==",
+          "stlinkSha256": "00abe2fa22bacf7c846e3eee0a5a12a4c1df851ca38f8ef0ea0dcb185daef376",
+          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjBzcDh2WmFkWjZIdVRVVXJFWUIrejhGYWFFZlA5SXlUVVo1YkZ4dmVPa1REcm5EVjJMWVdnUGhTQVBJY1ZOUjBTSWQzYVlPcXpENWR0VUgrb045ZEEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM1MDMwCWZpbGU6UGFjdG9UZWNoLTIwMDBULUYxMDNWQy1TVExpbmstRnVsbC5iaW4KMksvQ1hHcEJVc2lLajI0dlBVRlBqZklCRnBCN25wbjZ5V0RiSXBkR0dDei9ZOFpwWDVGbUVzUjhkdjVHWmtjR2ZLNjE1TzFDeHZTckRSaytBZ2YwQ1E9PQo=",
+          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/2000T-F103VC/20260916_0457/2000T-F103VC.pfw",
+          "size": 105948,
+          "sha256": "dc7e8554309b6c229d1e9e2780d146de0c35001f0fdf736388dc15da67a84892",
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNnlGaThHaWh1S0grMEtvVm45RjhHNlp3Y1lLVHRWamVtaEVaQ1VmRThFUmpObWM5TmtPdlowcWRzc2ZYSnlLOFVRb3QwaFBHZFV3enp1WHV6RmhUbHdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM1MDI5CWZpbGU6MjAwMFQtRjEwM1ZDLnBmdwpIbmJYN1dHQ1U0N2o1bUZUK0RrUTNxRTFnQktYZDZ0c2I4emRjMjRNdlpoNDU3U1NjN1JpRkZibnBVbndMak50S05IMGxXNFZVbkg5R0s2NFRIVUdDZz09Cg==",
           "minLayout": 2
         }
       }
@@ -69,17 +69,17 @@
     "3000T": {
       "targets": {
         "F103VC": {
-          "version": "20260916_0446",
+          "version": "20260916_0457",
           "mcu": "F103VC",
           "flashKb": 256,
           "ota": true,
           "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-3000T-F103VC-STLink-Full.bin",
-          "stlinkSha256": "6eb80fd69c5145de2bbea88e44aff48f4346aa1237b5e1a3d18ae460ab9f70a0",
-          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNnplNSt0YzU5Y0NMcnVrdVdqSy9DOWFPRkdVT3lKQ0h5L1VocjZ6a1FONUtha0JvTkZiRDZEK0JYNG1uc3Z2clRLTVRKZ1FxVHR2OFZYbVV3NXY4ckEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM0NDIzCWZpbGU6UGFjdG9UZWNoLTMwMDBULUYxMDNWQy1TVExpbmstRnVsbC5iaW4KTnZUVUsvTkVOdTgzZlJRS3VrQ3drNXRneEZTU1JSTWUwM2h3MDkxMXJCMmlybEI1OGNNdHZ4dEtVKzNodXhCWmhnN1JjVWQyRGRsQzY2NTNCSjVPQUE9PQo=",
-          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/3000T-F103VC/20260916_0446/3000T-F103VC.pfw",
+          "stlinkSha256": "462e36b6d5935ce645feeaf99aade4cb769a4c54574fdfbd59a528b7be898ad6",
+          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNndneW4wZDBkSDVYRHZERnZPUnpzekJFcHBXdWR1aTlMWW9OcjVPR1ZncXprUUFDbGNSVjRrL0p5VjR0WmhPOVFEOVp2OTVCM0ZVd3YwNGYxYjQ1RHdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM1MDM3CWZpbGU6UGFjdG9UZWNoLTMwMDBULUYxMDNWQy1TVExpbmstRnVsbC5iaW4KZlAvclZSRGVKck9mUEZQdW1vYk9ha0oyNjdHMkFaWE1MSldJWXJ5czM0K0tKL0x0bHhvVXIwQnRtMDhQOGwyejZNYzRjcWNGdGRnRTBtRFdzbjRTREE9PQo=",
+          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/3000T-F103VC/20260916_0457/3000T-F103VC.pfw",
           "size": 96195,
-          "sha256": "a19fbfafa90109df165b931d48d1357b27df2d96c2109cf02863dd588dd2d8d2",
-          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjByR2RyMDAvaWxIYzZXQzh0WTNVYkl6WjNoRjJMUHJHdXlYNklNTnVxSEdiZWVMcDlES2xYQVg1bWIySFdoa1pVTEZiQVlBSmVwMmowYWc5NzNXQ0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM0NDIxCWZpbGU6MzAwMFQtRjEwM1ZDLnBmdwpEakM5VUoyTG1YNmVZUC94Rm5kaW1mNHBvZGR6TFNYeERkVkdIbjhNYm5ZTHdGaXNZL2RXYW9QQ2lZMGpBTXZRaEdNRkxqdTZXUkV1T0hPZFAzQVpCUT09Cg==",
+          "sha256": "0431f31edfeb83eb3bb6fc5bf9d9862c54734cf9f017f7d32d043d584626e37e",
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjg4T3c5Z09wY2prdlJ0NnFCNmdESkZDeE1RRXNCdU1Rb3F5Y0dtTkh3U0VpcERhWDVZUW5rZWkxL1Q5Vi8xS09MM0QvWHBkcWg1dTgyNy9rMFRBUWdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM1MDM2CWZpbGU6MzAwMFQtRjEwM1ZDLnBmdwo5SXJ0cVJ0Mk1ZNTV4aW8yWk5ncERJUE94bjRKREdraXFvNjd6b092QzVLZjBKN2N2MGp6L2psRWdvdU1rdnJKUjJvT2t6UG51WHZ4YjVLZ05OVzdEQT09Cg==",
           "minLayout": 2
         }
       }
@@ -87,26 +87,26 @@
     "4000H": {
       "targets": {
         "F103VB": {
-          "version": "20260916_0446",
+          "version": "20260916_0457",
           "mcu": "F103VB",
           "flashKb": 128,
           "ota": false,
           "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-4000H-F103VB-STLink-Full.bin",
-          "stlinkSha256": "3f325c8d83d38d207e45183bccc6450a0b12b6c190ff68e4a36d56ba286bcac5",
-          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjJUQjBGM2IzMWgyMlhOMStIcUkzd2RYNVZXeC9LU3hjS0pRZ0NjT1VsQ1FkTHVybXhxeW1oc3BMa0xCbEYvd3JSb0J2cmRSUDRrWDhjSHl1NC8yVlFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM0NDMwCWZpbGU6UGFjdG9UZWNoLTQwMDBILUYxMDNWQi1TVExpbmstRnVsbC5iaW4Ka0Z3c2RXK0dETS9ZVHpDcEFZOFNIbUpjSWgrWUhJWG1XUmtDeTU1WjAvd1Y2NzM5Y0ZTQ0grdnc1VkdtdlZwOWFUc0hOa1JaVTJ4REZDMSs4eEtlQ0E9PQo="
+          "stlinkSha256": "90f9a7e01651351b52efa3d00941ecd4d997d6286265fa3df1a5fffc3d843923",
+          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNnphS3F3L2s4Vnl3MENBRlBybW1XbGNlUk9QeGpkSkgxQUdyK2ZDeVVzY1pZYVlXQVI1M1N1QzlaZ3RENVBZcExiVHFhZFE4N1E4dTYwQTZieThkY0FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM1MDQ1CWZpbGU6UGFjdG9UZWNoLTQwMDBILUYxMDNWQi1TVExpbmstRnVsbC5iaW4KSlRraDYzU1Y5NWl0YXl3VUE2TnE3akxudHQveVA0YWhLQ2h1QzRNejdvZTJsdUhsbVR3bnFNMDArQ1N6WnBuYitDVXYxTWhJemtUbVBEdDdYLy91Qmc9PQo="
         },
         "F103VC": {
-          "version": "20260916_0446",
+          "version": "20260916_0457",
           "mcu": "F103VC",
           "flashKb": 256,
           "ota": true,
           "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-4000H-F103VC-STLink-Full.bin",
-          "stlinkSha256": "3f8846e463dfb109cfea978983eafb3ba68a33f453e2d1fb43cdc320af885262",
-          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNnh6RzExNUxneGl6bW9kUzlYazdYcVpvV2FCdjBneGJ1dmQrVWVyU05NWnRHMWhkbHlOR0VpVlBBeWtuOG9OemFiSHBoK0JDZW56MUlFTlRmVC9FNlFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM0NDI5CWZpbGU6UGFjdG9UZWNoLTQwMDBILUYxMDNWQy1TVExpbmstRnVsbC5iaW4Kb29pbGZxN011SDRrSENOcS9CL3RBdzk3dTBrdnlFNU9mWGNiNUUyT1U0QmtwRFk1SFc5QnA5MmZxdG9lTUlLMnhtekMyR2pzWVU4Q2hqRlhRejgzQnc9PQo=",
-          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/4000H-F103VC/20260916_0446/4000H-F103VC.pfw",
+          "stlinkSha256": "c55a2f01de1689327ee7508da9d9a76dd38a652177df476697e23b1382b6beee",
+          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNndCdW1OZTU0SCtQa25XaHFJWkovSjFZV014RmFmanBQdDh5TS9VeDJHejZod0tkdUtsaEJHR3pwMU80bVQ4REtoa0lnVjE2eElvUHdrY2RRejBlcWdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM1MDQzCWZpbGU6UGFjdG9UZWNoLTQwMDBILUYxMDNWQy1TVExpbmstRnVsbC5iaW4KTXREOEcyL2lLdldOZE5uazh2VnNaY0Vzdk5tWDE5L3l6U3RjTUxMNVc0dzVSenVvL0VSQ1dMNUYxM3BWekgweWVIaDZRdkFBKytibjdxbjZtZjAwQ0E9PQo=",
+          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/4000H-F103VC/20260916_0457/4000H-F103VC.pfw",
           "size": 101646,
-          "sha256": "42cb16a950098d93f2e4b53f4b59b659d3f82aed75e556b588eba04b26b6455a",
-          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjRSd1J6VGNWczZqOHo5c2EzeXFWWlB3aXV1aUllZkNjS1RvUUIzQzgvV3ZVZFRaNWVLdWlsOXAwaU9raEtxR1BnV3h2RytBNnphN1FWZGg3NTRYNEFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM0NDI4CWZpbGU6NDAwMEgtRjEwM1ZDLnBmdwpNK2cvSkl1NnVPbjFNbWlxWjRpcWZTRFd2K0FmQ0VNd1lRcFZPODVkVW1Cd3NVRXhUTDRUTXNqUG1kVkNqQUoxc1E5SjExSXNqZjNMbC9mUTdJRE9EZz09Cg==",
+          "sha256": "7701785c6a9ac099f5cf4a88078462a68129e9f0eeaeef017685f125aa61c705",
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjJYdnhoZVYyOVlGcjZZUkJiMzFaQVh6ZjB0cGM3S2NpK3FEd2k4Ny9CblJEN0V1a1I1dXF3b0YvYXF4cXd5THg5enJLN0dZZkpSdnpkZmo5YmQ5cUFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM1MDQyCWZpbGU6NDAwMEgtRjEwM1ZDLnBmdwpMZU5XZXh0OTk0QlExV1M1SW9udTMwQ0R4NVltazZBRzlWeDZVelZibTBzYkxoTTBGaXRUazk1SkFiWlcrRDBWUmJJeUdkSHlSZFRma2JWQkJNU3hEZz09Cg==",
           "minLayout": 2
         }
       }
@@ -114,17 +114,17 @@
     "4000H2": {
       "targets": {
         "F103ZE": {
-          "version": "20260916_0446",
+          "version": "20260916_0457",
           "mcu": "F103ZE",
           "flashKb": 512,
           "ota": true,
           "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-4000H2-F103ZE-STLink-Full.bin",
-          "stlinkSha256": "cd8385e2a324ebb6ab036c0c7dcc0a9b3915ca53d0df0667820f627c958ae2cb",
-          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjB5NGdQaml2K1BERVc0OUR0THVUZjU5Qnl0RUlYeGVBZ1lJL1A5WWJDVFFPcXprME12alRuTkpzTFpvZnluNEw0aHdIbzhNNXU5RFQxd3I3d0dJOEE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM0NDMzCWZpbGU6UGFjdG9UZWNoLTQwMDBIMi1GMTAzWkUtU1RMaW5rLUZ1bGwuYmluCkxLejgybXNCeEg4V3l6ZG1TNVI0M1A0L3VRcTRPaHF2K2d1bnQzcTRMWnliVDg0ODRzYlJRQjRpWHZZN3U3WmR1QTh0SCt1Snc1TFRkRVZDVFhDQUFBPT0K",
-          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/4000H2-F103ZE/20260916_0446/4000H2-F103ZE.pfw",
+          "stlinkSha256": "db5e2907754dae1c232947c225ed1c9e89df4e0fec00f412988a6ffd1f1810d0",
+          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNncrSUtHUDRadGRnd2NpNUlIS0xsMUpSbHBRR1dHQmo1UGt0enUyZmxBV2lScmdrUmhqNk5vTDJKMW1GdlBwcTNLQjdKcnBFemtLSWZRUU5oTUdKMHdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM1MDQ4CWZpbGU6UGFjdG9UZWNoLTQwMDBIMi1GMTAzWkUtU1RMaW5rLUZ1bGwuYmluCnBmWFllOXRwNnFhbzdraEYrdnhQQzY3Tm0vOHRvM244UGpiK0V3VXVQVExneENuV0ZZNUt2WWY1RTluMXNFMUtFWXl3MXpCR2dRR0NXQ1Jqc3B6Q0RRPT0K",
+          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/4000H2-F103ZE/20260916_0457/4000H2-F103ZE.pfw",
           "size": 103330,
-          "sha256": "09aa7f32951db2ee385dbc037547e8845e008bc27253cd43d8fcb31d4c23bc5e",
-          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjJRL2lJeTBObEdZdEg3bHBNK3p5TmtKbUNwMVprekl5cS9UdXRib1NaQjZFZExPbEcwQmpoRjB2RndWSk4xaHBvOWVJRzllbnAzdlJXQmNjWnFha2d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM0NDMyCWZpbGU6NDAwMEgyLUYxMDNaRS5wZncKbGpHQzB2SXNPK3YvZkZ6U2o0S0p2YjZ5V0paSjI5RTBWM1MzQjgzZjNTV0RSYXVpZ0g1K3F3aFpPMkVQNHZIT3IxNHpZMEdoUFJPMVFFWE9kWFkwQnc9PQo=",
+          "sha256": "e286f536a9e27aa549b9635a50fb359c3f5824254f3f8b019a7be3e252fe9890",
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjQybWRKSUdlRVVRS2cxb3VFdmRaLytXbURzZWVMWk5pYjN6SEh2bG9tWFJWSDVYbVNnL1kyTWZlRWx3b1NELzZTeHdJcTFBN24yZEZIZTNJZUFkN3djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM1MDQ2CWZpbGU6NDAwMEgyLUYxMDNaRS5wZncKdkp3bGNrVVA1TFpGVEJSQ1RLb2ZvMHBEZjloSXhUVnFXUEIzV1RwdkNDYUQwcG9nejd5alNiU29GZjhINmROQzlhQlhLM29ORDlvSmw2S2c2Lzg3Q0E9PQo=",
           "minLayout": 2
         }
       }
@@ -132,17 +132,17 @@
     "4000T": {
       "targets": {
         "F103VC": {
-          "version": "20260916_0446",
+          "version": "20260916_0457",
           "mcu": "F103VC",
           "flashKb": 256,
           "ota": true,
           "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-4000T-F103VC-STLink-Full.bin",
-          "stlinkSha256": "77f35383ae157b26b9ec2ca8ea0471603fd3ddd0bc85079a0bc071ed9422773d",
-          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNncxWnpmc1loelFFMTBFQ1I2VW9SUkFZVUZwNHNBTlVYZXlyMEQ2RFhVSEYxVTM5VzNKRDU1YmhLYWxDS2VDVWZ4TFNBYlZyTmhDd2hieTZuV0RwdFE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM0NDI2CWZpbGU6UGFjdG9UZWNoLTQwMDBULUYxMDNWQy1TVExpbmstRnVsbC5iaW4KWk5iWTdxSUJabER0QmoxcW1FQjVTNWQyejNQVVdNNUZ0QUMxeWtDc3F0czRFZUVubXdzZGlzTzIxM2RJSmpmQ0lDSkJoVVJQbzZ4cmkyelU4TFlVQVE9PQo=",
-          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/4000T-F103VC/20260916_0446/4000T-F103VC.pfw",
+          "stlinkSha256": "99e2ce0d266ad82e70a4b91618a67111282ec24365e7375a63cc93461f4fe165",
+          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjBZSHJRQmVkbU10M1N1eTRqdTdnUTlUQjFFelFzTXhNWGd4MWcvWGFPamFmcFZvNDI1Mkk5STZyYyt3ZXNMaVJ2SWsrRUFzZ2t3djdDUEN1RW5oRVE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM1MDQwCWZpbGU6UGFjdG9UZWNoLTQwMDBULUYxMDNWQy1TVExpbmstRnVsbC5iaW4KUmY4RkVaWm8rdmJ4bk9WTFdXaDdlaTVEM1dnblNMZWRqZUVKaGM2akF5WEZ3NngzUzREWjUwT0FUbEY2S1d6Z2pOaExFWUZpK2F2aU1IOHFsbHpQQXc9PQo=",
+          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/4000T-F103VC/20260916_0457/4000T-F103VC.pfw",
           "size": 101862,
-          "sha256": "64fc9294506b21c8466ae28f67110fa34688d2c2a3d8d743c795256bee747e9b",
-          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjlQdmN3MFM4WndLTTVFbGJyejIrbjVnc2sySENrV3ZXK3B6YlBRQXpjSjU4M01tMHRSUXBDL2dvOEVrRDZkMk81Q0JHTHRlR0U5Q2N2UlB2MllaMHd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM0NDI0CWZpbGU6NDAwMFQtRjEwM1ZDLnBmdwptdWNmYzlCR3ZjWEl2dFhqVFdIazdsYXBGTENlRTNXQWd2bWYrekg5NWlFdm1ZOEV5Y1NYUUs3TERWa3NmVG1GbjZxeHBpc1FLQUtwRGRDTmt6VWlEQT09Cg==",
+          "sha256": "3678b8e41b47608a70aa389633f3548460b2ac3a05150c551a4ec73b71b4b5ca",
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNnhSdkxtVm5XWEFCaklHYllpYUI1aUREeUhhZ1dUNEtqOHB0T0lOQTBGa0VZM0Q0WVVzRVUrTTJXTHgxdE9SSUVrUkVFdUc4UDNLQ2NwYnRrdzhPL3c0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM1MDM5CWZpbGU6NDAwMFQtRjEwM1ZDLnBmdwpUNWo1Z0lFb0NNc2ZSOGJkU1pZcjFpMmRyNGhTOU9lOEFUSXFKY3pjVUZYQWo3a0x4cUwwaDMxSjBSbTFRQ2JwSzFYV1lUd2g0OXdlZ1hraUZZVEtCUT09Cg==",
           "minLayout": 2
         }
       }
@@ -150,17 +150,17 @@
     "SNAP2": {
       "targets": {
         "F103VC": {
-          "version": "20260916_0446",
+          "version": "20260916_0457",
           "mcu": "F103VC",
           "flashKb": 256,
           "ota": true,
           "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-SNAP2-F103VC-STLink-Full.bin",
-          "stlinkSha256": "80689fedb890a80d5f092a15161ffd0c16c136b1f158e0bffeda3d3b87f59bd7",
-          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjhyUmFqY1NVQlpLakQvR3BJcE5paCtLTG91eGM4Rzh1TWlLOFFWQTNDaVVWWXU2cW5Mb001cnNCcURjcWlMTU8zZDRLNEhUT0E2U1lTaHh4bGV1ZHc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM0NDM2CWZpbGU6UGFjdG9UZWNoLVNOQVAyLUYxMDNWQy1TVExpbmstRnVsbC5iaW4KM2k3N05UUVhIa3Rla2IyUFZOZEtucGNoRW1hNS8xYzZkSi9hV3ByaXhjdVg5c3NWVnp4ckZFSUg3d2pqQXR4UUxtaVZmRmJhcm9RbkpseHM4VTlNQnc9PQo=",
-          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/SNAP2-F103VC/20260916_0446/SNAP2-F103VC.pfw",
-          "size": 105958,
-          "sha256": "db075e1576fa7ef2757232baef05649f9dd6914ab4f6ec4b4c4e3e3327db9f81",
-          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjlBMmFRS2dHR0xZMlpLcTVHWDlWdE1CclVzbXJ1aGxIWDhTVFFFMGRLTVlSdDVNL0cvd2NBMG9uL2hkUklWdTcrYjZsc0RURmlzTEF4ekZoc3pmYXdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM0NDM1CWZpbGU6U05BUDItRjEwM1ZDLnBmdwpmVURLa0J0SW82eUpWdnBaQWU5dHJ5eUE2QTdqVEJaODlPR2JKMlRpaTN1TkN0MkxLaml3cjJyQUJjOERCaUNvSThEWkVzdC9tNThYeWkwcU1GK0pEZz09Cg==",
+          "stlinkSha256": "c83cebbb8b7a8554ca897ea654c54496b76fa13d7abb5c0b09a1cb674298f61e",
+          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjFkcjBrNndiL1FBb2d6OUZQTTdlQnYxRm0wQUxRZ1JRQ28yR1RlSmVmUzRnUndmQi9IcGdYamlvZGUzeHA4L3F0bWdiaVFoYm1IRFY1eVFUMGliTEFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM1MDUwCWZpbGU6UGFjdG9UZWNoLVNOQVAyLUYxMDNWQy1TVExpbmstRnVsbC5iaW4KVmtheHZidC9qQ2w0VmRrc1hTeUlBS3FFZFhtdjhnU3VWVzhoYitBbG5mS0JTb1RLSmhNOWd3YW52ZWtKZlF3UkNsWWtxQ3pLRFo2ZWVRRDZkM0szREE9PQo=",
+          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/SNAP2-F103VC/20260916_0457/SNAP2-F103VC.pfw",
+          "size": 105948,
+          "sha256": "b52daa4fb0d1135ff9f2c13bc26fa8997098f9f0be58ff6b169047833d68db26",
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjYzZU90cHl6VHU4SXdmdEdFenoyTVFYK2R3U1FCU2htRzgwS2tSU2Y4QVpJYUV4MldwcnVxSXhoTEFlUkZnUCtjdDY4a0hZMzMxaWZwUkswMU44QndrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM1MDQ5CWZpbGU6U05BUDItRjEwM1ZDLnBmdwp0OW50dXRhRU10Z1FxMDloTk5wUjM0a0xBY3NFblVPSGhnTGZCSVhySzRhakJRSk5LWW5PLzFWa2d1QVh4YmtVWFdKdVVaRFVuQ29aTEtTelFZbklCdz09Cg==",
           "minLayout": 2
         }
       }
@@ -168,17 +168,17 @@
     "SNAP4": {
       "targets": {
         "F103VC": {
-          "version": "20260916_0446",
+          "version": "20260916_0457",
           "mcu": "F103VC",
           "flashKb": 256,
           "ota": true,
           "stlink": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-SNAP4-F103VC-STLink-Full.bin",
-          "stlinkSha256": "36a85604aa244f9029d0f6751c60d4394ef534882cfb990e123eb78c466044e0",
-          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNi9nS0Z3Y040SnNndjkwMllLY2dWVy9MN2FvMk5GbFpoNU1qWDJwWWhHZXM0OTI3MjdZYTBtUWVmUFFRS21DeEM0TGoxVkhvRytMWTgrZ2gwUms1L3dZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM0NDM5CWZpbGU6UGFjdG9UZWNoLVNOQVA0LUYxMDNWQy1TVExpbmstRnVsbC5iaW4KV1BIMnprRTRFRlBsZVVOdVdSQmNmYzVWbHVVOVpsRkNWZHhScmFCcTdwVFZGUTZYTTU0QUd5QzVUV2preWtwdERMV0hnZStZK3ROUlhiQXBwTUU3Q3c9PQo=",
-          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/SNAP4-F103VC/20260916_0446/SNAP4-F103VC.pfw",
+          "stlinkSha256": "15c18b8041b70585149373e8ca9c6e85b9ca48f5324d077a44a26702f539e00c",
+          "stlinkSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjc3S3dDUGxRcHgxZHhjbmY2YWFLdGxQV0g0MGo5aEI5TDA4ekUxWWlyZzlmRnMzMEtSb1BUeTlqZXZaanVRTHZYLy9MN3NFQ3ZMVkoyTTZobzM3c2cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM1MDUzCWZpbGU6UGFjdG9UZWNoLVNOQVA0LUYxMDNWQy1TVExpbmstRnVsbC5iaW4KMm13MitQOCs3M0htS1hON2tqVUQwblNiR2YwZE1iTVJWdjFmQXgvOG9kYi9kMEtyaWFCQlZtV1hlcXF0UW1VVm45YnZnQjRqdzludUhhTFp2OFRYQkE9PQo=",
+          "url": "https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/firmware/earlytesting/SNAP4-F103VC/20260916_0457/SNAP4-F103VC.pfw",
           "size": 101862,
-          "sha256": "b939d0315bd41832086f17faf5975bf70343405bd207479d4974d179be65cfaf",
-          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjdyKy9NTmZ3QnJnYWtreE9VZmoyM054T1E3TkorUlYycHFOZUhuYlREZnl2RWM5QVZYbkN1c0E3clNPenZteUNDdGJGSzBndWJ6QnBOeFRubG85akFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM0NDM4CWZpbGU6U05BUDQtRjEwM1ZDLnBmdwpkdWsvM3FSZW5zUERhM0JQMGt1YXVMQjF1c2R0MFNGOFF4NXowUElHajhRWXh4YXJGOG5KOWNJd1VuQVBJbE9nOUlDUTZoR0dUaEFGR3krVnZCRUNBdz09Cg==",
+          "sha256": "55d7da52119a6b07f400719f809e6e1ec5757ec8c75e64cb50501eb532d87cda",
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNnlyZmQzWDZjTERRUi8veEp5bGpDVnJ5TTVPaGFHaFNMcXB2blFzVHFlbXJ6TlpjV2FiTk9UU2J4NUNXTkZ5RlJ2QnRBQ1FhWC8zd1dGS2N2RWorSlF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NTM1MDUyCWZpbGU6U05BUDQtRjEwM1ZDLnBmdwpIM2FEWUF1bjNOMkFEZGt5MWNXU2YvTkV6emF0NVBxZURxZHlhWXNTOE4yc2s5SkJLSUxSSU9Pa0cyamtWcFhlb0FqZ2VHeWpZQ0JNTFBKMWhkTVRDdz09Cg==",
           "minLayout": 2
         }
       }
