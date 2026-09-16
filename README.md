@@ -9,18 +9,39 @@
 > It's perfect if you're happy to try new things and let us know how it goes.
 > Thanks for helping us test! 🙌
 
-Welcome! This is the home for the **Pacto Tech Utility** — the free app for
-setting up your Pacto arcade controller — and the **firmware** that runs on the
-boards. Install the app once and it keeps both itself and your controller up to
-date for you.
+Welcome! This is the home for the **Pacto Tech Utility** — the free Windows app
+for setting up your Pacto arcade controller — the **firmware** that runs on the
+boards, and the **PactoTech Control Test**, a full-screen input tester for
+arcade cabinets. Install the Utility once and it keeps both itself and your
+controller up to date for you.
 
-## Get the app (Windows) — Early Testing
+## Which download do I need?
 
-### ➡️ [Download the Pacto Tech Utility (Early Testing)](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-Utility-Setup.exe)
+| You are… | Download this | Why |
+|---|---|---|
+| **A Pacto owner** (most people) | ➡️ **[Pacto Tech Utility installer](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-Utility-Setup.exe)** | Configures the board, updates the firmware, shows mode banners on screen, **and includes the full Control Test** on its *Test & Log* page (open it full screen from there). You do not need anything else. |
+| **Building a cabinet or front end**, doing a lot of hardware work, or you **don't own a Pacto board (yet)** | ➡️ **[PactoTech Control Test (stand-alone zip)](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest.zip)** | One portable `.exe` you can add to CoinOps / RetroFE / LaunchBox / any front end as a "game": every controller, mouse, trackball, light gun, keyboard and MIDI device on the PC, the XInput / DirectInput player order, polling rates, mouse speed graphs with 8-bit clipping detection, and (with a Pacto board) the arcade panel in its current mode. The zip also holds a front-end logo, a background image and a ready-made CoinOps entry. |
 
-Run the installer and you're ready to go — the app keeps itself updated on the
-**Early Testing** channel from then on. You can also browse
-[everything on the Early Testing release page](https://github.com/leecyrille/PactoTech_Public_Releases/releases/tag/earlytesting).
+The Utility and the stand-alone tester have the **same test features**. The
+stand-alone build exists for people who want the tester as a launchable item on
+a cabinet, or who have no Pacto hardware at all — it is useful for checking any
+arcade encoder, trackball or light gun.
+
+### New to GitHub? Here is how downloading works
+
+1. Click one of the **➡️ links above** — the file downloads straight away, like
+   any other download. (No account, no sign-up, nothing to "clone".)
+2. If your browser asks whether to keep the file, choose **Keep** — the files
+   here are signed by us and the app only ever installs signed updates.
+3. **Utility:** double-click `PactoTech-Utility-Setup.exe` and follow the
+   installer. It lives in the system tray afterwards and updates itself.
+4. **Control Test:** right-click `PactoTech-ControlTest.zip` → **Extract All…**,
+   then double-click `PactoTech-ControlTest.exe`. It opens full screen; hold
+   **ESC** (or **START+BACK** on a pad) to leave. `README.txt` inside explains
+   the logo, the background and the CoinOps folder.
+5. Want to see every file, older versions, or the firmware images? Open the
+   [Early Testing release page](https://github.com/leecyrille/PactoTech_Public_Releases/releases/tag/earlytesting)
+   and scroll down to **Assets** — that list is the downloads.
 
 > 💡 Because this is an Early Testing build, if you spot anything odd we'd
 > genuinely love to hear about it — that feedback is exactly what it's for.
