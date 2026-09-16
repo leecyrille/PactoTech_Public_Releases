@@ -451,5 +451,25 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20260916_0548",
+    "date": "2026-09-15",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "New DirectInput identity: the USB identity setting now has a third choice, DirectInput (HID gamepads), next to XInput (PC) and Console. It behaves exactly like XInput mode - same player order, modes, turbo, 8-to-6, keyboard mode and mode switching - but the board shows up as ordinary HID game controllers instead of Xbox controllers, for games and emulators that do not use XInput or when you have more than four players. Apply it from the Utility as you would the console identity (the board reboots; it comes back in about 15 seconds). Turbo now verified working inside keyboard mode (keys pulse at the turbo rate). Firmware fixes: on 2-player boards the \"turbo off\" shortcut (P1 START + DOWN) turned turbo ON; and two unset turbo flags could randomly drop the board out of keyboard mode. Control Test: the full-screen tester now stays in front of CoinOps / RetroFE (it used to run hidden behind the wheel) and writes PactoTech-ControlTest.log next to the exe for support.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
