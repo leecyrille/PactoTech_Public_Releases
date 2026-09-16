@@ -411,5 +411,25 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Utility: keyboard-map read-out for the new PactoTech Control Test app. The local agent API gains a read-only GET /agent/kbmap route (both profiles, 4 headers x 18 inputs) so the full-screen Control Test app can draw the arcade panel with each button's key while the Utility is running. No behaviour change otherwise."
+  },
+  {
+    "version": "20260916_0446",
+    "date": "2026-09-15",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "Utility: Control Test built in, and 8-to-6 now works inside keyboard mode. The Test & Log page has a new Control test section: a live view of every controller, mouse, trackball, light gun, keyboard and MIDI device on the PC, the XInput / DirectInput / SDL player order, polling rates, mouse speed graphs with 8-bit clipping detection, and this board's arcade panel in its current mode (2 player, 4 player, twin stick, 8-to-6, keyboard mode with every button's key). It flags a controller that takes a player position ahead of the Pacto board, with the advice to manage it through the DongleMaster. Open full screen or in a window from the same page; hold ESC or START+BACK to leave. Firmware: the 8-to-6 button shortcut no longer drops the board out of keyboard mode, so 8-to-6 switches the keyboard map while you stay in keyboard mode (the pin and the Utility already did).",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
