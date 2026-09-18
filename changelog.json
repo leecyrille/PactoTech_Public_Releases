@@ -499,5 +499,12 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Control Test (Test & Log page): empty XInput slots are hidden instead of dimmed; the arcade panel keeps working when another controller took an earlier player position - it turns red, explains that the controls are not properly enumerated (use a DongleMaster, or cycle keyboard mode and back) and says so out loud; each mouse, trackball or light gun now shows its full name and details with its speed graph."
+  },
+  {
+    "version": "20260918_0442",
+    "date": "2026-09-17",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "Control Test (Test & Log page): mouse / trackball speed graphs now plot every single report instead of one point per screen frame, and get more room; each device's full name and details sit with its graph; a Pacto encoder that is not in player position 1 is flagged even when the position ahead of it is empty."
   }
 ]
