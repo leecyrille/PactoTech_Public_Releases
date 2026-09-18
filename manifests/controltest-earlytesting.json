@@ -1,10 +1,10 @@
 {
-  "version": "20260918_0330",
-  "pub_date": "2026-09-18T03:34:01Z",
-  "notes": "PactoTech Control Test 20260918_0330 (earlytesting): stand-alone full-screen input tester. Release zip layout: exe + README + logo + background + CoinOps folder. Auto-update, settings file + editor, tones, hide-panel option.",
+  "version": "20260918_0349",
+  "pub_date": "2026-09-18T03:53:08Z",
+  "notes": "PactoTech Control Test 20260918_0349 (earlytesting): stand-alone full-screen input tester. Keyboard mode panel: Enter and keypad Enter are told apart (a far-left Enter button no longer lights the far-right keypad-Enter cell).",
   "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest.zip",
-  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260918_0330.zip",
-  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260918_0330.exe",
-  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNnhzYklvZnIzejdMeFFsZVZuZE53blE5aVlJbVppRXhRTEZMSFFLdEp5ZXJyS2p2UklkMWF1UG5JWW1VZURPU09UTkhZN3BXMFFSemVVUEw2OXVwalFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NzAyNDIyCWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQp1NmZURFd0REJqdE9FYWhndVNlajUvTTh6Z2ZPU0swRmFRYStIMmROWEVhOWZMcktNSDFlMHlxV2hySXliTzBXWjVGRmViR0FRbjd1OWNCU0M5UmtDZz09Cg==",
+  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260918_0349.zip",
+  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260918_0349.exe",
+  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNnpxNXhBTTlwSHBNZUJiL1ZwMWRIWDI4OVU2SmllZTQ2NjloZUJBNGpOYVAvQVZjWjZqWTNKcVF0a25vR3ZJRDhLNVpPenlBd0NKQUFTTE1pOEZCWXdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NzAzNTc0CWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQpEa0FqaVRBU3pTZUVsazI0Z3BjM01rNzFXNTJJb1dDWHZNcDhNclY4Zm16eXFGSEQwaFNzM0pRTVkxRkVNVGRuUlRyWmI3bGRqdEFWc2V4VlBNcFVEZz09Cg==",
   "exe_size": 6236160
 }
