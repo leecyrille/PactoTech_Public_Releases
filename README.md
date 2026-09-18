@@ -20,7 +20,7 @@ controller up to date for you.
 | You are… | Download this | Why |
 |---|---|---|
 | **A Pacto owner** (most people) | ➡️ **[Pacto Tech Utility installer](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-Utility-Setup.exe)** | Configures the board, updates the firmware, shows mode banners on screen, **and includes the full Control Test** on its *Test & Log* page (open it full screen from there). You do not need anything else. |
-| **Building a cabinet or front end**, doing a lot of hardware work, or you **don't own a Pacto board (yet)** | ➡️ **[PactoTech Control Test (stand-alone zip)](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest.zip)** | One portable `.exe` you can add to CoinOps / RetroFE / LaunchBox / any front end as a "game": every controller, mouse, trackball, light gun, keyboard and MIDI device on the PC, the XInput / DirectInput player order, polling rates, mouse speed graphs with 8-bit clipping detection, and (with a Pacto board) the arcade panel in its current mode. The zip also holds a front-end logo, a background image and a ready-made CoinOps entry. |
+| **Building a cabinet or front end**, doing a lot of hardware work, or you **don't own a Pacto board (yet)** | ➡️ **[PactoTech Control Test (stand-alone zip)](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest.zip)** | One portable `.exe` you can add to CoinOps / RetroFE / LaunchBox / any front end as a "game": every controller, mouse, trackball, light gun, keyboard and MIDI device on the PC, the XInput / DirectInput player order, polling rates, mouse speed graphs with 8-bit clipping detection, and (with a Pacto board) the arcade panel in its current mode. It updates itself in the background (switch that off in the settings file it creates next to itself, or with the "PactoTech Control Test Settings" shortcut it creates). The zip also holds a front-end logo, a background image and a ready-made CoinOps entry. |
 
 The Utility and the stand-alone tester have the **same test features**. The
 stand-alone build exists for people who want the tester as a launchable item on
@@ -38,7 +38,7 @@ arcade encoder, trackball or light gun.
 4. **Control Test:** right-click `PactoTech-ControlTest.zip` → **Extract All…**,
    then double-click `PactoTech-ControlTest.exe`. It opens full screen; hold
    **ESC** (or **START+BACK** on a pad) to leave. `README.txt` inside explains
-   the logo, the background and the CoinOps folder.
+   the logo, the background, the CoinOps folder and the settings file (auto-update, sounds, panel).
 5. Want to see every file, older versions, or the firmware images? Open the
    [Early Testing release page](https://github.com/leecyrille/PactoTech_Public_Releases/releases/tag/earlytesting)
    and scroll down to **Assets** — that list is the downloads.
