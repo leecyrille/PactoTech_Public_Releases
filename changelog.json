@@ -506,5 +506,12 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Control Test (Test & Log page): mouse / trackball speed graphs now plot every single report instead of one point per screen frame, and get more room; each device's full name and details sit with its graph; a Pacto encoder that is not in player position 1 is flagged even when the position ahead of it is empty."
+  },
+  {
+    "version": "20260918_0451",
+    "date": "2026-09-17",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "Control Test (Test & Log page): controller cards show all of their details (the line wraps instead of being cut off), pads that only report on change (Xbox pads) get a \"Hz while active\" poll rate, and the rumble test is a full-strength 800 ms pulse with a visible glow on the card."
   }
 ]
