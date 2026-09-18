@@ -1,10 +1,10 @@
 {
-  "version": "20260918_0417",
-  "pub_date": "2026-09-18T04:20:10Z",
-  "notes": "PactoTech Control Test 20260918_0417 (earlytesting): stand-alone full-screen input tester. Empty XInput slots are hidden; the arcade panel keeps working when another controller took an earlier player position (red outline, message and spoken warning); each mouse/trackball's details now sit with its speed graph.",
+  "version": "20260918_0442",
+  "pub_date": "2026-09-18T04:45:26Z",
+  "notes": "PactoTech Control Test 20260918_0442 (earlytesting): stand-alone full-screen input tester. Mouse speed graphs now plot every report (full resolution) and get more height; each device's details sit with its graph; an encoder that is not in player position 1 is flagged even when the slot ahead is empty.",
   "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest.zip",
-  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260918_0417.zip",
-  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260918_0417.exe",
-  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNnlVZG8vd0xWbjdXdFBQMjhTeGZPWkhIcXd5UmJSVHMxRTdSZU45MGgvL2xmUkRDcys2c0FSczllamh1c2x4MWtnNHY4NTVIS0FRWi9ScDF2MmdIdGdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NzA1MTk2CWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQphQlJQRDFQWWlWblNHekdoRVljdmFKbnR5TnVjYmdHdldSUlFzcmIvcWRKU0Z6NWhhN3RKZ3duWDZBeVB0d1VGVmdPdlZ5MzRudWRuRXgzV2V1QklCdz09Cg==",
-  "exe_size": 6236160
+  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260918_0442.zip",
+  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260918_0442.exe",
+  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNis5SDZQSFowOVZ1d3dXeWR5a3QxcGxWQ01FZnRZbjMrMkFzRVZOTnpzWVhDZlIzNE0zcFNyNjdES2NiQVVMVkZkT3g0VFFPOXd6WFpqMVd4RldPL2dzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NzA2NzA5CWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQpPOHJNdlFFSkpTOTdvSnMyaVRCVi9kRm1mbUtlTHRYVmtDL0VjZ2NYWXhKYTBhcmNJTmwyMlE0OStmYkYyNExvWDhwbGtZNGVnbTBOUzdPUS9mUGdDQT09Cg==",
+  "exe_size": 6242816
 }
