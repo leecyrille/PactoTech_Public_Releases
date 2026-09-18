@@ -478,5 +478,12 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Test page voice: announcements are now short - \"P 1 A\", \"P 2 L T\" - instead of \"Player 1 A\", and the Control Test no longer speaks a start-up phrase. Control Test: shows a note when the connected board's firmware does not report everything the tester can display (mode, button remap tables, keyboard-mode key map) and points you to the firmware update in the Configurator; the full-screen tester only holds the screen for the first few seconds after a front end launches it, so Alt+Tab works normally afterwards."
+  },
+  {
+    "version": "20260918_0311",
+    "date": "2026-09-17",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "Control Test arcade panel: BACK is now drawn on the left and START on the right, matching the physical panel."
   }
 ]
