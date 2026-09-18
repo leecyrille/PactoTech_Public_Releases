@@ -1,10 +1,10 @@
 {
-  "version": "20260918_0324",
-  "pub_date": "2026-09-18T03:27:46Z",
-  "notes": "PactoTech Control Test 20260918_0324 (earlytesting): stand-alone full-screen input tester. Auto-update (background, restart when ready; off via the settings file), settings file + editor, tones option, hide-panel option, header update status.",
+  "version": "20260918_0330",
+  "pub_date": "2026-09-18T03:34:01Z",
+  "notes": "PactoTech Control Test 20260918_0330 (earlytesting): stand-alone full-screen input tester. Release zip layout: exe + README + logo + background + CoinOps folder. Auto-update, settings file + editor, tones, hide-panel option.",
   "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest.zip",
-  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260918_0324.zip",
-  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260918_0324.exe",
-  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNnp6V3R1QWttN0w2TW9wK0d0N2lKa0FwYkN2cFZmZEttSGlVSy81dlFEZHdwdGhIOGU3bGdsZ0R6Mk9yZnU3U0FneWlRNlpxYjdDY2RPMEJoTWh6ZndNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NzAyMDQ4CWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQpLREJDSXo0aThuOGdOUkwrRmVFVzQ0bkVsZyt4aU90TVo3ZGJuRHJKZE8rU1U4VktZeG9nRk5iY0lhUmZ3d3NCZGZuWWpObTVNaHk4YVlYUmJ3UFVDQT09Cg==",
+  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260918_0330.zip",
+  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260918_0330.exe",
+  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNnhzYklvZnIzejdMeFFsZVZuZE53blE5aVlJbVppRXhRTEZMSFFLdEp5ZXJyS2p2UklkMWF1UG5JWW1VZURPU09UTkhZN3BXMFFSemVVUEw2OXVwalFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NzAyNDIyCWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQp1NmZURFd0REJqdE9FYWhndVNlajUvTTh6Z2ZPU0swRmFRYStIMmROWEVhOWZMcktNSDFlMHlxV2hySXliTzBXWjVGRmViR0FRbjd1OWNCU0M5UmtDZz09Cg==",
   "exe_size": 6236160
 }
