@@ -53,6 +53,16 @@
     Show early-testing releases</label>
   <div class="entry earlytesting">
     <div class="head">
+      <span class="ver">20260918_0504</span>
+      <span class="chip earlytesting">earlytesting</span>
+      <span class="chip both">App + Firmware</span>
+      <span class="boards">1000T-F103VC · 2000H-F103VB · 2000H-F103VC · 2000T-F103VC · 3000T-F103VC · 4000H-F103VB · 4000H-F103VC · 4000H2-F103ZE · 4000T-F103VC · SNAP2-F103VC · SNAP4-F103VC</span>
+      <span class="date">2026-09-17</span>
+    </div>
+    <div class="notes"><p>Firmware fix: in the analog stick modes, holding DOWN and LEFT together produced no output (every other direction and d-pad mode were fine). Cause: the full-scale DOWN+LEFT corner is the one place both axes reach -32768, and the stick merge arithmetic overflowed there. Fixed on all boards; verified on the bench. Utility: controller cards show every detail, a poll rate for pads that only report on change, and a stronger rumble test with a visible glow.</p></div>
+  </div>
+  <div class="entry earlytesting">
+    <div class="head">
       <span class="ver">20260918_0451</span>
       <span class="chip earlytesting">earlytesting</span>
       <span class="chip app">App</span>
