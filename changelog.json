@@ -485,5 +485,12 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Control Test arcade panel: BACK is now drawn on the left and START on the right, matching the physical panel."
+  },
+  {
+    "version": "20260918_0350",
+    "date": "2026-09-17",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "Control Test (Test & Log page): in keyboard mode the arcade panel now tells the plain Enter key and the keypad Enter key apart, so a button mapped to Enter no longer also lights the button mapped to keypad Enter (the keyboard strip already showed them correctly)."
   }
 ]
