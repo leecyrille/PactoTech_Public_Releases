@@ -492,5 +492,12 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Control Test (Test & Log page): in keyboard mode the arcade panel now tells the plain Enter key and the keypad Enter key apart, so a button mapped to Enter no longer also lights the button mapped to keypad Enter (the keyboard strip already showed them correctly)."
+  },
+  {
+    "version": "20260918_0417",
+    "date": "2026-09-17",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "Control Test (Test & Log page): empty XInput slots are hidden instead of dimmed; the arcade panel keeps working when another controller took an earlier player position - it turns red, explains that the controls are not properly enumerated (use a DongleMaster, or cycle keyboard mode and back) and says so out loud; each mouse, trackball or light gun now shows its full name and details with its speed graph."
   }
 ]
