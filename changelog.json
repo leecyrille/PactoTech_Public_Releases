@@ -540,5 +540,12 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Automatic updates: a new \"When automatic updates are installed\" choice under the two auto-update switches (both still off by default). \"At start-up only\" installs in the first minutes after the Utility starts and never while a game is running; \"Live\" installs as soon as a 15-minute check finds a newer app or controller firmware, even mid-game - for testing new builds on a cabinet."
+  },
+  {
+    "version": "20260918_0547",
+    "date": "2026-09-17",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "Control Test (Test & Log page): the mouse speed graphs move the way they did before (one point per frame) - the previous build cleared them instantly - with thinner lines and smaller labels."
   }
 ]
