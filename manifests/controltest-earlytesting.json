@@ -1,10 +1,10 @@
 {
-  "version": "20260919_0347",
-  "pub_date": "2026-09-19T03:51:10Z",
-  "notes": "PactoTech Control Test 20260919_0347 (earlytesting): stand-alone full-screen input tester. Dino battle: sound effects for every action; the shooting gallery puts up one CPU dino per shooter (up to 12 mice / light guns, each with its own crosshair colour and score); header buttons no longer overlap.",
+  "version": "20260919_0356",
+  "pub_date": "2026-09-19T03:59:43Z",
+  "notes": "PactoTech Control Test 20260919_0356 (earlytesting): stand-alone full-screen input tester. Gamepads that also carry a mouse interface (8BitDo 2.4G / Bluetooth receivers) no longer show up as pointing devices until that interface actually moves; when it does, it is labelled as the gamepad's mouse interface.",
   "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest.zip",
-  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0347.zip",
-  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0347.exe",
-  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNituRFBucVVwaTJab295MzAzOFhLWWVOQzdLMGViVWxDaG9mVEI0SGc1TVp4aUplOEYraGRqcDdsOWhybnFmSVA5YjBaZ0U2dFU1RGozL2k0MFRPVkFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5Nzg5ODU1CWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQpIQnpacUZHRUFVMzFSWGNIdjJxWkpNaGNuY3hsV3pmdEZzemIxWk9DSCt3TDZ5V3VEZTdSL3E2OGtHOVpuVHA0K05XWGhoaTI5NlYzUGpEaUZjNjhEZz09Cg==",
+  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0356.zip",
+  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0356.exe",
+  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjRZSkZveWk0Tm1FL2ZoVFo3ZVdkbVliQ0I5SHY5Um9lcVNhQmFESVBtbmc2N0VuUXU2VkZ1aDI5dU9KdGZ4ejFKWDZRRFFGZXR0NkV1YVVtNXNtQ2cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NzkwMzY4CWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQo2OXhIQnEwZVMxa3dkdHFSZEJwMWs2TG1IRytrWUV6eGEweVNVeGYxSVJnUHZxQS9Db0JxN2NENUIrM3lPY3ZidkJ6RVRPbWtHY2Q0SW82RW50WTNDQT09Cg==",
   "exe_size": 6253568
 }
