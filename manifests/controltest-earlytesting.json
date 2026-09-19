@@ -1,10 +1,10 @@
 {
-  "version": "20260919_0240",
-  "pub_date": "2026-09-19T02:43:55Z",
-  "notes": "PactoTech Control Test 20260919_0240 (earlytesting): stand-alone full-screen input tester. Arcade panel: the board's mode-input pin states are listed to the right of the stations (needs firmware 20260918 or newer; hidden otherwise).",
+  "version": "20260919_0255",
+  "pub_date": "2026-09-19T02:59:17Z",
+  "notes": "PactoTech Control Test 20260919_0255 (earlytesting): stand-alone full-screen input tester. Dino battle: a tiny dinosaur per controller appears when you touch it and fights the others with every button (A jump, B fireball, X bite, Y tail spin, LB roar, RB charge, LT shield, RT run, START taunt, BACK egg, GUIDE hide); mice, trackballs and light guns shoot with their crosshair. Switch it off in the settings if you want a plain tester. Mode-input pin states next to the arcade panel (firmware 20260919 or newer).",
   "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest.zip",
-  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0240.zip",
-  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0240.exe",
-  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjR0bXBrcGxhZ25iVWxvY2Faam9tOEZJcUxrcEFnTnkwdEt0TEVISzFtUW9icmNHUVIrdHpZV0VjOW9uUnNocmNMQVNibkJDMXVSaUUrV05nUjZFM2dvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5Nzg1ODE1CWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQpnNnYxMEc2UlhTOC92OC9WdVIvNFhMTGxBejJrTHFjSE5kRDdWUGZmeWlEUUpKRE13ejZPZ1VvTkVYcjF5dytmamxrQ2lWc1F6VmtqWmpCTmU1TDFEZz09Cg==",
-  "exe_size": 6246400
+  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0255.zip",
+  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0255.exe",
+  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjRsVGdiU01uS2FzMmw4TXpHMjRHTTYxdUdSV1FnMjU3U2hESmNNb0NTRmVreDNjbG1GSkhDRFFrUWhXWm90bDE1b0JNL3M4WmpGYWJ2VkcrYU5wTlFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5Nzg2NzQyCWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQo1MHNuS0xSWjJMckZEWkE1ZEhJN2dYcHUrZDY5cFpENGNYRzh3VUg3Nll2K0lmMGYrTlVvWkNpV3JOSEZFd3J0YmI5bGxsdFRES3M0WjYwWVBObllDdz09Cg==",
+  "exe_size": 6255104
 }
