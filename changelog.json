@@ -629,5 +629,12 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Control Test (Test & Log page): controllers on wireless receivers stay listed by Windows after the pad is switched off; their card now dims after 45 s without any input and says so."
+  },
+  {
+    "version": "20260919_0506",
+    "date": "2026-09-18",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "Control Test (Test & Log page): the rumble test now stops the motors on every slot when the pulse ends and whenever pads re-enumerate, so a controller can no longer be left rumbling."
   }
 ]
