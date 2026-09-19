@@ -622,5 +622,12 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "The on-screen overlays are more opaque (corner badge 80 percent, centre banner 95 percent; installs still on the old defaults are lifted automatically - your own values are kept). Control Test: an encoder interface can no longer show up twice (as an XInput player and again as a slot-less pad); slot-less interfaces are identified by what they actually send and labelled with their board interface number."
+  },
+  {
+    "version": "20260919_0447",
+    "date": "2026-09-18",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "Control Test (Test & Log page): controllers on wireless receivers stay listed by Windows after the pad is switched off; their card now dims after 45 s without any input and says so."
   }
 ]
