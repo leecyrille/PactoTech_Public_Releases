@@ -53,6 +53,16 @@
     Show early-testing releases</label>
   <div class="entry earlytesting">
     <div class="head">
+      <span class="ver">20260919_1954</span>
+      <span class="chip earlytesting">earlytesting</span>
+      <span class="chip both">App + Firmware</span>
+      <span class="boards">1000T-F103VC · 2000H-F103VB · 2000H-F103VC · 2000T-F103VC · 3000T-F103VC · 4000H-F103VB · 4000H-F103VC · 4000H2-F103ZE · 4000T-F103VC · SNAP2-F103VC · SNAP4-F103VC</span>
+      <span class="date">2026-09-19</span>
+    </div>
+    <div class="notes"><p>Pacto 3000T firmware now works. The 3-player board was missing its entire 3-player code path: it appeared on the PC as three Xbox 360 controllers but never actually sent any input, and none of its mode pins or 8-second shortcuts did anything. This release adds the full 3-player mode engine and report path, so a 3000T now behaves like the rest of the range: player-order modes (2 Player = 1,3,2 cabinet order by default, 3 Player = 1,2,3), the three stick output modes (Fast Analog, Slow Analog, D-Pad), single-player Twinstick (cabinet sticks 1 and 2 both drive the left stick so you can use left+right or middle+right, stick 3 drives the right stick), Turbo, 8-to-6 conversion, Interlock and Disconnect mode. A new 3000T user manual is included. Every board variant was re-verified on real hardware for this build: 3000T 145/145, 4000T 170/170, 2000T 123/123, 2000H 126/126, 4000H 172/172, 1000T 97/97. No behaviour changes on any board other than the 3000T.</p></div>
+  </div>
+  <div class="entry earlytesting">
+    <div class="head">
       <span class="ver">20260919_1601</span>
       <span class="chip earlytesting">earlytesting</span>
       <span class="chip both">App + Firmware</span>
