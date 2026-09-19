@@ -1,10 +1,10 @@
 {
-  "version": "20260919_0447",
-  "pub_date": "2026-09-19T04:50:25Z",
-  "notes": "PactoTech Control Test 20260919_0447 (earlytesting): stand-alone full-screen input tester. Controllers on wireless receivers stay listed by Windows after the pad is switched off; their card now dims after 45 s without any input and says so.",
+  "version": "20260919_0506",
+  "pub_date": "2026-09-19T05:09:39Z",
+  "notes": "PactoTech Control Test 20260919_0506 (earlytesting): stand-alone full-screen input tester. Rumble test: the motors are now stopped on every slot when the pulse ends and whenever pads re-enumerate, so a controller can no longer be left rumbling.",
   "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest.zip",
-  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0447.zip",
-  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0447.exe",
-  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNnh0WGxHdDdYc2ZqZXIrQlhxNng2cEtaeTJ3amgwemZ5ZTBkRHJMRWh1NnZXZUN6N2lRQ2ZGYVUwNFIxcGROVEpHRnlnRGlTblFJYnFseUI1eWJ2eGc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NzkzNDExCWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQpCQXRGQkRQWnJ3NXNmK3F6VWk1c2NrVzhrN3FRV0syUXQyZENJS09tcnZjT1hUeU9QNWthVHAxeWo2dks1MDBDTU53MCtDUWR5N21vRy9sZXd4UzNEQT09Cg==",
-  "exe_size": 6257664
+  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0506.zip",
+  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0506.exe",
+  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNno0NjkxYnlTUlRQakpSeFQyR0FCRFFGV2VuUkFKbTd4TlA0M0NkRWxVNFlNY3pYbkhJUnJ1WnplWUhDWU5HSGpkMU9Lb0VPeEtKU1dWRU9udlp2Z1FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5Nzk0NTYzCWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQpBTzM4eFRKZHRQZ1p5RFBtSFFZT1hpL2FuVTdoK1NyUWxwOUhxTTYzWDVuM2ZUY0xwWFhmcnRvcWdCTlI5OGJZQThpZndtdWorYllGcEZycWRuaGFEZz09Cg==",
+  "exe_size": 6258688
 }
