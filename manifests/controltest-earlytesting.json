@@ -1,10 +1,10 @@
 {
-  "version": "20260919_0506",
-  "pub_date": "2026-09-19T05:09:39Z",
-  "notes": "PactoTech Control Test 20260919_0506 (earlytesting): stand-alone full-screen input tester. Rumble test: the motors are now stopped on every slot when the pulse ends and whenever pads re-enumerate, so a controller can no longer be left rumbling.",
+  "version": "20260919_0548",
+  "pub_date": "2026-09-19T05:51:18Z",
+  "notes": "PactoTech Control Test 20260919_0548 (earlytesting): stand-alone full-screen input tester.",
   "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest.zip",
-  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0506.zip",
-  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0506.exe",
-  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNno0NjkxYnlTUlRQakpSeFQyR0FCRFFGV2VuUkFKbTd4TlA0M0NkRWxVNFlNY3pYbkhJUnJ1WnplWUhDWU5HSGpkMU9Lb0VPeEtKU1dWRU9udlp2Z1FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5Nzk0NTYzCWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQpBTzM4eFRKZHRQZ1p5RFBtSFFZT1hpL2FuVTdoK1NyUWxwOUhxTTYzWDVuM2ZUY0xwWFhmcnRvcWdCTlI5OGJZQThpZndtdWorYllGcEZycWRuaGFEZz09Cg==",
+  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0548.zip",
+  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0548.exe",
+  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjJRUmljZk5LMUNNbVFzNlZ4dDcrMlhwRkJibklSVzNTYVdNNDBBRVZhalRCUXNPU0dPY01XdjBtMWUrWWpFQlZaSmtjak9IeFVKMzBweG4vMDhDUmdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5Nzk3MDYzCWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQp6Y3ZONnh3VW9zWDVSL0xFc21MMS9kQnpSaWQ4c3NDWlhEdXdRRzRCa2RYdFVWMjNscWRPMGRjM0NKZTg4OGVLWjJGMHRzMHplK1ZGY25ESVNXbElCUT09Cg==",
   "exe_size": 6258688
 }
