@@ -547,5 +547,25 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Control Test (Test & Log page): the mouse speed graphs move the way they did before (one point per frame) - the previous build cleared them instantly - with thinner lines and smaller labels."
+  },
+  {
+    "version": "20260919_0240",
+    "date": "2026-09-18",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "Firmware: the board now reports the state of every mode-input pin (2P/4P/twin stick, d-pad/analog fast/slow, turbo, 8to6, interlock, keyboard/DIS, right stick, pinball, shift) to the PC. Utility: the Test & Log page's Control Test lists those pin states to the right of the arcade panel (needs this firmware), and the agent API exposes them as status.pins.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
