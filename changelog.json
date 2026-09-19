@@ -601,5 +601,12 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Control Test (Test & Log page): the Dino battle has sound effects for every action, the shooting gallery puts up one CPU dino per shooter (up to 12 mice / light guns), and the tester header buttons no longer overlap."
+  },
+  {
+    "version": "20260919_0357",
+    "date": "2026-09-18",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "Control Test (Test & Log page): gamepads that also carry a mouse interface (8BitDo 2.4G / Bluetooth receivers) no longer show up as pointing devices until that interface actually moves."
   }
 ]
