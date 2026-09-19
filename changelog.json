@@ -587,5 +587,12 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20260919_0341",
+    "date": "2026-09-18",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "Control Test (Test & Log page): the Dino battle is now off until you press the Dino battle button in the tester header or hold A + B for 3 s on any controller (the Settings switch is gone). Play alone for 20 s and the PC takes another dino and comes after you, gently; shoot with a mouse or light gun while no controller is in use and four CPU dinos run around for you to hit."
   }
 ]
