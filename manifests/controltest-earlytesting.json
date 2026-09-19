@@ -1,10 +1,10 @@
 {
-  "version": "20260919_0431",
-  "pub_date": "2026-09-19T04:35:37Z",
-  "notes": "PactoTech Control Test 20260919_0431 (earlytesting): stand-alone full-screen input tester. An encoder interface can no longer show up twice (as an XInput player and again as a slot-less pad): slot-less interfaces are identified by what they actually send, and are labelled with their board interface number.",
+  "version": "20260919_0447",
+  "pub_date": "2026-09-19T04:50:25Z",
+  "notes": "PactoTech Control Test 20260919_0447 (earlytesting): stand-alone full-screen input tester. Controllers on wireless receivers stay listed by Windows after the pad is switched off; their card now dims after 45 s without any input and says so.",
   "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest.zip",
-  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0431.zip",
-  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0431.exe",
-  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjgrWW43V3lkT1hLbi9IWVIzd2RWckR1WFYvendreWtLQXlCT3dqMTd1MWV0aWhWaXNabE5nVEkxbmF5QUhoeGR4UXFHaHZOVWVMRUxJNVhtcGRWdkFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NzkyNTE0CWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQp0N29Ia3FWa3FZb1dhd1dzQXg2UVZSdEVpTHhiNFluQkVUUVNCMG02amJRUzJRYlJmMzFIOWlOcStxV2ZGQllWYWN0RTBOQ0ZHMlN6VWl0dkdPQ0tDUT09Cg==",
+  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0447.zip",
+  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0447.exe",
+  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNnh0WGxHdDdYc2ZqZXIrQlhxNng2cEtaeTJ3amgwemZ5ZTBkRHJMRWh1NnZXZUN6N2lRQ2ZGYVUwNFIxcGROVEpHRnlnRGlTblFJYnFseUI1eWJ2eGc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NzkzNDExCWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQpCQXRGQkRQWnJ3NXNmK3F6VWk1c2NrVzhrN3FRV0syUXQyZENJS09tcnZjT1hUeU9QNWthVHAxeWo2dks1MDBDTU53MCtDUWR5N21vRy9sZXd4UzNEQT09Cg==",
   "exe_size": 6257664
 }
