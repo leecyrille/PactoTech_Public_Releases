@@ -1,10 +1,10 @@
 {
-  "version": "20260919_0340",
-  "pub_date": "2026-09-19T03:43:57Z",
-  "notes": "PactoTech Control Test 20260919_0340 (earlytesting): stand-alone full-screen input tester. Dino battle is off until you press the Dino battle button or hold A + B for 3 s on any controller. Play alone for 20 s and the PC takes another dino and comes after you (gently); shoot with a mouse or light gun while no controller is in use and four CPU dinos run around for you to hit. Auto-update restarts in place, also when launched from a front end.",
+  "version": "20260919_0347",
+  "pub_date": "2026-09-19T03:51:10Z",
+  "notes": "PactoTech Control Test 20260919_0347 (earlytesting): stand-alone full-screen input tester. Dino battle: sound effects for every action; the shooting gallery puts up one CPU dino per shooter (up to 12 mice / light guns, each with its own crosshair colour and score); header buttons no longer overlap.",
   "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest.zip",
-  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0340.zip",
-  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0340.exe",
-  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjFvVWcwQjA0ditsSDJYWjhJcFNBcVd0WHJOcE13b0dpZ0JLQkY0S0hYY05WNjdXVjlDM3J3aFh1MWVrbXRtaFBkQnZOL3FJR3NMWlNIZmZnNkZRaUFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5Nzg5NDIyCWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQpmK0Z1bExVSjlPNHc2UTBtUTUrSW13SkFRbTdsL0t2ZXk4SDd5bk96dFkvTjdJYk4zMmx3U3YzdWZCZnpKWDNpcS9IWmJ3R213aXB3MXZMN2VrWWxBdz09Cg==",
+  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0347.zip",
+  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0347.exe",
+  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNituRFBucVVwaTJab295MzAzOFhLWWVOQzdLMGViVWxDaG9mVEI0SGc1TVp4aUplOEYraGRqcDdsOWhybnFmSVA5YjBaZ0U2dFU1RGozL2k0MFRPVkFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5Nzg5ODU1CWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQpIQnpacUZHRUFVMzFSWGNIdjJxWkpNaGNuY3hsV3pmdEZzemIxWk9DSCt3TDZ5V3VEZTdSL3E2OGtHOVpuVHA0K05XWGhoaTI5NlYzUGpEaUZjNjhEZz09Cg==",
   "exe_size": 6253568
 }
