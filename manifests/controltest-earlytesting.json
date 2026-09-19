@@ -1,10 +1,10 @@
 {
-  "version": "20260919_0415",
-  "pub_date": "2026-09-19T04:18:38Z",
-  "notes": "PactoTech Control Test 20260919_0415 (earlytesting): stand-alone full-screen input tester. With many controllers paired: the PactoTech encoder's own interfaces are always shown first, an encoder that got no XInput player slot at all is flagged (red panel, banner, spoken warning), and spoken button names use the card number you see.",
+  "version": "20260919_0431",
+  "pub_date": "2026-09-19T04:35:37Z",
+  "notes": "PactoTech Control Test 20260919_0431 (earlytesting): stand-alone full-screen input tester. An encoder interface can no longer show up twice (as an XInput player and again as a slot-less pad): slot-less interfaces are identified by what they actually send, and are labelled with their board interface number.",
   "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest.zip",
-  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0415.zip",
-  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0415.exe",
-  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjgxYlI2b25VRndYVis4dDRQR3BXYXhleEwxWHE5MHJDNElTZldEeW5xa3JCMm1DdGtYT0FLVzkzSDViMGZpOS8yOGlMR1BNQk1DenFrK3JhWUdFZ2dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NzkxNTAzCWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQpEak9NendONWNPeEhtM2t4dUR4d09obzUzOEU2NXF0VC9kMlVXdXNPelJYaXg3ZTlNcUVkYldsZTJxUkNYTVlyRmdBN05xcHcvdmhMeG1qSmQrVW9EUT09Cg==",
+  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0431.zip",
+  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0431.exe",
+  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjgrWW43V3lkT1hLbi9IWVIzd2RWckR1WFYvendreWtLQXlCT3dqMTd1MWV0aWhWaXNabE5nVEkxbmF5QUhoeGR4UXFHaHZOVWVMRUxJNVhtcGRWdkFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NzkyNTE0CWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQp0N29Ia3FWa3FZb1dhd1dzQXg2UVZSdEVpTHhiNFluQkVUUVNCMG02amJRUzJRYlJmMzFIOWlOcStxV2ZGQllWYWN0RTBOQ0ZHMlN6VWl0dkdPQ0tDUT09Cg==",
   "exe_size": 6257664
 }
