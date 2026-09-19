@@ -636,5 +636,12 @@
     "channel": "earlytesting",
     "kind": "app",
     "notes": "Control Test (Test & Log page): the rumble test now stops the motors on every slot when the pulse ends and whenever pads re-enumerate, so a controller can no longer be left rumbling."
+  },
+  {
+    "version": "20260919_0543",
+    "date": "2026-09-18",
+    "channel": "earlytesting",
+    "kind": "app",
+    "notes": "Test & Log: an XInput pad (8BitDo, Xbox) no longer shows a second DInput card - its XInput-driver HID interface is read with the right button order (Back/Start/LS/RS were being taken for triggers), so it matches its XInput player slot."
   }
 ]
