@@ -1,10 +1,10 @@
 {
-  "version": "20260918_0552",
-  "pub_date": "2026-09-18T05:55:50Z",
-  "notes": "PactoTech Control Test 20260918_0552 (earlytesting): stand-alone full-screen input tester. Speed graphs move as before (one point per frame) with thinner lines and smaller labels; the previous build cleared them instantly.",
+  "version": "20260919_0240",
+  "pub_date": "2026-09-19T02:43:55Z",
+  "notes": "PactoTech Control Test 20260919_0240 (earlytesting): stand-alone full-screen input tester. Arcade panel: the board's mode-input pin states are listed to the right of the stations (needs firmware 20260918 or newer; hidden otherwise).",
   "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest.zip",
-  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260918_0552.zip",
-  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260918_0552.exe",
-  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjJWTGJNRFhlNk9JK1k1VU5NeU1oN3NyUHl3Z0NOdEZlTTVBMGJiTWdnd2dHdUdYcjA1MDlTVFlka0dQTmxoY1hjb1NmdUl3TFdjQW0ycDRPeGRtUFFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NzEwOTMwCWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQpka0JDZEhPanhmN3BpSXVkRG0vNStGNmppeVNKNVA2b0ZERWpXMzFudVptbDRWb3lDSklFTjBrZS91NFBpcElqdmNUTlphU0gvMnhVYmk2NjlUOWZDdz09Cg==",
-  "exe_size": 6243328
+  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0240.zip",
+  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0240.exe",
+  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjR0bXBrcGxhZ25iVWxvY2Faam9tOEZJcUxrcEFnTnkwdEt0TEVISzFtUW9icmNHUVIrdHpZV0VjOW9uUnNocmNMQVNibkJDMXVSaUUrV05nUjZFM2dvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5Nzg1ODE1CWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQpnNnYxMEc2UlhTOC92OC9WdVIvNFhMTGxBejJrTHFjSE5kRDdWUGZmeWlEUUpKRE13ejZPZ1VvTkVYcjF5dytmamxrQ2lWc1F6VmtqWmpCTmU1TDFEZz09Cg==",
+  "exe_size": 6246400
 }
