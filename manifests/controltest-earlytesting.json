@@ -1,10 +1,10 @@
 {
-  "version": "20260919_0328",
-  "pub_date": "2026-09-19T03:32:18Z",
-  "notes": "PactoTech Control Test 20260919_0328 (earlytesting): stand-alone full-screen input tester. Rebuild (restart-in-place auto-update verification).",
+  "version": "20260919_0340",
+  "pub_date": "2026-09-19T03:43:57Z",
+  "notes": "PactoTech Control Test 20260919_0340 (earlytesting): stand-alone full-screen input tester. Dino battle is off until you press the Dino battle button or hold A + B for 3 s on any controller. Play alone for 20 s and the PC takes another dino and comes after you (gently); shoot with a mouse or light gun while no controller is in use and four CPU dinos run around for you to hit. Auto-update restarts in place, also when launched from a front end.",
   "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest.zip",
-  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0328.zip",
-  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0328.exe",
-  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjdBQ0VWY0xaV253d2pOVTVqamtDek1iMjJTNDJDUFZ1RGJ2SG9ZWHQyd2p3a2hpa0FxcGEvOEkzNGRvY21VeU9rZloza3c5V3hPUVRvMGxSL29uYUFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5Nzg4NzIxCWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQpyMGVqMFNvUmZZK3AzMkJ3UGNWV2YwcklHRmR4VHJ0UzFldlU0MHdoM1NwclZiTldxR1psWkZRS2krWTcwQ1c5Y3R0RDA3OVd2OGhMQlg0MGQwYTlDUT09Cg==",
-  "exe_size": 6254080
+  "url_versioned": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0340.zip",
+  "exe_url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest-20260919_0340.exe",
+  "exe_signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjFvVWcwQjA0ditsSDJYWjhJcFNBcVd0WHJOcE13b0dpZ0JLQkY0S0hYY05WNjdXVjlDM3J3aFh1MWVrbXRtaFBkQnZOL3FJR3NMWlNIZmZnNkZRaUFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5Nzg5NDIyCWZpbGU6UGFjdG9UZWNoLUNvbnRyb2xUZXN0LmV4ZQpmK0Z1bExVSjlPNHc2UTBtUTUrSW13SkFRbTdsL0t2ZXk4SDd5bk96dFkvTjdJYk4zMmx3U3YzdWZCZnpKWDNpcS9IWmJ3R213aXB3MXZMN2VrWWxBdz09Cg==",
+  "exe_size": 6253568
 }
