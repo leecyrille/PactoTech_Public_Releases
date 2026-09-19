@@ -53,6 +53,16 @@
     Show early-testing releases</label>
   <div class="entry earlytesting">
     <div class="head">
+      <span class="ver">20260919_1601</span>
+      <span class="chip earlytesting">earlytesting</span>
+      <span class="chip both">App + Firmware</span>
+      <span class="boards">1000T-F103VC · 2000H-F103VB · 2000H-F103VC · 2000T-F103VC · 3000T-F103VC · 4000H-F103VB · 4000H-F103VC · 4000H2-F103ZE · 4000T-F103VC · SNAP2-F103VC · SNAP4-F103VC</span>
+      <span class="date">2026-09-19</span>
+    </div>
+    <div class="notes"><p>Firmware: 4-player boards (4000T, 4000H, 4000H2, SNAP4) no longer power the DongleMaster while in XInput mode. Yesterday&#x27;s build powered it 3 s after the arcade controls connected so dongle gamepads could ride as extra DInput players; on Windows a wireless XInput gamepad on that dongle can take player 1 away from the arcade controls whenever it wakes, so the original rule is back: in XInput mode the four arcade players own all four XInput slots and the DongleMaster stays off. Keyboard/disconnect mode still powers it after 12.5 s, and 1/2/3-player boards still power it 3 s after their controls connect.</p></div>
+  </div>
+  <div class="entry earlytesting">
+    <div class="head">
       <span class="ver">20260919_0543</span>
       <span class="chip earlytesting">earlytesting</span>
       <span class="chip app">App</span>
