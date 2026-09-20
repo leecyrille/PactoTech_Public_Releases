@@ -723,5 +723,25 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20260920_0439",
+    "date": "2026-09-19",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "New: USB-only firmware updates and recovery (no ST-Link needed). Boards programmed with the new factory image carry a small USB bootloader; the Utility updates them over the normal cable and can repair a board whose firmware is missing or not starting: open the Firmware page, arm \"catch\", and power-cycle the board. Existing boards keep working exactly as before and are migrated by one ST-Link flash of the new full image. Also: the boot countdown shown on the display now matches when the controllers actually appear.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
