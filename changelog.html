@@ -63,6 +63,30 @@
   </div>
   <div class="entry earlytesting">
     <div class="head">
+      <span class="ver">20260919_1945</span>
+      <span class="chip earlytesting">earlytesting</span>
+      <span class="chip both">App + Firmware</span>
+      <span class="boards">1000T-F103VC · 2000H-F103VB · 2000H-F103VC · 2000T-F103VC · 3000T-F103VC · 4000H-F103VB · 4000H-F103VC · 4000H2-F103ZE · 4000T-F103VC · SNAP2-F103VC · SNAP4-F103VC</span>
+      <span class="date">2026-09-19</span>
+    </div>
+    <div class="notes"><p>Pre-ship firmware review: 50 fixes across every board, verified on hardware.</p><p>Controls and latency
+- Fixed a 13-second control blackout at every power-on on 4-player boards fitted with a DongleMaster (the loop dropped to 8 updates per second while the boot countdown re-drew the OLED).
+- Button remaps that swap or rotate buttons no longer lose inputs.
+- Idle boards no longer stream a report every millisecond; reports go out only when something changes, and analog ramps still update at the full 1 kHz.
+- Pinball nudge: no longer zeroes your own stick, is instant in Analog-Fast, and wins over a held stick.</p><p>Modes and shortcuts
+- On 3- and 4-player boards the 8-to-6 shortcut (P2 Start + P2 Right) no longer also switches 2-Player mode, and the Disconnect combo (P1 Back + P2 Back) no longer also changes the stick mode. Each single-button 8-second hold now needs to be the only Start, Back or direction held.
+- Disconnect mode can be left by holding Player 1 Back or Player 2 Back alone for 8 seconds, as the manuals&#x27; FAQ describes.
+- Holding the Disconnect combo while powering on now really boots into Disconnect mode.
+- Disconnect set to &quot;Toggle&quot; in the Utility (and kiosk &quot;locked + switch&quot;) can now leave keyboard mode, cancel an exit countdown, and follow the Utility&#x27;s Keyboard-off command.
+- 1000T: the SHIFT input works (every SHIFT shortcut was dead), the D-Pad shortcut leaves Right-Stick mode, and the 8-to-6 right-hand variant can be chosen with LB.
+- 4-player turbo shortcuts respect kiosk and the Utility&#x27;s per-shortcut disable/hold; the turbo set window ends when Player 4 Start is released.
+- Keyboard mode: Player 3&#x27;s buttons 3 and 4 now type the MAME keys (Enter/O on X/Y, F16/F17 on LB/RB); saved configs are repaired automatically. Keyboard turbo restarts its cycle on every press so short taps always type.</p><p>4000H2
+- DIP1 (kiosk lock-down), DIP2 (D-Pad default) and DIP4/DIP5 (USB power force-on) now work and are shown in the Utility; inputs on ports F/G read correctly.</p><p>Reliability
+- OLED bus stalls can no longer block the controls; the update link no longer drops command replies when the Utility was closed for a while; bootloader firmware updates are bounded and never jump into a half-written image; several USB control-transfer edge cases fixed.</p><p>Manuals
+- Turbo enables on the A button only (hold the shortcut and press the buttons you want on turbo). Turbo switch wiring corrected (ground TURBO, switch on !TURB). 4000T 3-position stick switch tip corrected. 4000H has no 8-to-6 pins (shortcut only). New 3000T manual.</p></div>
+  </div>
+  <div class="entry earlytesting">
+    <div class="head">
       <span class="ver">20260919_1601</span>
       <span class="chip earlytesting">earlytesting</span>
       <span class="chip both">App + Firmware</span>

@@ -683,5 +683,25 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20260919_1945",
+    "date": "2026-09-19",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "Pre-ship firmware review: 50 fixes across every board, verified on hardware.\n\nControls and latency\n- Fixed a 13-second control blackout at every power-on on 4-player boards fitted with a DongleMaster (the loop dropped to 8 updates per second while the boot countdown re-drew the OLED).\n- Button remaps that swap or rotate buttons no longer lose inputs.\n- Idle boards no longer stream a report every millisecond; reports go out only when something changes, and analog ramps still update at the full 1 kHz.\n- Pinball nudge: no longer zeroes your own stick, is instant in Analog-Fast, and wins over a held stick.\n\nModes and shortcuts\n- On 3- and 4-player boards the 8-to-6 shortcut (P2 Start + P2 Right) no longer also switches 2-Player mode, and the Disconnect combo (P1 Back + P2 Back) no longer also changes the stick mode. Each single-button 8-second hold now needs to be the only Start, Back or direction held.\n- Disconnect mode can be left by holding Player 1 Back or Player 2 Back alone for 8 seconds, as the manuals' FAQ describes.\n- Holding the Disconnect combo while powering on now really boots into Disconnect mode.\n- Disconnect set to \"Toggle\" in the Utility (and kiosk \"locked + switch\") can now leave keyboard mode, cancel an exit countdown, and follow the Utility's Keyboard-off command.\n- 1000T: the SHIFT input works (every SHIFT shortcut was dead), the D-Pad shortcut leaves Right-Stick mode, and the 8-to-6 right-hand variant can be chosen with LB.\n- 4-player turbo shortcuts respect kiosk and the Utility's per-shortcut disable/hold; the turbo set window ends when Player 4 Start is released.\n- Keyboard mode: Player 3's buttons 3 and 4 now type the MAME keys (Enter/O on X/Y, F16/F17 on LB/RB); saved configs are repaired automatically. Keyboard turbo restarts its cycle on every press so short taps always type.\n\n4000H2\n- DIP1 (kiosk lock-down), DIP2 (D-Pad default) and DIP4/DIP5 (USB power force-on) now work and are shown in the Utility; inputs on ports F/G read correctly.\n\nReliability\n- OLED bus stalls can no longer block the controls; the update link no longer drops command replies when the Utility was closed for a while; bootloader firmware updates are bounded and never jump into a half-written image; several USB control-transfer edge cases fixed.\n\nManuals\n- Turbo enables on the A button only (hold the shortcut and press the buttons you want on turbo). Turbo switch wiring corrected (ground TURBO, switch on !TURB). 4000T 3-position stick switch tip corrected. 4000H has no 8-to-6 pins (shortcut only). New 3000T manual.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
