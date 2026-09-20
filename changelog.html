@@ -53,6 +53,22 @@
     Show early-testing releases</label>
   <div class="entry earlytesting">
     <div class="head">
+      <span class="ver">20260919_2116</span>
+      <span class="chip earlytesting">earlytesting</span>
+      <span class="chip both">App + Firmware</span>
+      <span class="boards">1000T-F103VC · 2000H-F103VB · 2000H-F103VC · 2000T-F103VC · 3000T-F103VC · 4000H-F103VB · 4000H-F103VC · 4000H2-F103ZE · 4000T-F103VC · SNAP2-F103VC · SNAP4-F103VC</span>
+      <span class="date">2026-09-19</span>
+    </div>
+    <div class="notes"><p>Adjustable input debounce, and a smaller firmware image.</p><p>Adjustable debounce (Utility, Mode input wiring page)
+- Three settings in steps of 0.1 ms: Joystick directions (1.5 ms), Action buttons including pinball inputs (1.5 ms), and Start/Back with the mode inputs and exit button (10 ms).
+- The shipped values suit every microswitch we have tested. Lower them only if a control feels sluggish; raise one only if a specific worn switch registers twice.
+- The board samples its inputs about every 0.4 ms, so differences smaller than that are not measurable.
+- Applies live and is saved with the rest of the board settings. Needs this firmware; older firmware keeps its fixed values and the controls stay hidden.</p><p>Firmware
+- The debounce windows for Start/Back and the mode inputs go from 15 ms to 10 ms; joystick and buttons from 2 ms to 1.5 ms.
+- The firmware image is 1.8 KB smaller than 20260919_1945 even with the new feature, from removing the C library&#x27;s text formatting code.</p></div>
+  </div>
+  <div class="entry earlytesting">
+    <div class="head">
       <span class="ver">20260919_1954</span>
       <span class="chip earlytesting">earlytesting</span>
       <span class="chip both">App + Firmware</span>
