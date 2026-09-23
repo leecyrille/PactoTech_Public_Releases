@@ -743,5 +743,12 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20260922_1835",
+    "date": "2026-09-22",
+    "channel": "earlytesting",
+    "kind": "linux",
+    "notes": "Firmware updates now work from Batocera, RetroPie and Lakka too. Open the PactoLink web page on the cabinet's address and use the Firmware section exactly as in the Windows Utility: it checks for new firmware, downloads and verifies it, and updates the encoder over its normal USB cable. Encoders with the new USB bootloader can also be repaired from here if their firmware is missing or will not start, and no ST-Link is needed. Firmware actions from another device on your network ask for the PIN shown on the cabinet."
   }
 ]
