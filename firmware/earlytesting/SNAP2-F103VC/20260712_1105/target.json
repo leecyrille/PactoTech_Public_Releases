@@ -1,0 +1,7 @@
+{
+  "board": "SNAP2",
+  "mcu": "F103VC",
+  "flash_kb": 256,
+  "ota": true,
+  "version": "20260712_1105"
+}

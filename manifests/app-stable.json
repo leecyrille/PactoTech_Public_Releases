@@ -1,0 +1,11 @@
+{
+  "version": "0.0.0",
+  "notes": "No stable release published yet.",
+  "pub_date": "2026-07-06T00:00:00Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "placeholder",
+      "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoTech-Utility-Setup.exe"
+    }
+  }
+}

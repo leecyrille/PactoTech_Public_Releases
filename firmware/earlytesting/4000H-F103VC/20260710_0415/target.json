@@ -1,0 +1,7 @@
+{
+  "board": "4000H",
+  "mcu": "F103VC",
+  "flash_kb": 256,
+  "ota": true,
+  "version": "20260710_0415"
+}
