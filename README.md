@@ -140,6 +140,15 @@ All PactoLink packages (PC `x86_64` plus Raspberry Pi `aarch64`, the latter
 experimental) are on the releases page with signatures and
 `PactoLink-SHA256SUMS.txt`.
 
+## Change modes from scripts, front ends and hotkeys
+
+### 🧰 [Change modes with scripts](https://leecyrille.github.io/PactoTech_Public_Releases/control-api.html)
+
+Switch 2 player / 4 player / twinstick / d-pad / analog / keyboard mode from a
+batch file, LaunchBox / RetroFE / CoinOps, PowerShell, Python, AutoHotkey or
+Linux, and read the live mode back. Ready-to-use examples:
+[PactoTech-Control-Examples.zip](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-Control-Examples.zip).
+
 ## What's new
 
 ### 📋 [See the full changelog](https://leecyrille.github.io/PactoTech_Public_Releases/changelog.html)

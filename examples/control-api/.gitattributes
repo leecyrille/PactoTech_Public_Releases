@@ -1,0 +1,7 @@
+# Windows scripts are stored with CRLF line endings on purpose (raw downloads
+# are served byte for byte; cmd.exe mis-handles labels in LF batch files).
+*.bat -text
+*.ps1 -text
+*.ahk -text
+*.sh text eol=lf
+*.py text eol=lf
