@@ -11,6 +11,25 @@ The quickest possible version (Windows, with the Pacto Tech Utility running):
 curl -s http://127.117.73.87:47391/mode/4p
 ```
 
+## Ready-made: one script per mode, nothing to edit
+
+Folder `ready-made/` has a file for every mode in every method. Modes: keyboard / disconnect
+mode (DongleMaster pads), leave keyboard mode, 2 player, 4 player, analog fast, d-pad, analog slow,
+8to6 on, 8to6 off.
+
+| Folder | Runs silently? | Needs |
+|---|---|---|
+| `ready-made/windows-silent-vbs` | yes, nothing on screen (+ `launch-with-mode.vbs` for front ends) | nothing |
+| `ready-made/windows-batch` | a console window may flash | nothing |
+| `ready-made/windows-powershell` | a brief flash | nothing |
+| `ready-made/windows-python` | yes (`.pyw`) | Python 3 |
+| `ready-made/windows-autohotkey` | yes | AutoHotkey v2 |
+| `ready-made/linux-batocera` | yes | PactoLink (tested in virtual machines so far) |
+
+Turbo on/off cannot be scripted yet (use the board's turbo button/switch or a Game profile).
+
+## Building blocks
+
 | File | What it is |
 |---|---|
 | `windows/pacto-mode.bat` | switch to any mode: `pacto-mode.bat 4p` |

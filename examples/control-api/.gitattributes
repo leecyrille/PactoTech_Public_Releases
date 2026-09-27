@@ -5,3 +5,5 @@
 *.ahk -text
 *.sh text eol=lf
 *.py text eol=lf
+*.vbs -text
+*.pyw text eol=lf
