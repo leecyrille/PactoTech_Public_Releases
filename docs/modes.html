@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modes — Pacto Tech Utility guide</title>
+<meta name="description" content="Which modes your Pacto Tech board is in and why, its power-on defaults, interlock, the Analog Slow stick feel, button shortcuts and PC hotkeys in the Pacto Tech Utility.">
+<link rel="stylesheet" href="docs.css">
+</head>
+<body>
+<nav class="top" aria-label="Guide pages">
+  <a class="brand" href="index.html">PACTO TECH · GUIDE</a>
+  <span class="grp">Play</span>
+  <span class="links">
+    <a class="nav" href="game-profiles.html">Game profiles</a>
+    <a class="nav" href="test-and-log.html">Test &amp; Log</a>
+  </span>
+  <span class="grp">Controller</span>
+  <span class="links">
+    <a class="nav here" href="modes.html" aria-current="page">Modes</a>
+    <a class="nav" href="default-xinput-mapping.html">Default XInput Mapping</a>
+    <a class="nav" href="default-keyboard-mapping.html">Default Keyboard Mapping</a>
+    <a class="nav" href="pinball.html">Pinball Inputs</a>
+    <a class="nav" href="wiring-hardware.html">Wiring &amp; Hardware</a>
+  </span>
+  <span class="grp">This PC</span>
+  <span class="links">
+    <a class="nav" href="overlays.html">Overlays</a>
+    <a class="nav" href="app-settings.html">App Settings</a>
+    <a class="nav" href="update-about.html">Update / About</a>
+  </span>
+</nav>
+<div class="wrap">
+  <h1>Modes</h1>
+  <p class="sub">See which modes are active and why, choose how your board starts up, tune the Analog Slow
+  stick feel, and set the button combos and PC keys that switch modes.</p>
+
+  <figure>
+    <img src="img/modes-layers.png" alt="The top of the Modes page: the Which modes are active? card, Defaults at power-on with Interlock mode, and the start of Analog Slow">
+    <figcaption>The top of the Modes page: the <b>Which modes are active?</b> card, <b>Defaults at power-on</b> and the
+    start of <b>Analog Slow</b>.</figcaption>
+  </figure>
+
+  <p>Modes is in the <b>Controller</b> group of the sidebar: its settings are stored on the board and only reach it when
+  you press <b>Save to controller</b> at the bottom of the page. The one exception is <a href="#hotkeys">PC hotkeys</a>,
+  which are saved on this PC. How the board's mode <i>pins</i> are wired (switches, jumpers, kiosk lock) is set on
+  <a href="wiring-hardware.html">Wiring &amp; Hardware</a>.</p>
+
+  <h2 id="layers">Which modes are active?</h2>
+  <p>The card at the top of the page explains the three things that decide the board's modes. It is shown even when no
+  controller is connected.</p>
+  <ol>
+    <li><b>At power-on</b> the controller starts in its <a href="#defaults">Defaults at power-on</a>. They are stored on
+    the controller, so they also apply on other PCs and on Linux.</li>
+    <li><b>While the Utility runs</b> and no known game is detected, the <code>No known game detected</code> game profile
+    (the <b>resting profile</b>) applies instead. The card shows its summary, for example
+    <code>2P · FAST · 8to6 Off · Turbo off</code>, and <b>Edit…</b> takes you straight to that row on
+    <a href="game-profiles.html">Game profiles</a>. If it reads <code>Not set up — board defaults apply</code>, the resting
+    profile hasn't been set up yet.</li>
+    <li><b>Live changes</b>: game profiles, the <b>Current modes</b> buttons in the sidebar, shortcuts and the board's mode
+    switches change modes on the fly. They never change the values on this page.</li>
+  </ol>
+  <div class="note">So if the board starts in one mode but switches as soon as the Utility starts, look at the
+  <code>No known game detected</code> row on Game profiles. The resting profile lives on this PC, not on the board, and
+  it is only applied while <a href="game-profiles.html">game profiles are applied automatically</a>.</div>
+
+  <h3>The Current modes box</h3>
+  <p>In the sidebar's <b>Current modes</b> box, the player layout buttons (<code>2P</code>, <code>4P</code>, twin stick)
+  and the stick buttons (<code>D-PAD</code>, <code>FAST</code>, <code>SLOW</code>) work like radio buttons: click the one
+  you want. <code>8to6</code> and <code>INTER LOCK</code> switch on and off with each click. <code>DISC. KEYBD</code>
+  switches the board into keyboard/disconnect mode, where the arcade controls type keys and your USB gamepads take over;
+  click it again to come back. The box only shows the modes your board supports (4-player boards show
+  <code>TWIN STICK 1P</code> and <code>TWIN STICK 2P</code> instead of a single twin stick button). You can also change
+  modes live with the board's mode buttons and switches, button shortcuts, PC hotkeys, or from a front end using the
+  <a href="../control-api.html">control scripts</a>. Changes happen instantly, with no restart.</p>
+
+  <h2 id="defaults">Defaults at power-on</h2>
+  <p>What the board goes back to every time it is powered up.</p>
+  <table>
+    <tr><th>Setting</th><th>Choices</th><th>What it does</th></tr>
+    <tr><td><b>Player layout</b></td><td><code>2 PLAYER</code> · <code>4 PLAYER</code> · <code>TWINSTICK</code></td>
+      <td>The player arrangement the board starts in. Only the layouts your board supports can be picked.</td></tr>
+    <tr><td><b>Stick output</b></td><td><code>D-PAD</code> · <code>ANALOG FAST</code> · <code>ANALOG SLOW</code></td>
+      <td>How joysticks report at start-up: as the D-pad, as an analog stick that jumps straight to full tilt, or as an
+      analog stick that ramps up gradually (tune the ramp under <a href="#analog-slow">Analog Slow</a> below).</td></tr>
+    <tr><td><b>Turbo on at boot</b></td><td>On / off switch</td>
+      <td>Starts the board with turbo already switched on.</td></tr>
+    <tr><td><b>Interlock mode</b></td><td><code>Per jumper</code> · <code>On</code> · <code>Off</code>, plus <b>Hold time</b></td>
+      <td>See <a href="#interlock">Interlock</a> below.</td></tr>
+  </table>
+  <p>The factory defaults are <code>2 PLAYER</code>, <code>ANALOG FAST</code>, turbo off and Interlock
+  <code>Per jumper</code> with a 2-second hold.</p>
+
+  <h3 id="interlock">Interlock</h3>
+  <p>Many front ends and emulators exit a game when START and BACK are pressed together. Interlock stops START and BACK
+  from being sent together unless they are held for the <b>Hold time</b>, which prevents accidental exits.</p>
+  <table>
+    <tr><th>Choice</th><th>What it does</th></tr>
+    <tr><td><code>Per jumper</code></td><td>Follows the board's <code>INT</code> pin (jumper or switch to ground = interlock on).</td></tr>
+    <tr><td><code>On</code></td><td>Interlock is always on, with no jumper needed.</td></tr>
+    <tr><td><code>Off</code></td><td>Interlock is always off.</td></tr>
+  </table>
+  <p><b>Hold time</b> runs from 0.5 to 5 seconds in half-second steps. The default is 2 seconds. Choosing
+  <code>On</code> or <code>Off</code> also frees the <code>INT</code> pin, so you can use it under
+  <a href="wiring-hardware.html#spare-pins">Spare pins as player buttons</a> on Wiring &amp; Hardware.</p>
+
+  <h2 id="analog-slow">Analog Slow</h2>
+  <p>Set how quickly the joystick builds up to full tilt, and how quickly it settles back to center, when the stick
+  output is <code>ANALOG SLOW</code>.</p>
+  <figure>
+    <img src="img/modes-slow.png" alt="The Analog Slow section of the Modes page with two time sliders, the Try it bar and the Restore Analog Slow Defaults button, above the built-in shortcuts">
+    <figcaption>The Analog Slow section with the default times: 649 ms up and 109 ms down.</figcaption>
+  </figure>
+
+  <h3>What analog slow mode is for</h3>
+  <p>An arcade joystick is either pushed or it isn't. In <code>ANALOG FAST</code> the board sends that as an analog
+  stick that jumps straight to full tilt. In <code>ANALOG SLOW</code> it sends the same analog stick but moves it
+  <b>gradually</b>. The stick builds up while you hold a direction and eases back to center when you let go. This suits
+  driving, flying and other games that expect smooth, gradual stick movement.</p>
+  <p>These settings only matter while the stick output is <code>ANALOG SLOW</code>. You can pick that as the power-on
+  default above, click <code>SLOW</code> in the sidebar's <b>Current modes</b> box, or use a shortcut, hotkey or script.
+  A game profile's <b>Analog slow</b> column can give one game its own feel
+  (see <a href="game-profiles.html#ramps">Game profiles</a>), and the <a href="pinball.html">Pinball Inputs</a> page has
+  its own separate ramp times for each pinball input.</p>
+
+  <h3>The two sliders</h3>
+  <p>Both settings are <b>times in milliseconds</b>. Drag the slider or type in the box next to it (0 to 2000 ms, in
+  steps of 10). The two stay in sync.</p>
+  <table>
+    <tr><th>Setting</th><th>What it means</th><th>Default</th></tr>
+    <tr><td><b>Time to reach 100% from 0%</b></td>
+      <td>How fast the stick reaches full deflection while held. Longer = slower, gentler build-up.</td>
+      <td>about 650 ms</td></tr>
+    <tr><td><b>Time to return to 0% from 100%</b></td>
+      <td>How fast the stick returns to center after release. Longer = it lingers before centering.</td>
+      <td>about 110 ms</td></tr>
+  </table>
+  <p>When you press a direction, the stick jumps straight to a starting point a little over a third of the way out, so
+  menus still feel responsive. It then ramps smoothly the rest of the way. The "up" time is measured all the way to full
+  deflection.</p>
+  <div class="note">The board stores these as speeds rather than times, so the Utility converts your times for you. The
+  conversion rounds slightly, which is why the defaults show as 649 and 109 instead of 650 and 110. At the very short
+  end the board has a limit: even "0 ms" really takes about 81 ms up and about 16 ms down.</div>
+
+  <h3>Try it</h3>
+  <p>Press and hold <b>HOLD</b>. The bar next to it ramps up while you hold and back down when you let go, showing the
+  percentage at the right. It uses the times currently on the page, including changes you haven't saved yet, and the
+  same rounding the board uses, so you can try different values before saving them.</p>
+
+  <h3>Restoring the Analog Slow defaults</h3>
+  <p>The line under the Try it bar reminds you of the defaults: <code>~650 ms up to full deflection, ~110 ms back to
+  center</code>. <b>Restore Analog Slow Defaults</b> next to it puts both sliders back to those values. Like every change
+  on this page it only fills in the page: press <b>Save to controller</b> to keep it. Right-click either slider's row to
+  restore just that one setting.</p>
+
+  <h2 id="shortcuts">Built-in shortcuts</h2>
+  <figure>
+    <img src="img/modes-full.png" alt="The whole Modes page including Analog Slow, the built-in shortcut list, custom shortcuts, the save buttons and PC hotkeys">
+    <figcaption>The whole Modes page with a 4-player board connected: the card, Defaults at power-on, Analog Slow, the
+    built-in shortcut list, custom shortcuts, the save buttons and PC hotkeys.</figcaption>
+  </figure>
+  <p>Built-in shortcuts are button combos you hold on the control panel to change modes, with no wiring needed. The
+  table shows the shortcuts for the board you have connected. For each one you can change the <b>Hold</b> time (0 to 20
+  seconds in half-second steps; shipped at 8 seconds) and switch it <code>On</code> or <code>Off</code> under
+  <b>Enabled</b>.</p>
+  <p>On a 4-player board the list is:</p>
+  <table>
+    <tr><th>Function</th><th>Buttons</th></tr>
+    <tr><td>TURBO ON</td><td>P4 START</td></tr>
+    <tr><td>TURBO OFF</td><td>P4 BACK</td></tr>
+    <tr><td>8to6 ON</td><td>P2 START + RIGHT</td></tr>
+    <tr><td>8to6 OFF</td><td>P2 START + LEFT</td></tr>
+    <tr><td>DISC./KEYBOARD MODE</td><td>P1 BACK + P2 BACK</td></tr>
+    <tr><td>D-PAD</td><td>P2 BACK</td></tr>
+    <tr><td>ANALOG SLOW</td><td>P1 START</td></tr>
+    <tr><td>ANALOG FAST</td><td>P1 BACK</td></tr>
+    <tr><td>2 PLAYER</td><td>P2 START</td></tr>
+    <tr><td>4 PLAYER</td><td>P3 BACK</td></tr>
+    <tr><td>TWINSTICK</td><td>P3 START</td></tr>
+    <tr><td>TWINSTICK 1P</td><td>P2/P3 START or BACK</td></tr>
+    <tr><td>TWINSTICK 2P</td><td>P1/P4 START or BACK</td></tr>
+  </table>
+  <p>1-, 2- and 3-player boards show their own lists. For example, TURBO ON is P1 START + UP on 1- and 2-player boards
+  and P2 START + P2 UP on 3-player boards.</p>
+
+  <h2>Custom shortcuts</h2>
+  <p>Custom shortcuts fire a function when <b>exactly</b> that combination of inputs is held. Click <b>Add shortcut</b>
+  to add a row (up to 8), then:</p>
+  <ol>
+    <li>Pick the <b>Function</b>. You can choose 2 PLAYER, 4 PLAYER, TWINSTICK (only if your board has them), D-PAD,
+    ANALOG FAST, ANALOG SLOW, TURBO ON, TURBO OFF, 8to6 ON, 8to6 OFF, EXIT (START+BACK), DISCONNECT / KEYBOARD,
+    INTERLOCK (toggle) or SHIFT.</li>
+    <li>Build the combo under <b>Buttons</b>: choose a player and an input, then click <b>+ input</b>. A combo needs at
+    least 2 inputs and can have up to 6. Click ✕ on an input to remove it.</li>
+    <li>Set the <b>Hold</b> time in seconds (0 to 20).</li>
+  </ol>
+  <p>The switch at the end of the row turns the shortcut on or off, and the ✕ button deletes the row.</p>
+  <div class="tip">Only button <i>combinations</i> use hold times. Single mode inputs such as the board's
+  <code>DISS.</code> input react immediately.</div>
+
+  <h2 id="hotkeys">PC hotkeys <span class="scope">saved on this PC</span></h2>
+  <p>PC hotkeys switch modes from this computer's keyboard, even while a game has focus. Click a field, then press the
+  key combination (Ctrl, Alt, Shift and the Windows key can be combined with a key). Press <kbd>Esc</kbd> in a field to
+  clear it.</p>
+  <p>The actions offered are 2 PLAYER, 4 PLAYER, TWINSTICK, D-PAD, ANALOG FAST, ANALOG SLOW, 8to6 ON and INTERLOCK ON.
+  Actions your board can't do are hidden. The <b>8to6 ON</b> and <b>INTERLOCK ON</b> hotkeys actually toggle: press once
+  to switch the mode on, and again to switch it off.</p>
+  <div class="tip">Hotkeys are stored in the Utility on this PC, not on the controller, and they're saved as soon as you
+  set them. They sit below the <b>Save to controller</b> button because that button doesn't save them. They work only
+  while the Utility is running.</div>
+
+  <h2>Saving your changes</h2>
+  <ul>
+    <li><b>Save to controller</b> writes this page's board settings to the board: the power-on defaults, interlock mode
+    and hold time, the Analog Slow times, and the built-in and custom shortcuts. Saved settings live on the board, so
+    they go with it to another PC.</li>
+    <li><b>Restore Mode Defaults</b> puts back 2 PLAYER, ANALOG FAST, turbo off at boot, Interlock <code>Per jumper</code>
+    with a 2-second hold, and the Analog Slow default times. It only fills in the page, so press <b>Save to controller</b>
+    to keep the defaults. It doesn't change the shortcuts or the PC hotkeys. (Mode pin wiring, kiosk, debounce and USB
+    identity have their own restore on <a href="wiring-hardware.html">Wiring &amp; Hardware</a>.)</li>
+    <li>Right-click a setting's row to restore just that one setting to its default.</li>
+    <li>If you switch pages with unsaved changes, the Utility asks whether to <b>Save</b> or <b>Discard</b> them.</li>
+  </ul>
+  <p>The sidebar's <b>Current modes</b> buttons, shortcuts, hotkeys and scripts change modes live and never need
+  saving. A power cycle returns the board to its saved power-on defaults, or to whatever its mode jumpers and switches
+  select.</p>
+
+  <div class="pager"><a href="test-and-log.html">← Previous: Test &amp; Log</a><a href="default-xinput-mapping.html">Next: Default XInput Mapping →</a></div>
+  <footer>Pacto Tech · <a href="https://github.com/leecyrille/PactoTech_Public_Releases">Downloads</a> · <a href="../changelog.html">Release notes</a> ·
+  <a href="../control-api.html">Change modes with scripts</a></footer>
+</div>
+</body>
+</html>

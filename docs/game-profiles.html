@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Game profiles — Pacto Tech Utility guide</title>
+<meta name="description" content="Let the Pacto Tech Utility switch your board's modes by itself for each game, emulator, RetroArch core, front end or program, and put everything back afterwards.">
+<link rel="stylesheet" href="docs.css">
+</head>
+<body>
+<nav class="top" aria-label="Guide pages">
+  <a class="brand" href="index.html">PACTO TECH · GUIDE</a>
+  <span class="grp">Play</span>
+  <span class="links">
+    <a class="nav here" href="game-profiles.html" aria-current="page">Game profiles</a>
+    <a class="nav" href="test-and-log.html">Test &amp; Log</a>
+  </span>
+  <span class="grp">Controller</span>
+  <span class="links">
+    <a class="nav" href="modes.html">Modes</a>
+    <a class="nav" href="default-xinput-mapping.html">Default XInput Mapping</a>
+    <a class="nav" href="default-keyboard-mapping.html">Default Keyboard Mapping</a>
+    <a class="nav" href="pinball.html">Pinball Inputs</a>
+    <a class="nav" href="wiring-hardware.html">Wiring &amp; Hardware</a>
+  </span>
+  <span class="grp">This PC</span>
+  <span class="links">
+    <a class="nav" href="overlays.html">Overlays</a>
+    <a class="nav" href="app-settings.html">App Settings</a>
+    <a class="nav" href="update-about.html">Update / About</a>
+  </span>
+</nav>
+<div class="wrap">
+  <h1>Game profiles</h1>
+  <p class="sub">Tell the Utility how your controls should be set for each game, emulator or program.
+  It notices what is running, switches the board for you, and puts it back when you are done.</p>
+
+  <figure>
+    <img src="img/games.png" alt="The Game profiles page of the Pacto Tech Utility, showing the profile table and the game history">
+    <figcaption>The Game profiles page: the profile table on top, the game history below.</figcaption>
+  </figure>
+  <p>Game profiles is the first page in the sidebar's <b>Play</b> group, and the page the Utility opens on. Profiles
+  are stored on this PC and apply straight away: there is no Save button.</p>
+
+  <h2>What a game profile is</h2>
+  <p>A game profile is a small set of board settings (player mode, stick output, button layout,
+  turbo and exit combo) tied to one game, one emulator, one RetroArch core, one front end or one
+  Windows program.</p>
+  <p>While the Utility runs, it watches which program is in front. When a profiled game starts, the
+  Utility sends that profile to the board. When the game closes, the board goes back to your
+  <b>resting profile</b>, the row called <code>No known game detected</code>.</p>
+  <p>You can also change modes from a front end with scripts (see
+  <a href="../control-api.html">Change modes with scripts</a>). For most cabinets game profiles are
+  easier and more reliable:</p>
+  <ul>
+    <li>Nothing to add to each game's launch settings in your front end.</li>
+    <li>The board is always put back when the game ends, even if the game crashes or you quit it
+    another way.</li>
+    <li>Profiles can do things scripts can't, such as turbo on chosen buttons, button remaps and a
+    per-game exit combo.</li>
+  </ul>
+  <div class="note">Profiles live on this PC, not on the controller. Use <code>Export…</code> or
+  <b>Back up settings to file</b> on <a href="app-settings.html#backup">App Settings</a> to keep a copy (the backup
+  includes profiles).</div>
+
+  <h2>Quick start</h2>
+  <ol>
+    <li>Make sure <b>Apply game profiles automatically</b> is on (it is by default).</li>
+    <li>Start the game once from your front end, then switch back to the Utility. The game now shows
+    under <b>Game &amp; program history</b>.</li>
+    <li>Click <code>Add profile…</code> on that line and pick <code>This game only</code>. A new row
+    appears in the table with the standard settings (2 Player, Analog Fast, Default buttons, Turbo Off).</li>
+    <li>Double-click the cells you want to change, for example <b>Mode</b> or <b>Stick</b>, and pick a
+    value. It saves by itself (a small <code>Saved</code> note flashes). The profile is used from the
+    next time the game starts.</li>
+  </ol>
+  <div class="tip">A game that is running keeps its profile while you switch to the Utility to edit it.
+  A game only counts as ended when its program closes or a different game comes to the front.</div>
+
+  <h2>How detection works (Windows)</h2>
+  <p>About every 2.5 seconds the Utility looks at the program in the foreground and works out
+  what it is:</p>
+  <table>
+    <tr><th>What is in front</th><th>How the Utility recognises it</th></tr>
+    <tr><td>A Steam game</td><td>The program lives inside one of your Steam library folders. Every
+    installed Steam game is already listed, even before you play it.</td></tr>
+    <tr><td>A front end</td><td>Steam, Steam Big Picture, RetroFE, HyperSpin, LaunchBox, LaunchBox
+    Big Box, Attract-Mode, EmulationStation, Pegasus, Playnite, CoinOPS and Maximus Arcade are
+    recognised by their program name.</td></tr>
+    <tr><td>An emulator and its game</td><td>More than 30 emulators are recognised, including
+    RetroArch, MAME, FinalBurn Neo, Dolphin, PCSX2, DuckStation, PPSSPP, Snes9x, Flycast,
+    Supermodel and TeknoParrot. The game (ROM) comes from the emulator's command line when it has
+    one, otherwise from the window title.</td></tr>
+    <tr><td>A RetroArch core</td><td>Read from RetroArch's command line, so you can give every game
+    on one core (for example <code>snes9x</code>) the same profile.</td></tr>
+    <tr><td>A program you picked</td><td>Any program you added with <code>Choose a program…</code>,
+    matched by its file name.</td></tr>
+    <tr><td>Any other program</td><td>After 10 seconds in front it is recorded as a
+    <b>Windows</b> game, so it shows in the history and can get a profile. Desktop tools such as
+    Explorer, Office, Discord or VLC are ignored.</td></tr>
+  </table>
+  <p>Web browsers never trigger a profile. See <a href="#privacy">Privacy</a>.</p>
+
+  <h3>Which profile wins</h3>
+  <p>When a game starts, the Utility uses the most specific profile it finds:</p>
+  <ol>
+    <li><b>This game:</b> a row for that exact game (or that front end, Steam game or program).</li>
+    <li><b>The RetroArch core:</b> a <code>RetroArch cores</code> row, for RetroArch games.</li>
+    <li><b>The emulator:</b> an <code>(every game on this platform)</code> row.</li>
+    <li><b>Nothing found:</b> the board stays in the <code>No known game detected</code> resting profile.</li>
+  </ol>
+  <p>The sidebar and the now-playing card tell you which one was used, for example
+  <code>✓ game profile</code>, <code>✓ core default (snes9x)</code> or <code>✓ emulator default</code>.</p>
+
+  <h2>The columns you edit</h2>
+  <p>The table has three column groups: <b>Identification</b> (Platform, Title, ROM / file),
+  <b>Board settings</b> (the columns below) and <b>Game database</b> (information only). Scroll
+  right to see all of them.</p>
+  <figure>
+    <img src="img/games-edit-mode.png" alt="The Mode drop-down open on the Robotron: 2084 row of the profile table">
+    <figcaption>The Mode cell of the Robotron: 2084 row, opened with Enter: pick a value from the list.</figcaption>
+  </figure>
+  <p>To change a cell, double-click it, or select it and press <kbd>Enter</kbd> or <kbd>F2</kbd>,
+  or just start typing, then pick from the list. Select several rows (drag, or
+  <kbd>Shift</kbd>+click) and change one cell to set the same value on every selected row.</p>
+
+  <h3>Mode</h3>
+  <table>
+    <tr><th>Option</th><th>What it does</th></tr>
+    <tr><td><code>2 Player</code></td><td>Two-player layout.</td></tr>
+    <tr><td><code>4 Player</code></td><td>Four-player layout (4-player boards).</td></tr>
+    <tr><td><code>TS 1P</code></td><td>Twin stick: one player uses two joysticks as the left and right
+    sticks of one gamepad.</td></tr>
+    <tr><td><code>TS 2P</code></td><td>Twin stick for two players, two joysticks each (4-player boards).</td></tr>
+    <tr><td><code>KEYBOARD</code></td><td>For games that only work with a gamepad. The board's
+    arcade gamepads leave the PC and it becomes a keyboard, so your DongleMaster gamepads take over
+    as the players. When the game ends the arcade controls come back. Windows needs about
+    12.5 seconds to forget controllers, so there is a short countdown each way.</td></tr>
+  </table>
+
+  <h3>Stick</h3>
+  <table>
+    <tr><th>Option</th><th>What it does</th></tr>
+    <tr><td><code>D-Pad</code></td><td>Joysticks report as the d-pad.</td></tr>
+    <tr><td><code>Analog Fast</code></td><td>Joysticks report as an analog stick at full tilt straight away.</td></tr>
+    <tr><td><code>Analog Slow</code></td><td>The analog stick ramps up gradually, tuned under
+    <a href="modes.html#analog-slow">Modes → Analog Slow</a> (or per game with the Analog slow column below). Good for
+    driving and flying games.</td></tr>
+  </table>
+  <p>The Stick cell is greyed out when Mode is KEYBOARD (it is kept for when you change back).</p>
+
+  <h3>Buttons</h3>
+  <table>
+    <tr><th>Option</th><th>What it does</th></tr>
+    <tr><td><code>Default</code></td><td>No changes to the buttons, and 8-to-6 off.</td></tr>
+    <tr><td><code>8to6</code></td><td>Turns on the 8-to-6 button shuffle for 6-button fighting
+    games on an 8-button panel.</td></tr>
+    <tr><td><code>Custom (match players)</code></td><td>Opens <b>Custom controls</b>: choose what each
+    button does. The same mapping is used for every player. <code>(no change)</code> leaves a button
+    as the board has it.</td></tr>
+    <tr><td><code>Full custom</code></td><td>Opens <b>Custom controls</b> with a grid of every button
+    for every player position. Send any input to any player's button, or to a keyboard key.</td></tr>
+  </table>
+  <p>Custom rows show a ✎ button in the cell to reopen the editor. Custom button maps only apply
+  while that game runs; your normal remaps on the <a href="default-xinput-mapping.html">Default XInput Mapping</a>
+  page stay as they are.</p>
+
+  <h3>Turbo</h3>
+  <table>
+    <tr><th>Option</th><th>What it does</th></tr>
+    <tr><td><code>Off</code></td><td>Turbo is off for this game, even if the panel's turbo is on.</td></tr>
+    <tr><td><code>On</code></td><td>The chosen buttons autofire while held. When you switch a row
+    from Off to On, a <b>Turbo buttons</b> box opens with LB, RB, A, B, X, Y, LT and RT (A is ticked
+    to start). The cell then lists the buttons, for example <code>On A B</code>.</td></tr>
+  </table>
+  <p>While the game runs, the profile's turbo setting replaces whatever turbo the panel had. When
+  the game ends it is cleared again. To change the buttons later, pick <code>On</code> again and the
+  Turbo buttons box reopens. A cell showing <code>—</code> means the row doesn't change turbo at all.</p>
+
+  <h3>Turbo speed</h3>
+  <p>How fast turbo fires: <code>Default (15 Hz)</code>, <code>29 Hz (max)</code>, <code>20 Hz</code>,
+  <code>15 Hz</code>, <code>12 Hz</code>, <code>10 Hz</code>, <code>7.5 Hz</code>, or <code>Custom…</code>
+  (type the on and off times in milliseconds, 5 to 1000 each). It is greyed out while Turbo is Off.</p>
+
+  <h3>Exit combo</h3>
+  <p>What the cabinet's EXIT button (or holding START+BACK when interlock is on) sends while this game
+  runs.</p>
+  <table>
+    <tr><th>Option</th><th>What it does</th></tr>
+    <tr><td><code>(inherit)</code></td><td>Use the setting of the <code>No known game detected</code> row.</td></tr>
+    <tr><td><code>START+BACK</code></td><td>The standard behaviour: player 1 presses START and BACK together.</td></tr>
+    <tr><td><code>ESC</code>, <code>Q</code>, <code>ALT+F4</code>, <code>CTRL+Q</code>, <code>CTRL+F9</code></td>
+    <td>The board types that key combination instead, even while it is a gamepad. <code>ESC</code> quits
+    MAME, and <code>ALT+F4</code> closes most Windows programs.</td></tr>
+    <tr><td><code>Custom…</code></td><td>Press up to 3 keys (with Ctrl, Shift, Alt or Windows if you
+    like), then <code>Save</code>.</td></tr>
+  </table>
+  <div class="note">The Exit combo of the <code>No known game detected</code> row is also saved on the
+  board as its standard exit, so it keeps working even when the Utility isn't running.</div>
+
+  <h3 id="ramps">Analog slow and Nudge speed</h3>
+  <figure>
+    <img src="img/games-ramps.png" alt="The Analog slow and Nudge speed columns of the profile table">
+    <figcaption>Out Run has a gentle Analog slow ramp; Visual Pinball X has a sharp nudge.</figcaption>
+  </figure>
+  <p><b>Analog slow</b> sets how the stick feels in <code>Analog Slow</code> for this game: how long it takes
+  to reach full throw while you hold it, and to return to centre when you let go. <b>Nudge speed</b> does the
+  same for the pinball nudges (Nudge Left, Right and Up rows set to <code>ANALOG SLOW</code> on the
+  <a href="pinball.html">Pinball Inputs</a> page).</p>
+  <table>
+    <tr><th>Option</th><th>Analog slow</th><th>Nudge speed</th></tr>
+    <tr><td><code>(inherit)</code></td><td colspan="2">Use the <code>No known game detected</code> row's value; if that is
+    (inherit) too, the board's own <a href="modes.html#analog-slow">Analog Slow</a> (Modes page) / <a href="pinball.html">Pinball Inputs</a> settings.</td></tr>
+    <tr><td><code>Gentle</code> / <code>Soft</code></td><td>1.2 s out, 200 ms back (driving games)</td><td>1.5 s out, 250 ms back</td></tr>
+    <tr><td><code>Medium</code></td><td>650 ms out, 110 ms back (the board's shipped feel)</td><td>1 s out, 110 ms back</td></tr>
+    <tr><td><code>Quick</code> / <code>Sharp</code></td><td>300 ms out, 60 ms back</td><td>400 ms out, 60 ms back</td></tr>
+    <tr><td><code>Custom…</code></td><td colspan="2">Type both times in milliseconds (10 to 30000 each).</td></tr>
+  </table>
+  <figure>
+    <img src="img/games-ramp-custom.png" alt="The Custom analog slow ramp box with the full-throw and back-to-centre times">
+    <figcaption><code>Custom…</code> opens a box for the two times.</figcaption>
+  </figure>
+  <p>The ramp only changes while the game runs and is never saved on the board, so the Analog Slow settings on the
+  Modes page and the Pinball Inputs page keep their own values. Analog slow is greyed out on rows whose Stick is D-Pad or
+  Analog Fast, as a hint that it only matters in Analog Slow (the panel's stick switch can still select it).</p>
+  <div class="note">These two columns need newer controller firmware. While the connected controller has older firmware
+  the columns are hidden; update it on the <a href="update-about.html">Update / About</a> page.</div>
+
+  <h3>More ways to edit</h3>
+  <ul>
+    <li><b>Right-click</b> a row for <code>Copy profile</code>, <code>Paste profile</code>,
+    <code>Reset to defaults</code>, <code>Remove profile(s)</code>, <code>Edit custom controls…</code>,
+    <code>Save as reusable profile…</code> and one <code>Use saved profile: &lt;name&gt;</code> line for each
+    <a href="#saved">saved profile</a>. With several rows selected, the menu acts on all of them.</li>
+    <li><kbd>Ctrl</kbd>+<kbd>C</kbd> / <kbd>Ctrl</kbd>+<kbd>V</kbd> copy and paste a single cell.</li>
+    <li><kbd>Delete</kbd> resets the selected board-setting cells to their standard values.</li>
+    <li>Click a column heading to sort. Click its ⏷ button to filter that column.</li>
+  </ul>
+
+  <h2>The + Add menu</h2>
+  <figure>
+    <img src="img/games-add-menu.png" alt="The + Add menu open, listing five ways to add profiles">
+    <figcaption>The <code>+ Add ▾</code> menu.</figcaption>
+  </figure>
+  <table>
+    <tr><th>Option</th><th>What it does</th></tr>
+    <tr><td><code>From games seen on this PC…</code></td><td>Everything the Utility has seen running,
+    grouped by emulator. Pick one game, or the emulator's <code>every game</code> line for an
+    emulator-wide profile. Installed Steam games are listed here too.</td></tr>
+    <tr><td><code>Choose a program…</code></td><td>Pick a program file (.exe). Whenever a program with that
+    name is in front, its profile is used. Handy for PC games that aren't detected by themselves.</td></tr>
+    <tr><td><code>From the game database…</code></td><td>Opens <b>Known games</b>: popular games for each
+    emulator. Press <code>+</code> to add one before it has ever run on this PC.</td></tr>
+    <tr><td><code>Auto-profile MAME games</code></td><td>Creates profiles for the MAME and FinalBurn Neo
+    games seen on this PC and in the arcade catalog, using the built-in arcade database: player count,
+    twin-stick games, and turbo for the shoot-'em-ups that want it. Profiles are matched to your
+    board, existing profiles are never overwritten, and a note tells you how many were created.</td></tr>
+    <tr><td><code>Set up front ends</code></td><td>Gives every supported front end
+    <code>2 Player · Analog Fast · Turbo off · 8to6 off</code>, so menus always work the same way.</td></tr>
+  </table>
+  <p>New rows start with the standard settings (2 Player, Analog Fast, Default, Turbo Off).</p>
+
+  <h2>Game &amp; program history</h2>
+  <figure>
+    <img src="img/games-history.png" alt="The now-playing card for Robotron: 2084 above the game history list">
+    <figcaption>The now-playing card (Robotron: 2084 is running) and the history list below it.</figcaption>
+  </figure>
+  <p>The <b>now-playing card</b> shows the game running right now, its emulator, and which profile was
+  applied (or <code>no profile</code>). <code>Edit profile</code> jumps to that game's row, creating one
+  with the standard settings if it doesn't have one yet. The same information sits in the sidebar on
+  every page, with its own <code>Edit profile</code> button.</p>
+  <p>Below it, every play is listed with the newest first: date and time, the game, its emulator or
+  front end, and how many times it has been played (for example <code>14×</code>).</p>
+  <ul>
+    <li><code>Add profile…</code> offers the places a profile can go: <code>This game only</code>,
+    <code>Every game on the snes9x core</code> (RetroArch), or <code>Every game on this emulator</code>.
+    Steam games, front ends and Windows programs just offer <code>This program</code>. The best choice
+    is marked <code>recommended</code>, and choices that already have a profile say
+    <code>already profiled</code>. Picking one adds the row and jumps to it.</li>
+    <li>The <code>✕</code> button removes that line from the history.</li>
+    <li><b>Keep game &amp; program history</b> turns the history on or off. <code>Clear history</code> empties it.</li>
+    <li><b>Include browser tabs in history</b> (off by default). See <a href="#privacy">Privacy</a>.</li>
+  </ul>
+
+  <h2 id="saved">Saved profiles</h2>
+  <p>A saved profile has a name and can be shared by many rows. Set it up once and reuse it on any game, emulator
+  or core.</p>
+  <ol>
+    <li><b>Create one:</b> set up a row the way you want, right-click it and choose <code>Save as reusable
+    profile…</code>. Type a name (for example <code>Fighters</code>) and press <code>Save</code>. The row's settings are
+    saved under that name, and the row (and any other selected rows) now use it. If the name already exists, the
+    Utility asks you to press <code>Save</code> again to replace it.</li>
+    <li><b>Use it:</b> select one or more rows, right-click and choose <code>Use saved profile: Fighters</code>.
+    This works on game, emulator and core rows. On the <code>No known game detected</code> row it copies the saved
+    settings into the row instead.</li>
+  </ol>
+  <p>Rows that use a saved profile show a small <code>↗</code> chip with its name next to the title, for example
+  <code>Mortal Kombat ↗ Fighters</code> in the screenshots. Hover the chip for a reminder.</p>
+  <figure>
+    <img src="img/games-named.png" alt="The folded Saved profiles section open at the bottom of the page, showing a profile called Fighters with its summary, the apply to list and the Apply button">
+    <figcaption>The folded <b>Saved profiles</b> section at the bottom of the page, with one saved profile,
+    "Fighters".</figcaption>
+  </figure>
+  <p>Open <b>Saved profiles</b> at the bottom of the page to see each one with a summary of its settings:</p>
+  <ul>
+    <li>Choose a game in <code>apply to…</code> and click <code>Apply</code> to make that game use it. The list offers
+    the games seen on this PC.</li>
+    <li><code>✕</code> deletes a saved profile. Rows that used it keep its settings as their own copy.</li>
+  </ul>
+  <p>The spreadsheet (next section) can also create saved profiles: a row with <b>Target Type</b> <code>named</code>
+  and the profile's name in <b>Key</b>. To make any row use it, type the name in that row's <b>Uses Named</b>
+  column.</p>
+  <div class="note">If you edit a board-setting cell on a row that uses a saved profile, that row gets its own copy of
+  the settings and stops following the saved profile.</div>
+
+  <h2>Spreadsheet, filter, columns and views</h2>
+  <table>
+    <tr><th>Control</th><th>What it does</th></tr>
+    <tr><td><code>Export…</code></td><td>Saves every profile to an Excel file
+    (<code>pacto-game-profiles.xlsx</code>). The <b>Profiles</b> sheet has one row per profile with
+    drop-down lists, and the <b>Help</b> sheet explains every column. Edit it in Excel, or with an AI tool.</td></tr>
+    <tr><td><code>Import…</code></td><td>Reads the spreadsheet back. Rows with a mistake are skipped and
+    listed in an <b>Import profiles</b> report; everything else still imports. Import adds and updates
+    rows, and never deletes anything.</td></tr>
+    <tr><td><code>Filter…</code></td><td>Shows only rows whose platform, title or ROM contains what you type.</td></tr>
+    <tr><td><code>Columns</code></td><td>Show or hide columns. The <b>Game database</b> group (Players,
+    Simul., Controls, Buttons, Clone of, Status, Played) can be switched off as a whole.</td></tr>
+    <tr><td><code>Separate</code></td><td>Splits the table into <b>No known game detected</b>,
+    <b>Manually added games</b> and <b>From the game database</b>.</td></tr>
+    <tr><td><code>Combined</code></td><td>One sorted list, with a small <code>DB</code> or <code>M</code>
+    tag showing where each row came from.</td></tr>
+  </table>
+  <p>In the Game database columns, <b>Status</b> shows <code>Modified</code> when you changed a database
+  game from what the database would pick, and <b>Played</b> counts how often it ran.</p>
+
+  <h2>Switching it off, and the resting profile</h2>
+  <p><b>Apply game profiles automatically</b> turns the whole feature on or off. When you switch it off,
+  the Utility puts the board back the way it was before game profiles changed it, then leaves the board
+  alone. It also stops watching programs, so nothing new goes into the history.</p>
+  <p>The <code>No known game detected</code> row is the <b>resting profile</b>: the board sits in it
+  whenever no profiled game is running, and returns to it each time a game ends. If a game has no
+  profile at all, the board simply stays in the resting profile. On older installs this row may say
+  <code>Set up</code>. Until you click it, the board keeps its own settings between games and each
+  game's changes are undone when it ends.</p>
+  <figure>
+    <img src="img/modes-layers.png" alt="The Modes page with the Which modes are active? card; its second line shows the resting profile, 2P, FAST, 8to6 Off, Turbo off, with an Edit button">
+    <figcaption>The <b>Which modes are active?</b> card at the top of the Modes page. Its second line shows the resting
+    profile.</figcaption>
+  </figure>
+  <p>The same summary appears in the <a href="modes.html#layers">Which modes are active?</a> card on the Modes page
+  (here <code>2P · FAST · 8to6 Off · Turbo off</code>). Its <code>Edit…</code> button jumps straight to the row.
+  If it reads <code>Not set up — board defaults apply</code>, the resting profile hasn't been set up yet. The card also
+  explains how the resting profile fits between the board's power-on defaults and live mode changes.</p>
+
+  <h2>Worked examples</h2>
+  <p>These match the table in the screenshots above.</p>
+
+  <div class="card">
+  <h3>1. Fighting games: 8-to-6 and d-pad</h3>
+  <p>Mortal Kombat uses the saved profile <b>Fighters</b> (<code>2P · D-PAD · 8to6 On · Turbo off</code>), so every
+  fighting game can share one setup.</p>
+  <ol>
+    <li>Play Mortal Kombat once so it shows in the history, then add its row with <code>Add profile…</code>.</li>
+    <li>Set Mode <code>2 Player</code>, Stick <code>D-Pad</code> and Buttons <code>8to6</code>.</li>
+    <li>Right-click the row, choose <code>Save as reusable profile…</code>, type <code>Fighters</code> and press
+    <code>Save</code>. The row now shows <code>↗ Fighters</code>.</li>
+    <li>For the next fighting game (Street Fighter II, for example), add its row, right-click it and choose
+    <code>Use saved profile: Fighters</code>.</li>
+  </ol>
+  </div>
+
+  <div class="card">
+  <h3>2. A 4-player game: Gauntlet</h3>
+  <ol>
+    <li>Play Gauntlet once, then click <code>Add profile…</code> on its history line and pick <code>This game only</code>.</li>
+    <li>Set Mode to <code>4 Player</code>.</li>
+  </ol>
+  <p>Menus and every other game stay in 2 Player. Only Gauntlet switches to all four players.</p>
+  </div>
+
+  <div class="card">
+  <h3>3. A twin-stick game: Robotron: 2084</h3>
+  <ol>
+    <li>Add Robotron: 2084 the same way (or use <code>Auto-profile MAME games</code>, which knows it is a twin-stick game).</li>
+    <li>Set Mode to <code>TS 1P</code>. The two joysticks become the left and right sticks of player 1.</li>
+  </ol>
+  </div>
+
+  <div class="card">
+  <h3>4. A shoot-'em-up with turbo: 1942</h3>
+  <ol>
+    <li>Add 1942, then set its Turbo cell to <code>On</code>.</li>
+    <li>In <b>Turbo buttons</b>, tick <b>A</b> and <b>B</b>. The cell reads <code>On A B</code>.</li>
+    <li>Optional: choose a <b>Turbo speed</b>. <code>Default (15 Hz)</code> suits most games.</li>
+  </ol>
+  </div>
+
+  <div class="card">
+  <h3>5. Every SNES game: the snes9x core</h3>
+  <ol>
+    <li>Play any SNES game in RetroArch with the snes9x core (Super Mario World in the history above).</li>
+    <li>Click <code>Add profile…</code> and pick <code>Every game on the snes9x core</code>.</li>
+    <li>Set Stick to <code>D-Pad</code>. The row appears under <code>RetroArch cores</code> as <code>snes9x core</code>.</li>
+  </ol>
+  <p>Every game on that core now gets the d-pad, while other RetroArch games use the RetroArch row.</p>
+  </div>
+
+  <div class="card">
+  <h3>6. A modern gamepad game: Rocket League on Steam</h3>
+  <ol>
+    <li>Click <code>+ Add ▾</code> › <code>From games seen on this PC…</code> and pick Rocket League under
+    Steam (installed Steam games are already listed).</li>
+    <li>Set Mode to <code>KEYBOARD</code>.</li>
+  </ol>
+  <p>When Rocket League starts, the arcade gamepads leave the PC and your DongleMaster gamepads become the
+  players. When it closes, the arcade controls come back. Stick is greyed out and Turbo shows
+  <code>—</code>: in keyboard mode the Utility changes nothing else on the board while the game runs.</p>
+  </div>
+
+  <div class="card">
+  <h3>7. A driving game with a gentler stick: Out Run</h3>
+  <ol>
+    <li>Add Out Run (MAME) from the history or <code>+ Add ▾</code>.</li>
+    <li>Set Stick to <code>Analog Slow</code> and Analog slow to <code>Gentle</code>.</li>
+  </ol>
+  <p>Steering now eases in over 1.2 seconds in Out Run only; every other game keeps the board's own Analog Slow feel.</p>
+  </div>
+
+  <div class="tip">The MAME row <code>(every game on this platform)</code> in these examples has its Exit
+  combo set to <code>ESC</code>, so the cabinet's exit button quits MAME games that have no row of their
+  own. A game with its own row uses that row's Exit combo, and <code>(inherit)</code> there means the
+  resting profile's setting, not the MAME row's. To give those games ESC too, select their rows and set
+  Exit combo once.</div>
+
+  <h2 id="privacy">Privacy</h2>
+  <ul>
+    <li>Profiles, the list of games seen and the play history are stored on this PC, in
+    <code>%LOCALAPPDATA%\PactoConfigurator</code>. The history keeps up to 1000 entries. You can remove
+    single lines or clear it, or switch it off.</li>
+    <li><b>Include browser tabs in history</b> is <b>off by default</b>. When on, a browser page title that
+    stays in front for 10 seconds is added to the history, which helps you find web games. Browser
+    titles are never used for profiles and never change the controller. To give a browser a profile on
+    purpose, use <code>Add profile…</code> on its line, which makes a profile for that browser program.</li>
+  </ul>
+
+  <h2>Linux (PactoLink)</h2>
+  <p>PactoLink on Linux (Batocera, RetroPie, Lakka) also supports game profiles, through its web page at
+  <code>http://&lt;machine-ip&gt;:46810</code>. It recognises the running emulator, game and RetroArch
+  core from the emulator's command line, and uses the same emulator names and game keys as Windows.
+  On a new Linux install there is no resting profile: the board keeps its own settings between games,
+  and each game's profile is undone when the game ends. This has been tested in virtual machines so far.</p>
+
+  <div class="pager"><a href="index.html">← Guide home</a><a href="test-and-log.html">Next: Test &amp; Log →</a></div>
+  <footer>Pacto Tech · <a href="https://github.com/leecyrille/PactoTech_Public_Releases">Downloads</a> · <a href="../changelog.html">Release notes</a> ·
+  <a href="../control-api.html">Change modes with scripts</a></footer>
+</div>
+</body>
+</html>

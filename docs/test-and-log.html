@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test &amp; Log — Pacto Tech Utility guide</title>
+<meta name="description" content="Test every control and controller on your PC, find extra controllers that steal player positions, and log inputs to a file.">
+<link rel="stylesheet" href="docs.css">
+</head>
+<body>
+<nav class="top" aria-label="Guide pages">
+  <a class="brand" href="index.html">PACTO TECH · GUIDE</a>
+  <span class="grp">Play</span>
+  <span class="links">
+    <a class="nav" href="game-profiles.html">Game profiles</a>
+    <a class="nav here" href="test-and-log.html" aria-current="page">Test &amp; Log</a>
+  </span>
+  <span class="grp">Controller</span>
+  <span class="links">
+    <a class="nav" href="modes.html">Modes</a>
+    <a class="nav" href="default-xinput-mapping.html">Default XInput Mapping</a>
+    <a class="nav" href="default-keyboard-mapping.html">Default Keyboard Mapping</a>
+    <a class="nav" href="pinball.html">Pinball Inputs</a>
+    <a class="nav" href="wiring-hardware.html">Wiring &amp; Hardware</a>
+  </span>
+  <span class="grp">This PC</span>
+  <span class="links">
+    <a class="nav" href="overlays.html">Overlays</a>
+    <a class="nav" href="app-settings.html">App Settings</a>
+    <a class="nav" href="update-about.html">Update / About</a>
+  </span>
+</nav>
+<div class="wrap">
+  <h1>Test &amp; Log</h1>
+  <p class="sub">Check that every button, joystick and controller works and shows up where games expect
+  it. You can also record your inputs to a file.</p>
+
+  <figure>
+    <img src="img/logging.png" alt="The top of the Test and Log page: input logging, voice volume and the Control test">
+    <figcaption>The top of the Test &amp; Log page.</figcaption>
+  </figure>
+  <p>Test &amp; Log is in the <b>Play</b> group of the sidebar, right under Game profiles.</p>
+
+  <h2>When to use it</h2>
+  <ul>
+    <li><b>A player is missing or in the wrong position in a game.</b> Another controller (a wireless
+    receiver, a gamepad, a Steam virtual pad) may be taking a player position ahead of the arcade
+    controls. The Control test shows this and outlines the culprit in red.</li>
+    <li><b>A button or joystick direction does nothing.</b> Press it and watch it light up, or check
+    the raw pin under <b>Mode &amp; special pins</b>.</li>
+    <li><b>Checking a game profile or mode change.</b> See which layout and buttons the board is
+    sending right now.</li>
+    <li><b>A trackball or spinner feels capped.</b> The Control test graphs mouse speed and warns
+    when the device is clipping.</li>
+    <li><b>Asking for support.</b> <code>Save report</code> writes a text file listing every
+    device, ready to send.</li>
+  </ul>
+
+  <h2>Log controller inputs</h2>
+  <p>Turn on <b>Log controller inputs</b> to record every change on the four XInput player slots to a
+  CSV file (one line per change, with the time, slot, buttons, triggers and stick positions). Logging
+  only watches: games still see the controllers as normal.</p>
+  <p>A new file named <code>pacto_inputs_&lt;date&gt;_&lt;time&gt;.csv</code> starts each time logging is
+  switched on. <code>Open log folder</code> opens the folder
+  (<code>%LOCALAPPDATA%\PactoConfigurator\logs</code>). The files open in Excel or any text editor.</p>
+  <div class="tip">Logging is useful for tracking down a button that sometimes fires by itself: leave it
+  on, play until it happens, then look at the file for that moment.</div>
+
+  <h2>Voice volume</h2>
+  <p>While this page is open, the Utility says each control out loud as you press it, for example
+  "P 1 A" or "P 2 L T". You can test a whole panel without looking at the screen. Set the volume from
+  0 to 100% (0 turns the voice off). The voice only speaks while the Utility window is in front.</p>
+
+  <h2>Control test</h2>
+  <p>The Control test shows every controller, mouse, trackball, light gun, keyboard and MIDI device on
+  the PC, all in one screen. It runs inside the page while Test &amp; Log is open and stops when you
+  leave the page.</p>
+  <table>
+    <tr><th>Part</th><th>What it shows</th></tr>
+    <tr><td>Top bar</td><td>How many XInput, DInput/HID, pointer, keyboard and MIDI devices are connected.</td></tr>
+    <tr><td>Controller cards</td><td>One card per controller: the XInput slots first, then other
+    (DirectInput/HID) pads and wheels. Each card shows the name, the USB ID, the player order
+    (for example <code>XInput P2 · DInput #3 · SDL #2</code>), which station on the Pacto panel it is,
+    the polling rate, live sticks and triggers, and the buttons held. XInput cards have a
+    <code>rumble</code> button.</td></tr>
+    <tr><td>Arcade panel</td><td>This board's control panel in its current mode, with each button
+    lighting up as you press it. Shown when a Pacto board is connected and its firmware reports its
+    modes.</td></tr>
+    <tr><td>Pointers</td><td>Mice, trackballs, light guns and touch screens, with speed graphs. A
+    warning appears if a device is clipping at the limit of 8-bit movement reports.</td></tr>
+    <tr><td>Keyboards</td><td>Keys and media keys as they are pressed.</td></tr>
+    <tr><td>MIDI</td><td>MIDI devices and their messages.</td></tr>
+  </table>
+
+  <h3>Warnings</h3>
+  <p>A bar at the top explains problems as they are found:</p>
+  <ul>
+    <li><b>Controls are not properly enumerated</b>: another controller is holding a player position
+    ahead of the Pacto board, or the board has no XInput slot at all. The offending cards (and the panel)
+    are outlined in red and the warning is spoken. To fix it, manage extra controllers through a
+    DongleMaster, switch the board into keyboard mode and back to gamepad mode after the other controllers
+    are connected, or unplug them.</li>
+    <li><b>Steam Virtual Gamepad detected</b>: Steam Input is remapping a controller. If a game sees the
+    wrong pad or double inputs, close Steam or turn off Steam Input for that game.</li>
+    <li>The board's firmware is too old to report everything the test can show. Update the firmware on
+    the <a href="update-about.html">Update / About</a> page.</li>
+  </ul>
+
+  <h3>Full screen or in a window</h3>
+  <p><code>Open full screen</code> opens the Control test on its own, filling the screen, which is ideal on
+  the cabinet monitor. <code>Open in a window</code> opens it as a normal window.</p>
+  <p>To leave the full-screen view, hold <kbd>ESC</kbd> (1.5 seconds) or <b>START+BACK</b> on any
+  controller (2 seconds). A ring fills while you hold; letting go cancels. The <code>✕</code> button also
+  closes it. <kbd>F11</kbd> switches between full screen and a window.</p>
+
+  <h3>Save report</h3>
+  <p><code>Save report</code> (or <kbd>F12</kbd>, or holding <b>LB+RB</b> for 2 seconds on any controller) writes a text file named <code>PactoTech_ControlTest_&lt;date&gt;_&lt;time&gt;.txt</code>. It lists
+  the device counts, which controller holds each XInput slot, the DirectInput order, the board's details
+  and every device with its IDs. The file goes in the Utility's program folder, or on your Desktop if
+  that folder can't be written to. A message shows exactly where it was saved.</p>
+
+  <h3>Dino battle</h3>
+  <p><code>Dino battle</code> starts a small game: each controller gets a dinosaur that appears above its
+  card at its first input, and fights the others with the buttons. Mice, trackballs and light guns shoot
+  with their crosshair. You can also start it by holding <b>A+B</b> for 3 seconds on any controller. It
+  is off until you start it. It is a fun way to check that every player's controls respond.</p>
+
+  <figure>
+    <img src="img/logging-full.png" alt="The whole Test and Log page, including the live monitor, keyboard output and mode pin states">
+    <figcaption>The whole page: Control test, Live monitor, Keyboard output and Mode &amp; special pins.</figcaption>
+  </figure>
+
+  <h2>Live monitor</h2>
+  <p>One gamepad drawing per player your board supports. Buttons light up, the stick dots move and the
+  trigger bars fill as Windows receives each input. The cards follow the XInput player slots as Windows
+  numbers them: if another controller has taken slot 1, the Player 1 card shows that controller. A card
+  is dimmed when its slot is empty.</p>
+
+  <h2>Keyboard output</h2>
+  <p>Shows the keys the board is typing right now, the moment it sends them, and says each new key out loud. Switch
+  the board into keyboard mode and press the controls to test; <code>No keys pressed</code> shows otherwise. The keys
+  come from <a href="default-keyboard-mapping.html">Default Keyboard Mapping</a> (and, for spare pins, the
+  <b>Types key</b> column on <a href="wiring-hardware.html#spare-pins">Wiring &amp; Hardware</a>).</p>
+
+  <h2>Mode &amp; special pins</h2>
+  <p>The raw electrical state of the mode and special input pins (2 PLAYER, TURBO, 8-TO-6, DISC / KEYBD
+  and so on), straight off the connectors and before any mode logic. Use it to check switch wiring:
+  each tile lights while its pin is active, and the voice names each pin as it turns on. Pins your board doesn't have
+  are greyed out. How each pin behaves is set on <a href="wiring-hardware.html">Wiring &amp; Hardware</a>.</p>
+
+  <div class="pager"><a href="game-profiles.html">← Previous: Game profiles</a><a href="modes.html">Next: Modes →</a></div>
+  <footer>Pacto Tech · <a href="https://github.com/leecyrille/PactoTech_Public_Releases">Downloads</a> · <a href="../changelog.html">Release notes</a> ·
+  <a href="../control-api.html">Change modes with scripts</a></footer>
+</div>
+</body>
+</html>

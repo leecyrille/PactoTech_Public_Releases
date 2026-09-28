@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wiring &amp; Hardware — Pacto Tech Utility guide</title>
+<meta name="description" content="Set how your Pacto Tech board's mode pins are wired, turn spare pins into player buttons or keys, and set kiosk lock-down, input debounce and the USB identity.">
+<link rel="stylesheet" href="docs.css">
+</head>
+<body>
+<nav class="top" aria-label="Guide pages">
+  <a class="brand" href="index.html">PACTO TECH · GUIDE</a>
+  <span class="grp">Play</span>
+  <span class="links">
+    <a class="nav" href="game-profiles.html">Game profiles</a>
+    <a class="nav" href="test-and-log.html">Test &amp; Log</a>
+  </span>
+  <span class="grp">Controller</span>
+  <span class="links">
+    <a class="nav" href="modes.html">Modes</a>
+    <a class="nav" href="default-xinput-mapping.html">Default XInput Mapping</a>
+    <a class="nav" href="default-keyboard-mapping.html">Default Keyboard Mapping</a>
+    <a class="nav" href="pinball.html">Pinball Inputs</a>
+    <a class="nav here" href="wiring-hardware.html" aria-current="page">Wiring &amp; Hardware</a>
+  </span>
+  <span class="grp">This PC</span>
+  <span class="links">
+    <a class="nav" href="overlays.html">Overlays</a>
+    <a class="nav" href="app-settings.html">App Settings</a>
+    <a class="nav" href="update-about.html">Update / About</a>
+  </span>
+</nav>
+<div class="wrap">
+  <h1>Wiring &amp; Hardware</h1>
+  <p class="sub">Settings you normally make once, when wiring the cabinet: how the board's mode pins behave, what spare
+  pins do, kiosk lock-down, input debounce and the USB identity.</p>
+
+  <figure>
+    <img src="img/wiring.png" alt="The top of the Wiring and Hardware page: the five Mode input wiring groups and the folded Switch and jumper wiring guide">
+    <figcaption>The top of the Wiring &amp; Hardware page: the <b>Mode input wiring</b> groups (here the player layout
+    pins are <code>DISABLED</code>), then the folded <b>Switch &amp; jumper wiring guide</b>.</figcaption>
+  </figure>
+
+  <p>This page is in the <b>Controller</b> group of the sidebar. Everything on it is stored on the board, so the
+  controller must be plugged in to see and change it. Nothing reaches the board until you press <b>Save to
+  controller</b> at the bottom, except the <a href="#usb-identity">USB identity</a>, which has its own button.</p>
+
+  <h2 id="mode-inputs">Mode input wiring</h2>
+  <p>This section controls the board's dedicated <b>mode pins</b>: the header pins for mode buttons, switches and
+  jumpers. All of them are optional. <code>DEFAULT</code> (or <code>DEFAULT / AUTO</code>) works the way the printed
+  manual describes, with detection jumpers read at power-on. If you pick any other type here, <b>no detection jumpers
+  are needed at all</b>, because the app setting replaces them. Any setting that stops using a pin <b>frees</b> that pin,
+  so you can use it under <a href="#spare-pins">Spare pins as player buttons</a> further down this page.</p>
+  <p>Each group of mode pins has its own row. The note under each row explains what the current choice does.</p>
+  <table>
+    <tr><th>Group</th><th>Choices</th><th>What the choices mean</th></tr>
+    <tr><td><b>Stick mode inputs (DPAD / ANA-S / ANA-F)</b></td>
+      <td><code>DEFAULT / AUTO</code> · <code>SWITCH</code> · <code>BUTTONS</code> · <code>DISABLED</code></td>
+      <td>Auto: a grounded <code>DPAD</code> pin at power-on means the stick modes are wired as switches.
+      <code>SWITCH</code>: the pins are treated as switches, and the <code>DPAD</code> detection ground is no longer needed.
+      <code>BUTTONS</code>: the pins are treated as buttons.
+      <code>DISABLED</code>: all three pins are ignored and freed.</td></tr>
+    <tr><td><b>Player layout inputs (2P / 4P / TS)</b></td>
+      <td><code>DEFAULT</code> · <code>DISABLED</code></td>
+      <td>Default: the pins work as jumpers, switches or buttons, as in the manual.
+      <code>DISABLED</code>: <code>2P</code>, <code>4P</code> and <code>TS</code> are ignored and freed.</td></tr>
+    <tr><td><b>Disconnect input (DIS)</b></td>
+      <td><code>DEFAULT</code> · <code>TOGGLE</code> · <code>DISABLED</code></td>
+      <td>Default: grounding <code>DIS</code> enters keyboard mode (as in the manual), which also powers the DongleMaster.
+      <code>TOGGLE</code>: each press of <code>DIS</code> switches keyboard mode in <b>and</b> out, with no hold needed.
+      The other mode inputs then keep working inside keyboard mode instead of exiting it.
+      <code>DISABLED</code>: <code>DIS</code> is ignored and freed.</td></tr>
+    <tr><td><b>Turbo inputs (TURBO / !TURB)</b></td>
+      <td><code>DEFAULT / AUTO</code> · <code>SWITCH</code> · <code>TWO BUTTONS</code> · <code>ONE BUTTON</code> · <code>DISABLED</code></td>
+      <td>Auto: see the wiring note below.
+      <code>SWITCH</code>: a switch wired to <code>!TURB</code>, with <code>TURBO</code> freed and no detection ground needed.
+      <code>TWO BUTTONS</code>: <code>TURBO</code> turns turbo on and <code>!TURB</code> turns it off.
+      <code>ONE BUTTON</code>: a single button on <code>TURBO</code> toggles turbo, and <code>!TURB</code> is freed.
+      <code>DISABLED</code>: both pins are ignored and freed. The long-hold shortcuts still work.</td></tr>
+    <tr><td><b>8-to-6 inputs (8TO6 / !8TO6)</b></td>
+      <td><code>DEFAULT</code> · <code>SWITCH</code> · <code>TOGGLE</code> · <code>DISABLED</code></td>
+      <td>Default: <code>8TO6</code> turns the mode on (button, switch or jumper) and <code>!8TO6</code> turns it off.
+      <code>SWITCH</code>: a switch on <code>8TO6</code> (closed = on, open = off), with <code>!8TO6</code> freed.
+      <code>TOGGLE</code>: one button on <code>8TO6</code> toggles the mode, with <code>!8TO6</code> freed.
+      <code>DISABLED</code>: both pins are ignored and freed.</td></tr>
+  </table>
+  <p><b>Turbo in Auto:</b> for a turbo <b>switch</b>, permanently ground the <code>TURBO</code> pin (that ground is the
+  detection jumper) and wire the switch itself between <code>!TURB</code> and GND. Grounding <code>!TURB</code> at
+  power-on instead gives one-button turbo (button on <code>TURBO</code>). If you ground neither, you get two buttons
+  (<code>TURBO</code> turns turbo on, <code>!TURB</code> turns it off).</p>
+  <div class="note">For turbo switch wiring, follow the Utility's own wiring guide (below and on screen). The
+  turbo-switch wiring drawn in some printed manuals is the wrong way round.</div>
+  <p>If your board doesn't have the pins for a group, that group stays visible but greyed out, with a note saying so.
+  Those modes still work from the app, shortcuts and scripts, and <b>Buttons that trigger modes and pinball inputs</b> on
+  <a href="default-xinput-mapping.html#triggers">Default XInput Mapping</a> can put them on any player button. While
+  <a href="#kiosk">kiosk lock-down</a> is on, it overrides all of these groups.</p>
+
+  <h3 id="wiring-guide">Switch &amp; jumper wiring guide</h3>
+  <p>Click <b>Switch &amp; jumper wiring guide</b> under the groups to open this table:</p>
+  <table>
+    <tr><th>Function</th><th>Wiring</th></tr>
+    <tr><td>Slow-analog switch</td><td>Ground the <code>DPAD</code> pin, then wire the switch to <code>ANA-S</code></td></tr>
+    <tr><td>Fast-analog switch</td><td>Ground the <code>DPAD</code> pin, then wire the switch to <code>ANA-F</code></td></tr>
+    <tr><td>4-player switch</td><td>Ground the <code>2P</code> pin, then wire the switch to <code>4P</code></td></tr>
+    <tr><td>Twinstick switch</td><td>Ground the <code>2P</code> pin, then wire the switch to <code>TS</code></td></tr>
+    <tr><td>Disconnect switch</td><td>Ground the <code>2P</code> pin, then wire the switch to <code>DIS</code></td></tr>
+    <tr><td>Turbo switch</td><td>Ground the <code>TURBO</code> pin, then wire the switch to <code>!TURB</code> (or set Turbo
+      inputs to <code>SWITCH</code> and skip the <code>TURBO</code> ground)</td></tr>
+    <tr><td>8-to-6 switch</td><td>Ground the <code>!8TO6</code> pin, then wire the switch to <code>8TO6</code></td></tr>
+    <tr><td>Interlock</td><td>Jumper the <code>INT</code> pin to ground (or force it with the
+      <a href="modes.html#interlock">Interlock setting on the Modes page</a>)</td></tr>
+  </table>
+  <p><b>3-position switches:</b> for stick modes, ground <code>ANA-F</code> and wire <code>DPAD</code> /
+  <code>ANA-S</code> to the outer positions. For player modes, ground <code>2P</code> and wire <code>4P</code> /
+  <code>TS</code> to the outer positions.</p>
+  <p>The grounds also decide which mode a switch's OFF position selects. Keep them even when you choose
+  <code>SWITCH</code> in the app; only their power-on detection role becomes optional.</p>
+  <div class="tip">To check your wiring, open <a href="test-and-log.html">Test &amp; Log</a>: <b>Mode &amp; special
+  pins</b> shows each pin's raw state as you flip a switch or press a button.</div>
+
+  <h2 id="spare-pins">Spare pins as player buttons</h2>
+  <figure>
+    <img src="img/wiring-spare.png" alt="The Spare pins as player buttons table: free pins are Available, pins still used by their mode are greyed out with a note on how to free them">
+    <figcaption>The spare-pins table. <code>4 PLAYER</code> is ticked (the player layout pins were disabled above);
+    the stick-mode, turbo, 8-to-6, interlock and disconnect pins are still in use, so they are greyed out with a note
+    saying how to free them.</figcaption>
+  </figure>
+  <p>Your board has dedicated mode inputs: player-layout pins, stick-mode pins, TURBO, 8TO6, INT, DIS and, on some
+  boards, right-stick and pinball pins (like the 2000H's). If you don't use one for its mode, this table turns it into an
+  extra player control and, in keyboard mode, its own key. For example, a spare pin can become a player's
+  <code>LT</code>. The table only lists pins your board actually has. While a pin is ticked here, its own mode function
+  is off.</p>
+  <table>
+    <thead><tr><th>Column</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td><code>On</code></td><td>Tick to use this pin as a player control.</td></tr>
+      <tr><td><code>Special input</code></td><td>The board pin, for example <code>TURBO ON</code>, <code>8to6 OFF</code>,
+        <code>RIGHT-STICK</code>, <code>Nudge Left</code> or <code>PINBALL A</code>.</td></tr>
+      <tr><td><code>Acts as player input</code></td><td>Two drop-downs. The first picks <b>whose</b> control it becomes (a
+        cabinet position or a fixed player). The second picks <b>which</b> control: a direction, a button, <code>LT</code>
+        or <code>RT</code>.</td></tr>
+      <tr><td><code>Types key (keyboard mode)</code></td><td>The key it types while the board is in keyboard mode. Leave it on
+        <code>(target input's key)</code> to type whatever key the player input it acts as types on
+        <a href="default-keyboard-mapping.html">Default Keyboard Mapping</a>.</td></tr>
+      <tr><td><code>Status</code></td><td>Whether the pin is free to use (see below).</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Status: which pins are free</h3>
+  <table>
+    <thead><tr><th>Status</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td><code>Available</code></td><td>The pin is free. Tick <code>On</code> and choose what it acts as.</td></tr>
+      <tr><td><code>In use — free it: …</code></td><td>Its mode still needs it, so the row is greyed out and can't be ticked.
+        The note says which setting frees it (see the list below).</td></tr>
+      <tr><td><code>Remap overrides the mode function</code></td><td>The pin is ticked here but its mode setting still uses
+        it. The mapping wins.</td></tr>
+    </tbody>
+  </table>
+  <p>How to free each pin:</p>
+  <table>
+    <thead><tr><th>Pins</th><th>Freed when</th></tr></thead>
+    <tbody>
+      <tr><td><code>2 PLAYER</code>, <code>4 PLAYER</code>, <code>TWINSTICK</code></td><td>Player layout inputs are <code>DISABLED</code></td></tr>
+      <tr><td><code>D-PAD</code>, <code>ANALOG FAST</code>, <code>ANALOG SLOW</code></td><td>Stick mode inputs are <code>DISABLED</code></td></tr>
+      <tr><td><code>TURBO ON</code></td><td>Turbo inputs are <code>SWITCH</code> or <code>DISABLED</code></td></tr>
+      <tr><td><code>TURBO OFF</code></td><td>Turbo inputs are <code>ONE BUTTON</code> or <code>DISABLED</code></td></tr>
+      <tr><td><code>8to6 ON</code></td><td>8-to-6 inputs are <code>DISABLED</code></td></tr>
+      <tr><td><code>8to6 OFF</code></td><td>8-to-6 inputs are <code>SWITCH</code>, <code>TOGGLE</code> or <code>DISABLED</code></td></tr>
+      <tr><td><code>INTERLOCK (toggle)</code></td><td>Interlock mode is <code>On</code> or <code>Off</code> (<a href="modes.html#interlock">Modes page</a>)</td></tr>
+      <tr><td><code>DISCONNECT / KEYBOARD</code></td><td>Disconnect input is <code>DISABLED</code></td></tr>
+      <tr><td><code>RIGHT-STICK</code> and the pinball pins</td><td>Always available</td></tr>
+    </tbody>
+  </table>
+  <p>While kiosk lock-down is on, it frees every mode pin it locks. The <code>INT</code> pin still follows the interlock
+  setting, and in <code>LOCKED XINPUT/KEYBOARD (DongleMaster Support)</code> the <code>DIS</code> pin stays the keyboard
+  switch.</p>
+
+  <h3>Positions and players</h3>
+  <p>The first <b>Acts as player input</b> drop-down lists the physical stick positions on the cabinet:
+  <code>Far-Left</code>, <code>Mid-Left</code>, <code>Mid-Right</code> and <code>Far-Right</code> on 4-player boards
+  (<code>Left</code>, <code>Middle</code>, <code>Right</code> on 3-player boards; <code>Left</code>, <code>Right</code> on
+  2-player boards), then <code>Player N - Fixed</code>. A position keeps working when 2-player or 4-player mode reorders
+  the players. <code>Player N - Fixed</code> follows the Xbox player number after reordering instead.</p>
+
+  <div class="card">
+    <h3>Example: give a spare pin its own key</h3>
+    <p>Set the group that owns the pin to <code>DISABLED</code> above, for example Turbo inputs. Then tick
+    <code>On</code> for that pin in this table, pick a player input for it, choose a key such as <code>P</code> (pause in
+    MAME) under <b>Types key</b>, and click <b>Save to controller</b>.</p>
+  </div>
+
+  <h2 id="board-behaviour">Board behaviour</h2>
+
+  <h3 id="kiosk">Kiosk/Lockdown Mode</h3>
+  <p>Kiosk mode locks the cabinet into its power-on defaults for public use. The board's own mode buttons, switches and
+  shortcuts stop working. Mode changes from this app, its control scripts (LaunchBox / RetroFE) and PC hotkeys
+  <b>still work</b>. Interlock keeps its own setting, and spare pins keep working.</p>
+  <table>
+    <tr><th>Choice</th><th>What happens</th></tr>
+    <tr><td><code>OFF (ALL MODES)</code></td><td>Normal operation: all modes available.</td></tr>
+    <tr><td><code>LOCKED XINPUT</code></td><td>Locked to XInput with the power-on defaults. There's no mode switching from
+      the board, and every mode pin is freed.</td></tr>
+    <tr><td><code>LOCKED DISC./KEYBOARD</code></td><td>Locked to keyboard mode (the board boots straight into it). There's no
+      mode switching from the board, and every mode pin is freed.</td></tr>
+    <tr><td><code>LOCKED XINPUT/KEYBOARD (DongleMaster Support)</code></td><td>Everything is locked <b>except</b> the
+      <code>DIS</code> input. Pressing it switches between XInput (arcade controls) and keyboard mode, and keyboard mode
+      also powers the DongleMaster so wireless gamepads become the main controls. All other mode pins are freed.</td></tr>
+  </table>
+  <p>While kiosk mode is on, the Mode input wiring groups above are locked. On a 4000H2 whose DIP1 (kiosk lock-down)
+  switch is on, the note under the buttons says the lock is held on by that switch and can't be cleared from the app.</p>
+
+  <h3 id="debounce">Input debounce</h3>
+  <p>Debounce is how long an input must stay in its new state before the board believes it. This setting only appears
+  when your board's firmware supports it.</p>
+  <table>
+    <tr><th>Field</th><th>Shipped value</th></tr>
+    <tr><td><b>Joystick directions</b></td><td>1.5 ms</td></tr>
+    <tr><td><b>Action buttons</b></td><td>1.5 ms</td></tr>
+    <tr><td><b>Start/Back &amp; mode inputs</b></td><td>10 ms</td></tr>
+  </table>
+  <p>Values go from 0.1 to 25.5 ms in steps of 0.1 ms. The board checks its inputs about every 0.4 ms, so differences
+  smaller than that can't be measured. Lower values respond faster, but a worn or bouncy switch may register twice.
+  Higher values are safer but add lag.</p>
+  <div class="tip">The shipped values suit every microswitch Pacto Tech has tested. Only change them if a specific
+  control double-fires or feels sluggish.</div>
+
+  <h3 id="usb-identity">USB identity (Windows / Linux / DirectInput mode)</h3>
+  <p>This controls how the board introduces itself over USB, so set it to match the machine the board lives in. The
+  setting only appears when your board's firmware supports it.</p>
+  <table>
+    <tr><th>Choice</th><th>Use it for</th></tr>
+    <tr><td><code>WINDOWS (XINPUT)</code></td><td>The standard Pacto identity (XInput pads), with full Utility support on
+      Windows. This is the default.</td></tr>
+    <tr><td><code>LINUX</code></td><td>Linux systems. The board presents the stock Xbox 360 controller identity, so the
+      system's own built-in driver runs the pads. Batocera, RetroPie, Lakka, Knulli, ROCKNIX, MiSTer and the Steam Deck
+      are all Linux systems, even when they don't look like it.</td></tr>
+    <tr><td><code>DIRECTINPUT (HID GAMEPADS)</code></td><td>Games and front ends that only accept DirectInput pads (older
+      PC games, some MAME setups). Each player becomes a generic HID game controller. The Utility stays connected, but
+      XInput-only games won't see the controls.</td></tr>
+  </table>
+  <p>Picking a choice doesn't change anything yet. Click <b>Apply identity (saves &amp; restarts the board)</b> and
+  confirm: the board saves the setting and restarts with the new identity. This button has its own save and is not part
+  of <b>Save to controller</b>. The line under the choices says which identity is active.</p>
+  <div class="note"><b>Linux mode on a Windows PC:</b> Windows' Xbox driver takes over the whole board, so the Utility
+  can only reach it in keyboard mode. To change the setting back, flip the <code>DISS.</code> input (keyboard mode),
+  change the setting here, then flip it back.</div>
+  <div class="note">So far, Linux mode has been tested with Linux running in virtual machines.</div>
+
+  <h2>Saving and restoring</h2>
+  <figure>
+    <img src="img/wiring-full.png" alt="The whole Wiring and Hardware page: mode input wiring, the spare-pins table, Board behaviour with kiosk, debounce and USB identity, and the save buttons">
+    <figcaption>The whole page on a 4-player board: Mode input wiring, Spare pins as player buttons, Board behaviour
+    (kiosk, debounce, USB identity with its own Apply button), then <b>Save to controller</b> and <b>Restore Wiring
+    Defaults</b>.</figcaption>
+  </figure>
+  <ul>
+    <li><b>Save to controller</b> writes the Mode input wiring groups, kiosk mode, input debounce and the spare-pins table
+    to the board. The USB identity is saved only by its own <b>Apply identity</b> button.</li>
+    <li><b>Restore Wiring Defaults</b> puts every Mode input wiring group back on <code>DEFAULT</code>, kiosk on
+    <code>OFF (ALL MODES)</code> (unless a 4000H2's DIP1 switch holds it on), debounce on the shipped values, and clears
+    the spare-pins table. It doesn't change the USB identity. It only fills in the page, so press <b>Save to
+    controller</b> to keep it.</li>
+    <li>Right-click a wiring group or the kiosk row to restore just that one setting.</li>
+    <li>If you switch pages with unsaved changes, the Utility asks whether to <b>Save</b> or <b>Discard</b> them.</li>
+  </ul>
+  <div class="note"><b>Back up settings to file</b> (on <a href="app-settings.html#backup">App Settings</a>) includes the
+  spare-pins table, but not the Mode input wiring, kiosk, debounce or USB identity. Note those down if you want to set up
+  another board the same way.</div>
+
+  <div class="pager"><a href="pinball.html">← Previous: Pinball Inputs</a><a href="overlays.html">Next: Overlays →</a></div>
+  <footer>Pacto Tech · <a href="https://github.com/leecyrille/PactoTech_Public_Releases">Downloads</a> · <a href="../changelog.html">Release notes</a> ·
+  <a href="../control-api.html">Change modes with scripts</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>App Settings — Pacto Tech Utility guide</title>
+<meta name="description" content="Settings for the Pacto Tech Utility itself: language, start with Windows, backing up and restoring settings, local AI agent access, external control scripts, and the sidebar.">
+<link rel="stylesheet" href="docs.css">
+</head>
+<body>
+<nav class="top" aria-label="Guide pages">
+  <a class="brand" href="index.html">PACTO TECH · GUIDE</a>
+  <span class="grp">Play</span>
+  <span class="links">
+    <a class="nav" href="game-profiles.html">Game profiles</a>
+    <a class="nav" href="test-and-log.html">Test &amp; Log</a>
+  </span>
+  <span class="grp">Controller</span>
+  <span class="links">
+    <a class="nav" href="modes.html">Modes</a>
+    <a class="nav" href="default-xinput-mapping.html">Default XInput Mapping</a>
+    <a class="nav" href="default-keyboard-mapping.html">Default Keyboard Mapping</a>
+    <a class="nav" href="pinball.html">Pinball Inputs</a>
+    <a class="nav" href="wiring-hardware.html">Wiring &amp; Hardware</a>
+  </span>
+  <span class="grp">This PC</span>
+  <span class="links">
+    <a class="nav" href="overlays.html">Overlays</a>
+    <a class="nav here" href="app-settings.html" aria-current="page">App Settings</a>
+    <a class="nav" href="update-about.html">Update / About</a>
+  </span>
+</nav>
+<div class="wrap">
+  <h1>App Settings</h1>
+  <p class="sub">Settings for the Utility itself: language, start-up, backing up and restoring your settings, and how
+  other programs can control your board. This page also explains the sidebar that sits on the left of every page.</p>
+
+  <figure>
+    <img src="img/general.png" alt="The App Settings page of the Pacto Tech Utility: Language, Start with Windows, Back up and restore, AI agent access and External control">
+    <figcaption>The App Settings page, with the sidebar on the left.</figcaption>
+  </figure>
+
+  <p>App Settings is in the <b>This PC</b> group of the sidebar: everything here is saved on your PC as soon as you
+  change it. There is no Save button. The on-screen banners have their own page, <a href="overlays.html">Overlays</a>,
+  and the update settings are at the top of <a href="update-about.html#updates">Update / About</a>.</p>
+  <div class="tip">Hover over a setting to see a tooltip that explains it. Right-click <b>Language</b>, <b>Start with
+  Windows</b> or the AI agent switch and choose <b>Restore default</b> to put just that one setting back.</div>
+
+  <h2>General</h2>
+  <table>
+    <tr><th>Setting</th><th>What it does</th></tr>
+    <tr><td><b>Language</b></td><td>The language of the Utility. The list has Arabic, Bengali, Chinese,
+      English, French, German, Hebrew, Hindi, Portuguese, Russian, Spanish and Urdu. The change is
+      immediate. Arabic, Hebrew and Urdu switch the layout to right-to-left.</td></tr>
+    <tr><td><b>Start with Windows</b></td><td>Starts the Utility when you log in to Windows. It is on by default.
+      Leave it on if you use overlays, game profiles or the mode scripts, because all of these need
+      the Utility running.</td></tr>
+  </table>
+
+  <h2 id="backup">Back up and restore</h2>
+  <p><b>Back up settings to file</b> saves one <code>.pacto</code> file (suggested name
+  <code>pacto-settings.pacto</code>). It holds:</p>
+  <ul>
+    <li><b>this Utility's settings</b>: the settings on the This PC pages (overlays, language, start with Windows,
+    update settings and so on), the PC hotkeys from the Modes page and the input-logging switch from Test &amp; Log;</li>
+    <li><b>your game profiles</b>, including saved profiles;</li>
+    <li>if a controller is connected, <b>its main settings</b>: the power-on defaults (player layout, stick output, turbo
+    at boot), the Analog Slow times, interlock mode and hold time, both columns of the button remap on
+    <a href="default-xinput-mapping.html">Default XInput Mapping</a> (including each cabinet position's own settings on
+    firmware that has them), both columns of <i>Buttons that trigger modes and pinball inputs</i>, the
+    <a href="wiring-hardware.html#spare-pins">spare-pins table</a> and the <a href="pinball.html">Pinball Inputs</a>
+    settings.</li>
+  </ul>
+  <div class="note">The file does <b>not</b> include the built-in or custom shortcuts, the keyboard map, the mode input
+  wiring, kiosk mode, input debounce or the USB identity. Note those down separately if you need them.</div>
+  <p>If no controller is connected, you'll see <i>Backed up app settings only — connect a controller to include device
+  settings</i>.</p>
+  <p><b>Restore settings from file</b> loads a <code>.pacto</code> file:</p>
+  <ul>
+    <li>The Utility's settings apply straight away.</li>
+    <li>Game profiles from the file replace the ones on this PC.</li>
+    <li>Controller settings are checked against the board that is connected now. Settings that fit are loaded and the
+      rest are skipped. The Utility tells you how many were imported and skipped, and warns you if the file came from a
+      different board model.</li>
+    <li>Controller settings are only <b>staged</b>. Review them, then click <b>Save to controller</b> on each page
+      concerned (Modes, Default XInput Mapping, Pinball Inputs, Wiring &amp; Hardware).</li>
+  </ul>
+  <p>Use it before experiments, or to copy a setup onto another board of the same model.</p>
+
+  <h2>AI agent access</h2>
+  <p>This section lets an AI assistant or script running on your PC change the Utility and the controller for you. It can
+  read and change settings, game profiles, live modes, button remaps, keyboard maps and board parameters. For example,
+  you could ask it to make the corner badge bigger.</p>
+  <table>
+    <tr><th>Control</th><th>What it does</th></tr>
+    <tr><td><b>Allow local AI agents to read and change settings, profiles, modes and remaps</b></td><td>Turns the
+      access on or off. When it is off, the Utility refuses every agent request.</td></tr>
+    <tr><td>Token file / Prompt</td><td>The line under the switch shows where both files are. The token file is
+      <code>agent_token.txt</code> and the prompt is <code>AI_AGENT_README.md</code>. Both are in the Utility's config
+      folder, <code>%LOCALAPPDATA%\PactoConfigurator</code>. An agent must send the token with every request that reads
+      or changes anything.</td></tr>
+    <tr><td><b>Copy bootstrap prompt</b></td><td>Copies a set of instructions to the clipboard. Paste it into your AI
+      assistant, then ask for what you want. The prompt tells the assistant where to find the token.</td></tr>
+    <tr><td><b>Open config folder</b></td><td>Opens the config folder in File Explorer.</td></tr>
+  </table>
+  <div class="note">The connection only works on this PC. Nothing can reach it from the network or from a web page.
+  Still, anything that can read the token file can change your settings. If you don't use an assistant,
+  you can turn the switch off.</div>
+
+  <h2 id="external-control">External control (LaunchBox / frontends)</h2>
+  <p>Other programs on this PC can switch modes, for example LaunchBox (Additional Apps or Running Script) or any
+  other frontend. The Utility makes one ready-made script for each mode, so you can point your frontend at the right script.</p>
+  <ul>
+    <li>The line <b>Listening on</b> <code>http://127.117.73.87:47391</code> shows the fixed local address the
+      scripts use. This address is the same on every install, so a script works unchanged on any PC. The folder
+      that holds the scripts is shown underneath.</li>
+    <li><b>Open scripts folder</b> opens that folder in File Explorer. The scripts are rebuilt each time you click it,
+      so the folder is never empty.</li>
+    <li>If the Utility couldn't open that address, the line shows <b>Control channel failed</b> with the reason.</li>
+  </ul>
+  <p>The Utility must be running for the scripts to work. To write your own scripts or read the current mode back,
+  see <a href="../control-api.html">Change modes with scripts</a>. For most cabinets,
+  <a href="game-profiles.html">game profiles</a> are simpler: they need no scripts at all.</p>
+
+  <h2 id="sidebar">The sidebar</h2>
+  <p>The sidebar on the left is the same on every page of the Utility.</p>
+
+  <h3>The page list</h3>
+  <p>The pages are grouped by where their settings are kept: <b>Play</b> (Game profiles, Test &amp; Log),
+  <b>Controller</b>, <i>saved on the controller</i> (Modes, Default XInput Mapping, Default Keyboard Mapping, Pinball
+  Inputs, Wiring &amp; Hardware) and <b>This PC</b>, <i>saved in the Utility</i> (Overlays, App Settings, Update / About,
+  Help). See the <a href="index.html">guide home</a> for what that means when you change something.</p>
+
+  <h3>Current modes</h3>
+  <p>These buttons show the board's live mode and let you change it with a click. You only see the ones your board supports.</p>
+  <table>
+    <tr><th>Row</th><th>Buttons</th><th>How they behave</th></tr>
+    <tr><td>Player layout</td><td>2P, 4P, TWIN (4-player boards show TWIN STICK 1P and TWIN STICK 2P instead)</td><td>One is always selected; click another to switch.</td></tr>
+    <tr><td>Stick output</td><td>D-PAD, FAST, SLOW</td><td>One is always selected; click another to switch.</td></tr>
+    <tr><td>Toggles</td><td>8to6, INTER LOCK, DISC. KEYBD</td><td>Click to turn on, click again to turn off.</td></tr>
+  </table>
+  <p>Changes are live. They are not stored as the board's power-on defaults, which you set on the
+  <a href="modes.html">Modes</a> page. When you click <b>DISC. KEYBD</b> (keyboard/disconnect mode), the arcade controls
+  type keys and your USB gamepads take over. The board changes how it appears to Windows, so the connection box can briefly
+  show <i>No controller found</i> while it switches.</p>
+
+  <h3>Now playing</h3>
+  <p>Once the Utility has detected a game, a small box shows:</p>
+  <ul>
+    <li>the game's title, with ▶ if it is running now or ⏸ if it was the last game played;</li>
+    <li>the emulator or platform;</li>
+    <li>a ✓ and the profile that was applied, or <i>no profile applied</i>.</li>
+  </ul>
+  <p><b>Edit profile</b> takes you to <a href="game-profiles.html">Game profiles</a> with that game's row ready to edit.
+  If the game doesn't have a row yet, one is created.</p>
+
+  <h3>Other boxes</h3>
+  <ul>
+    <li><b>SpecVision display</b>: if a SpecVision screen is attached to the board, this box shows a live copy of what it displays.</li>
+    <li><b>Update notice</b>: when an app or firmware update is waiting, a button such as <i>Updates available — click here</i>
+      appears. Click it to go to <a href="update-about.html">Update / About</a>.</li>
+    <li><b>Connection box</b> (at the bottom): a green dot and <i>Connected — </i> followed by your board model when the Utility is
+      talking to the controller. The line below shows the firmware version and the chip code, for example
+      <code>FW 20260920 0439 · VC</code>. With no board, it reads <i>No controller found</i>.</li>
+  </ul>
+  <div class="note">In older versions of the Utility, <b>Back up settings to file</b> and <b>Restore settings from
+  file</b> sat in the sidebar. They are now in <a href="#backup">Back up and restore</a> on this page.</div>
+
+  <div class="pager"><a href="overlays.html">← Previous: Overlays</a><a href="update-about.html">Next: Update / About →</a></div>
+  <footer>Pacto Tech · <a href="https://github.com/leecyrille/PactoTech_Public_Releases">Downloads</a> · <a href="../changelog.html">Release notes</a> ·
+  <a href="../control-api.html">Change modes with scripts</a></footer>
+</div>
+</body>
+</html>

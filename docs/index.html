@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pacto Tech Utility guide</title>
+<meta name="description" content="How to use every page of the Pacto Tech Utility, with screenshots: game profiles, testing, modes, button and keyboard mapping, pinball, wiring, overlays, app settings and updates.">
+<link rel="stylesheet" href="docs.css">
+</head>
+<body>
+<nav class="top" aria-label="Guide pages">
+  <a class="brand" href="index.html">PACTO TECH · GUIDE</a>
+  <span class="grp">Play</span>
+  <span class="links">
+    <a class="nav" href="game-profiles.html">Game profiles</a>
+    <a class="nav" href="test-and-log.html">Test &amp; Log</a>
+  </span>
+  <span class="grp">Controller</span>
+  <span class="links">
+    <a class="nav" href="modes.html">Modes</a>
+    <a class="nav" href="default-xinput-mapping.html">Default XInput Mapping</a>
+    <a class="nav" href="default-keyboard-mapping.html">Default Keyboard Mapping</a>
+    <a class="nav" href="pinball.html">Pinball Inputs</a>
+    <a class="nav" href="wiring-hardware.html">Wiring &amp; Hardware</a>
+  </span>
+  <span class="grp">This PC</span>
+  <span class="links">
+    <a class="nav" href="overlays.html">Overlays</a>
+    <a class="nav" href="app-settings.html">App Settings</a>
+    <a class="nav" href="update-about.html">Update / About</a>
+  </span>
+</nav>
+<div class="wrap">
+  <h1>Pacto Tech Utility guide</h1>
+  <p class="sub">Everything the Pacto Tech Utility can do, page by page, with screenshots.
+  The Utility is the Windows app that configures your Pacto Tech controller board, shows mode
+  banners on screen, tests your controls and keeps the firmware up to date.</p>
+
+  <div class="card">
+    <p><strong>Want the board to switch modes by itself for each game?</strong> Start with
+    <a href="game-profiles.html">Game profiles</a>, the page the Utility opens on. The Utility sees which game or
+    front end is running and sets 2 player / 4 player / twinstick, stick output, 8-to-6, turbo, button remaps or
+    keyboard mode automatically, then puts everything back when the game ends. No scripts needed.</p>
+  </div>
+
+  <figure>
+    <img src="img/games.png" alt="The Game profiles page of the Pacto Tech Utility, with the grouped sidebar on the left">
+    <figcaption>The Utility, here on its Game profiles page.</figcaption>
+  </figure>
+
+  <h2>How the Utility is organised</h2>
+  <div class="split">
+    <figure>
+      <img src="img/nav.png" alt="The Utility's sidebar: the Play, Controller and This PC page groups, then Current modes, the now-playing card and the connection box">
+      <figcaption>The sidebar, with a 4000T connected.</figcaption>
+    </figure>
+    <div>
+      <p>The sidebar on the left groups the pages by where their settings are kept:</p>
+      <ul>
+        <li><b>Play</b>: <a href="game-profiles.html">Game profiles</a> and <a href="test-and-log.html">Test &amp; Log</a>,
+        the pages you use most once the cabinet is set up.</li>
+        <li><b>Controller</b> (<i>saved on the controller</i>): Modes, Default XInput Mapping, Default Keyboard Mapping,
+        Pinball Inputs and Wiring &amp; Hardware. These settings are stored in the board itself, so they go with it to any
+        PC. Changes wait on the page until you press <b>Save to controller</b> at the bottom, and the Utility asks about
+        unsaved changes before you leave. These pages need the controller plugged in.</li>
+        <li><b>This PC</b> (<i>saved in the Utility</i>): Overlays, App Settings, Update / About and Help. These
+        settings apply as soon as you change them. There is no Save button.</li>
+      </ul>
+      <p>Game profiles are stored on this PC too. They change the controller only while a game runs and never touch
+      what is saved on the controller.</p>
+      <p>Below the pages, the sidebar shows the <b>Current modes</b> buttons, the game that is playing (with the profile
+      that was applied) and, at the bottom, the connection box with your board model and firmware. The
+      <a href="app-settings.html#sidebar">App Settings page</a> describes each box.</p>
+      <p><b>Help</b>, the last page in the sidebar, has short searchable topics inside the Utility itself.</p>
+    </div>
+  </div>
+
+  <h2>Play</h2>
+  <div class="grid2">
+    <a class="tile" href="game-profiles.html"><b>Game profiles</b><span>Automatic per-game settings, the easiest way to get the right mode every time. The Utility opens on this page.</span></a>
+    <a class="tile" href="test-and-log.html"><b>Test &amp; Log</b><span>The Control test, live inputs, keyboard output, raw pin states and input logging.</span></a>
+  </div>
+
+  <h2>Controller <span class="scope">saved on the controller</span></h2>
+  <div class="grid2">
+    <a class="tile" href="modes.html"><b>Modes</b><span>Which modes are active, power-on defaults, interlock, Analog Slow, button shortcuts and PC hotkeys.</span></a>
+    <a class="tile" href="default-xinput-mapping.html"><b>Default XInput Mapping</b><span>What each button sends to the PC, for all players or one cabinet position, and buttons that trigger modes.</span></a>
+    <a class="tile" href="default-keyboard-mapping.html"><b>Default Keyboard Mapping</b><span>Which key each input types in keyboard / disconnect mode.</span></a>
+    <a class="tile" href="pinball.html"><b>Pinball Inputs</b><span>Flippers, launch and nudge for pinball cabinets.</span></a>
+    <a class="tile" href="wiring-hardware.html"><b>Wiring &amp; Hardware</b><span>Mode pin wiring, spare pins as player buttons, kiosk lock, debounce and USB identity.</span></a>
+  </div>
+
+  <h2>This PC <span class="scope">saved in the Utility</span></h2>
+  <div class="grid2">
+    <a class="tile" href="overlays.html"><b>Overlays</b><span>The on-screen banners shown when a mode changes: look, size, position, icons and fullscreen games.</span></a>
+    <a class="tile" href="app-settings.html"><b>App Settings</b><span>Language, start with Windows, backups, AI agent access and external control scripts.</span></a>
+    <a class="tile" href="update-about.html"><b>Update / About</b><span>Update settings, app and firmware updates, update channels, repair.</span></a>
+  </div>
+
+  <h2>More</h2>
+  <ul>
+    <li><a href="../control-api.html">Change modes with scripts</a> — batch files, front ends, PowerShell, Python, AutoHotkey, Linux.</li>
+    <li><a href="../changelog.html">Release notes</a> — what changed in each version.</li>
+    <li><a href="https://github.com/leecyrille/PactoTech_Public_Releases">Downloads</a> — the Utility installer, firmware and the stand-alone Control Test.</li>
+  </ul>
+  <p class="note">Screenshots show the Utility with example settings; your board, games and history will differ.</p>
+
+  <div class="pager"><span></span><a href="game-profiles.html">Start with Game profiles →</a></div>
+
+  <footer>Pacto Tech · <a href="https://github.com/leecyrille/PactoTech_Public_Releases">Downloads</a> · <a href="../changelog.html">Release notes</a> ·
+  <a href="../control-api.html">Change modes with scripts</a></footer>
+</div>
+</body>
+</html>

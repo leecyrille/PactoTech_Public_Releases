@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Default XInput Mapping — Pacto Tech Utility guide</title>
+<meta name="description" content="Change what each arcade button sends to the PC for every game, for all players or one cabinet position, and let player buttons trigger modes or pinball inputs.">
+<link rel="stylesheet" href="docs.css">
+</head>
+<body>
+<nav class="top" aria-label="Guide pages">
+  <a class="brand" href="index.html">PACTO TECH · GUIDE</a>
+  <span class="grp">Play</span>
+  <span class="links">
+    <a class="nav" href="game-profiles.html">Game profiles</a>
+    <a class="nav" href="test-and-log.html">Test &amp; Log</a>
+  </span>
+  <span class="grp">Controller</span>
+  <span class="links">
+    <a class="nav" href="modes.html">Modes</a>
+    <a class="nav here" href="default-xinput-mapping.html" aria-current="page">Default XInput Mapping</a>
+    <a class="nav" href="default-keyboard-mapping.html">Default Keyboard Mapping</a>
+    <a class="nav" href="pinball.html">Pinball Inputs</a>
+    <a class="nav" href="wiring-hardware.html">Wiring &amp; Hardware</a>
+  </span>
+  <span class="grp">This PC</span>
+  <span class="links">
+    <a class="nav" href="overlays.html">Overlays</a>
+    <a class="nav" href="app-settings.html">App Settings</a>
+    <a class="nav" href="update-about.html">Update / About</a>
+  </span>
+</nav>
+<div class="wrap">
+  <h1>Default XInput Mapping</h1>
+  <p class="sub">Change what each arcade button sends to the PC as an Xbox controller, for every game: for all
+  players at once or for one cabinet position. You can also let a player button switch modes or act as a pinball
+  input.</p>
+
+  <div class="card">
+    <p><strong>Changing buttons for a game? Use <a href="game-profiles.html">Game profiles</a> instead.</strong>
+    A game profile remaps buttons for just that game or emulator and puts everything back when the game ends:
+    nothing to undo and no Save button. This page changes the controller itself, for every game on every PC, so it
+    is the right place only for wiring fixes and changes you want everywhere.
+    <a href="#per-game">What a game profile can remap</a>.</p>
+  </div>
+
+  <figure>
+    <img src="img/remap.png" alt="The Default XInput Mapping page of the Pacto Tech Utility, with the Game profiles card at the top and the Players selector above the Button remap table">
+    <figcaption>The top of the Default XInput Mapping page: the Game profiles card, then the Button remap table with its
+    <b>Players:</b> selector. The small line under BACK says the Mid-Left position has its own setting.</figcaption>
+  </figure>
+
+  <p>The page has two parts, most used first:</p>
+  <table>
+    <thead><tr><th>Section</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td><code>Button remap — change what each input outputs</code></td><td>The main table: change which Xbox button each arcade button sends, for all players or one cabinet position. A folded <code>Common button layouts</code> reference sits under it.</td></tr>
+      <tr><td><code>Buttons that trigger modes and pinball inputs</code></td><td>A player button switches a mode (2 Player, Turbo, Disconnect…) or acts as a pinball input when pressed.</td></tr>
+    </tbody>
+  </table>
+  <p>Nothing on this page reaches the board until you click <code>Save to controller</code> at the bottom. The page is in
+  the <b>Controller</b> group of the sidebar and needs the controller plugged in.</p>
+
+  <h2>Button remap</h2>
+  <p>This table is the one most people need. Each row is a button on the cabinet (<code>Physical button</code>).
+  The drop-down next to it picks what that button sends to the PC. Every row starts as itself, for example
+  <code>A</code> sends <code>A</code>. The directions start as <code>Up - Auto</code>, <code>Down - Auto</code> and so on.</p>
+  <p>The rows are <code>D-Pad Up</code>, <code>D-Pad Down</code>, <code>D-Pad Left</code>, <code>D-Pad Right</code>,
+  <code>START</code>, <code>BACK</code>, <code>LB</code>, <code>RB</code>, <code>GUIDE</code>, <code>A</code>,
+  <code>B</code>, <code>X</code> and <code>Y</code>. On boards with stick-click buttons you also get
+  <code>LS (stick click)</code> and <code>RS (stick click)</code>.</p>
+
+  <div class="tip">Can't tell which row is which button? Leave this page open and press the button on the cabinet. Its row lights up.</div>
+
+  <h3>What a button can send</h3>
+  <table>
+    <thead><tr><th>Choice in the drop-down</th><th>What the PC sees</th></tr></thead>
+    <tbody>
+      <tr><td><code>Up - Auto</code>, <code>Down - Auto</code>, <code>Left - Auto</code>, <code>Right - Auto</code></td>
+          <td>A joystick direction that behaves like the real joystick, so it follows the current stick mode (D-PAD, ANALOG FAST or ANALOG SLOW).</td></tr>
+      <tr><td><code>START</code>, <code>BACK</code>, <code>LB</code>, <code>RB</code>, <code>GUIDE</code>, <code>A</code>, <code>B</code>, <code>X</code>, <code>Y</code></td>
+          <td>That Xbox button.</td></tr>
+      <tr><td><code>LS (stick click)</code>, <code>RS (stick click)</code></td>
+          <td>Clicking the left or right thumbstick. These are offered on every board, even boards without stick-click buttons.</td></tr>
+      <tr><td><code>DPAD Up Fixed</code> … <code>DPAD Right Fixed</code></td>
+          <td>Always that d-pad direction, whatever the stick mode.</td></tr>
+      <tr><td><code>L-Ana Up Fixed</code> … <code>L-Ana Right Fixed</code></td>
+          <td>Always the left analog stick in that direction.</td></tr>
+      <tr><td><code>R-Ana Up Fixed</code> … <code>R-Ana Right Fixed</code></td>
+          <td>Always the right analog stick in that direction.</td></tr>
+      <tr><td><code>Nothing (no game output)</code></td>
+          <td>The button sends nothing to games. Offered with controller firmware that supports it (see below).</td></tr>
+    </tbody>
+  </table>
+  <p>If several buttons push the same stick, the strongest push wins.</p>
+  <div class="note">The triggers (<code>LT</code>, <code>RT</code>) are not part of this table. They have no row and can't be picked as an output.</div>
+
+  <h3>A remap moves the button</h3>
+  <p>If you set <code>A</code> to <code>B</code>, pressing A sends B, and A is no longer sent at all unless another
+  row is set to <code>A</code>. To swap two buttons, change both rows: set <code>A</code> to <code>B</code> and <code>B</code> to <code>A</code>.</p>
+
+  <h3 id="players">Players: all players or one cabinet position</h3>
+  <p>With controller firmware that supports it, a <b>Players:</b> bar sits above the table. <code>All players</code>
+  is the normal view: a change there applies to every player's controls. The other buttons are the physical stick
+  positions on your cabinet: <code>Far-Left</code>, <code>Mid-Left</code>, <code>Mid-Right</code> and
+  <code>Far-Right</code> on 4-player boards, <code>Left</code>, <code>Middle</code> and <code>Right</code> on 3-player
+  boards, and <code>Left</code> and <code>Right</code> on 2-player boards. Pick one to give that position its own
+  mapping. A position means the same controls on the panel whichever player number they are in the current mode.</p>
+  <figure>
+    <img src="img/remap-position.png" alt="The Button remap table with Mid-Left selected: every cell reads Same as All players except BACK, which is set to Nothing (no game output)">
+    <figcaption><code>Mid-Left</code> selected: every cell follows All players except <code>BACK</code>, which is set to
+    <code>Nothing (no game output)</code>, so that position's BACK button sends nothing to games.</figcaption>
+  </figure>
+  <p>In a position's view, each drop-down offers:</p>
+  <table>
+    <thead><tr><th>Choice</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td><code>Same as All players (…)</code></td><td>The position follows the All players setting, shown in
+        brackets. This is where every cell starts.</td></tr>
+      <tr><td>Any output, with the button's own name marked <code>(as itself)</code></td><td>This position sends that
+        output instead. Pick <code>(as itself)</code> to keep the plain button at this position even when All players
+        remaps it.</td></tr>
+      <tr><td><code>Nothing (no game output)</code></td><td>The button sends nothing to games at this position.</td></tr>
+    </tbody>
+  </table>
+  <p>Back on <code>All players</code>, a small line under a cell lists the positions that differ, for example
+  <code>Mid-Left: Nothing</code>. Click it to jump to that position. Positions with their own settings are marked with a
+  dot on their button in the Players bar.</p>
+  <div class="note">The Players bar, <code>Nothing (no game output)</code> and the <a href="#stop-output">Stop game
+  output</a> column need controller firmware that supports them. With older firmware the page shows the single table
+  for all players, as before. Update the firmware on <a href="update-about.html">Update / About</a>.</div>
+
+  <h3>Default and 8to6 mode columns</h3>
+  <p>There are two separate mappings. The <code>Default</code> column is used for normal play. The
+  <code>8to6 mode</code> column is used only while 8-to-6 mode is on. The 8-to-6 shift (below) is built in, so leave the
+  <code>8to6 mode</code> column as it is unless you want a different 8-to-6 layout. Each position has both columns too.</p>
+
+  <h3>Common button layouts</h3>
+  <p>Unfold <code>Common button layouts</code> under the table to see three reference cards (nothing to set there):</p>
+  <ul>
+    <li><b>Typical 8-button fightstick</b>: top row <code>X Y RB LB</code>, bottom row <code>A B RT LT</code>.
+    This is the recommended wiring for 8-button cabinets.</li>
+    <li><b>8to6 mode</b>: how 8-to-6 mode rearranges that 8-button panel so the six left-most buttons act as a 6-button layout.</li>
+    <li><b>6-button cabinet convention</b>: top row <code>X Y LB</code>, bottom row <code>A B RB</code>.</li>
+  </ul>
+  <p>8-to-6 mode moves four buttons. It is built into the board, so you don't have to set it up in the remap table:</p>
+  <table>
+    <thead><tr><th>Physical button</th><th>Sends while 8-to-6 is on</th></tr></thead>
+    <tbody>
+      <tr><td>RB</td><td>LB</td></tr>
+      <tr><td>LB</td><td>LT</td></tr>
+      <tr><td>RT</td><td>RB</td></tr>
+      <tr><td>LT</td><td>RT</td></tr>
+    </tbody>
+  </table>
+  <p>A, B, X and Y are unchanged. You can turn 8-to-6 on from the <code>8to6</code> button in the sidebar, the
+  board's 8TO6 inputs (on boards that have them), a button shortcut or a game profile. See <a href="modes.html">Modes</a>.</p>
+
+  <figure>
+    <img src="img/remap-full.png" alt="The whole Default XInput Mapping page: the Game profiles card, the Button remap table with the Players selector, Buttons that trigger modes and pinball inputs with one pinball row, and the save buttons">
+    <figcaption>The whole page: the Button remap table, then Buttons that trigger modes and pinball inputs, the
+    pointer to Wiring &amp; Hardware and the save buttons.</figcaption>
+  </figure>
+
+  <h2 id="triggers">Buttons that trigger modes and pinball inputs</h2>
+  <p>This works the other way round: pressing a player control fires a mode or system function, or (if you have inputs
+  to spare) a pinball input. It lets you put a mode change on your control panel without wiring the dedicated pin. The
+  control still sends its normal game output as well, unless you tick <a href="#stop-output">Stop game output</a> or
+  remap it in the button remap table.</p>
+  <figure>
+    <img src="img/remap-triggers.png" alt="The Buttons that trigger modes and pinball inputs section with one row: PINBALL: Left Flipper on Far-Left LB, with Stop game output ticked">
+    <figcaption>One row: the Far-Left <code>LB</code> button acts as the pinball Left Flipper, with <b>Stop game output</b>
+    ticked so it no longer sends LB to games.</figcaption>
+  </figure>
+  <p>The section starts empty. Click <code>Add mapping</code> to add a row (up to 12). In each row:</p>
+  <ul>
+    <li><code>Function</code> picks what happens (list below).</li>
+    <li><code>Default</code> picks the control that fires it in normal play: a cabinet position or fixed player, then the
+    control (a direction, a button, <code>LT</code> or <code>RT</code>).</li>
+    <li><code>8to6 mode</code> picks the control that fires it while 8-to-6 is on. For <code>8to6 ON</code> and
+    <code>8to6 OFF</code> this column is locked to match <code>Default</code>.</li>
+    <li><code>Stop game output</code> (see below).</li>
+    <li><code>✕</code> removes the row.</li>
+  </ul>
+  <p>The same function can be put on several controls. Unfold <code>How positions and directions work</code> for a
+  short explanation of positions (they follow the physical stick positions, so they keep working when 2-player or
+  4-player mode reorders the players) and of <code>Player N - Fixed</code> (it follows the Xbox player number after
+  reordering).</p>
+  <table>
+    <thead><tr><th>Function</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td><code>2 PLAYER</code>, <code>4 PLAYER</code>, <code>TWINSTICK</code></td><td>Switches the player layout. Only the layouts your board supports are listed.</td></tr>
+      <tr><td><code>D-PAD</code>, <code>ANALOG FAST</code>, <code>ANALOG SLOW</code></td><td>Switches the stick output.</td></tr>
+      <tr><td><code>TURBO ON</code>, <code>TURBO OFF</code></td><td>Turns turbo on or off.</td></tr>
+      <tr><td><code>8to6 ON</code>, <code>8to6 OFF</code></td><td>Turns 8-to-6 mode on or off.</td></tr>
+      <tr><td><code>EXIT (START+BACK)</code></td><td>Sends START and BACK together, the exit combo many emulators use.</td></tr>
+      <tr><td><code>DISCONNECT / KEYBOARD</code></td><td>Switches to keyboard / disconnect mode (see <a href="default-keyboard-mapping.html">Default Keyboard Mapping</a>).</td></tr>
+      <tr><td><code>INTERLOCK (toggle)</code></td><td>Each press flips the START+BACK interlock on or off.</td></tr>
+      <tr><td><code>SHIFT</code></td><td>Acts as the SHIFT modifier button used by the 1000T's instant shortcuts.</td></tr>
+      <tr><td><code>PINBALL: Nudge Left</code> … <code>PINBALL: Nudge Up</code></td><td>Feeds that input on the <a href="pinball.html">Pinball Inputs</a> page. On a board without pinball pins (such as the 4000T) this is how you get flippers, launch and nudge, but only if you can spare inputs: player buttons no game needs, or unused mode pins given a player slot under <a href="wiring-hardware.html#spare-pins">Spare pins as player buttons</a> on Wiring &amp; Hardware.</td></tr>
+    </tbody>
+  </table>
+
+  <h3 id="stop-output">Stop game output</h3>
+  <p>With controller firmware that supports it, each row has a <code>Stop game output</code> tick box. Tick it and that
+  button <b>only</b> does the function: it no longer sends its own button to games. This is handy for a button borrowed
+  for pinball, such as a flipper. The tick applies to the whole row, in both columns. With older firmware the column is
+  hidden and the button always sends its normal output too.</p>
+  <div class="note">When the board is kiosk-locked (<a href="wiring-hardware.html#kiosk">Wiring &amp; Hardware</a>), the
+  mode-changing functions here do nothing. <code>EXIT (START+BACK)</code>, <code>SHIFT</code> and the
+  <code>PINBALL</code> functions still work.</div>
+
+  <h2 id="spare-pins">Mode and pinball pins as player buttons</h2>
+  <p>Turning the board's own mode or pinball pins into player controls is now done on
+  <a href="wiring-hardware.html#spare-pins">Wiring &amp; Hardware → Spare pins as player buttons</a>. The line
+  <code>Want a mode or pinball pin to act as a player button?</code> near the bottom of this page has an
+  <code>Open Wiring &amp; Hardware</code> button that takes you there.</p>
+
+  <h2>Save and reset</h2>
+  <table>
+    <thead><tr><th>Button</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td><code>Save to controller</code></td><td>Writes everything on this page to the board: both columns of the button remap table (All players and every position) and the Buttons that trigger modes rows. The board keeps them after power-off. <code>Saved</code> appears when it's done.</td></tr>
+      <tr><td><code>Reset mapping</code></td><td>Sets every button back to itself in both columns, clears every position's own settings and removes every Buttons that trigger modes row. Click <code>Save to controller</code> to keep the result.</td></tr>
+      <tr><td><code>Copy Default → 8to6</code></td><td>Copies the whole <code>Default</code> column to the <code>8to6 mode</code> column: the button remap (including the positions' own settings) and the Buttons that trigger modes rows.</td></tr>
+    </tbody>
+  </table>
+  <p>If you leave the page with unsaved changes, the Utility shows an <code>Unsaved changes</code> window where you can
+  choose <code>Save</code> or <code>Discard</code>.</p>
+  <p>To keep a copy of your mapping, or to put the same setup on another board of the same model, use
+  <code>Back up settings to file</code> and <code>Restore settings from file</code> on
+  <a href="app-settings.html#backup">App Settings</a>. After a restore, check the settings and click
+  <code>Save to controller</code>.</p>
+
+  <h2 id="per-game">Different buttons for each game</h2>
+  <p>This page sets the board's permanent mapping. If only one game needs different buttons, use a game profile instead.
+  In the <a href="game-profiles.html">Game profiles</a> table, the <code>Buttons</code> column has these choices:</p>
+  <table>
+    <thead><tr><th>Choice</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td><code>Default</code></td><td>The game uses the board's own mapping.</td></tr>
+      <tr><td><code>8to6</code></td><td>Turns on 8-to-6 mode for the game.</td></tr>
+      <tr><td><code>Custom (match players)</code></td><td>One mapping, applied the same way to every player.</td></tr>
+      <tr><td><code>Full custom</code></td><td>Sends any player's input to any player's output, or to a keyboard key.</td></tr>
+    </tbody>
+  </table>
+  <p>While that game runs, its mapping takes priority over the table on this page for the buttons it changes. Once
+  the game closes, your saved mapping is used again.</p>
+
+  <div class="pager"><a href="modes.html">← Previous: Modes</a><a href="default-keyboard-mapping.html">Next: Default Keyboard Mapping →</a></div>
+  <footer>Pacto Tech · <a href="https://github.com/leecyrille/PactoTech_Public_Releases">Downloads</a> · <a href="../changelog.html">Release notes</a> ·
+  <a href="../control-api.html">Change modes with scripts</a></footer>
+</div>
+</body>
+</html>

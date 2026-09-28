@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Update / About — Pacto Tech Utility guide</title>
+<meta name="description" content="How to set up automatic updates, update the Pacto Tech Utility and your controller's firmware, recover a board, pick a specific version, and read What's new.">
+<link rel="stylesheet" href="docs.css">
+</head>
+<body>
+<nav class="top" aria-label="Guide pages">
+  <a class="brand" href="index.html">PACTO TECH · GUIDE</a>
+  <span class="grp">Play</span>
+  <span class="links">
+    <a class="nav" href="game-profiles.html">Game profiles</a>
+    <a class="nav" href="test-and-log.html">Test &amp; Log</a>
+  </span>
+  <span class="grp">Controller</span>
+  <span class="links">
+    <a class="nav" href="modes.html">Modes</a>
+    <a class="nav" href="default-xinput-mapping.html">Default XInput Mapping</a>
+    <a class="nav" href="default-keyboard-mapping.html">Default Keyboard Mapping</a>
+    <a class="nav" href="pinball.html">Pinball Inputs</a>
+    <a class="nav" href="wiring-hardware.html">Wiring &amp; Hardware</a>
+  </span>
+  <span class="grp">This PC</span>
+  <span class="links">
+    <a class="nav" href="overlays.html">Overlays</a>
+    <a class="nav" href="app-settings.html">App Settings</a>
+    <a class="nav here" href="update-about.html" aria-current="page">Update / About</a>
+  </span>
+</nav>
+<div class="wrap">
+  <h1>Update / About</h1>
+  <p class="sub">Choose how updates reach you, keep the Utility and your controller's firmware up to date, go back to
+  an older version if you need to, recover a board that stopped working, and see what changed in each release.</p>
+
+  <figure>
+    <img src="img/about.png" alt="The Update / About page of the Pacto Tech Utility: version information, the Updates settings and the This app box">
+    <figcaption>The top of the Update / About page: version information, the <b>Updates</b> settings and the
+    <i>This app</i> box.</figcaption>
+  </figure>
+
+  <p>Update / About is in the <b>This PC</b> group of the sidebar. The update settings are saved on your PC as soon as
+  you change them.</p>
+
+  <h2>Board and firmware information</h2>
+  <p>The top of the page shows:</p>
+  <table>
+    <tr><th>Line</th><th>Meaning</th></tr>
+    <tr><td><b>Pacto Tech Utility</b></td><td>The version of the app you are running, for example <code>20260920_0439</code> (release date and time).</td></tr>
+    <tr><td><b>Board</b></td><td>The model of the connected controller, for example <code>4000T</code>.</td></tr>
+    <tr><td><b>Firmware</b></td><td>The firmware version on the controller, followed by its chip code, for example
+      <code>FW 20260920 0439 · VC</code>. The chip code is <code>VB</code>, <code>VC</code> or <code>ZE</code>, short for
+      the F103VB, F103VC or F103ZE chip.</td></tr>
+  </table>
+  <p>The same board and firmware details are shown in the connection box at the bottom of the sidebar.</p>
+
+  <h2 id="updates">Updates</h2>
+  <p>These settings, right under the version information, control how the Utility and your controller's firmware are
+  kept up to date.</p>
+  <table>
+    <tr><th>Setting</th><th>What it does</th></tr>
+    <tr><td><b>Update channel</b></td><td><b>Stable (recommended)</b>, <b>Beta</b> or <b>Early Testing</b>. Beta gets new
+      features first. Early Testing gets the newest work before that. The channel applies to both app and firmware
+      updates. See <a href="#channels">Update channels</a>.</td></tr>
+    <tr><td><b>Update the app automatically</b></td><td>Checks your channel every 15 minutes and installs a newer app
+      version on its own, then restarts the app. It never installs while you have unsaved changes. Off by default.</td></tr>
+    <tr><td><b>Update controller firmware automatically</b></td><td>Installs newer firmware on the connected controller
+      when it can be done over the USB cable. A board that updates with an ST-Link is never flashed on its own. It never
+      installs while you have unsaved changes. Off by default.</td></tr>
+    <tr><td><b>When automatic updates are installed</b></td><td>Applies to both switches above.<br>
+      <b>At start-up only (safe)</b>: updates install only in the first minutes after the Utility starts, and never while a
+      game is running. An update found later waits for the next start.<br>
+      <b>Live - install as soon as found, even mid-game</b>: each check installs at once. The app restarts and the controller
+      reboots, even in the middle of a game. This is meant for testing new builds on a cabinet.</td></tr>
+  </table>
+  <p>When neither automatic switch is on, the Utility still checks every 6 hours. It only shows the update notice in the
+  sidebar and installs nothing. It also checks about 10 seconds after it starts, and again each time you open this page
+  (at most once every 5 minutes). When something is waiting, the box that needs your attention is highlighted, and a
+  notice such as <i>Updates available — click here</i> appears in the sidebar.</p>
+
+  <h2>This app</h2>
+  <p>The status next to <b>This app</b> shows <i>Checking…</i>, <i>✓ Up to date</i>, <i>Update available — install below</i>,
+  or <i>Update check failed</i> with the reason.</p>
+  <table>
+    <tr><th>Control</th><th>What it does</th></tr>
+    <tr><td><b>Check for updates</b></td><td>Checks your update channel right now. It always does a fresh check.</td></tr>
+    <tr><td><b>Download &amp; install</b></td><td>Appears with the new version number and its notes when an update is available.
+      A bar shows the download. When it is done, the Utility restarts on the new version.</td></tr>
+    <tr><td><b>Run a different app version…</b></td><td>Lists every published app version, newest first. Each entry shows its
+      channel, date and notes, and the firmware it shipped with (<i>firmware of the time</i>). Your current version is marked <i>installed</i>.
+      Click <b>Install this</b>, then click again on <b>Confirm: install &amp; restart</b> within a few seconds. The Utility checks
+      the installer's signature, closes and runs the installer. Older versions from before archiving began show <i>not archived</i>
+      and can't be installed.</td></tr>
+  </table>
+  <div class="note">When you install a different app version, <b>Update the app automatically</b> is turned off. Otherwise the
+  Utility would update itself straight back to the newest version. Turn it on again under <a href="#updates">Updates</a>
+  at the top of this page when you want to return to the latest version. Settings created by a newer version may not
+  survive a downgrade. If the version you pick shipped with different firmware than your controller runs, the Utility
+  tells you which firmware matches it. You can flash that firmware under <i>Your controller</i>.</div>
+
+  <figure>
+    <img src="img/about-full.png" alt="The whole Update / About page: version information, Updates, This app, Your controller with the installed and newest firmware rows, Advanced update options and What's new">
+    <figcaption>The whole page: Updates, <i>This app</i>, <i>Your controller</i> with its Installed / Newest rows and
+    <b>Advanced update options…</b>, then What's new.</figcaption>
+  </figure>
+
+  <h2>Your controller</h2>
+  <p>This box handles the firmware on the connected board.</p>
+  <ul>
+    <li><b>Check for updates</b> checks for newer firmware for your exact board model <i>and</i> chip, on your update channel.</li>
+    <li>The <b>Installed</b> and <b>Newest</b> rows compare board, chip, date and time. Anything that differs is highlighted.</li>
+    <li>One plain-language line underneath tells you what applies to your board. Only the matching action is shown.</li>
+  </ul>
+
+  <h3>What you may see</h3>
+  <table>
+    <tr><th>Message</th><th>What to do</th></tr>
+    <tr><td><i>Plug your controller in with its USB cable to check for firmware updates.</i></td><td>No board is connected. Connect it by USB.</td></tr>
+    <tr><td><i>Your controller's firmware is up to date.</i></td><td>Nothing to do.</td></tr>
+    <tr><td><i>A firmware update is ready (…). It installs over the USB cable — just click the button.</i></td><td>Click <b>Update over USB</b>.
+      A bar and a short status (such as <i>downloading</i>, <i>writing firmware</i>, <i>verifying</i>, <i>restarting</i>) show progress.
+      When it is finished you'll see <i>Done — controller restarting</i>, and the board comes back on the new firmware.</td></tr>
+    <tr><td><i>A firmware update is ready (…).</i> followed by a reason, with ST-Link instructions</td><td>This board updates with an
+      ST-Link. See <a href="#stlink">Boards that update with an ST-Link</a> below.</td></tr>
+    <tr><td><i>The controller is in update mode (…).</i></td><td>The board is waiting for firmware. See <a href="#repair">Repairing a board in update mode</a>.</td></tr>
+    <tr><td><i>Firmware check failed</i> with a reason</td><td>Usually a network problem. Try <b>Check for updates</b> again later.</td></tr>
+  </table>
+  <div class="tip">To have firmware updates installed for you, turn on <b>Update controller firmware automatically</b> under
+  <a href="#updates">Updates</a> at the top of this page. This only covers updates over USB. A board that needs an
+  ST-Link is never flashed on its own.</div>
+
+  <h3 id="stlink">Boards that update with an ST-Link</h3>
+  <p>Some boards can't take firmware over the USB cable. The message tells you why:</p>
+  <ul>
+    <li><b>F103VB chip (128 KB)</b>: this chip has no room for over-USB updates, so these boards always update with the
+      ST-Link. This is normal for this chip, not a fault.</li>
+    <li><b>Firmware from before in-app updates</b>: the board needs one ST-Link flash. After that it updates over USB.</li>
+  </ul>
+  <p>In both cases the box shows the steps and an <b>Update firmware</b> button:</p>
+  <ol>
+    <li>Connect an ST-Link V2 to the board's SWD header (SWDIO / SWCLK / GND / 3V3), and plug the ST-Link into the PC.</li>
+    <li>Make sure the board also has its <b>own</b> USB power. The ST-Link's 3V3 pin can't power a whole board.</li>
+    <li>Click <b>Update firmware</b>. The Utility finds the board model, reads the chip itself, and only flashes the image that matches it.</li>
+  </ol>
+  <p>If the Utility can't reach the chip, it keeps trying and asks you to check the power and the SWDIO / SWCLK / GND wires,
+  and to power-cycle the board. If no ST-Link is found, check the USB connection. If Windows doesn't recognise the ST-Link,
+  install ST's ST-Link driver.</p>
+
+  <h3 id="repair">Repairing a board in update mode</h3>
+  <p>Boards with a USB update mode go into it by themselves when their firmware is missing or incomplete, or when it failed to start
+  three times in a row. When that happens, the box shows a <b>Board</b> list and a <b>Repair firmware</b> button.
+  Check that the board model is right (the Utility fills it in when it knows the board), then click <b>Repair firmware</b>.
+  The current firmware for your channel is installed over USB.</p>
+
+  <h2>Advanced update options…</h2>
+  <p>Click <b>Advanced update options…</b> to open these tools. They are mainly for fixing a wrong firmware version or recovering
+  a board that stopped responding. Normally the board and chip are detected for you, so only change them if you know they are wrong.</p>
+  <table>
+    <tr><th>Tool</th><th>What it does</th></tr>
+    <tr><td><b>Recover a board that stopped responding…</b></td><td>Use this when the board's firmware runs but the Utility can't
+      talk to it. Pick the board model in the <b>Board</b> list, click the button, then turn the cabinet off and on. The Utility waits up to
+      45 seconds to catch the board as it starts up, then installs the current firmware over USB. This works on boards that have a USB update mode.</td></tr>
+    <tr><td><b>Board</b>, <b>Chip</b> and <b>Flash with ST-Link</b></td><td>Flashes the current firmware with an ST-Link, using the board
+      model and chip you choose. Leave <b>Chip</b> on <b>Auto (read from chip)</b> unless you have a reason not to. The other choices are
+      F103VC (256 KB), F103VB (128 KB) and F103ZE (512 KB).</td></tr>
+    <tr><td><b>Flash a specific version…</b></td><td>Lists every published firmware version for your board, from all channels, newest first.
+      Each entry shows its channel, date and notes, and the app it shipped with (<i>app of the time</i>). Your current version is marked
+      <i>installed</i>. Click <b>Flash this</b> to install that version: over USB on boards that support it, or with an ST-Link otherwise.</td></tr>
+  </table>
+  <div class="note">An ST-Link must be connected for the ST-Link tools. For the ST-Link, the board also needs its own USB power, as described above.</div>
+
+  <h2 id="channels">Update channels</h2>
+  <p>You choose the channel with <b>Update channel</b> under <a href="#updates">Updates</a> at the top of this page. It
+  applies to both app and firmware updates, and you can change it at any time without reinstalling.</p>
+  <table>
+    <tr><th>Channel</th><th>What you get</th></tr>
+    <tr><td><b>Stable (recommended)</b></td><td>The releases we recommend for everyone.</td></tr>
+    <tr><td><b>Beta</b></td><td>New features before Stable, for testers who don't mind rough edges.</td></tr>
+    <tr><td><b>Early Testing</b></td><td>The newest work, first.</td></tr>
+  </table>
+
+  <h2>What's new</h2>
+  <p>At the bottom of the page is a combined list of app and firmware releases, newest first (up to 25). Each entry shows the version,
+  its channel, whether it is an app release, a firmware release or both, the boards it covers where relevant, the date, and the notes.
+  The list includes a copy that ships with the Utility, so it works offline. When you are online, newer entries are added.</p>
+  <p>You see releases for your own channel. Stable shows Stable releases. Beta shows Stable and Beta. Early Testing shows everything.
+  If nothing has been released on your channel yet, the list says so and suggests changing <b>Update channel</b> above.</p>
+  <p>The full history is also online in the <a href="../changelog.html">release notes</a>.</p>
+
+  <div class="pager"><a href="app-settings.html">← Previous: App Settings</a><a href="index.html">Guide home →</a></div>
+  <footer>Pacto Tech · <a href="https://github.com/leecyrille/PactoTech_Public_Releases">Downloads</a> · <a href="../changelog.html">Release notes</a> ·
+  <a href="../control-api.html">Change modes with scripts</a></footer>
+</div>
+</body>
+</html>

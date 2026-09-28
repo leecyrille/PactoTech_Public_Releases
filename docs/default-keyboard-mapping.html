@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Default Keyboard Mapping — Pacto Tech Utility guide</title>
+<meta name="description" content="Choose which keyboard key each arcade control types when the Pacto Tech board is in keyboard / disconnect mode.">
+<link rel="stylesheet" href="docs.css">
+</head>
+<body>
+<nav class="top" aria-label="Guide pages">
+  <a class="brand" href="index.html">PACTO TECH · GUIDE</a>
+  <span class="grp">Play</span>
+  <span class="links">
+    <a class="nav" href="game-profiles.html">Game profiles</a>
+    <a class="nav" href="test-and-log.html">Test &amp; Log</a>
+  </span>
+  <span class="grp">Controller</span>
+  <span class="links">
+    <a class="nav" href="modes.html">Modes</a>
+    <a class="nav" href="default-xinput-mapping.html">Default XInput Mapping</a>
+    <a class="nav here" href="default-keyboard-mapping.html" aria-current="page">Default Keyboard Mapping</a>
+    <a class="nav" href="pinball.html">Pinball Inputs</a>
+    <a class="nav" href="wiring-hardware.html">Wiring &amp; Hardware</a>
+  </span>
+  <span class="grp">This PC</span>
+  <span class="links">
+    <a class="nav" href="overlays.html">Overlays</a>
+    <a class="nav" href="app-settings.html">App Settings</a>
+    <a class="nav" href="update-about.html">Update / About</a>
+  </span>
+</nav>
+<div class="wrap">
+  <h1>Default Keyboard Mapping</h1>
+  <p class="sub">Choose which key each arcade control types while the board is in keyboard / disconnect mode.</p>
+
+  <figure>
+    <img src="img/kbremap.png" alt="The Default Keyboard Mapping page of the Pacto Tech Utility">
+    <figcaption>The top of the Default Keyboard Mapping page with the Player 1 key table.</figcaption>
+  </figure>
+
+  <h2>Keyboard / disconnect mode</h2>
+  <p>In keyboard / disconnect mode, the board's Xbox controllers are removed from the PC completely (not just muted).
+  Your arcade controls then type the keys set on this page, like a normal USB keyboard. At the same time, the
+  DongleMaster USB port switches on the gamepads or wireless dongle plugged into it, and those take over as the game
+  controllers. On 4-player boards the DongleMaster is powered only in this mode. On 1- and 2-player boards it is also
+  powered in arcade mode, where the pads become players 3 and up. The 4000H2 switches its own USB ports instead of
+  using a DongleMaster. When switching, Windows needs about 12.5 seconds to forget the old controllers, so the
+  switch shows a countdown. You can switch with a button shortcut, the board's DIS input on boards that support it,
+  the <code>DISC. KEYBD</code> button in the sidebar, or a game profile whose Mode is <code>KEYBOARD</code>. See
+  <a href="modes.html">Modes</a>.</p>
+  <div class="tip">The keyboard is part of the same USB device, so you can keep editing this page while keyboard mode is on.</div>
+
+  <h2>Key tables for each player</h2>
+  <p>There is one table for each player position on your board, headed <code>Player 1 inputs</code>,
+  <code>Player 2 inputs</code> and so on. The tables follow the physical control positions from left to right, so
+  <code>Player 1 inputs</code> is the left-most set of controls. They don't change when the player order of the
+  current mode changes.</p>
+  <table>
+    <thead><tr><th>Column</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td><code>Physical button</code></td><td>The control on the cabinet: <code>D-Pad Up</code>, <code>D-Pad Down</code>, <code>D-Pad Left</code>, <code>D-Pad Right</code>, <code>START</code>, <code>BACK</code>, <code>LB</code>, <code>RB</code>, <code>GUIDE</code>, <code>A</code>, <code>B</code>, <code>X</code>, <code>Y</code>, <code>LT</code>, <code>RT</code>. Boards with stick-click buttons also list <code>LS (stick click)</code> and <code>RS (stick click)</code>.</td></tr>
+      <tr><td><code>Default</code></td><td>The key it types in normal play.</td></tr>
+      <tr><td><code>8to6 mode</code></td><td>The key it types while 8-to-6 mode is on.</td></tr>
+    </tbody>
+  </table>
+  <p>Each drop-down holds these keys:</p>
+  <table>
+    <thead><tr><th>Group</th><th>Keys</th></tr></thead>
+    <tbody>
+      <tr><td>No key</td><td><code>— none —</code> (the control types nothing)</td></tr>
+      <tr><td>Letters and numbers</td><td><code>A</code>–<code>Z</code>, <code>1</code>–<code>9</code>, <code>0</code></td></tr>
+      <tr><td>Editing and arrows</td><td><code>Enter</code>, <code>Esc</code>, <code>Backspace</code>, <code>Tab</code>, <code>Space</code>, <code>Minus</code>, <code>Equals</code>, <code>Up Arrow</code>, <code>Down Arrow</code>, <code>Left Arrow</code>, <code>Right Arrow</code></td></tr>
+      <tr><td>Function keys</td><td><code>F1</code>–<code>F24</code></td></tr>
+      <tr><td>Keypad</td><td><code>Keypad 0</code>–<code>Keypad 9</code>, <code>Keypad .</code>, <code>Keypad /</code>, <code>Keypad *</code>, <code>Keypad -</code>, <code>Keypad +</code>, <code>Keypad Enter</code></td></tr>
+      <tr><td>Modifiers</td><td><code>L-Ctrl</code>, <code>L-Shift</code>, <code>L-Alt</code>, <code>L-GUI</code>, <code>R-Ctrl</code>, <code>R-Shift</code>, <code>R-Alt</code>, <code>R-GUI</code></td></tr>
+    </tbody>
+  </table>
+
+  <h2 id="factory">Factory keys (MAME defaults)</h2>
+  <p>A new board uses MAME's default keys. Because of that, keyboard mode works in MAME and most front ends
+  without changing anything. The stick-click buttons have no key by default.</p>
+  <table>
+    <thead><tr><th>Control</th><th>MAME player 1</th><th>MAME player 2</th><th>MAME player 3</th><th>MAME player 4</th></tr></thead>
+    <tbody>
+      <tr><td>Up / Down / Left / Right</td><td>Arrow keys</td><td><code>R</code> <code>F</code> <code>D</code> <code>G</code></td><td><code>I</code> <code>K</code> <code>J</code> <code>L</code></td><td><code>Keypad 8</code> <code>2</code> <code>4</code> <code>6</code></td></tr>
+      <tr><td>START</td><td><code>1</code></td><td><code>2</code></td><td><code>3</code></td><td><code>4</code></td></tr>
+      <tr><td>BACK (coin)</td><td><code>5</code></td><td><code>6</code></td><td><code>7</code></td><td><code>8</code></td></tr>
+      <tr><td>A</td><td><code>L-Ctrl</code></td><td><code>A</code></td><td><code>R-Ctrl</code></td><td><code>Keypad 0</code></td></tr>
+      <tr><td>B</td><td><code>L-Alt</code></td><td><code>S</code></td><td><code>R-Shift</code></td><td><code>Keypad .</code></td></tr>
+      <tr><td>X</td><td><code>Space</code></td><td><code>Q</code></td><td><code>Enter</code></td><td><code>Keypad Enter</code></td></tr>
+      <tr><td>Y</td><td><code>L-Shift</code></td><td><code>W</code></td><td><code>O</code></td><td><code>M</code></td></tr>
+      <tr><td>LB / RB</td><td><code>Z</code> / <code>X</code></td><td><code>E</code> / <code>F13</code></td><td><code>F16</code> / <code>F17</code></td><td><code>F20</code> / <code>F21</code></td></tr>
+      <tr><td>LT / RT</td><td><code>C</code> / <code>V</code></td><td><code>F14</code> / <code>F15</code></td><td><code>F18</code> / <code>F19</code></td><td><code>F22</code> / <code>F23</code></td></tr>
+      <tr><td>GUIDE</td><td><code>Esc</code></td><td><code>Esc</code></td><td><code>Esc</code></td><td><code>Esc</code></td></tr>
+    </tbody>
+  </table>
+  <p>Which set each table starts with depends on the board:</p>
+  <table>
+    <thead><tr><th>Board</th><th>Factory key sets</th></tr></thead>
+    <tbody>
+      <tr><td>1- and 2-player boards</td><td><code>Player 1 inputs</code> = MAME player 1, <code>Player 2 inputs</code> = MAME player 2.</td></tr>
+      <tr><td>3- and 4-player boards</td><td>Set up for the default 2-player order (3-1-2-4), where players 1 and 2 are in the middle:
+      <code>Player 1 inputs</code> (left-most) = MAME player 3, <code>Player 2 inputs</code> = MAME player 1,
+      <code>Player 3 inputs</code> = MAME player 2, <code>Player 4 inputs</code> (right-most, 4-player boards) = MAME player 4.</td></tr>
+    </tbody>
+  </table>
+  <div class="note">The screenshots on this page come from a board whose keys had already been changed. Your board
+  shows the keys that are saved on it.</div>
+
+  <h2>The 8to6 mode column</h2>
+  <p>The <code>8to6 mode</code> column is a second key map that is used only while 8-to-6 mode is on. Out of the box it
+  holds the same keys as <code>Default</code>. To build an 8-to-6 key map, start with <code>Copy Default → 8to6</code>
+  and then change the keys you want.</p>
+
+  <h2 id="spare-pins">Keys for spare mode and pinball pins</h2>
+  <p>Spare mode or pinball pins can type their own key too. That is set in the <code>Types key (keyboard mode)</code>
+  column of <a href="wiring-hardware.html#spare-pins">Spare pins as player buttons</a> on Wiring &amp; Hardware. The line
+  <code>Spare mode or pinball pins can type their own key too.</code> under the key tables has an
+  <code>Open Wiring &amp; Hardware</code> button that takes you there.</p>
+
+  <figure>
+    <img src="img/kbremap-full.png" alt="The whole Default Keyboard Mapping page: four player key tables, the pointer to Wiring and Hardware and the save buttons">
+    <figcaption>The whole page on a 4-player board: four key tables, the pointer to Wiring &amp; Hardware, then the
+    buttons.</figcaption>
+  </figure>
+
+  <h2>Save and restore</h2>
+  <table>
+    <thead><tr><th>Button</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td><code>Save to controller</code></td><td>Writes your key changes to the board. The board keeps them after power-off. <code>Saved</code> appears when it's done.</td></tr>
+      <tr><td><code>Copy Default → 8to6</code></td><td>Copies every player's <code>Default</code> keys into the <code>8to6 mode</code> column. Click <code>Save to controller</code> to keep it.</td></tr>
+      <tr><td><code>Restore Keyboard Map Defaults</code></td><td>Puts the <a href="#factory">factory keys</a> back in both columns of every table. Click <code>Save to controller</code> to keep them.</td></tr>
+    </tbody>
+  </table>
+  <p>If you leave the page with unsaved changes, the Utility asks whether to <code>Save</code> or <code>Discard</code> them.</p>
+  <div class="note"><code>Back up settings to file</code> (on <a href="app-settings.html#backup">App Settings</a>) does
+  not include the key maps. If you change a lot of keys, note them down.</div>
+
+  <h2>Examples</h2>
+  <div class="card">
+    <h3>Play MAME with the arcade controls in keyboard mode</h3>
+    <p>Nothing to change. The factory keys are MAME's defaults. The controls set up as MAME player 1 type the arrow keys,
+    <kbd>1</kbd> for start, <kbd>5</kbd> for coin and <kbd>L-Ctrl</kbd> <kbd>L-Alt</kbd> <kbd>Space</kbd>
+    <kbd>L-Shift</kbd> <kbd>Z</kbd> <kbd>X</kbd> for the buttons. <code>GUIDE</code> types <kbd>Esc</kbd>, which quits MAME.</p>
+  </div>
+  <div class="card">
+    <h3>Make START select in a front end</h3>
+    <p>If your front end expects <kbd>Enter</kbd> to launch a game, find the table for the controls you use in the
+    menus. Set its <code>START</code> to <code>Enter</code> in both the <code>Default</code> and
+    <code>8to6 mode</code> columns, then click <code>Save to controller</code>. That START stops typing its old key.
+    If a game still needs that key, map it to another control.</p>
+  </div>
+  <div class="card">
+    <h3>Give a spare pin its own key</h3>
+    <p>See the <a href="wiring-hardware.html#spare-pins">example on Wiring &amp; Hardware</a>: free the pin, tick it in
+    the spare-pins table and pick a key under <code>Types key</code>.</p>
+  </div>
+
+  <div class="pager"><a href="default-xinput-mapping.html">← Previous: Default XInput Mapping</a><a href="pinball.html">Next: Pinball Inputs →</a></div>
+  <footer>Pacto Tech · <a href="https://github.com/leecyrille/PactoTech_Public_Releases">Downloads</a> · <a href="../changelog.html">Release notes</a> ·
+  <a href="../control-api.html">Change modes with scripts</a></footer>
+</div>
+</body>
+</html>

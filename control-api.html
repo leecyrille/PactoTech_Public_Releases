@@ -69,6 +69,18 @@
   analog, keyboard mode and more from a batch file, a front end, PowerShell, Python, AutoHotkey
   or Linux — and read the current mode back.</p>
 
+  <div class="card" style="border-color:var(--ok)">
+    <p style="font-size:16px"><strong>Before you script anything: try Game profiles.</strong></p>
+    <p>If what you want is <em>“this game should always start in 4 player”</em>, <em>“twinstick for Robotron”</em>,
+    <em>“turbo for shmups”</em> or <em>“keyboard mode for this gamepad game”</em>, the Pacto Tech Utility already
+    does it by itself: it sees which game, emulator or front end is running, switches the controller, and puts it
+    back when the game ends. Nothing to launch, nothing to time — and it can do things scripts cannot, such as
+    turbo, per-game button remaps and the exit combo.</p>
+    <p><a class="btn" style="margin-top:6px" href="docs/game-profiles.html">Read the Game profiles guide</a></p>
+    <p style="color:var(--dim);font-size:13.5px">Use the scripts on this page when you want a front end, a launcher,
+    a hotkey tool or your own program to be in charge.</p>
+  </div>
+
   <div class="dl">
     <a class="btn" href="https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-Control-Examples.zip">Download all examples (.zip)</a>
     <a class="btn ghost" href="https://github.com/leecyrille/PactoTech_Public_Releases/tree/main/examples/control-api">Browse the examples</a>
@@ -186,7 +198,7 @@ arguments  = "C:\Pacto\launch-with-mode.vbs" 4p "C:\Emulators\MAME\mame.exe" %IT
   <pre><code>curl -s http://127.117.73.87:47391/mode/twinstick</code></pre>
 
   <h3>Ready-made scripts in the Utility</h3>
-  <p>The Utility already writes one <code>.bat</code> per mode for you: <em>App Options →
+  <p>The Utility already writes one <code>.bat</code> per mode for you: <em>App Settings →
   External control → Open scripts folder</em> (files like <code>Pacto - 4 Player.bat</code>).
   They are identical on every PC, so they are safe to copy between cabinets.</p>
 
@@ -262,7 +274,7 @@ python pacto_mode.py --watch     # print every change live (full API)</code></pr
   <p>Beyond switching modes, the Utility can read the live mode and change remaps, keyboard
   maps, board settings and game profiles. This part needs a key:</p>
   <ol>
-    <li>In the Utility, turn on <em>App Options → Allow local AI agents</em>.</li>
+    <li>In the Utility, turn on <em>App Settings → Allow local AI agents</em>.</li>
     <li>The key is in <code>%LOCALAPPDATA%\PactoConfigurator\agent_token.txt</code>
     (created on first start). Keep it private.</li>
     <li>Send it with every request: <code>Authorization: Bearer &lt;key&gt;</code>.</li>
@@ -336,12 +348,12 @@ Invoke-RestMethod -Method Post http://127.117.73.87:47391/agent/mode -Headers $h
     <tr><td><code>controller rejected the command</code></td><td>No controller connected, or a kiosk lock blocks that mode.</td></tr>
     <tr><td><code>unknown mode</code></td><td>Typo in the name — <code>/modes</code> lists them.</td></tr>
     <tr><td><code>401</code> on <code>/agent/…</code></td><td>Missing or wrong key (<code>agent_token.txt</code>).</td></tr>
-    <tr><td><code>403</code> on <code>/agent/…</code></td><td>“Allow local AI agents” is off in App Options.</td></tr>
+    <tr><td><code>403</code> on <code>/agent/…</code></td><td>“Allow local AI agents” is off in App Settings.</td></tr>
     <tr><td>Controller vanishes for a moment</td><td>Normal after <code>keyboard-on</code> / <code>keyboard-off</code>: it restarts as a different device.</td></tr>
   </table>
 
   <footer>Pacto Tech · <a href="https://github.com/leecyrille/PactoTech_Public_Releases">Downloads</a> ·
-  <a href="changelog.html">Release notes</a></footer>
+  <a href="changelog.html">Release notes</a> · <a href="docs/index.html">Utility guide</a></footer>
 </div>
 <script>
   document.querySelectorAll("pre").forEach(pre => {

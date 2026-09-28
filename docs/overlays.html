@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Overlays — Pacto Tech Utility guide</title>
+<meta name="description" content="Set up the on-screen banners the Pacto Tech Utility shows when a mode changes: themes, font, colours, size, position, monitor, icons and banners over fullscreen games.">
+<link rel="stylesheet" href="docs.css">
+</head>
+<body>
+<nav class="top" aria-label="Guide pages">
+  <a class="brand" href="index.html">PACTO TECH · GUIDE</a>
+  <span class="grp">Play</span>
+  <span class="links">
+    <a class="nav" href="game-profiles.html">Game profiles</a>
+    <a class="nav" href="test-and-log.html">Test &amp; Log</a>
+  </span>
+  <span class="grp">Controller</span>
+  <span class="links">
+    <a class="nav" href="modes.html">Modes</a>
+    <a class="nav" href="default-xinput-mapping.html">Default XInput Mapping</a>
+    <a class="nav" href="default-keyboard-mapping.html">Default Keyboard Mapping</a>
+    <a class="nav" href="pinball.html">Pinball Inputs</a>
+    <a class="nav" href="wiring-hardware.html">Wiring &amp; Hardware</a>
+  </span>
+  <span class="grp">This PC</span>
+  <span class="links">
+    <a class="nav here" href="overlays.html" aria-current="page">Overlays</a>
+    <a class="nav" href="app-settings.html">App Settings</a>
+    <a class="nav" href="update-about.html">Update / About</a>
+  </span>
+</nav>
+<div class="wrap">
+  <h1>Overlays</h1>
+  <p class="sub">The banners that pop up on screen when a mode changes: whether they show, how they look, where they
+  appear and how long they stay.</p>
+
+  <figure>
+    <img src="img/overlays.png" alt="The top of the Overlays page: Show overlay on mode change, the themes, font, colour chips with the overlay preview, and the center and corner overlay sliders">
+    <figcaption>The top of the Overlays page, with the preview of the center overlay and the corner badge.</figcaption>
+  </figure>
+
+  <p>Overlays is in the <b>This PC</b> group of the sidebar: everything here is saved on your PC as soon as you change
+  it. There is no Save button, and nothing here is written to the controller.</p>
+  <div class="tip">Hover over a setting to see a tooltip that explains it. Many settings can also be right-clicked:
+  choose <b>Restore default</b> to put just that one setting back.</div>
+
+  <p>When the mode changes (for example from 2 PLAYER to 4 PLAYER, or turbo on or off), the Utility shows a banner on
+  screen. First a large <b>center overlay</b> appears. After a moment it shrinks into a small <b>corner overlay</b>
+  (the "badge"), which stays on screen for a while longer.</p>
+
+  <h2>Mode-change overlays</h2>
+  <table>
+    <tr><th>Setting</th><th>What it does</th></tr>
+    <tr><td><b>Show overlay on mode change</b></td><td>Turns the banners on or off. It is on by default.</td></tr>
+    <tr><td><b>Theme</b></td><td>Ready-made colour sets: Pacto Cyan, Synthwave, Ember, Arcade Classic, Slate Mono
+      and Vaporwave.<br><b>Export theme…</b> saves your current look (colours, font, logo setting and icons) to a
+      <code>.pactotheme</code> file. Your own icon images or videos are packed into the file too, so you can share it.<br>
+      <b>Import theme…</b> loads a <code>.pactotheme</code> file. Imported themes appear next to the built-in ones,
+      and you can remove one with its <b>✕</b>.</td></tr>
+    <tr><td><b>Font</b></td><td>The font used on both overlays. The list contains common Windows fonts, and each one is
+      shown in its own style.</td></tr>
+    <tr><td><b>Accent color</b> / <b>Text color</b></td><td>Click a colour chip to open its picker. You can choose a swatch
+      (press and drag across the swatches to try them quickly), use the Windows colour picker, or type a Hex or R/G/B value.
+      Choosing your own colour means you are no longer using a preset theme.</td></tr>
+    <tr><td><b>Overlay preview</b></td><td>Next to the colour chips: a small version of the center overlay and the corner
+      badge in your current colours and font.</td></tr>
+    <tr><td><b>Hide the PactoTech logo on overlays</b></td><td>Removes the Pacto Tech logo from the mode-change banners.</td></tr>
+  </table>
+
+  <h2>Size, timing and position</h2>
+  <table>
+    <tr><th>Setting</th><th>Range</th><th>What it does</th></tr>
+    <tr><td colspan="3"><b>Center overlay (shows first)</b></td></tr>
+    <tr><td>Opacity</td><td>20–100 %</td><td>How see-through the center overlay is.</td></tr>
+    <tr><td>Size (% of screen)</td><td>20–80 %</td><td>How big the center overlay is.</td></tr>
+    <tr><td>Display time</td><td>0.5–10 seconds</td><td>How long it stays before it shrinks to the corner.</td></tr>
+    <tr><td colspan="3"><b>Corner overlay (stays after)</b></td></tr>
+    <tr><td>Opacity</td><td>20–100 %</td><td>How see-through the corner badge is.</td></tr>
+    <tr><td>Size (% of screen)</td><td>8–40 %</td><td>How big the corner badge is.</td></tr>
+    <tr><td>Hide overlay after</td><td>3–120 seconds</td><td>How long the badge stays before it disappears.
+      This greys out when <b>Keep corner overlay until dismissed</b> is on.</td></tr>
+  </table>
+  <p>Each slider has a number box beside it, so you can type an exact value if you prefer.</p>
+  <table>
+    <tr><th>Setting</th><th>What it does</th></tr>
+    <tr><td><b>Corner position</b></td><td>Six quick positions (Top Left, Top Center, Top Right, Bottom Left, Bottom Center,
+      Bottom Right), plus <b>X</b> and <b>Y</b> sliders for fine placement. X 0 % is the left edge and 100 % is the right edge.
+      Y 0 % is the bottom edge and 100 % is the top edge. The default is bottom right, raised slightly to clear the taskbar.</td></tr>
+    <tr><td><b>Keep the corner badge clear of</b></td><td>Steam and Windows show a "controller connected" notification when your board
+      reconnects, which happens at the same moment as a mode change. Pick the corner those notifications use. If your badge
+      is set to that corner, it moves to the opposite (top or bottom) edge so the two don't overlap. Choose
+      <b>Nothing (badge stays where it is set)</b> to turn this off.</td></tr>
+    <tr><td><b>Show overlay on</b></td><td><b>Primary monitor</b>, a specific monitor (listed with its resolution),
+      or <b>All monitors</b>.</td></tr>
+    <tr><td><b>Keep center overlay until dismissed</b></td><td>The center overlay stays until you click it.
+      This is useful on a separate status screen.</td></tr>
+    <tr><td><b>Keep corner overlay until dismissed</b></td><td>The badge stays until you click it.</td></tr>
+  </table>
+
+  <h2>Overlay icons</h2>
+  <p>Every mode has its own icon. The icons are grouped as Player layout, Stick output, Turbo, 8-to-6 and Other
+  (Interlock and Keyboard). For each mode you can:</p>
+  <ul>
+    <li>pick a built-in icon from the drop-down list. The first entry is the default;</li>
+    <li>click the <b>folder</b> button to use your own image or video. PNG, JPG, GIF, WEBP, SVG, BMP, AVIF, MP4, WEBM,
+      MOV and M4V files work. The Utility keeps its own copy of the file, so it still works if you move or delete the original;</li>
+    <li>for a video, choose how it plays: <b>Loop repeat</b>, <b>Loop forward–rewind</b>, <b>Play once &amp; pause</b>
+      or <b>Play once → corner</b>;</li>
+    <li>click <b>✕</b> to go back to the default icon, and <b>▶</b> to see how that one mode's banner looks.</li>
+  </ul>
+  <p>The <b>Test overlay</b> button below the icons shows a sample banner using all your current settings.</p>
+
+  <figure>
+    <img src="img/overlays-full.png" alt="The whole Overlays page, from Show overlay on mode change down to Restore Overlay Defaults">
+    <figcaption>The whole Overlays page: look, size and position, the overlay icons, Test overlay, in-game overlays and
+    <b>Restore Overlay Defaults</b>.</figcaption>
+  </figure>
+
+  <h2 id="fullscreen">In-game overlays (fullscreen games)</h2>
+  <p>Some games run in <i>exclusive fullscreen</i> (MAME's default on Windows), and Windows doesn't let any other window
+  draw on top of them, including the normal overlay. Borderless or windowed fullscreen is fine. You have two ways to see
+  banners in those games.</p>
+  <table>
+    <tr><th>Option</th><th>What it does</th></tr>
+    <tr><td><b>Draw banners over fullscreen games</b></td><td>On by default. The banner is drawn inside the game's own picture,
+      the same way the Steam and Discord overlays work, so it appears over any fullscreen game. Some antivirus programs may
+      flag this technique. If that causes a problem, turn it off and use the per-emulator options instead. The board and its
+      controls are never affected; this is only how the banner is drawn on the PC.</td></tr>
+    <tr><td><b>Install MAME plugin…</b></td><td>This option doesn't use injection. Pick your MAME folder (the one that contains
+      the MAME <code>.exe</code>; for front-end bundles such as CoinOps or LaunchBox that is the bundled
+      <code>emulators\mame</code> folder). The Utility adds a small plugin called <code>pactooverlay</code> to that folder's
+      <code>plugins</code> folder, and MAME then draws the banners itself, in every video mode. Restart MAME afterwards.
+      If you use more than one copy of MAME, repeat this for each one. If your <code>mame.ini</code> points
+      <code>pluginspath</code> somewhere else, the Utility warns you. To turn the plugin off, use MAME's Plugins menu or
+      delete the folder.</td></tr>
+    <tr><td>RetroArch</td><td>There's no button for RetroArch. Turn on Settings → Network → <b>Network Commands</b> in
+      RetroArch (port 55355), and the Utility sends mode banners to RetroArch's own on-screen messages, visible in any
+      fullscreen mode.</td></tr>
+  </table>
+  <p>Other emulators and games in exclusive fullscreen can only show banners through <b>Draw banners over fullscreen
+  games</b>; otherwise run them in borderless windowed mode. The normal overlay keeps covering the desktop and front-end
+  menus either way.</p>
+
+  <h2>Restore Overlay Defaults</h2>
+  <p>The <b>Restore Overlay Defaults</b> button at the bottom of the page asks you to confirm, then puts the banners and
+  their look back to their defaults straight away: showing the overlay, theme, font, colours, the logo setting, the
+  center and corner overlay sliders, the keep-until-dismissed switches, corner position, the notification corner, the
+  monitor and <b>Draw banners over fullscreen games</b>.</p>
+  <div class="note">It keeps your custom icons and imported themes, and it doesn't touch any other setting (App Settings,
+  update settings, PC hotkeys, game profiles or anything stored on the controller). To undo one setting only,
+  right-click it and choose <b>Restore default</b>.</div>
+
+  <div class="pager"><a href="wiring-hardware.html">← Previous: Wiring &amp; Hardware</a><a href="app-settings.html">Next: App Settings →</a></div>
+  <footer>Pacto Tech · <a href="https://github.com/leecyrille/PactoTech_Public_Releases">Downloads</a> · <a href="../changelog.html">Release notes</a> ·
+  <a href="../control-api.html">Change modes with scripts</a></footer>
+</div>
+</body>
+</html>

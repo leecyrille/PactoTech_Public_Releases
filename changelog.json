@@ -757,5 +757,25 @@
     "channel": "earlytesting",
     "kind": "linux",
     "notes": "Game profiles now work on Batocera, RetroPie and Lakka. PactoLink recognises the game you start from EmulationStation (the emulator, the RetroArch core and the ROM) and switches the encoder to that game's profile, then puts it back when you quit. Profiles use the same names as the Windows Utility, so a profile set up on a PC matches the same game on your cabinet. Nothing changes on your encoder until you create a profile: while no profiled game runs, the encoder stays exactly as its switches set it. Set profiles up from the Profiles page of the PactoLink web page on your cabinet's address."
+  },
+  {
+    "version": "20260928_0408",
+    "date": "2026-09-27",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "A reorganised Utility, per-player button mapping, and per-game Analog Slow and nudge speed.\n\nThe Utility now opens on Game profiles, and the sidebar is grouped: Play (Game profiles, Test & Log), Controller - settings saved on the controller (Modes, Default XInput Mapping, Default Keyboard Mapping, Pinball Inputs, and the new Wiring & Hardware page) - and This PC - settings saved in the Utility (Overlays, App Settings, Update / About, Help). Wiring & Hardware gathers what you set once when building a cabinet: mode-pin wiring, spare pins (one table now, for both button and key output), kiosk, input debounce and USB identity. Analog Slow is now part of Modes, all update settings live on Update / About, and backup/restore is on App Settings. Controller pages say so when no controller is connected instead of showing blank tables.\n\nWith this firmware, Default XInput Mapping can remap one cabinet position instead of all players, and any button can be set to \"Nothing\". \"Buttons that trigger modes and pinball inputs\" has a new \"Stop game output\" tick box, so a button borrowed for a pinball flipper or a mode no longer also sends its own button to games. Game profiles gain per-game \"Analog slow\" and \"Nudge speed\" columns, \"Save as reusable profile...\" on a row's right-click menu, and a tag showing which saved profile a row uses.\n\nAlso: Pinball Inputs explains what feeds each input (and how to add inputs on boards without pinball pins); Restore Keyboard Map Defaults restores the real factory keys; the overlay reset no longer wipes your hotkeys, themes or update settings; edits to debounce, wiring, kiosk, shortcuts and special inputs are no longer lost when you leave a page; Analog Slow no longer shows empty boxes; one tray icon instead of two; Help rewritten; language switching no longer leaves the previous language on screen. Firmware also restores the default debounce and Esc exit on boards whose settings date from very old firmware.\n\nNote: this firmware stores settings in a new format. If you ever go back to an older firmware, the controller runs on factory settings until you update again; your settings are kept and return with the update.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]

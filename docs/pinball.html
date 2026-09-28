@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pinball Inputs — Pacto Tech Utility guide</title>
+<meta name="description" content="Set what each pinball input (nudges, flippers, plunger) sends, and how nudges ramp, on the Pinball Inputs page of the Pacto Tech Utility.">
+<link rel="stylesheet" href="docs.css">
+</head>
+<body>
+<nav class="top" aria-label="Guide pages">
+  <a class="brand" href="index.html">PACTO TECH · GUIDE</a>
+  <span class="grp">Play</span>
+  <span class="links">
+    <a class="nav" href="game-profiles.html">Game profiles</a>
+    <a class="nav" href="test-and-log.html">Test &amp; Log</a>
+  </span>
+  <span class="grp">Controller</span>
+  <span class="links">
+    <a class="nav" href="modes.html">Modes</a>
+    <a class="nav" href="default-xinput-mapping.html">Default XInput Mapping</a>
+    <a class="nav" href="default-keyboard-mapping.html">Default Keyboard Mapping</a>
+    <a class="nav here" href="pinball.html" aria-current="page">Pinball Inputs</a>
+    <a class="nav" href="wiring-hardware.html">Wiring &amp; Hardware</a>
+  </span>
+  <span class="grp">This PC</span>
+  <span class="links">
+    <a class="nav" href="overlays.html">Overlays</a>
+    <a class="nav" href="app-settings.html">App Settings</a>
+    <a class="nav" href="update-about.html">Update / About</a>
+  </span>
+</nav>
+<div class="wrap">
+  <h1>Pinball Inputs</h1>
+  <p class="sub">Choose what each pinball input sends to the PC (a button, an instant stick push or a
+  gradual one) and try it out on a live pinball table.</p>
+
+  <figure>
+    <img src="img/pinball.png" alt="The Pinball Inputs page of the Pacto Tech Utility on a 4000T, with the status line at the top and the Left Flipper row active">
+    <figcaption>The Pinball Inputs page on a 4000T, which has no pinball pins. The line at the top says what feeds the
+    pinball inputs: here one player button has been mapped to <b>Left Flipper</b>. The other rows are dimmed, each with
+    a note on how to feed it.</figcaption>
+  </figure>
+  <p>Pinball Inputs is in the <b>Controller</b> group of the sidebar: its settings are stored on the board when you press
+  <b>Save to controller</b>.</p>
+
+  <h2>Which boards have pinball inputs</h2>
+  <table>
+    <tr><th>Pinball inputs</th><th>Boards with dedicated pins</th></tr>
+    <tr><td>Nudge Left, Nudge Right (and Nudge Up)</td><td>1000T, 2000T, 2000H, 4000H2, SNAP2</td></tr>
+    <tr><td>Left Flipper, Right Flipper, Launch / Plunger</td><td>2000H, 4000H, 4000H2</td></tr>
+  </table>
+  <h2>The status line</h2>
+  <p>The line under the page title always tells you where you stand:</p>
+  <ul>
+    <li><b>No controller connected:</b> it asks you to connect one.</li>
+    <li><b>Nothing feeds any pinball input</b> (for example a 4000T, which has no pinball pins, before anything is
+    mapped): it says so, the rows are greyed out, and it explains how to use spare inputs, with an <b>Open Default XInput
+    Mapping</b> button (and, on boards without pinball pins, an <b>Open Wiring &amp; Hardware</b> button).</li>
+    <li><b>Some inputs are fed:</b> it lists them, split into <i>board pins</i> and <i>mapped player buttons</i>.
+    Rows with nothing feeding them stay dimmed, each with a note saying nothing on the board produces that input yet.</li>
+  </ul>
+
+  <h2>Pinball on a board without pinball pins</h2>
+  <p>This is only possible if you can <b>spare inputs</b> for it, because each pinball input borrows one of the
+  board's existing inputs. Spare inputs can be:</p>
+  <ul>
+    <li><b>Player buttons no game on the cabinet needs</b>, for example Player 3 and 4 on a 2-player panel.</li>
+    <li><b>Mode inputs you don't use</b> (mode switches, turbo or 8-to-6 inputs). Free them under <b>Mode input
+    wiring</b> on <a href="wiring-hardware.html#mode-inputs">Wiring &amp; Hardware</a>, then give each one a player-input
+    slot under <a href="wiring-hardware.html#spare-pins">Spare pins as player buttons</a> on the same page.</li>
+  </ul>
+  <p>Then, on <a href="default-xinput-mapping.html#triggers">Default XInput Mapping</a>, go to <b>Buttons that trigger
+  modes and pinball inputs</b>, press <b>Add mapping</b>, choose the spare input and pick one of the <code>PINBALL:</code>
+  functions (<code>Nudge Left</code>, <code>Nudge Right</code>, <code>Left Flipper</code>, <code>Right Flipper</code>,
+  <code>Launch / Plunger</code>, <code>Nudge Up</code>). If your controller's firmware supports it, also tick
+  <b>Stop game output</b> on that row, so the borrowed button no longer sends its own button to games. Press <b>Save to
+  controller</b>; the Pinball Inputs page then unlocks that row.</p>
+  <div class="note">Without <b>Stop game output</b> (or on older firmware, where that tick box is hidden), a borrowed
+  input still sends its normal game output as well, so only use inputs nothing else needs.</div>
+  <p><b>Nudge Up</b> doesn't have its own pin. Press <b>Nudge Left</b> and <b>Nudge Right</b> together
+  and the board treats it as Nudge Up.</p>
+  <div class="note">Pinball outputs always go to <b>Player 1's</b> controller.</div>
+
+  <h2>The input rows</h2>
+  <p>There is one row for each of the six pinball inputs: <b>Nudge Left</b>, <b>Nudge Right</b>,
+  <b>Left Flipper</b>, <b>Right Flipper</b>, <b>Launch / Plunger</b> and <b>Nudge Up</b>.
+  Each row has the same controls.</p>
+  <table>
+    <tr><th>Control</th><th>What it does</th></tr>
+    <tr><td><code>D-PAD</code> · <code>ANALOG FAST</code> · <code>ANALOG SLOW</code></td>
+      <td>How the input behaves. <code>D-PAD</code> acts as a button, <code>ANALOG FAST</code> gives an instant
+      full analog push, and <code>ANALOG SLOW</code> gives a timed ramp using the ramp times below.</td></tr>
+    <tr><td><b>Output</b></td>
+      <td>What the input sends. The choices are:
+      <ul>
+        <li><code>Disabled</code> (the input does nothing)</li>
+        <li>a button: START, BACK, LS (stick click), RS (stick click), LB, RB, GUIDE, A, B, X or Y</li>
+        <li>a D-pad direction: <code>DPAD Up Fixed</code> … <code>DPAD Right Fixed</code></li>
+        <li>a left-stick direction: <code>L-Ana Up Fixed</code> … <code>L-Ana Right Fixed</code></li>
+        <li>a right-stick direction: <code>R-Ana Up Fixed</code> … <code>R-Ana Right Fixed</code></li>
+        <li>a trigger: LT or RT</li>
+      </ul></td></tr>
+    <tr><td><b>Ramp up</b> / <b>Ramp down</b> (ms)</td>
+      <td>For <code>ANALOG SLOW</code>: how long the push takes to build to full (<b>Ramp up</b>) and to die away after
+      you let go (<b>Ramp down</b>), from 0 to 2000 ms. In the other two modes these boxes are dimmed and marked
+      <code>ramps apply in ANALOG SLOW</code>.</td></tr>
+  </table>
+  <p>The mode only makes a difference when the output is a stick direction (<code>L-Ana</code> /
+  <code>R-Ana</code>) or a trigger (LT / RT). Buttons and D-pad directions are simply pressed for as
+  long as you hold the input.</p>
+  <p>Unlike the <a href="modes.html#analog-slow">Analog Slow</a> joystick mode (on the Modes page), a pinball ramp starts from zero,
+  so a slow nudge really does build up from nothing.</p>
+  <div class="tip">Set <b>Launch / Plunger</b> to <code>R-Ana Down Fixed</code> with <code>ANALOG SLOW</code>
+  for a realistic, progressive plunger pull.</div>
+
+  <h3>Defaults</h3>
+  <table>
+    <tr><th>Input</th><th>Mode</th><th>Output</th></tr>
+    <tr><td>Nudge Left</td><td><code>ANALOG FAST</code></td><td><code>L-Ana Right Fixed</code></td></tr>
+    <tr><td>Nudge Right</td><td><code>ANALOG FAST</code></td><td><code>L-Ana Left Fixed</code></td></tr>
+    <tr><td>Left Flipper</td><td><code>D-PAD</code></td><td>LB</td></tr>
+    <tr><td>Right Flipper</td><td><code>D-PAD</code></td><td>RB</td></tr>
+    <tr><td>Launch / Plunger</td><td><code>D-PAD</code></td><td>A</td></tr>
+    <tr><td>Nudge Up</td><td><code>ANALOG FAST</code></td><td><code>L-Ana Up Fixed</code></td></tr>
+  </table>
+  <p>Every input's default ramp times are 1024 ms up and 109 ms down.</p>
+  <div class="tip">Want a different nudge feel for one table or pinball program? Set <b>Nudge speed</b> in its
+  <a href="game-profiles.html#ramps">game profile</a> instead of changing this page.</div>
+
+  <h2>Live table</h2>
+  <figure>
+    <img src="img/pinball-full.png" alt="The whole Pinball Inputs page including the live pinball table drawing and the save buttons">
+    <figcaption>The whole Pinball Inputs page: the six input rows, the <b>Live table</b> and the save buttons.</figcaption>
+  </figure>
+  <p>Press your pinball inputs and the drawing reacts exactly as configured, including slow-ramp nudges.
+  Nudges shove the table and light up that side, the flippers flip, the plunger pulls back, and
+  the name of each input flashes in the middle as you press it. The table follows the settings currently on
+  the page, even before you save them, so you can try changes first.</p>
+
+  <h2>Saving and restoring</h2>
+  <ul>
+    <li><b>Save to controller</b> writes all six rows to the board and stores them there.</li>
+    <li><b>Restore Pinball Defaults</b> puts every row back to the defaults above. Press
+    <b>Save to controller</b> afterwards to keep them.</li>
+    <li>If you switch pages with unsaved changes, the Utility asks whether to <b>Save</b> or <b>Discard</b> them.</li>
+  </ul>
+
+  <div class="pager"><a href="default-keyboard-mapping.html">← Previous: Default Keyboard Mapping</a><a href="wiring-hardware.html">Next: Wiring &amp; Hardware →</a></div>
+  <footer>Pacto Tech · <a href="https://github.com/leecyrille/PactoTech_Public_Releases">Downloads</a> · <a href="../changelog.html">Release notes</a> ·
+  <a href="../control-api.html">Change modes with scripts</a></footer>
+</div>
+</body>
+</html>

@@ -94,10 +94,9 @@ play — all with no extra setup.
 
 > **Good to know:** Batocera, RetroPie, Lakka, Knulli, ROCKNIX, MiSTer and the
 > Steam Deck are all **Linux** systems, even when they don't look like it.
-> Native gamepad (XInput) play on them arrives with the upcoming **"Linux mode"**
-> firmware — once your board has it, set the board's USB identity to **LINUX**
-> for these machines (Modes page in the configurator). Keyboard mode is the
-> supported way to play until then.
+> For native gamepad (XInput) play on them, set the board's USB identity to
+> **LINUX** (Wiring & Hardware page in the configurator; needs current
+> firmware). Keyboard mode works on any firmware.
 
 ### One-line install
 
@@ -139,6 +138,14 @@ menu.
 All PactoLink packages (PC `x86_64` plus Raspberry Pi `aarch64`, the latter
 experimental) are on the releases page with signatures and
 `PactoLink-SHA256SUMS.txt`.
+
+## Guide
+
+### 📖 [Pacto Tech Utility guide](https://leecyrille.github.io/PactoTech_Public_Releases/docs/index.html)
+
+Every page of the Utility explained with screenshots — start with
+[Game profiles](https://leecyrille.github.io/PactoTech_Public_Releases/docs/game-profiles.html): the
+board switches modes, turbo, remaps and keyboard mode by itself for each game, with no scripts.
 
 ## Change modes from scripts, front ends and hotkeys
 
