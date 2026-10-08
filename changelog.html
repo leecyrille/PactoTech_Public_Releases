@@ -53,6 +53,16 @@
     Show early-testing releases</label>
   <div class="entry earlytesting">
     <div class="head">
+      <span class="ver">20261008_0454</span>
+      <span class="chip earlytesting">earlytesting</span>
+      <span class="chip both">App + Firmware</span>
+      <span class="boards">1000T-F103VC · 2000H-F103VB · 2000H-F103VC · 2000T-F103VC · 3000T-F103VC · 4000H-F103VB · 4000H-F103VC · 4000H2-F103ZE · 4000T-F103VC · SNAP2-F103VC · SNAP4-F103VC</span>
+      <span class="date">2026-10-07</span>
+    </div>
+    <div class="notes"><p>Firmware fix for Windows PCs: after the PC was shut down and switched back on (or woke from sleep), only one player&#x27;s controls worked until the board was switched to Disconnect mode and back. All players now keep working through shutdown, restart and sleep. The board&#x27;s XInput controllers now share one Windows driver, the way the 2025 firmware did.</p><p>Also fixed: in rare cases the controls or the Utility connection could stop responding after Windows reset the USB connection, until the board was reconnected.</p><p>Update the controller firmware to get these fixes (F103VB boards: use the one-click ST-Link update). The first time a board with this firmware is connected, Windows sets it up again, which takes a few seconds; player order and settings are unchanged.</p></div>
+  </div>
+  <div class="entry earlytesting">
+    <div class="head">
       <span class="ver">20260928_0408</span>
       <span class="chip earlytesting">earlytesting</span>
       <span class="chip both">App + Firmware</span>

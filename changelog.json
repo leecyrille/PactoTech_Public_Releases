@@ -777,5 +777,25 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20261008_0454",
+    "date": "2026-10-07",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "Firmware fix for Windows PCs: after the PC was shut down and switched back on (or woke from sleep), only one player's controls worked until the board was switched to Disconnect mode and back. All players now keep working through shutdown, restart and sleep. The board's XInput controllers now share one Windows driver, the way the 2025 firmware did.\n\nAlso fixed: in rare cases the controls or the Utility connection could stop responding after Windows reset the USB connection, until the board was reconnected.\n\nUpdate the controller firmware to get these fixes (F103VB boards: use the one-click ST-Link update). The first time a board with this firmware is connected, Windows sets it up again, which takes a few seconds; player order and settings are unchanged.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
