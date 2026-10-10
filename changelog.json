@@ -797,5 +797,25 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20261010_2120",
+    "date": "2026-10-10",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "Game profiles now set the controller the same way every time a game starts, plus fixes from a full review of the firmware and the Utility.\n\nGame profiles: every profile now says whether the game runs in XInput or Keyboard (Disconnect) mode, and starting the game applies every setting of that mode, so a game always behaves the same whatever a previous game, a mode button or a shortcut left behind. Keyboard-mode profiles now also apply their 8-to-6 key map, turbo key repeat, custom keys and exit combo. Empty cells in the Game profiles table show the value that will apply (from the \"No known game detected\" row) in italics. A profile without a turbo setting leaves turbo to the cabinet's turbo button, starting off in each game. Changes to the running game's profile apply straight away, and the profile is put back when the controller restarts or reconnects. Games without a profile keep the mode the players picked.\n\nFirmware fixes: in Keyboard mode, START+BACK types Esc again, as the 2025 firmware did. With the 8-to-6 switch on, holding LB or LT no longer changes the button layout. Analog Slow and pinball nudges no longer misbehave when a direction is held for a long time. Turning 8-to-6 off now always turns it fully off. An update that was started but not finished (for example because the Utility was closed) no longer leaves the controls unresponsive until the controller is unplugged: it returns to normal after about a minute. The 4000H2 ST-Link image now starts correctly. Settings are now stored in a part of the chip every F103VC is guaranteed to have; existing settings move across automatically on the first start.\n\nUtility fixes: a controller still on 2025 firmware is recognised and offered the one-click ST-Link update, and a firmware file for a different board is refused; the overlay no longer appears when overlays are switched off; swapping controllers no longer saves one controller's settings onto another; starting the Utility no longer takes the controller out of Keyboard mode; theme files can only add images to the icon folder; update progress and errors are clearer.\n\nUpdate the controller firmware to get the firmware fixes (F103VB boards: use the one-click ST-Link update).",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
