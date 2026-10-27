@@ -53,6 +53,16 @@
     Show early-testing releases</label>
   <div class="entry earlytesting">
     <div class="head">
+      <span class="ver">20261027_0431</span>
+      <span class="chip earlytesting">earlytesting</span>
+      <span class="chip both">App + Firmware</span>
+      <span class="boards">1000T-F103VC · 2000H-F103VB · 2000H-F103VC · 2000T-F103VC · 3000T-F103VC · 4000H-F103VB · 4000H-F103VC · 4000H2-F103ZE · 4000T-F103VC · SNAP2-F103VC · SNAP4-F103VC</span>
+      <span class="date">2026-10-26</span>
+    </div>
+    <div class="notes"><p>The in-game overlay no longer crashes games.</p><p>The Utility&#x27;s in-game overlay (the mode banners drawn inside fullscreen games) could crash some games when it loaded: OpenGL games on NVIDIA graphics (RetroArch&#x27;s OpenGL drivers, Dolphin, Flycast, MAME&#x27;s OpenGL mode, yuzu and others), an occasional crash while it was starting up, and a crash inside NVIDIA&#x27;s driver with RetroArch. These are fixed, and banners now also appear in PPSSPP&#x27;s Direct3D 9 mode and MAME&#x27;s bgfx renderer.</p><p>The overlay now waits until a game has been fullscreen for a few seconds before loading, and it is never loaded again into a game that closed unexpectedly right after it loaded (that game falls back to the other ways the Utility shows banners). Games it cannot draw in, such as Vulkan and DirectX 12 games, keep showing banners the same way as before.</p><p>The controller firmware is unchanged from the previous release; there is no need to update it.</p></div>
+  </div>
+  <div class="entry earlytesting">
+    <div class="head">
       <span class="ver">20261010_2120</span>
       <span class="chip earlytesting">earlytesting</span>
       <span class="chip both">App + Firmware</span>
