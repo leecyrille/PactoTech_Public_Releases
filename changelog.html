@@ -53,6 +53,16 @@
     Show early-testing releases</label>
   <div class="entry earlytesting">
     <div class="head">
+      <span class="ver">20261031_1444</span>
+      <span class="chip earlytesting">earlytesting</span>
+      <span class="chip both">App + Firmware</span>
+      <span class="boards">1000T-F103VC · 2000H-F103VB · 2000H-F103VC · 2000T-F103VC · 3000T-F103VC · 4000H-F103VB · 4000H-F103VC · 4000H2-F103ZE · 4000T-F103VC · SNAP2-F103VC · SNAP4-F103VC</span>
+      <span class="date">2026-10-31</span>
+    </div>
+    <div class="notes"><p>New firmware for the ATLAS0 and ATLAS1 trackball boards, installable from the Utility, and the Utility now keeps a copy of each trackball&#x27;s settings.</p><p>ATLAS firmware 20261031: the trackball and buttons respond much faster. The PC now reads the board every millisecond instead of every 10 ms, and the board no longer pauses for about 20 ms each time it sends a button press or movement, so fast spins, drags and quick taps arrive smoothly and on time. The trackball and buttons also keep working while the Utility or a terminal is talking to the board, and a program that opens the board&#x27;s COM port without reading it can no longer freeze it.</p><p>Settings are now stored in a part of the chip&#x27;s memory that every ATLAS board is guaranteed to have, so they save reliably on every board. Updating keeps all of a board&#x27;s settings and button mappings, including its player number. Other fixes: a key or volume button held while you change its mapping or restore factory defaults no longer stays stuck on the PC; releasing one of two held media keys no longer releases the other; media keys such as Email, Calculator and the web keys can now be assigned; F13-F24 can be chosen by name; the right mouse button is named correctly in exported settings; and a bad or interrupted settings import no longer changes the wrong setting or leaves the board waiting.</p><p>To update an ATLAS board: plug it in, open the ATLAS Trackball page, click Read from board, then Update firmware with ST-Link. This needs an ST-Link connected to the board&#x27;s SWD pins (SWDIO, SWCLK, GND) with the board plugged into USB; it takes about 10 seconds.</p><p>Settings copy: every time the Utility reads or saves an ATLAS board, it keeps a copy of that board&#x27;s settings on the PC. If a board ever comes back on factory settings, the ATLAS Trackball page offers to put its saved settings back.</p><p>The controller firmware is unchanged from the previous release; there is no need to update it.</p></div>
+  </div>
+  <div class="entry earlytesting">
+    <div class="head">
       <span class="ver">20261030_0355</span>
       <span class="chip earlytesting">earlytesting</span>
       <span class="chip both">App + Firmware</span>
