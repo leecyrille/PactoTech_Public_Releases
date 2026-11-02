@@ -53,6 +53,23 @@
     Show early-testing releases</label>
   <div class="entry earlytesting">
     <div class="head">
+      <span class="ver">20261102_0107</span>
+      <span class="chip earlytesting">earlytesting</span>
+      <span class="chip both">App + Firmware</span>
+      <span class="boards">1000T-F103VC · 2000H-F103VB · 2000H-F103VC · 2000T-F103VC · 3000T-F103VC · 4000H-F103VB · 4000H-F103VC · 4000H2-F103ZE · 4000T-F103VC · SNAP2-F103VC · SNAP4-F103VC</span>
+      <span class="date">2026-11-01</span>
+    </div>
+    <div class="notes"><p>The 1000T&#x27;s Kiosk/Lockdown setting now locks every panel shortcut, plus clearer wiring help and naming in the Utility.</p><p>1000T firmware: with Kiosk/Lockdown turned on, the SHIFT button shortcuts (SHIFT + BACK, START, A, LB, RB or X) and the Right-Stick input no longer change modes, so a locked 1000T stays exactly as you set it. The Utility can still change modes, and the &quot;DISC only&quot; lock still lets the DISC input switch to keyboard mode. Nothing changes when the lock is off.</p><p>Utility:
+- The firmware your boards shipped with before November 2026 is now called &quot;Legacy Gen 1 firmware&quot; everywhere. Update / About &gt; Advanced update options &gt; Install Legacy Gen 1 firmware with ST-Link puts it back, and the ATLAS Trackball page marks older ATLAS firmware &quot;(Legacy Gen 1)&quot;.
+- Wiring &amp; Hardware: the 3-position switch tip now matches the board - for the stick modes, ground DPAD and wire ANA-S / ANA-F to the outer positions. The keyboard-mode tip now says to use a momentary button between DISC and GND (each press switches). The input is called DISC, as printed on the boards.
+- Default Keyboard Mapping: the key tables are named by cabinet position (Far-Left, Mid-Left, Mid-Right, Far-Right), like the XInput mapping page, so it is clear which station types which keys.
+- ATLAS Trackball page: on an ATLAS1 (which has no DIP switches) the default choices now say what they do there - Off, Player 1, 100 % speed.
+- Test &amp; Log: the Control Test&#x27;s stick percentages are no longer cut off when a stick is pushed.
+- Update / About: the controller status no longer gets stuck on &quot;Checking...&quot;.
+- Modes: the 1000T no longer lists a turbo shortcut it doesn&#x27;t have.</p><p>The 2000T, 4000T and other boards&#x27; firmware is unchanged from the previous release; there is no need to update them. F103VB boards: use the one-click ST-Link update.</p></div>
+  </div>
+  <div class="entry earlytesting">
+    <div class="head">
       <span class="ver">20261031_1444</span>
       <span class="chip earlytesting">earlytesting</span>
       <span class="chip both">App + Firmware</span>

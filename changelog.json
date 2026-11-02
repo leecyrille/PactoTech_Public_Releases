@@ -877,5 +877,25 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20261102_0107",
+    "date": "2026-11-01",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "The 1000T's Kiosk/Lockdown setting now locks every panel shortcut, plus clearer wiring help and naming in the Utility.\n\n1000T firmware: with Kiosk/Lockdown turned on, the SHIFT button shortcuts (SHIFT + BACK, START, A, LB, RB or X) and the Right-Stick input no longer change modes, so a locked 1000T stays exactly as you set it. The Utility can still change modes, and the \"DISC only\" lock still lets the DISC input switch to keyboard mode. Nothing changes when the lock is off.\n\nUtility:\n- The firmware your boards shipped with before November 2026 is now called \"Legacy Gen 1 firmware\" everywhere. Update / About > Advanced update options > Install Legacy Gen 1 firmware with ST-Link puts it back, and the ATLAS Trackball page marks older ATLAS firmware \"(Legacy Gen 1)\".\n- Wiring & Hardware: the 3-position switch tip now matches the board - for the stick modes, ground DPAD and wire ANA-S / ANA-F to the outer positions. The keyboard-mode tip now says to use a momentary button between DISC and GND (each press switches). The input is called DISC, as printed on the boards.\n- Default Keyboard Mapping: the key tables are named by cabinet position (Far-Left, Mid-Left, Mid-Right, Far-Right), like the XInput mapping page, so it is clear which station types which keys.\n- ATLAS Trackball page: on an ATLAS1 (which has no DIP switches) the default choices now say what they do there - Off, Player 1, 100 % speed.\n- Test & Log: the Control Test's stick percentages are no longer cut off when a stick is pushed.\n- Update / About: the controller status no longer gets stuck on \"Checking...\".\n- Modes: the 1000T no longer lists a turbo shortcut it doesn't have.\n\nThe 2000T, 4000T and other boards' firmware is unchanged from the previous release; there is no need to update them. F103VB boards: use the one-click ST-Link update.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
