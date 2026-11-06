@@ -53,6 +53,20 @@
     Show early-testing releases</label>
   <div class="entry earlytesting">
     <div class="head">
+      <span class="ver">20261106_0327</span>
+      <span class="chip earlytesting">earlytesting</span>
+      <span class="chip both">App + Firmware</span>
+      <span class="boards">1000T-F103VC · 2000H-F103VB · 2000H-F103VC · 2000T-F103VC · 3000T-F103VC · 4000H-F103VB · 4000H-F103VC · 4000H2-F103ZE · 4000T-F103VC · SNAP2-F103VC · SNAP4-F103VC</span>
+      <span class="date">2026-11-05</span>
+    </div>
+    <div class="notes"><p>1000T fixes: game profiles no longer stop the 1000T&#x27;s controller, and the SpecVision screen shows the 1000T&#x27;s real layout.</p><p>1000T firmware:
+- A game profile set to Twin-Stick (or 4 Player) could stop the 1000T&#x27;s controller responding until it was unplugged, and a 4 Player layout stopped the second stick. The 1000T now treats any such layout as its Normal layout (first stick = left analog stick, second stick = right analog stick).
+- SpecVision OLED status screen: the 1000T showed &quot;4 PLAYER (1234)&quot; as its layout. It now shows NORMAL or RIGHT STICK, and switching to Right-Stick mode shows its own screen.</p><p>Utility:
+- Game profiles no longer send a player layout to a 1000T, so 1000Ts that haven&#x27;t updated their firmware yet are protected too. Stick output, 8-to-6, interlock, turbo and the other profile settings still apply.
+- Install Legacy Gen 1 firmware: an error message still said &quot;2025 firmware&quot;; it now says Legacy Gen 1.</p><p>The 1000T user manual is corrected: Normal is the power-on layout and Right-Stick mode swaps the two sticks, the DISC input switches to Disconnect / Keyboard mode, and the optional SpecVision screen works on the 1000T.</p><p>3000T firmware: the SpecVision status screen now names the layout in 2 Player and Twin-Stick modes (&quot;2 PLAYER (132)&quot; / &quot;TWINSTICK&quot;) instead of leaving it blank or wrong.</p><p>The 2000T, 4000T and other boards&#x27; firmware is unchanged from the previous release; there is no need to update them. F103VB boards: use the one-click ST-Link update.</p></div>
+  </div>
+  <div class="entry earlytesting">
+    <div class="head">
       <span class="ver">20261102_0107</span>
       <span class="chip earlytesting">earlytesting</span>
       <span class="chip both">App + Firmware</span>
