@@ -1,35 +1,58 @@
 # Pacto Tech — Downloads
 
-> # ⚠️ EARLY TESTING RELEASE
->
-> **Everything on this page is an _Early Testing_ (preview) build.** You're
-> getting the newest features first — but this is **not** the final, polished
-> release, so it may have rough edges or change as we go.
->
-> It's perfect if you're happy to try new things and let us know how it goes.
-> Thanks for helping us test! 🙌
+Your Pacto board works as soon as you plug it in, so everything here is optional.
 
-Welcome! This is the home for the **Pacto Tech Utility** — the free Windows app
-for setting up your Pacto arcade controller — the **firmware** that runs on the
-boards, and the **PactoTech Control Test**, a full-screen input tester for
-arcade cabinets. Install the Utility once and it keeps both itself and your
-controller up to date for you.
+<a id="which-download-do-i-need"></a>
+## Latest downloads
 
-## Which download do I need?
+Click a name and the file downloads straight away. No account needed.
 
-| You are… | Download this | Why |
+| Download | Who it's for | Latest version |
 |---|---|---|
-| **A Pacto owner** (most people) | ➡️ **[Pacto Tech Utility installer](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-Utility-Setup.exe)** | Configures the board, updates the firmware, shows mode banners on screen, **and includes the full Control Test** on its *Test & Log* page (open it full screen from there). You do not need anything else. |
-| **Building a cabinet or front end**, doing a lot of hardware work, or you **don't own a Pacto board (yet)** | ➡️ **[PactoTech Control Test (stand-alone zip)](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest.zip)** | One portable `.exe` you can add to CoinOps / RetroFE / LaunchBox / any front end as a "game": every controller, mouse, trackball, light gun, keyboard and MIDI device on the PC, the XInput / DirectInput player order, polling rates, mouse speed graphs with 8-bit clipping detection, and (with a Pacto board) the arcade panel in its current mode. It updates itself in the background (switch that off in the settings file it creates next to itself, or with the "PactoTech Control Test Settings" shortcut it creates). The zip also holds a front-end logo, a background image and a ready-made CoinOps entry. |
+| ⬇️ **[Pacto Tech Utility for Windows](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-Utility-Setup.exe)** | **Most owners.** Sets up the board for each game, shows mode changes on screen, remaps buttons, locks the panel for kiosk use, tests your controls and updates firmware. Includes the full Control Test. | <!-- utility-earlytesting -->20261106_0419<!-- /utility-earlytesting --> |
+| ⬇️ **[Control Test for Windows](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest.zip)** | **Cabinet builders, or anyone without a Pacto board.** A portable full-screen tester you can launch from a front end like a game. It checks any encoder, trackball, light gun, keyboard or MIDI device. | 20260919_0548 |
+| ⬇️ **[PactoLink for Batocera](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoLink-Batocera-x86_64.zip)** | Batocera on a PC. See [Linux setup](#using-pacto-boards-on-batocera-retropie-lakka--other-linux-systems). | 2026-09-23 |
+| ⬇️ **[PactoLink for Lakka](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoLink-Lakka-x86_64.zip)** | Lakka on a PC. | 2026-09-23 |
+| ⬇️ **[PactoLink for Linux](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoLink-Linux-x86_64.tar.gz)** | RetroPie or desktop Linux on a PC. | 2026-09-23 |
+| ⬇️ [Script examples](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-Control-Examples.zip) | Change modes from scripts, front ends and hotkeys. | 2026-09-27 |
 
-The Utility and the stand-alone tester have the **same test features**. The
-stand-alone build exists for people who want the tester as a launchable item on
-a cabinet, or who have no Pacto hardware at all — it is useful for checking any
-arcade encoder, trackball or light gun.
+These are **Early Testing** builds: the newest features, which may still have rough edges. If you spot anything odd, we'd love to hear about it.
+
+<details>
+<summary><b>Raspberry Pi packages (experimental, not yet tested on real hardware)</b></summary>
+
+- [PactoLink for Batocera (aarch64)](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoLink-Batocera-aarch64.zip)
+- [PactoLink for Lakka (aarch64)](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoLink-Lakka-aarch64.zip)
+- [PactoLink for Linux (aarch64)](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoLink-Linux-aarch64.tar.gz)
+
+</details>
+
+<details>
+<summary><b>Firmware images for flashing with an ST-Link</b></summary>
+
+Most people never need these: the Utility installs firmware for you, with or without an ST-Link.
+
+| Board | Chip | Image |
+|---|---|---|
+| 1000T | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-1000T-F103VC-STLink-Full.bin) |
+| 2000T | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-2000T-F103VC-STLink-Full.bin) |
+| 3000T | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-3000T-F103VC-STLink-Full.bin) |
+| 4000T | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-4000T-F103VC-STLink-Full.bin) |
+| 2000H | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-2000H-F103VC-STLink-Full.bin) |
+| 2000H | F103VB | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-2000H-F103VB-STLink-Full.bin) |
+| 4000H | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-4000H-F103VC-STLink-Full.bin) |
+| 4000H | F103VB | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-4000H-F103VB-STLink-Full.bin) |
+| 4000H2 | F103ZE | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-4000H2-F103ZE-STLink-Full.bin) |
+| SNAP2 | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-SNAP2-F103VC-STLink-Full.bin) |
+| SNAP4 | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-SNAP4-F103VC-STLink-Full.bin) |
+
+</details>
+
+The folders above this page (`firmware`, `manifests`, `docs` and so on) are what the Utility and the guide read from. You don't need to open them.
 
 ### New to GitHub? Here is how downloading works
 
-1. Click one of the **➡️ links above** — the file downloads straight away, like
+1. Click one of the **⬇️ links above** — the file downloads straight away, like
    any other download. (No account, no sign-up, nothing to "clone".)
 2. If your browser asks whether to keep the file, choose **Keep** — the files
    here are signed by us and the app only ever installs signed updates.
@@ -39,12 +62,9 @@ arcade encoder, trackball or light gun.
    then double-click `PactoTech-ControlTest.exe`. It opens full screen; hold
    **ESC** (or **START+BACK** on a pad) to leave. `README.txt` inside explains
    the logo, the background, the CoinOps folder and the settings file (auto-update, sounds, panel).
-5. Want to see every file, older versions, or the firmware images? Open the
+5. Want to see every file? Open the
    [Early Testing release page](https://github.com/leecyrille/PactoTech_Public_Releases/releases/tag/earlytesting)
-   and scroll down to **Assets** — that list is the downloads.
-
-> 💡 Because this is an Early Testing build, if you spot anything odd we'd
-> genuinely love to hear about it — that feedback is exactly what it's for.
+   and scroll down to **Assets**.
 
 ## Keeping your controller up to date
 
