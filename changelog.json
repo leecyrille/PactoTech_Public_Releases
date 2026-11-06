@@ -917,5 +917,25 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20261106_0419",
+    "date": "2026-11-05",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "Firmware updates over USB work reliably again.\n\nUpdates could fail with \"the bootloader did not answer\" or \"did not accept the claim\", and the board went back to its old firmware unharmed. This Utility now updates boards that had the problem, and every firmware image in this release includes a corrected bootloader for boards flashed with an ST-Link.\n\nIf your board is on a recent firmware, update the Utility first, then update the firmware from Update / About. Your settings are kept.\n\nBoards on Legacy Gen 1 firmware, or any board you want the corrected bootloader on: use Update / About > Advanced update options to flash with an ST-Link. A USB update can't replace the bootloader, but the updated Utility handles that for you.\n\nNew installs now start on the Stable channel. If you chose a channel yourself, it stays as you set it.\n\nAll boards' firmware is rebuilt in this release; apart from the corrected bootloader in the ST-Link images, nothing changes on the 1000T, 2000T, 3000T or 4000T since the previous release. F103VB boards: use the one-click ST-Link update.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
