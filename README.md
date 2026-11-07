@@ -42,7 +42,6 @@ Most people never need these: the Utility installs firmware for you, with or wit
 | 2000H | F103VB | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-2000H-F103VB-STLink-Full.bin) |
 | 4000H | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-4000H-F103VC-STLink-Full.bin) |
 | 4000H | F103VB | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-4000H-F103VB-STLink-Full.bin) |
-| 4000H2 | F103ZE | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-4000H2-F103ZE-STLink-Full.bin) |
 | SNAP2 | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-SNAP2-F103VC-STLink-Full.bin) |
 | SNAP4 | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-SNAP4-F103VC-STLink-Full.bin) |
 
