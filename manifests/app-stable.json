@@ -1,10 +1,10 @@
 {
-  "version": "0.0.0",
-  "notes": "No stable release published yet.",
-  "pub_date": "2026-07-06T00:00:00Z",
+  "version": "0.20261106.419",
+  "notes": "Pacto Tech Utility 20261106_0419 (stable)",
+  "pub_date": "2026-11-12T23:37:40Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "placeholder",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjErSVV0TW5kQlQzVk1WV3kxNkJCYmcrY1QxTE94MkNzeEdyL0Y5azdsdEcrb1BRdDJ6UUYvM3RreXU1K3ViRDVvb21EUmF1VDZZNi9lVFlhcXgvT0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzOTM5MDQwCWZpbGU6UGFjdG8gVGVjaCBVdGlsaXR5XzAuMjAyNjExMDYuNDE5X3g2NC1zZXR1cC5leGUKUHdGV3llSnVlVWcySzhmZTRPbHhYUmJHMElpZDB1dklkTWR4djh0bnpWd2JLV3hRSXUzRGtlbXd4VExmbUZCQTZGTHg2cHVadW41MzM4eCsrbWtiQkE9PQo=",
       "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoTech-Utility-Setup.exe"
     }
   }

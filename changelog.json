@@ -937,5 +937,24 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20261106_0419",
+    "date": "2026-11-12",
+    "channel": "stable",
+    "kind": "both",
+    "notes": "First Stable release: the Pacto Tech Utility and 2nd generation firmware.\n\nThis is the first release on the Stable channel, which is the channel new installs use. It is the same build as 20261106_0419.\n\nPacto Tech Utility for Windows:\n- Game profiles set the board up for each game and put it back when the game closes.\n- On-screen banners show every mode change.\n- Remap buttons and keyboard keys, for every player or one position.\n- The Control Test checks every control and the player order Windows gave them.\n- A kiosk lock stops mode changes from the panel.\n- Settings for ATLAS0 and ATLAS1 trackball boards.\n\n2nd generation firmware supports previous hardware, so boards bought before November 2026 can run it too. Updates are optional: if your cabinet works the way you like, you can leave it as it is.\n\nUpdating:\n- Boards already on 2nd generation firmware update over the USB cable from Update / About. Your settings are kept.\n- Boards on Legacy Gen 1 firmware need one ST-Link flash first, from Update / About. The Utility does the flash for you. After that, updates arrive over USB.\n- Automatic updates for the app and the firmware are an option. They are off by default for stability.\n\nF103VB boards: use the one-click ST-Link update.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]

@@ -1,11 +1,11 @@
 #!/bin/sh
-# PactoLink one-line installer for Linux emulation systems (Early Testing).
+# PactoLink one-line installer for Linux emulation systems (still in testing).
 #
 #   curl -L https://raw.githubusercontent.com/leecyrille/PactoTech_Public_Releases/main/install.sh | sh
 #
 # Detects Batocera / Lakka / generic Linux (RetroPie, Debian, Ubuntu,
 # Raspberry Pi OS), downloads the matching signed package from the
-# Early Testing release, and runs its installer. Everything lands in user
+# Stable release, and runs its installer. Everything lands in user
 # storage (Batocera /userdata, Lakka /storage, generic /usr/local) - see the
 # per-platform READMEs in the packages. Uninstall notes are printed at the
 # end and live in the README of each package.
@@ -15,7 +15,7 @@
 # (PactoLink-SHA256SUMS.txt[.sig] on the release page).
 set -e
 
-BASE="https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting"
+BASE="https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable"
 
 say() { printf '%s\n' "== $*"; }
 die() { printf '%s\n' "!! $*" >&2; exit 1; }

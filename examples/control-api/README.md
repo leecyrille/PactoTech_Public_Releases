@@ -3,7 +3,7 @@
 **Full guide with explanations: https://leecyrille.github.io/PactoTech_Public_Releases/control-api.html**
 
 Download everything at once:
-[PactoTech-Control-Examples.zip](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-Control-Examples.zip)
+[PactoTech-Control-Examples.zip](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoTech-Control-Examples.zip)
 
 The quickest possible version (Windows, with the Pacto Tech Utility running):
 

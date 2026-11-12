@@ -9,21 +9,21 @@ Click a name and the file downloads straight away. No account needed.
 
 | Download | Who it's for | Latest version |
 |---|---|---|
-| ⬇️ **[Pacto Tech Utility for Windows](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-Utility-Setup.exe)** | **Most owners.** Sets up the board for each game, shows mode changes on screen, remaps buttons, locks the panel for kiosk use, tests your controls and updates firmware. Includes the full Control Test. | <!-- utility-earlytesting -->20261106_0419<!-- /utility-earlytesting --> |
-| ⬇️ **[Control Test for Windows](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-ControlTest.zip)** | **Cabinet builders, or anyone without a Pacto board.** A portable full-screen tester you can launch from a front end like a game. It checks any encoder, trackball, light gun, keyboard or MIDI device. | 20260919_0548 |
-| ⬇️ **[PactoLink for Batocera](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoLink-Batocera-x86_64.zip)** | Batocera on a PC. See [Linux setup](#using-pacto-boards-on-batocera-retropie-lakka--other-linux-systems). | 2026-09-23 |
-| ⬇️ **[PactoLink for Lakka](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoLink-Lakka-x86_64.zip)** | Lakka on a PC. | 2026-09-23 |
-| ⬇️ **[PactoLink for Linux](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoLink-Linux-x86_64.tar.gz)** | RetroPie or desktop Linux on a PC. | 2026-09-23 |
-| ⬇️ [Script examples](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-Control-Examples.zip) | Change modes from scripts, front ends and hotkeys. | 2026-09-27 |
+| ⬇️ **[Pacto Tech Utility for Windows](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoTech-Utility-Setup.exe)** | **Most owners.** Sets up the board for each game, shows mode changes on screen, remaps buttons, locks the panel for kiosk use, tests your controls and updates firmware. Includes the full Control Test. | <!-- utility-stable -->20261106_0419<!-- /utility-stable --> |
+| ⬇️ **[Control Test for Windows](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoTech-ControlTest.zip)** | **Cabinet builders, or anyone without a Pacto board.** A portable full-screen tester you can launch from a front end like a game. It checks any encoder, trackball, light gun, keyboard or MIDI device. | 20260919_0548 |
+| ⬇️ **[PactoLink for Batocera](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoLink-Batocera-x86_64.zip)** | Batocera on a PC. See [Linux setup](#using-pacto-boards-on-batocera-retropie-lakka--other-linux-systems). | 2026-09-23 |
+| ⬇️ **[PactoLink for Lakka](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoLink-Lakka-x86_64.zip)** | Lakka on a PC. | 2026-09-23 |
+| ⬇️ **[PactoLink for Linux](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoLink-Linux-x86_64.tar.gz)** | RetroPie or desktop Linux on a PC. | 2026-09-23 |
+| ⬇️ [Script examples](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoTech-Control-Examples.zip) | Change modes from scripts, front ends and hotkeys. | 2026-09-27 |
 
-These are **Early Testing** builds: the newest features, which may still have rough edges. If you spot anything odd, we'd love to hear about it.
+These are the **Stable** releases, the ones the Utility uses unless you choose otherwise. The firmware is our 2nd generation firmware, which supports previous hardware: boards bought before November 2026 can run it too. PactoLink for Linux is still in testing. Want new features sooner? In the Utility, open **Update / About** and change **Update channel**.
 
 <details>
 <summary><b>Raspberry Pi packages (experimental, not yet tested on real hardware)</b></summary>
 
-- [PactoLink for Batocera (aarch64)](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoLink-Batocera-aarch64.zip)
-- [PactoLink for Lakka (aarch64)](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoLink-Lakka-aarch64.zip)
-- [PactoLink for Linux (aarch64)](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoLink-Linux-aarch64.tar.gz)
+- [PactoLink for Batocera (aarch64)](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoLink-Batocera-aarch64.zip)
+- [PactoLink for Lakka (aarch64)](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoLink-Lakka-aarch64.zip)
+- [PactoLink for Linux (aarch64)](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoLink-Linux-aarch64.tar.gz)
 
 </details>
 
@@ -34,16 +34,16 @@ Most people never need these: the Utility installs firmware for you, with or wit
 
 | Board | Chip | Image |
 |---|---|---|
-| 1000T | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-1000T-F103VC-STLink-Full.bin) |
-| 2000T | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-2000T-F103VC-STLink-Full.bin) |
-| 3000T | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-3000T-F103VC-STLink-Full.bin) |
-| 4000T | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-4000T-F103VC-STLink-Full.bin) |
-| 2000H | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-2000H-F103VC-STLink-Full.bin) |
-| 2000H | F103VB | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-2000H-F103VB-STLink-Full.bin) |
-| 4000H | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-4000H-F103VC-STLink-Full.bin) |
-| 4000H | F103VB | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-4000H-F103VB-STLink-Full.bin) |
-| SNAP2 | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-SNAP2-F103VC-STLink-Full.bin) |
-| SNAP4 | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-SNAP4-F103VC-STLink-Full.bin) |
+| 1000T | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoTech-1000T-F103VC-STLink-Full.bin) |
+| 2000T | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoTech-2000T-F103VC-STLink-Full.bin) |
+| 3000T | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoTech-3000T-F103VC-STLink-Full.bin) |
+| 4000T | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoTech-4000T-F103VC-STLink-Full.bin) |
+| 2000H | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoTech-2000H-F103VC-STLink-Full.bin) |
+| 2000H | F103VB | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoTech-2000H-F103VB-STLink-Full.bin) |
+| 4000H | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoTech-4000H-F103VC-STLink-Full.bin) |
+| 4000H | F103VB | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoTech-4000H-F103VB-STLink-Full.bin) |
+| SNAP2 | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoTech-SNAP2-F103VC-STLink-Full.bin) |
+| SNAP4 | F103VC | [download](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoTech-SNAP4-F103VC-STLink-Full.bin) |
 
 </details>
 
@@ -62,7 +62,7 @@ The folders above this page (`firmware`, `manifests`, `docs` and so on) are what
    **ESC** (or **START+BACK** on a pad) to leave. `README.txt` inside explains
    the logo, the background, the CoinOps folder and the settings file (auto-update, sounds, panel).
 5. Want to see every file? Open the
-   [Early Testing release page](https://github.com/leecyrille/PactoTech_Public_Releases/releases/tag/earlytesting)
+   [Stable release page](https://github.com/leecyrille/PactoTech_Public_Releases/releases/tag/stable)
    and scroll down to **Assets**.
 
 ## Keeping your controller up to date
@@ -148,7 +148,7 @@ updates, and each package's README has the uninstall steps.
 ### Prefer not to use a terminal? (Batocera)
 
 Download `PactoLink-Batocera-x86_64.zip` from the
-[releases page](https://github.com/leecyrille/PactoTech_Public_Releases/releases/tag/earlytesting),
+[releases page](https://github.com/leecyrille/PactoTech_Public_Releases/releases/tag/stable),
 extract its `roms` folder onto the cabinet's network share (`\\BATOCERA\share`,
 user `root` / password `linux`), refresh the gamelists (**Main Menu → Game
 Settings → Update Gamelists**), and launch **Install PactoLink** from the Ports
@@ -173,7 +173,7 @@ board switches modes, turbo, remaps and keyboard mode by itself for each game, w
 Switch 2 player / 4 player / twinstick / d-pad / analog / keyboard mode from a
 batch file, LaunchBox / RetroFE / CoinOps, PowerShell, Python, AutoHotkey or
 Linux, and read the live mode back. Ready-to-use examples:
-[PactoTech-Control-Examples.zip](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-Control-Examples.zip).
+[PactoTech-Control-Examples.zip](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoTech-Control-Examples.zip).
 
 ## What's new
 
