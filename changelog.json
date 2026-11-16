@@ -995,5 +995,29 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20261116_0828",
+    "date": "2026-11-16",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "PactoLink for Batocera and Linux catches up with the Windows Utility.\n\nTest your cabinet from your desktop or phone: open http://batocera.local:46810 (or the cabinet's address) in any browser on your network. Settings, game profiles and now the Control Test all work from there, so you can press every button on the cabinet and watch it light up on your desktop. Key presses from an ordinary keyboard plugged into the cabinet are never shown to other devices.\n\nNew on Batocera and Linux since the September release:\n- The Control Test and Test & Log, the same as in the Windows Utility.\n- Mode-change banners use the full Windows card and show over every game: RetroArch, Dolphin, Cemu and Windows games. Each change now shows once (RetroArch games showed it twice).\n- Game profiles can follow any program, custom overlay icons and themes, PC hotkeys, and the Utility updates itself.\n\nFixes:\n- Batocera 43: the controls showed as not connected in Test & Log and the Control Test. They show now.\n- Running \"Install PactoLink\" again to upgrade could keep the old version without saying so, or leave PactoLink stopped until the next reboot. It now replaces it and restarts it every time.\n\nTested on a real Batocera 43.1 PC with a 4000T: every control of all four players, keyboard mode, game detection and banners in SNES, N64, PlayStation, Dreamcast, MAME, Doom, GameCube, Wii, Wii U and Windows games.\n\nThe Windows Utility and the board firmware are unchanged from the previous release. F103VB boards: use the one-click ST-Link update.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ],
+    "linux": [
+      "x86_64",
+      "aarch64"
+    ]
   }
 ]
