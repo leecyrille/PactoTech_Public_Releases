@@ -53,6 +53,32 @@
     Show early-testing releases</label>
   <div class="entry earlytesting">
     <div class="head">
+      <span class="ver">20261117_0607</span>
+      <span class="chip earlytesting">earlytesting</span>
+      <span class="chip both">App + Firmware</span>
+      <span class="boards">1000T-F103VC · 2000H-F103VB · 2000H-F103VC · 2000T-F103VC · 3000T-F103VC · 4000H-F103VB · 4000H-F103VC · 4000H2-F103ZE · 4000T-F103VC · SNAP2-F103VC · SNAP4-F103VC</span>
+      <span class="date">2026-11-17</span>
+    </div>
+    <div class="notes"><p>New boards now flash with an ST-Link, and every screen is easier to read.</p><p>Flashing a new board: a board that has never had firmware could not be flashed from the Utility - it said it couldn&#x27;t reach the board&#x27;s chip, even with correct wiring. It now flashes in about 15 seconds, with no unplugging. The Update / About page has a new &quot;Flash a board with an ST-Link&quot; section that is always there, even with no board connected: it shows how to wire the 4 pins (with a picture of your board&#x27;s pins), checks the ST-Link and the chip by itself, asks for the board model when a new board can&#x27;t tell it, then flashes and confirms the board is connected. Flashing several boards in a row is quick: the Utility keeps the model and only asks you to confirm it for each new board.
+- If Windows has no driver for the ST-Link, the Utility now installs it for you (Windows asks for permission once).
+- No internet? The firmware for every board is included with the Utility, so new boards can be flashed offline.
+- Clear messages for every problem: no ST-Link, two ST-Links plugged in, a board that doesn&#x27;t answer, a locked chip, the wrong chip.</p><p>Easier to read: text, buttons and boxes have much stronger contrast across the whole Utility and the Control Test, so everything stays readable on older or dimmer laptop screens. Keyboard focus is now clearly visible.</p><p>1000T: in D-pad mode the right stick now always works as the right stick (it sent nothing before).</p><p>F103VB boards: use the one-click ST-Link update.</p></div>
+  </div>
+  <div class="entry stable">
+    <div class="head">
+      <span class="ver">20261117_0607</span>
+      <span class="chip stable">stable</span>
+      <span class="chip both">App + Firmware</span>
+      <span class="boards">1000T-F103VC · 2000H-F103VB · 2000H-F103VC · 2000T-F103VC · 3000T-F103VC · 4000H-F103VB · 4000H-F103VC · 4000H2-F103ZE · 4000T-F103VC · SNAP2-F103VC · SNAP4-F103VC</span>
+      <span class="date">2026-11-17</span>
+    </div>
+    <div class="notes"><p>New boards now flash with an ST-Link, and every screen is easier to read.</p><p>Flashing a new board: a board that has never had firmware could not be flashed from the Utility - it said it couldn&#x27;t reach the board&#x27;s chip, even with correct wiring. It now flashes in about 15 seconds, with no unplugging. The Update / About page has a new &quot;Flash a board with an ST-Link&quot; section that is always there, even with no board connected: it shows how to wire the 4 pins (with a picture of your board&#x27;s pins), checks the ST-Link and the chip by itself, asks for the board model when a new board can&#x27;t tell it, then flashes and confirms the board is connected. Flashing several boards in a row is quick: the Utility keeps the model and only asks you to confirm it for each new board.
+- If Windows has no driver for the ST-Link, the Utility now installs it for you (Windows asks for permission once).
+- No internet? The firmware for every board is included with the Utility, so new boards can be flashed offline.
+- Clear messages for every problem: no ST-Link, two ST-Links plugged in, a board that doesn&#x27;t answer, a locked chip, the wrong chip.</p><p>Easier to read: text, buttons and boxes have much stronger contrast across the whole Utility and the Control Test, so everything stays readable on older or dimmer laptop screens. Keyboard focus is now clearly visible.</p><p>1000T: in D-pad mode the right stick now always works as the right stick (it sent nothing before).</p><p>F103VB boards: use the one-click ST-Link update.</p></div>
+  </div>
+  <div class="entry earlytesting">
+    <div class="head">
       <span class="ver">20261116_1518</span>
       <span class="chip earlytesting">earlytesting</span>
       <span class="chip both">App + Firmware</span>

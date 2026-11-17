@@ -1043,5 +1043,45 @@
       "x86_64",
       "aarch64"
     ]
+  },
+  {
+    "version": "20261117_0607",
+    "date": "2026-11-17",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "New boards now flash with an ST-Link, and every screen is easier to read.\n\nFlashing a new board: a board that has never had firmware could not be flashed from the Utility - it said it couldn't reach the board's chip, even with correct wiring. It now flashes in about 15 seconds, with no unplugging. The Update / About page has a new \"Flash a board with an ST-Link\" section that is always there, even with no board connected: it shows how to wire the 4 pins (with a picture of your board's pins), checks the ST-Link and the chip by itself, asks for the board model when a new board can't tell it, then flashes and confirms the board is connected. Flashing several boards in a row is quick: the Utility keeps the model and only asks you to confirm it for each new board.\n- If Windows has no driver for the ST-Link, the Utility now installs it for you (Windows asks for permission once).\n- No internet? The firmware for every board is included with the Utility, so new boards can be flashed offline.\n- Clear messages for every problem: no ST-Link, two ST-Links plugged in, a board that doesn't answer, a locked chip, the wrong chip.\n\nEasier to read: text, buttons and boxes have much stronger contrast across the whole Utility and the Control Test, so everything stays readable on older or dimmer laptop screens. Keyboard focus is now clearly visible.\n\n1000T: in D-pad mode the right stick now always works as the right stick (it sent nothing before).\n\nF103VB boards: use the one-click ST-Link update.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
+  },
+  {
+    "version": "20261117_0607",
+    "date": "2026-11-17",
+    "channel": "stable",
+    "kind": "both",
+    "notes": "New boards now flash with an ST-Link, and every screen is easier to read.\n\nFlashing a new board: a board that has never had firmware could not be flashed from the Utility - it said it couldn't reach the board's chip, even with correct wiring. It now flashes in about 15 seconds, with no unplugging. The Update / About page has a new \"Flash a board with an ST-Link\" section that is always there, even with no board connected: it shows how to wire the 4 pins (with a picture of your board's pins), checks the ST-Link and the chip by itself, asks for the board model when a new board can't tell it, then flashes and confirms the board is connected. Flashing several boards in a row is quick: the Utility keeps the model and only asks you to confirm it for each new board.\n- If Windows has no driver for the ST-Link, the Utility now installs it for you (Windows asks for permission once).\n- No internet? The firmware for every board is included with the Utility, so new boards can be flashed offline.\n- Clear messages for every problem: no ST-Link, two ST-Links plugged in, a board that doesn't answer, a locked chip, the wrong chip.\n\nEasier to read: text, buttons and boxes have much stronger contrast across the whole Utility and the Control Test, so everything stays readable on older or dimmer laptop screens. Keyboard focus is now clearly visible.\n\n1000T: in D-pad mode the right stick now always works as the right stick (it sent nothing before).\n\nF103VB boards: use the one-click ST-Link update.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]

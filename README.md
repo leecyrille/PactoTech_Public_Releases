@@ -9,7 +9,7 @@ Click a name and the file downloads straight away. No account needed.
 
 | Download | Who it's for | Latest version |
 |---|---|---|
-| ⬇️ **[Pacto Tech Utility for Windows](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoTech-Utility-Setup.exe)** | **Most owners.** Sets up the board for each game, shows mode changes on screen, remaps buttons, locks the panel for kiosk use, tests your controls and updates firmware. Includes the full Control Test. | <!-- utility-stable -->20261115_0452<!-- /utility-stable --> |
+| ⬇️ **[Pacto Tech Utility for Windows](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoTech-Utility-Setup.exe)** | **Most owners.** Sets up the board for each game, shows mode changes on screen, remaps buttons, locks the panel for kiosk use, tests your controls and updates firmware. Includes the full Control Test. | <!-- utility-stable -->20261117_0607<!-- /utility-stable --> |
 | ⬇️ **[Control Test for Windows](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoTech-ControlTest.zip)** | **Cabinet builders, or anyone without a Pacto board.** A portable full-screen tester you can launch from a front end like a game. It checks any encoder, trackball, light gun, keyboard or MIDI device. | 20260919_0548 |
 | ⬇️ **[PactoLink for Batocera](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoLink-Batocera-x86_64.zip)** | Batocera on a PC. See [Linux setup](#using-pacto-boards-on-batocera-retropie-lakka--other-linux-systems). | 2026-09-23 |
 | ⬇️ **[PactoLink for Lakka](https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/stable/PactoLink-Lakka-x86_64.zip)** | Lakka on a PC. | 2026-09-23 |
