@@ -1083,5 +1083,29 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20261117_0647",
+    "date": "2026-11-17",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "PactoLink for Batocera and Linux: Windows games now get game profiles, plus a 1000T keyboard-mode fix.\n\nBatocera and Linux:\n- Windows games run through Wine/Proton (Batocera's \"Windows\" system, including .wsquashfs packages) are now recognized by name, so their game profiles apply when the game starts and the board goes back to your Default profile when it closes. A profile made for a Windows game on the Windows Utility works for the same game on Batocera.\n- GameCube and Wii games keep their full names (for example \"Mario Kart - Double Dash!! (USA)\" was shown as \"Double Dash!! (USA)\").\n- The Utility's web page has the same easier-to-read screens as the Windows release.\n\n1000T: in keyboard mode the second stick now sends its keys (by default R, F, D, G - MAME's Player 2 directions); before, it typed nothing. In D-pad mode the second stick works as the right stick (from the previous release).\n\nTested on a real Batocera 43.1 PC with a 1000T: every control, both sticks in D-pad and analog mode, keyboard mode, and game profiles in SNES, a Wine game and a Batocera Windows package.\n\nThe Windows Utility is unchanged from the previous release apart from the version number. F103VB boards: use the one-click ST-Link update.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ],
+    "linux": [
+      "x86_64",
+      "aarch64"
+    ]
   }
 ]
