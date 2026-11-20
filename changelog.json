@@ -1107,5 +1107,29 @@
       "x86_64",
       "aarch64"
     ]
+  },
+  {
+    "version": "20261120_0603",
+    "date": "2026-11-20",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "New COMPATIBILITY (XBOX 360) setting for systems that only accept a real Xbox 360 controller, and PactoLink now sets up older Batocera by itself.\n\nUSB identity (Wiring & Hardware -> USB identity, also on PactoLink's web page) now has three clearly named choices:\n- STANDARD (XINPUT) is the default and the right choice for Windows 10/11, Batocera 37 and newer, and Linux. Full Utility and PactoLink features.\n- COMPATIBILITY (XBOX 360) is new: the board shows up as standard wired Xbox 360 controllers (one per player), exactly like Microsoft's own controller. Use it for older systems or programs that don't recognise the board in Standard, for example Batocera 36 and older. In gamepad mode the Utility and PactoLink can't reach the board; everything stored on the board (modes, turbo, mapping, keyboard mode) keeps working. To change settings, update the firmware or go back to Standard, switch to keyboard mode (DISC), make the change, then switch back.\n- DIRECTINPUT (HID GAMEPADS) for games and front ends that only take DirectInput controllers.\nIf kiosk lock 1 is on, the board stays on STANDARD so there is always a way back. When the Utility finds a board set to COMPATIBILITY it says so and tells you to press DISC, instead of asking for an ST-Link update.\n\nBatocera and Linux:\n- Batocera 36 and older: games ignored the board until it was set up in Configure a Controller. Installing PactoLink now adds it to EmulationStation's controller list by itself, with BACK as the hotkey like newer Batocera, and never changes a mapping you made. PactoLink's web page checks this and offers a \"Fix it\" button.\n- Batocera 43 on a Raspberry Pi: PactoLink now recognises the board's controllers there.\n- After upgrading Batocera from 42 or older, PactoLink no longer starts twice.\n\nControl Test: the 1000T panel shows the second stick beside the buttons, on a wider panel.\n\nTested on Windows 11 (COMPATIBILITY with 1, 2 and 4 players), on a Raspberry Pi 4 with Batocera 36 and with Batocera 43.1 (every control, game profiles in SNES, N64, PlayStation, MAME and FinalBurn Neo games, keyboard mode, firmware updates over USB), and COMPATIBILITY on every multi-player board on Batocera 43.1.\n\nF103VB boards: use the one-click ST-Link update.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ],
+    "linux": [
+      "x86_64",
+      "aarch64"
+    ]
   }
 ]

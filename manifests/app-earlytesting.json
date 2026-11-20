@@ -1,25 +1,25 @@
 {
-  "version": "0.20261117.647",
-  "notes": "Pacto Tech Utility 20261117_0647 (earlytesting)",
-  "pub_date": "2026-11-17T07:03:40Z",
+  "version": "0.20261120.603",
+  "notes": "Pacto Tech Utility 20261120_0603 (earlytesting)",
+  "pub_date": "2026-11-20T06:32:18Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjNqYkxkTjlPZjdydkMxUHF5NHdJa2dYcVdBVkwvMVdjWXhvSzd6UnREci9lRVg4Y0x2YVJYeUYxd3pNTURjeThJZXd1Ti9oTytQeW9RZDNpMmlMS2dNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0ODk4NjY5CWZpbGU6UGFjdG8gVGVjaCBVdGlsaXR5XzAuMjAyNjExMTcuNjQ3X3g2NC1zZXR1cC5leGUKRndxK01ObnFSc05vSmdpWDlEV1NHR2NQRUhWUUdCNkRxd21JN3V6dzZiUitjelFKRVRTaS9RWmFITVFDb1dnaXlrdkJ2cE5VcEZlWklkUVZaTXFJQWc9PQo=",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNnc0ZzUrakJhVW9ZaU0vbFVRemRoREFRbkNtZnc4ZFUwcmVRYVdsekw0YU85cHZQcTN0L3pUTkQ0SGp5MW5GZlNJUUhxZGVXK0p2SThxNFJZNEU3U1FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTU1NjQ2CWZpbGU6UGFjdG8gVGVjaCBVdGlsaXR5XzAuMjAyNjExMjAuNjAzX3g2NC1zZXR1cC5leGUKakQ4ak1hbURkSGs3K0JFZEw0RS82WlcyTThSWmNQRHRzS2UvenF3Zjk2NzlRVzRRY3FZeWJVcjcxbHdmMkZkK01UQ01MNjVZS3FZWjVUc3o2cnpMQ1E9PQo=",
       "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/PactoTech-Utility-Setup.exe"
     },
     "linux-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNno3aXdmdmxKRDJFb2pRQUd5SzdwSlRHWFhXN3FObFNMMVZPMEVDMVZaVk1xMG9XYTM1R1Jscjh0TC9MOExDd0RQTTNuZnB4Z2Izd2h4VWxQTkwvbFFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0ODk5MDA4CWZpbGU6cGFjdG9saW5rLWRhZW1vbi14ODZfNjQKRHhQeHI2TGwvYUt0RXBIMnRZWHdxRmlyYVFrMTVqWkx5dm9BbmNwZWdFcFpISkxaWXdxSHY5ZUtia3Q2cE8rbC9mdnJUMjhNNEhvTC9TaVYyLzUvQ0E9PQo=",
-      "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/pactolink-daemon-x86_64-20261117_0647",
-      "sha256": "93034c44042eec13753f3c6b1be4f59adb1f62af75d627e35a596bb2ba207715",
-      "size": 23246304,
-      "version": "20261117_0647"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjd3d3BGMmF4QWVMZnR5YjhPeE5paW8wN0RWMVcvNHZkMFROM21WSHFlZ3lyWTFWSm5aQVNBSlZGQlZseks3U2UzbFNpa1pGRXFoUllGQTN1a0ExZFEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTU2MTI1CWZpbGU6cGFjdG9saW5rLWRhZW1vbi14ODZfNjQKR0lHYmdiRHUzSGZZb2l2Rm1QYVRYMDR5U3Jlek5lUUNETEo2OGgvWTBDZ3ZDckVhWUF3dWRmLzBsbDY0cmhHc1YrMXhRMkxKRy9BWTRVbXp4bWFqQmc9PQo=",
+      "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/pactolink-daemon-x86_64-20261120_0603",
+      "sha256": "412cf6204cb830d9d4353d109dddbc560825afe3a0968d943e73272f7025df4f",
+      "size": 23274976,
+      "version": "20261120_0603"
     },
     "linux-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNisxdHdlZkw2Y3BjNUJWamE0QUEyUmNvSDkvQlgxZm1aUkdxV1lZWi9XR01FUzd2M0VHRVFrUkRjQkVXSGZoeUFJVXJGa1ZWV1hGU0R3a0RBcmw2Q2dJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0ODk5MDEwCWZpbGU6cGFjdG9saW5rLWRhZW1vbi1hYXJjaDY0CkZlWFVhVmJvMUJQeFZldVh1MndFSkQ3bkVFdUpJVW9PS29lZ0FzTitHNFpyQW53d1RQRk9IUjJhU1hFWVVzUEExbkI3T2Z3YlpqbzM3dkp3RStPUERBPT0K",
-      "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/pactolink-daemon-aarch64-20261117_0647",
-      "sha256": "1b3efcb049659be11d1e47c843b05ef7ed80b2247d2b265de12c602a3f7667da",
-      "size": 20767688,
-      "version": "20261117_0647"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaUZSWUwyZ3FVNjU3YzdvVGVVWWhTVXZ2SStlV2dIOHJPbFRjWkJnS3lKcFN3aXZnYzRjU3JYMGJKZzM1bVVIUVgvVkNocjlZNm8xVmV2a1RXZ1FzVmtlaFFYcEIrbnc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTU2MTI3CWZpbGU6cGFjdG9saW5rLWRhZW1vbi1hYXJjaDY0ClFuZ1pZVnNTeVFMSEt5Z09MaHVLZWZlUGtMV3pNOGpFYmI5UEFwRGp4Y05Jd1BxOHNQajZtM0NzVzFWRkRyTmNweHZHcklYSVkxaXhkVXl0T2FObEJBPT0K",
+      "url": "https://github.com/leecyrille/PactoTech_Public_Releases/releases/download/earlytesting/pactolink-daemon-aarch64-20261120_0603",
+      "sha256": "333211e3a39fd8dac70390da8ef45e5a5bb812dfa053853a707e4af84cae8861",
+      "size": 20784072,
+      "version": "20261120_0603"
     }
   }
 }
