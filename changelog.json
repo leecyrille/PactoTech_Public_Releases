@@ -1131,5 +1131,44 @@
       "x86_64",
       "aarch64"
     ]
+  },
+  {
+    "version": "20261124_0319",
+    "date": "2026-11-23",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "ATLAS trackball boards: install firmware with an ST-Link even on a new, blank board.\n\nThe ATLAS Trackball page only offered the ST-Link firmware install after the Utility had found the board over USB and read it, so a board that had never been flashed (or no longer starts) could not be installed from the Utility. The Firmware section is now always on the ATLAS Trackball page: wire the ST-Link to the 4 pins marked ST-LINK (UPDATES) next to the USB socket, plug the board into USB for power, pick ATLAS0 (has DIP switches) or ATLAS1 (no DIP switches) and click Update firmware with ST-Link. If the board shows up and you read it first, the Utility picks the board for you. Settings and button maps already on the board are kept.\n\nF103VB boards: use the one-click ST-Link update.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
+  },
+  {
+    "version": "20261124_0319",
+    "date": "2026-11-23",
+    "channel": "stable",
+    "kind": "both",
+    "notes": "ATLAS trackball boards can be installed with an ST-Link even when blank, plus a new COMPATIBILITY (XBOX 360) setting.\n\nATLAS trackball boards: the Firmware section is now always on the ATLAS Trackball page, so a board that has never been flashed (or no longer starts) can be installed from the Utility. Wire the ST-Link to the 4 pins marked ST-LINK (UPDATES) next to the USB socket, plug the board into USB for power, pick ATLAS0 (has DIP switches) or ATLAS1 (no DIP switches) and click Update firmware with ST-Link. If the board shows up and you read it first, the Utility picks the board for you. Settings and button maps already on the board are kept.\n\nUSB identity (Wiring & Hardware -> USB identity) now has three clearly named choices:\n- STANDARD (XINPUT) is the default and the right choice for Windows 10/11, Batocera 37 and newer, and Linux. Full Utility features.\n- COMPATIBILITY (XBOX 360) is new: the board shows up as standard wired Xbox 360 controllers (one per player), exactly like Microsoft's own controller. Use it for older systems or programs that don't recognise the board in Standard. In gamepad mode the Utility can't reach the board; everything stored on the board (modes, turbo, mapping, keyboard mode) keeps working. To change settings, update the firmware or go back to Standard, switch to keyboard mode (DISC), make the change, then switch back.\n- DIRECTINPUT (HID GAMEPADS) for games and front ends that only take DirectInput controllers.\nIf kiosk lock 1 is on, the board stays on STANDARD so there is always a way back. When the Utility finds a board set to COMPATIBILITY it says so and tells you to press DISC, instead of asking for an ST-Link update.\n\n1000T: in keyboard mode the second stick now sends its keys (by default R, F, D, G - MAME's Player 2 directions); before, it typed nothing.\n\nControl Test: the 1000T panel shows the second stick beside the buttons, on a wider panel.\n\nF103VB boards: use the one-click ST-Link update.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
