@@ -1209,5 +1209,25 @@
       "SNAP2-F103VC",
       "SNAP4-F103VC"
     ]
+  },
+  {
+    "version": "20261124_0542",
+    "date": "2026-11-23",
+    "channel": "earlytesting",
+    "kind": "both",
+    "notes": "ATLAS trackball boards now update over their USB cable - no ST-Link after one last install.\n\nATLAS firmware 20261123 adds USB updates:\n- Install it once with an ST-Link, from Update / About -> Flash a board with an ST-Link, or from the ATLAS Trackball page. From then on, the ATLAS Trackball page shows \"Update firmware over USB\": one click, about 10 seconds. Settings and button maps are kept.\n- If an update is interrupted (unplugged, power cut), nothing is lost: the board waits in update mode, and the ATLAS Trackball page shows it with a one-click \"Install firmware over USB\".\n- To start a board in update mode by hand (for example, firmware that no longer starts), hold the LEFT and RIGHT buttons while plugging it in.\n\nF103VB boards: use the one-click ST-Link update.",
+    "boards": [
+      "1000T-F103VC",
+      "2000H-F103VB",
+      "2000H-F103VC",
+      "2000T-F103VC",
+      "3000T-F103VC",
+      "4000H-F103VB",
+      "4000H-F103VC",
+      "4000H2-F103ZE",
+      "4000T-F103VC",
+      "SNAP2-F103VC",
+      "SNAP4-F103VC"
+    ]
   }
 ]
